@@ -9,6 +9,8 @@ import about from "../assets/about.svg"
 import team from "../assets/team.svg"
 import phone from "../assets/phone.svg"
 import title from "../assets/title.svg"
+import docs from "../assets/docs.svg"
+
 
 
 const NavBar = () => {
@@ -78,6 +80,14 @@ const NavBar = () => {
                                                 setPageMenu(false)
                                             }}  >
                                                 Distribution
+                                            </a>
+                                        </div>
+                                        <div className="py-2">
+                                            <a className="text-lg  text-slate-700" target="_blank" href="https://surveybull.gitbook.io/surveybull-whitepaper" onClick={() => {
+                                                setOpenMenu(false)
+                                                setPageMenu(false)
+                                            }}  >
+                                                Docs
                                             </a>
                                         </div>
                                     </div>
@@ -195,6 +205,15 @@ const NavBar = () => {
                                         <div className="ml-5  text-[#5831c8]">
                                             <div className=" font-semibold text-sm ">Distribution </div>
                                             <div className=" font-normal text-xs">know your share </div>
+                                        </div>
+                                    </a>
+                                    <a className="flex w-full items-center p-4 mt-2 min-w-[300px]" target="_blank" href="https://surveybull.gitbook.io/surveybull-whitepaper">
+                                        <div className="flex justify-center items-center rounded-2xl w-[40px]  h-[40px] bg-[#5831C8] ">
+                                            <img width={25} height={25} color="white" src={docs} />
+                                        </div>
+                                        <div className="ml-5  text-[#5831c8]">
+                                            <div className=" font-semibold text-sm ">Docs </div>
+                                            <div className=" font-normal text-xs">Read Whitepaper </div>
                                         </div>
                                     </a>
                                 </div>
