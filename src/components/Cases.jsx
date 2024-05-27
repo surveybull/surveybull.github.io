@@ -6,6 +6,10 @@ import investor from "../assets/investor.svg"
 import marketTrend from "../assets/marketTrend.svg"
 import realestate from "../assets/realestate.svg"
 import politicalImg from "../assets/politicalImg.svg"
+import gated from "../assets/gated.svg"
+import airdrop from "../assets/postHook.svg"
+
+
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -42,63 +46,64 @@ const Cases = () => {
     return (
         <div className="  md:my-[8rem]">
             <h1 data-aos={"fade-up"} className="text-2xl md:text-4xl flex justify-center font-patua text-[#484848] ">Use Cases</h1>
-            <div className="xl:flex justify-between my-20 ">
+            <div className="  my-20 ">
                 <div
-                    className="grid grid-cols-1 gap-12 mb-[3rem] xl:mb-0 ">
+                    className="xl:flex grid grid-cols-1 justify-evenly gap-12 mb-[3rem] xl:mb-0 ">
+                        <SurveyCard
+                       imageSrc={airdrop}
+                       title="Token Airdrops"
+                       description="Accompany your survey with Airdrop and experience the ease of token airdrops"
+                   />
+                        <SurveyCard
+                            imageSrc={gated}
+                            title="Token Gated Surveys"
+                            description="Our platform employs a technique wherein only individuals possessing a specific token, along with the requisite amount, are permitted to participate in the survey."
+                        />
                     <SurveyCard
                         imageSrc={blockchain}
                         title="Blockchain Adoption Surveys"
                         description="Blockchain startups and projects use the survey platform to gather feedback on user experiences, preferences, and challenges related to adopting blockchain technology."
                     />
-                    <div className="mb-[3rem] md:mb-[0px]">
-                        <SurveyCard
-                            imageSrc={userprofile}
-                            title="User Satisfaction Surveys"
-                            description="A cryptocurrency wallet provider conducts regular surveys to understand user satisfaction, feature preferences, and security concerns."
-                        />
-                    </div>
                 </div>
-                <div className="grid grid-cols-1 gap-12 mb-[3rem] xl:mb-0  ">
-                    <div className="md:mt-[0px]">
-                        <SurveyCard
-                            imageSrc={health}
-                            title="Healthcare Research Consortium"
-                            description="A consortium of healthcare researchers collaborates on a platform to gather data for epidemiological studies."
-                        />
-                    </div>
-                    <SurveyCard
+               
+                <div className="grid grid-cols-1 xl:grid-cols-4 gap-12 mt-7 ">
+                <SurveyCard
                         imageSrc={crypto}
                         title="Cryptocurrency Education & Awareness"
                         description="A crypto education platform utilizes surveys to understand the knowledge gaps and learning preferences of its audience."
                     />
-                </div>
-                <div className="grid grid-cols-1 gap-12 ">
                     <SurveyCard
                         imageSrc={investor}
                         title="ICO/STO Investor Sentiment Analysis"
                         description="Companies launching Initial Coin Offerings (ICOs) or Security Token Offerings (STOs) use the survey platform to gauge investor sentiment."
                     />
-                    <div className="mb-[3rem] md:mb-[0px]">
                         <SurveyCard
                             imageSrc={marketTrend}
                             title="Crypto Market Trends and Predictions"
                             description="A market research firm in the crypto space conducts regular surveys to gather predictions and opinions on market trends, price movements, and potential upcoming developments."
                         />
-                    </div>
-                </div>
-                <div className="grid grid-cols-1  gap-12">
-                    <div className="md:mt-[0px]">
-                        <SurveyCard
+                    <SurveyCard
                             imageSrc={realestate}
                             title="Real Estate Market Analysis"
                             description="Real estate developers leverage the platform to conduct market research on evolving housing preferences."
                         />
-                    </div>
+                </div>
+                <div className="xl:flex grid grid-cols-1 justify-evenly gap-12 mt-7">
                     <SurveyCard
                         imageSrc={politicalImg}
                         title="Political Engagement Tracker"
                         description="A civic engagement group employs the platform to gauge public sentiment on political issues over time."
                     />
+                    <SurveyCard
+                            imageSrc={userprofile}
+                            title="User Satisfaction Surveys"
+                            description="A cryptocurrency wallet provider conducts regular surveys to understand user satisfaction, feature preferences, and security concerns."
+                        />
+                        <SurveyCard
+                            imageSrc={health}
+                            title="Healthcare Research Consortium"
+                            description="A consortium of healthcare researchers collaborates on a platform to gather data for epidemiological studies."
+                        />
                 </div>
             </div>
         </div>

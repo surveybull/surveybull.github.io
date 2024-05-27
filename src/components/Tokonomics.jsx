@@ -6,44 +6,40 @@ import "aos/dist/aos.css";
 
 const cardData = [
     {
-        title: "Title 1",
-        text: "Text 1",
-        color: "#880808"
+        title: "Ecosystem & Devlopment",
+        text: "10",
+        tokens:"1,000,000,000",
+        color: "#006DF2"
     },
     {
-        title: "Title 2",
-        text: "Text 2",
-        color: "#880808"
+        title: "Founders",
+        text: "6",
+        tokens:"600,000,000",
+        color: "#23CE6B"
     },
     {
-        title: "Title 3",
-        text: "Text 3",
-        color: "#880808"
+        title: "Marketing",
+        text: "5",
+        tokens:"500,000,000",
+        color: "#EC4AA1"
     },
     {
-        title: "Title 4",
-        text: "Text 4",
-        color: "#880808"
+        title: "Partnership & Growth",
+        text: "10",
+        tokens:"1,000,000,000",
+        color: "#FDEE6D"
     },
     {
-        title: "Title 5",
-        text: "Text 5",
-        color: "#880808"
+        title: "Staking & Community Incentive ",
+        text: "15",
+        tokens:"1,500,000,000",
+        color: "#FE6B43"
     },
     {
-        title: "Title 6",
-        text: "Text 6",
-        color: "#880808"
-    },
-    {
-        title: "Title 7",
-        text: "Text 7",
-        color: "#880808"
-    },
-    {
-        title: "Title 8",
-        text: "Text 8",
-        color: "#880808"
+        title: "Liquidity",
+        text: "54",
+        tokens:"5,400,000,000",
+        color: "#9133EE"
     },
 
 ]
@@ -51,10 +47,15 @@ const cardData = [
 const Card = ({ data }) => {
     return (
         <div data-aos={"fade-up"} className={`w-full mt-4 border border-l-4 shadow-xl rounded-xl `} style={{ borderLeftColor: data.color }}>
-            <div className="px-4 py-2">
+            <div className="px-4 py-2 font-semibold">
                 {data.title}
             </div>
-            <div className="px-4 py-2">{data.text}</div>
+            <div className="flex justify-between pr-3">
+
+            <div className="px-4 py-2">{data.text}% Allocation
+            </div>
+            <div className="px-4 py-2">{data.tokens} Tokens</div>
+            </div>
         </div>
     )
 }

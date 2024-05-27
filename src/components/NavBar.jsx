@@ -164,9 +164,11 @@ const NavBar = () => {
                         <MobileMenu />}
                 </div>
                 <div className="hidden xl:flex justify-around items-center">
-
+                    <div className="">
+                        <a target="_blank" href="https://surveybull.gitbook.io/surveybull-whitepaper" className=" px-3 h-full  cursor-pointer text-sm font-medium text-black hover:text-slate-700 lg:px-6 xl:text-base xl:px-8  dark:hover:text-slate-300 ">Docs</a>
+                    </div>
                     <div className="flex hidden w-auto justify-around xl:flex" >
-                        <div className="relative group px-4 h-full font-poppins cursor-pointer text-sm font-medium text-black hover:text-slate-700 lg:px-6 xl:text-base xl:px-8  dark:hover:text-slate-300"   >
+                        <div className="relative group px-3 h-full font-poppins cursor-pointer text-sm font-medium text-black hover:text-slate-700 lg:px-6 xl:text-base xl:px-8  dark:hover:text-slate-300"   >
                             <div className="">{"About"}</div>
                             <div className=" group-hover:block group-hover:absolute right-[-50%] hidden  rounded-2xl z-10 bg-[#f7f7ff]" >
                                 <div className="w-full py-6 px-3 ">

@@ -5,7 +5,7 @@ import instagram from "../assets/instagram.svg"
 import twitter from "../assets/twitter.svg"
 import reddit from "../assets/Reddit.svg"
 import linkedin from "../assets/linkedin.svg"
-import youtube from "../assets/youtube.svg"
+import telegram from "../assets/telegram.svg"
 
 const sectionsData = [
     { title: "Offering", links: ['Earn crypto', 'Stacking Reward', 'Bull token', 'Survey creation'] },
@@ -43,9 +43,9 @@ const Footer = () => {
                             <img src={Logo} />
                         </div>
                         <div className="flex justify-center ">
-                            <div class="grid grid-cols-3 mt-8 gap-2 max-w-[200px] w-full justify-center">
+                            <div class="grid grid-cols-2 mt-8 gap-2 max-w-[200px] w-full justify-center">
 
-                                <a className="flex justify-center">
+                                {/* <a className="flex justify-center">
                                     <img src={facebook} />
                                 </a>
                                 <a className="flex justify-center">
@@ -56,9 +56,9 @@ const Footer = () => {
                                 </a>
                                 <a className="flex justify-center">
                                     <img src={youtube} />
-                                </a>
+                                </a> */}
                                 <a className="flex justify-center">
-                                    <img src={linkedin} />
+                                    <img src={telegram} />
                                 </a>
                                 <a className="flex justify-center">
                                     <img src={twitter} />
