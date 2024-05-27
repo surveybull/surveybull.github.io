@@ -52,7 +52,7 @@ const Cases = () => {
                         <SurveyCard
                        imageSrc={airdrop}
                        title="Token Airdrops"
-                       description="Accompany your survey with Airdrop and experience the ease of token airdrops"
+                       description="Revamp the crypto airdrop process by collecting feedback from prospective cryptocurrency product users"
                    />
                         <SurveyCard
                             imageSrc={gated}
