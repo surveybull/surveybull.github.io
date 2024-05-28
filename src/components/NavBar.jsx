@@ -22,28 +22,28 @@ const NavBar = () => {
     const MobileMenu = () => {
 
         return (
-            <div class="absolute inset-x-0 top-0 z-20 origin-top-right transform p-2 transition xl:hidden" id="headlessui-popover-panel-:r16:" tabindex="-1" data-headlessui-state="open">
-                <div class=" divide-y-2 divide-slate-100 rounded-lg bg-slate-100 shadow-lg ">
-                    <div class="px-5 pb-6 pt-5">
-                        <div class="flex items-center justify-between">
+            <div className="absolute inset-x-0 top-0 z-20 origin-top-right transform p-2 transition xl:hidden" id="headlessui-popover-panel-:r16:" tabindex="-1" data-headlessui-state="open">
+                <div className=" divide-y-2 divide-slate-100 rounded-lg bg-slate-100 shadow-lg ">
+                    <div className="px-5 pb-6 pt-5">
+                        <div className="flex items-center justify-between">
                             <div>
                                 <img src={logoTitle} />
                             </div>
-                            <div class="-mr-2">
-                                <button onClick={() => { setOpenMenu(false) }} class="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:bg-slate-700 dark:text-slate-200" type="button" data-headlessui-state="open">
-                                    <span class="sr-only">Close menu</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-6 w-6" aria-hidden="true">
+                            <div className="-mr-2">
+                                <button onClick={() => { setOpenMenu(false) }} className="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:bg-slate-700 dark:text-slate-200" type="button" data-headlessui-state="open">
+                                    <span className="sr-only">Close menu</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-x h-6 w-6" aria-hidden="true">
                                         <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
                                     </svg>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="px-5 py-6">
-                        <div class="flex flex-col space-y-5 text-center text-sm dark:text-slate-300">
-                            <div class="space-y-4">
+                    <div className="px-5 py-6">
+                        <div className="flex flex-col space-y-5 text-center text-sm dark:text-slate-300">
+                            <div className="space-y-4">
                                 <a className="flex justify-between text-lg text-slate-700 " onClick={() => { setPageMenu(prev => !prev) }}><div></div>{"Pages"}
-                                    <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <svg data-accordion-icon className="w-4 h-4 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </a>
@@ -93,7 +93,7 @@ const NavBar = () => {
                                     </div>
                                 }
                                 {/* <a className="flex justify-between text-lg text-slate-700 " onClick={() => { setHelloMenu(prev => !prev) }}><div></div>{"About"}
-                                    <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <svg data-accordion-icon className="w-4 h-4 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </a>
@@ -120,7 +120,7 @@ const NavBar = () => {
                                         </div>
                                     </div>
                                 } */}
-                                <button class="items-center appearance-none px-6 py-3 font-medium rounded-2xl relative text-white bg-[#5831C8] hover:bg-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-slate-900 flex w-full justify-center text-lg">Get started
+                                <button className="items-center appearance-none px-6 py-3 font-medium rounded-2xl relative text-white bg-[#5831C8] hover:bg-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-slate-900 flex w-full justify-center text-lg">Get started
                                 </button>
                             </div>
                         </div>
@@ -149,10 +149,10 @@ const NavBar = () => {
                         <img height={30} src={title} />
                     </div>
                 </div>
-                <div class="block xl:hidden p-3" >
-                    <button onClick={() => { setOpenMenu(true) }} class="inline-flex items-center justify-center rounded-md bg-slate-100 p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 xl:hidden dark:bg-slate-700 dark:text-slate-200" type="button" aria-expanded="true" id="headlessui-popover-button-:Rm5m:" aria-controls="headlessui-popover-panel-:r16:">
-                        <span class="sr-only">Open menu</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6" aria-hidden="true">
+                <div className="block xl:hidden p-3" >
+                    <button onClick={() => { setOpenMenu(true) }} className="inline-flex items-center justify-center rounded-md bg-slate-100 p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 xl:hidden dark:bg-slate-700 dark:text-slate-200" type="button" aria-expanded="true" id="headlessui-popover-button-:Rm5m:" aria-controls="headlessui-popover-panel-:r16:">
+                        <span className="sr-only">Open menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-menu h-6 w-6" aria-hidden="true">
                             <line x1="4" x2="20" y1="12" y2="12">
                             </line>
                             <line x1="4" x2="20" y1="6" y2="6">

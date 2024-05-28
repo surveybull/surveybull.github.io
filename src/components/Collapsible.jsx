@@ -21,7 +21,6 @@ const Collapsible = ({ title, children }) => {
     isExpanded ? "is-expanded" : null
   }`;
   const currentHeight = isExpanded ? height : 0;
-  console.log("🚀 ~ file: Collapsible.jsx:24 ~ Collapsible ~ currentHeight:", currentHeight)
   return (
     <div
       className={classes}

@@ -15,6 +15,7 @@ import DecentralizedAction from './components/DecentralizedAction'
 import SDK from './components/SDK'
 import Roadmap from './components/Roadmap'
 import Tokonomics from './components/Tokonomics'
+import Popup from './components/Popup'
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Popup/>
     </div>
   )
 }

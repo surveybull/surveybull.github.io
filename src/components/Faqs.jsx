@@ -17,8 +17,8 @@ const collapsibleData = [
         content: "No, you need to authenticate the World ID to the orb level."
     },
     {
-        title: "What's charged to create a survey?",
-        content: "The survey creator will need to have Bull token balance to create the survey."
+        title: "How will i be profited by staking the Bull tokens?",
+        content: "For every survey ends, Reward distribution has a portion of rewards for the stakers. That will be distributed as the Survey ends. The more you Stake the more you Earn"
     },
     {
         title: "Is survey entry free?",
@@ -27,6 +27,14 @@ const collapsibleData = [
     {
         title: "How can I earn more?",
         content: "You earn by participating in surveys. To earn more, you can stake the token as Stakers. Additionally, you can increase rewards with referral bonuses, as rewards increase with referrals."
+    },
+    {
+        title: "I want only people with my tokens with them to participate in survey is it possible?",
+        content: "Yes it is possible, Through our Token Gated Feature. that filters the participant and let participants holding the token join"
+    },
+    {
+        title: "Why should i refer the platform to other people?",
+        content: "For people who refer the platform to other people to participate, there is a portion for people who refer. These are distributed at the Survey's end"
     }
 ];
 
