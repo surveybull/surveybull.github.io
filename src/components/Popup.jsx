@@ -111,7 +111,7 @@ const Popup = () => {
           ))}
         </div>
         <div className="w-full mt-5 p-3 gap-3 flex justify-center items-center">
-          <a href="https://telegram.org/" target="_blank">
+          <a href="https://t.me/surveybull" target="_blank">
             {" "}
             <img
               className="mr-3 cursor-pointer "
@@ -120,7 +120,7 @@ const Popup = () => {
               src={telegram}
             />
           </a>
-          <a href="https://x.com/?lang=en" target="_blank">
+          <a href="https://x.com/surveybull" target="_blank">
             <img
               className="mr-3 cursor-pointer "
               width={40}
