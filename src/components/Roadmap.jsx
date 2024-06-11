@@ -71,17 +71,14 @@ const Roadmap = () => {
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua w-full ml-3 text-left text-xl">
-                    July 2023 - Token & Platform Development
+                  July 2024 - Staking Platform Launch ( Testnet )
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      {"🚀   Smart Contract Development"}
+                    🚀 Platform Integration
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Survey Platform Development
-                    </div>
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Staking Dashboard Development
+                    🚀 Staking Platform Launch (Beta)
                     </div>
                   </div>
                 </div>
@@ -107,15 +104,18 @@ const Roadmap = () => {
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua w-full text-center text-xl">
-                    July 2024 - Staking Platform Launch ( Testnet )
+                  Aug 2024 - Survey Platform Launch (Testnet)
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Platform Integration
+                    🚀 Survey Platform Development
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Staking Platform Launch (Beta)
+                    🚀 Beta Testing and Feedback
                     </div>
+                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
+                    🚀 Platform Improvement //
+                    </div> 
                   </div>
                 </div>
                 <div className="absolute top-[40%] right-[-45]  ">
@@ -140,17 +140,17 @@ const Roadmap = () => {
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua w-full text-center text-xl">
-                    Aug 2024 - Survey Platform Launch (Testnet)
+                  Aug 2024 - Token Launch and Adoption
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Survey Platform Development
+                    🚀 Token Sale and Distribution
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Beta Testing and Feedback
+                    🚀 Exchange Listing
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Platform Improvement
+                    🚀 Community Building and Engagement //
                     </div>
                   </div>
                 </div>
@@ -176,17 +176,11 @@ const Roadmap = () => {
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua w-full ml-3 text-left text-xl">
-                    Aug 2024 - Token Launch and Adoption
+                  Aug 2024 - Staking Platform Launch (Mainnet)
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Token Sale and Distribution
-                    </div>
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Exchange Listing
-                    </div>
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Community Building and Engagement
+                    🚀 Public Launch and Promotion
                     </div>
                   </div>
                 </div>
@@ -212,11 +206,11 @@ const Roadmap = () => {
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua ml-2 w-full text-center text-xl">
-                    Aug 2024 - Staking Platform Launch (Mainnet)
+                  Aug 2024 - Survey Platform Launch (Mainnet)
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Public Launch and Promotion
+                    🚀 Public Launch and Promotion
                     </div>
                   </div>
                 </div>
@@ -242,11 +236,17 @@ const Roadmap = () => {
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
                   <div className=" font-patua w-full text-center text-xl">
-                    Aug 2024 - Survey Platform Launch (Mainnet)
+                  Aug 2024 -Growth and Expansion
                   </div>
                   <div className=" mt-5">
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Public Launch and Promotion
+                    🚀 Partnerships and Integrations
+                    </div>
+                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
+                    🚀 Continuous Development and Improvement
+                    </div>
+                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
+                    🚀 Ecosystem Development
                     </div>
                   </div>
                 </div>
@@ -261,42 +261,7 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-          <div className=" my-10 flex justify-end items-center h-fit w-full ">
-            <div className="absolute flex justify-center w-full h-8 ">
-              <div className=" rounded-full w-5 h-5 z-10 bg-white "></div>
-            </div>
-            <div
-              data-aos={"zoom-in"}
-              className="   w-[45%] xl:w-[28.125rem] xl:mr-32 py-9"
-            >
-              <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
-                <div>
-                  <div className=" ml-3 font-patua w-full text-left text-xl">
-                    Aug 2024 -Growth and Expansion
-                  </div>
-                  <div className=" mt-5">
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold  w-full">
-                      🚀 Partnerships and Integrations
-                    </div>
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Continuous Development and Improvement
-                    </div>
-                    <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                      🚀 Ecosystem Development
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute top-[40%] left-[-30]">
-                  <img
-                    className="mr-3 cursor-pointer "
-                    width={40}
-                    height={40}
-                    src={leftTriangle}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
