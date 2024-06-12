@@ -114,7 +114,7 @@ const Roadmap = () => {
                     🚀 Beta Testing and Feedback
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                    🚀 Platform Improvement //
+                    🚀 Platform Improvement 
                     </div> 
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Roadmap = () => {
                     🚀 Exchange Listing
                     </div>
                     <div className="mt-2 p-1 text-left text-sm xl:font-semibold w-full">
-                    🚀 Community Building and Engagement //
+                    🚀 Community Building and Engagement 
                     </div>
                   </div>
                 </div>
