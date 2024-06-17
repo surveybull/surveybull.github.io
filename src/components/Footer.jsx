@@ -57,10 +57,10 @@ const Footer = () => {
                                 <a className="flex justify-center">
                                     <img src={youtube} />
                                 </a> */}
-                                <a className="flex justify-center" href="https://t.me/surveybull" target="-black">
+                                <a className="flex justify-center" href="https://t.me/official_surveybull" target="_blank">
                                     <img src={telegram} />
                                 </a>
-                                <a className="flex justify-center " href="https://x.com/surveybull" target="-black">
+                                <a className="flex justify-center " href="https://x.com/surveybull" target="_blank">
                                     <img src={twitter} />
                                 </a>
                             </div>

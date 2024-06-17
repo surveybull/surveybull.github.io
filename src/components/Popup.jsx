@@ -4,7 +4,7 @@ import twitter from "../assets/twitter.svg";
 import telegram from "../assets/telegram.svg";
 
 const calculateTimeLeft = () => {
-  const difference = +new Date("2024-07-01T00:00:00Z") - +new Date();
+  const difference = +new Date("2024-08-05T00:00:00Z") - +new Date();
   let timeLeft = {};
 
   if (difference > 0) {
@@ -111,7 +111,7 @@ const Popup = () => {
           ))}
         </div>
         <div className="w-full mt-5 p-3 gap-3 flex justify-center items-center">
-          <a href="https://t.me/surveybull" target="_blank">
+          <a href="https://t.me/official_surveybull" target="_blank">
             {" "}
             <img
               className="mr-3 cursor-pointer "
