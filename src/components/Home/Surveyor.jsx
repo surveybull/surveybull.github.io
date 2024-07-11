@@ -1,6 +1,6 @@
-import blockchainW from "../assets/blockchainW.svg"
-import verifiedProfile from "../assets/verifiedProfile.svg"
-import eyeVerification from "../assets/eyeVerification.svg"
+import blockchainW from "../../assets/blockchainW.svg"
+import verifiedProfile from "../../assets/verifiedProfile.svg"
+import eyeVerification from "../../assets/eyeVerification.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";

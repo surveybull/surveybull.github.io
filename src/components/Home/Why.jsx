@@ -1,11 +1,11 @@
-import blockchainW from "../assets/blockchainW.svg"
-import verifiedW from "../assets/verifiedW.svg"
-import compensationW from "../assets/compensationW.svg"
-import regulationW from "../assets/regulationW.svg"
-import integrationW from "../assets/integrationW.svg"
-import approchW from "../assets/approchW.svg"
-import collaborationW from "../assets/collaborationW.svg"
-import gate from "../assets/gate.svg"
+import blockchainW from "../../assets/blockchainW.svg"
+import verifiedW from "../../assets/verifiedW.svg"
+import compensationW from "../../assets/compensationW.svg"
+import regulationW from "../../assets/regulationW.svg"
+import integrationW from "../../assets/integrationW.svg"
+import approchW from "../../assets/approchW.svg"
+import collaborationW from "../../assets/collaborationW.svg"
+import gate from "../../assets/gate.svg"
 
 import {
   Carousel,
@@ -13,7 +13,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../@/components/ui/carousel"
+} from "../../@/components/ui/carousel"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";

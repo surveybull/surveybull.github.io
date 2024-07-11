@@ -1,9 +1,9 @@
-import tick from "../assets/tick.svg";
+import tick from "../../assets/tick.svg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import rightTriangle from "../assets/rightTriangle.svg";
-import leftTriangle from "../assets/leftTriangle.svg";
+import rightTriangle from "../../assets/rightTriangle.svg";
+import leftTriangle from "../../assets/leftTriangle.svg";
 
 const Roadmap = () => {
   useEffect(() => {

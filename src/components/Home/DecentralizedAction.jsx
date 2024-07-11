@@ -1,5 +1,5 @@
-import preHook from "../assets/preHook.svg"
-import postHook from "../assets/postHook.svg"
+import preHook from "../../assets/preHook.svg"
+import postHook from "../../assets/postHook.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";

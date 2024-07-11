@@ -1,5 +1,5 @@
-import stakingW from "../assets/stakingW.svg"
-import referEarnW from "../assets/referEarnW.svg"
+import stakingW from "../../assets/stakingW.svg"
+import referEarnW from "../../assets/referEarnW.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";

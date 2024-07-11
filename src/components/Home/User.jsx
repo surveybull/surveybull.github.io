@@ -1,7 +1,7 @@
 import { useState } from "react"
-import register from "../assets/register.svg"
-import staking from "../assets/staking.svg"
-import refer from "../assets/Refer.svg"
+import register from "../../assets/register.svg"
+import staking from "../../assets/staking.svg"
+import refer from "../../assets/Refer.svg"
 
 function ArrowIcon() {
     return (

@@ -1,11 +1,11 @@
 
-import Logo from "../assets/logoTitle.svg"
-import facebook from "../assets/facebook.svg"
-import instagram from "../assets/instagram.svg"
-import twitter from "../assets/twitter.svg"
-import reddit from "../assets/Reddit.svg"
-import linkedin from "../assets/linkedin.svg"
-import telegram from "../assets/telegram.svg"
+import Logo from "../../assets/logoTitle.svg"
+import facebook from "../../assets/facebook.svg"
+import instagram from "../../assets/instagram.svg"
+import twitter from "../../assets/twitter.svg"
+import reddit from "../../assets/Reddit.svg"
+import linkedin from "../../assets/linkedin.svg"
+import telegram from "../../assets/telegram.svg"
 
 const sectionsData = [
     { title: "Offering", links: ['Earn crypto', 'Stacking Reward', 'Bull token', 'Survey creation'] },

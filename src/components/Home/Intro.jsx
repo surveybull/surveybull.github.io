@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import IntroSVG from "../assets/Intro.svg"
+import IntroSVG from "../../assets/Intro.svg"
 import { Button } from "./Button"
 import AOS from 'aos';
 import "aos/dist/aos.css";

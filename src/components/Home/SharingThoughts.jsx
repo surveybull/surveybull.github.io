@@ -1,6 +1,6 @@
-import crafting from "../assets/craftings.svg"
-import reward from "../assets/reward1.svg"
-import participation from "../assets/participation.svg"
+import crafting from "../../assets/craftings.svg"
+import reward from "../../assets/reward1.svg"
+import participation from "../../assets/participation.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -11,7 +11,7 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "../@/components/ui/dialog"
+} from "../../@/components/ui/dialog"
 
 const imgContainerClass = "xl:max-w-[300px] my-5";
 const textClass = "text-l text-center mt-12 font-bold px-5 xl:px-0";

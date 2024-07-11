@@ -1,4 +1,4 @@
-import behind from "../assets/behind.svg"
+import behind from "../../assets/behind.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";

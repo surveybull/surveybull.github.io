@@ -1,4 +1,4 @@
-import distribution from "../assets/distribution.svg"
+import distribution from "../../assets/distribution.svg"
 import { useEffect } from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";
