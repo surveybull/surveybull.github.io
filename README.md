@@ -18,7 +18,7 @@ index index.html
 sudo service nginx start
 ```
 
-## step to deploy on gh-pages 
+## Step to deploy on gh-pages 
 
 1. push all the latest changes to main branch 
 
