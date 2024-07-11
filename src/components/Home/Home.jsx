@@ -1,0 +1,58 @@
+import React from 'react'
+import Why from './Why';
+import Surveyor from './Surveyor';
+import SurveyBuilding from './SurveyBuilding';
+import SharingThoughts from './SharingThoughts';
+import Hooks from './Hooks';
+import Distribution from './Distribution';
+import DecentralizedAction from './DecentralizedAction';
+import SDK from './SDK';
+import Cases from './Cases';
+import Roadmap from './Roadmap';
+import Tokonomics from './Tokonomics';
+import Faqs from './Faqs';
+import Invite from './Invite';
+import Popup from './Popup';
+
+function Home() {
+  return (
+      <div className='font-montserrat'>
+      <div className='xl:max-w-[1300px] mx-auto '>
+        <div id='why' className='p-1'>
+          <Why />
+        </div>
+        <Surveyor/>
+        <div id='SurveyBuilding' className='p-1'>
+        <SurveyBuilding/>
+        </div>
+        <div id='EarnToken' className='p-1'>
+        <SharingThoughts />
+        </div>
+        <Hooks />
+      </div>
+      <div className='max-w-[1300px] mx-auto'>
+      <div id='Distribution' className='p-1'>
+        <Distribution />
+      </div>
+      <DecentralizedAction/>
+      <SDK/>
+      <Cases/>
+      <Roadmap/>
+      <Tokonomics/>
+      </div>
+      <div className=''>
+        <div className='max-w-[1300px] mx-auto py-1'>
+          <Faqs />
+        </div>
+      </div>
+      <div className='bg-[#5831C8]'>
+        <Invite/>
+      </div>
+      <div  >
+      </div>
+      <Popup/>
+    </div> 
+  )
+}
+
+export default Home;
