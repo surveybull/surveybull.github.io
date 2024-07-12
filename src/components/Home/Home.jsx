@@ -13,10 +13,12 @@ import Tokonomics from './Tokonomics';
 import Faqs from './Faqs';
 import Invite from './Invite';
 import Popup from './Popup';
+import NavBar from '../Navbar/NavBar'
 
 function Home() {
   return (
       <div>
+        <NavBar visitedPage={"Home"}/>
       <div className='xl:max-w-[1300px] mx-auto '>
         <div id='why' className='p-1'>
           <Why />

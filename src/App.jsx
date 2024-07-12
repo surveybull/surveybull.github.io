@@ -1,9 +1,8 @@
-import NavBar from './components/Navbar/NavBar'
 import Home from './components/Home/Home'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import Why from './components/Home/Why'
-import Roadmap from './components/Home/Roadmap'
+import Roadmap from './components/Roadmap/Roadmap'
 import Pricing from './components/Pricing/Pricing'
 import Blog from './components/Blog/Blog'
 import FAQs from './components/FAQs/FAQs'
@@ -13,8 +12,7 @@ function App() {
   return (
     
     <Router>
-      <div className='xl:max-w-[1300px] mx-auto'>
-           <NavBar/>
+      <div className='xl:max-w-[1300px] mx-auto p-4'>
            <Routes>
            <Route path='/' Component={Home}></Route>
            <Route path='/roadmap' Component={Roadmap}></Route>
