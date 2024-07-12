@@ -63,8 +63,8 @@ function DropDownMenu({ option, visitedPage }) {
                     e.currentTarget.style.backgroundColor = "transparent";
                     e.currentTarget.querySelectorAll('span')[0].style.color = '#132337'; 
                     e.currentTarget.querySelectorAll('span')[1].style.color = '#89919B';  } } className={`${option.childItem.length - 1 == child.id  ? "border-none" : "border-b border-[#E7E9EB]"} flex flex-col gap-y-1 px-3 py-5 mx-4 font-semibold`}>
-                  <span className="text-[#132337] text-[16px] font-[500]">{child.title}</span>
-                  <span className="text-[#89919B] text-[14px] font-[400]">{child.subtitle}</span>
+                  <span className="text-[#132337] text-[16px] font-[500] text-start">{child.title}</span>
+                  <span className="text-[#89919B] text-[14px] font-[400] text-start">{child.subtitle}</span>
                 </div>
               </a>
             ))}
