@@ -12,7 +12,7 @@ function App() {
   return (
     
     <Router>
-      <div className='xl:max-w-[1300px] mx-auto'>
+      <div className='flex flex-col'>
            <Routes>
            <Route path='/' Component={Home}></Route>
            <Route path='/roadmap' Component={Roadmap}></Route>

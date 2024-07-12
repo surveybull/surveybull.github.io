@@ -1,34 +1,32 @@
-import { useEffect } from "react";
-import IntroSVG from "../../assets/Intro.svg"
-import { Button } from "./Button"
-import AOS from 'aos';
-import "aos/dist/aos.css";
-
+import introLogo from "../../assets/Intro.svg";
 const Intro = () => {
-
-    useEffect(() => {
-        AOS.init({ duration:1000});
-      }, [])
-
-    return (
-        <div  className="xl:flex xl:justify-between my-10">
-            <div data-aos={"fade-up"} className="  flex items-center justify-center">
-                <div className="xl:max-w-xl w-full">
-                    <h1 className="text-3xl text-center xl:text-start    xl:text-[3rem] text-[#140346]  tracking-wide  font-intro leading-[3.5rem] " style={{ fontFamily: "Patua One" }} >Craft, Share, Earn </h1>
-                    <h1 className="text-3xl text-center xl:text-start    xl:text-[3rem] text-[#140346]  tracking-wide  font-intro leading-[3.5rem]" > Embark on Your Survey Adventure Today!</h1>
-                    <div className="mt-8 text-base text-center xl:text-start xl:text-2xl  text-[#484848] font-medium px-4 xl:px-0 ">
-                        Unlock the power of Blockchain Supported Survey, Earn reward for your data!
-                    </div>
-                    <div className="flex justify-center xl:justify-start">
-                        <Button className={"bg-[#5831C8] mt-10 w-[230px] font-poppins "} arrow={"right"}><div className="font-['Poppins'] " style={{ fontFamily: "Poppins" }}>Get Started</div></Button>
-                    </div>
-                </div>
-            </div>
-            <div data-aos={"fade-up"} className="hidden xl:block">
-                <img src={IntroSVG} />
-            </div>
+  return (
+    <div className="flex justify-between py-4 mt-[3rem] md:mt-[4rem] gap-6 flex-col md:flex-row">
+      <div className="flex flex-col gap-y-4 justify-center items-start flex-1">
+        <div className="text-start text-[#3B4EF4] font-[700] text-[28px] md:text-[40px] lg:text-[56px]">
+          Craft, Share, Analyse 
         </div>
-    )
-}
+        <div className="text-start text-[#132337] font-[700] text-[28px] md:text-[40px] lg:text-[56px]">Embark on Your Survey Adventure Today!</div>
+        <div className="text-start text-[#132337] text-[14px] md:text-[18px] lg:text-[20px] font-[400]">
+          Unlock the power of Blockchain Supported Survey, Earn reward for your
+          data!
+        </div>
+        <div>
+          <button className="bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] rounded-[7px] px-3 py-2 text-[#FFFFFF] font-[500] text-[16px]">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div className="flex-1 flex items-start md:items-center md:justify-end justify-center">
+        <img
+          src={introLogo}
+          width={20}
+          height={20}
+          className="w-[400px] h-[400px]"
+        ></img>
+      </div>
+    </div>
+  );
+};
 
-export default Intro
+export default Intro;

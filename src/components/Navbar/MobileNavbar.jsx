@@ -8,7 +8,7 @@ import {
 import SurveybullLogo from "../../../public/SurveybullLogo.svg";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import NavbarSheetBg from '../../../public/MobileNavbarSheetBg.svg'
+import Sheetpng from '../../../public/sheetpng.png'
 import twitterLogo from '../../assets/twitterLogo.svg'
 import mailLogo from '../../assets/mailLogo.svg'
 import telegramLogo from '../../assets/telegramLogo.svg'
@@ -23,7 +23,7 @@ function MobileNavbar({ NavbarData }) {
         <SheetTrigger>
           <FiMenu size={25} />
         </SheetTrigger>
-        <SheetContent style={{ backgroundImage: `url(${NavbarSheetBg})`,backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className="overflow-auto">
+        <SheetContent style={{ backgroundImage: `url(${Sheetpng})`,backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className="overflow-auto">
           <div className="flex flex-col gap-y-6 mt-[2.5rem]">
           <div className="flex justify-evenly items-center">
             <img src={mailLogo} width={20} height={20}></img>
