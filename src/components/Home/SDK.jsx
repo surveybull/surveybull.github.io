@@ -9,7 +9,7 @@ const SDK = () => {
       }, [])
     return (
         <div className=" my-[4rem] xl:my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex px-2 justify-center text-2xl md:text-4xl font-patua tracking-wide   text-center">Software Development Kit (SDK) for Seamless Survey Integration</h1>
+            <h1 data-aos={"fade-up"} className="flex px-2 justify-center text-2xl md:text-4xl   tracking-wide   text-center">Software Development Kit (SDK) for Seamless Survey Integration</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-10 px-2 text-center max-w-[1000px] flex justify-center font-medium tracking-wide text-[#263238]">The SurveyBull SDK empowers effortless creation and management of on-chain surveys, offering seamless participant sign-up and survey submission functionalities. This versatile SDK is meticulously crafted for integration with any web3 or web2 product, unlocking the full array of SurveyBull features.</div>
             </div>

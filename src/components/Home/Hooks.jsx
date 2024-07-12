@@ -62,7 +62,7 @@ const Hooks = () => {
       }, [])
 
     const contentContainerClass = "max-w-xl";
-    const titleClass = " font-patua text-4xl mt-5";
+    const titleClass = "   text-4xl mt-5";
     const subTitleClass = "font-normal text-base font-light mt-3";
     const sectionTitleClass = "font-semibold text-2xl";
     const sectionTextClass = "font-normal text-lg font-light mt-1";
@@ -90,7 +90,7 @@ const Hooks = () => {
 
     return (
         <div className="my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl  font-patua tracking-wide  text-center">Maximize Your Earnings : Staking and Referrals</h1>
+            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl    tracking-wide  text-center">Maximize Your Earnings : Staking and Referrals</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-10  px-2 text-center max-w-[1000px] flex justify-center font-medium tracking-wide text-[#263238]">Unlock additional avenues to boost your rewards beyond survey participation through SurveyBull's innovative staking and referral programs. Explore these opportunities to maximize your earnings and become an integral part of our thriving community.</div>
             </div>

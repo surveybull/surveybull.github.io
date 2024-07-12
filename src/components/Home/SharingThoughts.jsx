@@ -74,7 +74,7 @@ const SharingThoughts = () => {
 
     return (
         <div className=" my-[4rem] xl:my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-center text-2xl md:text-4xl font-patua tracking-wide  ">Earn tokens for sharing your thoughts</h1>
+            <h1 data-aos={"fade-up"} className="flex justify-center text-center text-2xl md:text-4xl   tracking-wide  ">Earn tokens for sharing your thoughts</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]">At SurveyBull, we value your opinions and insights. That's why we've created an opportunity for you to earn tokens simply by sharing your thoughts through surveys. Our platform offers a seamless experience where your contributions are not only appreciated but also rewarded. Here's how it works</div>
             </div>

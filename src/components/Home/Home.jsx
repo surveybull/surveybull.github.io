@@ -16,7 +16,7 @@ import Popup from './Popup';
 
 function Home() {
   return (
-      <div className='font-montserrat'>
+      <div>
       <div className='xl:max-w-[1300px] mx-auto '>
         <div id='why' className='p-1'>
           <Why />

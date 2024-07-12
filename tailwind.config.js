@@ -18,6 +18,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        'HelveticaNeueMedium':['HelveticaNeueMedium'],
+        'HelveticaNeueBold':['HelveticaNeueBold'],
+        'HelveticaNeueLight':['HelveticaNeueLight'],
+        'HelveticaNeueThin':['HelveticaNeueThin'],
+        'sans': ['HelveticaNeue'],
         'montserrat': ['Montserrat'],
         'patua' :['Patua One'],
         poppins: ["Poppins", "sans-serif"]

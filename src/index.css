@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Patua+One&display=swap');
+/* @import url('./fonts/style.css'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-    font-family: "Montserrat", sans-serif;
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./fonts/HelveticaNeue.ttf") format("truetype"),
+    url("./fonts/HelveticaNeue.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("./fonts/HelveticaNeueBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueThin";
+  src: url("./fonts/HelveticaNeueThin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url("./fonts/HelveticaNeueLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("./fonts/HelveticaNeueMedium.otf") format("opentype"),
+    url("./fonts/HelveticaNeueMedium.ttf") format("truetype");
 }

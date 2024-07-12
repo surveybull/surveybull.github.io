@@ -51,7 +51,7 @@ const Surveyor = () => {
 
     return (
         <div className=" my-[4rem] xl:my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-center text-2xl md:text-4xl font-patua tracking-wide mt-5  ">Revolutionize Surveying: Say Goodbye to Fake Reviews with On-Chain Verifiable Proof of Personhood</h1>
+            <h1 data-aos={"fade-up"} className="flex justify-center text-center text-2xl md:text-4xl   tracking-wide mt-5  ">Revolutionize Surveying: Say Goodbye to Fake Reviews with On-Chain Verifiable Proof of Personhood</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-24 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]">At SurveyBull, we're dedicated to equipping surveyors with the tools they need to gather authentic data and drive informed decisions. With pioneering WorldID protocol, we're eradicating fake reviews and unreliable responses, ensuring that surveyors receive only unique, human-generated feedback that is verifiable on the blockchain.</div>
             </div>

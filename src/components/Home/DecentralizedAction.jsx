@@ -58,7 +58,7 @@ const DecentralizedAction = () => {
       }, [])
 
     const contentContainerClass = "max-w-xl";
-    const titleClass = "font-patua text-4xl mt-5";
+    const titleClass = "  text-4xl mt-5";
 
     const ContentComponent = ({ imageSrc, imageAlt, title, subTitle, sections, reverse }) => (
         <div className={reverse ? "flex flex-row-reverse justify-around py-[30px]" : "flex flex-row justify-around py-[80px]"}>
@@ -87,7 +87,7 @@ const DecentralizedAction = () => {
         return (
             <div  className=" bg-white rounded-2xl shadow-2xl my-3 mx-6 mt-8">
                 <div className="px-5 py-3">
-                    <div  className="text-center font-patua text-lg ">
+                    <div  className="text-center   text-lg ">
                         {data.title}
                     </div>
                     <div className="flex justify-center">
@@ -112,7 +112,7 @@ const DecentralizedAction = () => {
     return (
 
         <div className=" my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl font-patua tracking-wide  text-center">Decentralized Actions: Elevating Survey Engagement in Crypto Products</h1>
+            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl   tracking-wide  text-center">Decentralized Actions: Elevating Survey Engagement in Crypto Products</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]">At SurveyBull, we value your opinions and insights. That's why we've created an opportunity for you to earn tokens simply by sharing your thoughts through surveys. Our platform offers a seamless experience where your contributions are not only appreciated but also rewarded. Here's how it works</div>
             </div>

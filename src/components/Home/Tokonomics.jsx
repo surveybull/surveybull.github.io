@@ -89,7 +89,7 @@ const Tokonomics = () => {
     <div className=" my-[6rem]">
       <h1
         data-aos={"fade-up"}
-        className="text-2xl md:text-4xl flex justify-center text-center font-patua tracking-wide  text-[#484848] "
+        className="text-2xl md:text-4xl flex justify-center text-center   tracking-wide  text-[#484848] "
       >
         Tokenomics
       </h1>

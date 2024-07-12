@@ -14,7 +14,7 @@ const Roadmap = () => {
     <div className=" my-[6rem]">
       <h1
         data-aos={"fade-up"}
-        className="text-2xl md:text-4xl flex justify-center text-center font-patua tracking-wide  text-[#484848] "
+        className="text-2xl md:text-4xl flex justify-center text-center   tracking-wide  text-[#484848] "
       >
         Roadmap
       </h1>
@@ -34,7 +34,7 @@ const Roadmap = () => {
             >
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full ml-3  text-left text-xl">
+                  <div className="   w-full ml-3  text-left text-xl">
                     June 2023 - Pre-Development
                   </div>
                   <div className=" mt-5">
@@ -70,7 +70,7 @@ const Roadmap = () => {
             >
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full ml-3 text-left text-xl">
+                  <div className="   w-full ml-3 text-left text-xl">
                   July 2024 - Staking Platform Launch ( Testnet )
                   </div>
                   <div className=" mt-5">
@@ -103,7 +103,7 @@ const Roadmap = () => {
             >
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full text-center text-xl">
+                  <div className="   w-full text-center text-xl">
                   Aug 2024 - Survey Platform Launch (Testnet)
                   </div>
                   <div className=" mt-5">
@@ -139,7 +139,7 @@ const Roadmap = () => {
             >
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full text-center text-xl">
+                  <div className="   w-full text-center text-xl">
                   Aug 2024 - Token Launch and Adoption
                   </div>
                   <div className=" mt-5">
@@ -175,7 +175,7 @@ const Roadmap = () => {
             >
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full ml-3 text-left text-xl">
+                  <div className="   w-full ml-3 text-left text-xl">
                   Aug 2024 - Staking Platform Launch (Mainnet)
                   </div>
                   <div className=" mt-5">
@@ -205,7 +205,7 @@ const Roadmap = () => {
             >
               <div className="relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua ml-2 w-full text-center text-xl">
+                  <div className="   ml-2 w-full text-center text-xl">
                   Aug 2024 - Survey Platform Launch (Mainnet)
                   </div>
                   <div className=" mt-5">
@@ -235,7 +235,7 @@ const Roadmap = () => {
             >
               <div className=" relative transition duration-500 ease-in-out hover:-translate-y-1 text-white bg-gradient-to-b from-[#5831C8] to-[#2E62E8] rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 hover:scale-110 ">
                 <div>
-                  <div className=" font-patua w-full text-center text-xl">
+                  <div className="   w-full text-center text-xl">
                   Aug 2024 -Growth and Expansion
                   </div>
                   <div className=" mt-5">

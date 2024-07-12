@@ -45,7 +45,7 @@ const Cases = () => {
 
     return (
         <div className="  md:my-[8rem]">
-            <h1 data-aos={"fade-up"} className="text-2xl md:text-4xl flex justify-center font-patua text-[#484848] ">Use Cases</h1>
+            <h1 data-aos={"fade-up"} className="text-2xl md:text-4xl flex justify-center   text-[#484848] ">Use Cases</h1>
             <div className="  my-20 ">
                 <div
                     className="xl:flex grid grid-cols-1 justify-evenly gap-12 mb-[3rem] xl:mb-0 ">

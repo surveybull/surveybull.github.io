@@ -67,7 +67,7 @@ const Why = () => {
   return (
 
     <div className=" my-[4rem] xl:my-[4rem]">
-      <h1 data-aos={"fade-up"} className=" text-2xl xl:text-4xl flex justify-center font-medium  font-patua tracking-wider leading-8  text-[#484848]">WHY SURVEYBULL ?</h1>
+      <h1 data-aos={"fade-up"} className=" text-[36px] xl:text-4xl flex justify-center font-medium leading-9 tracking-wider text-[#484848]">Why Survey ?</h1>
 
       <div className="hidden  xl:visible xl:flex flex-col xl:flex-row  justify-between my-16">
         {column1Item.map((item, index) => (

@@ -51,7 +51,7 @@ const Distribution = () => {
 
     return (
         <div className=" my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl font-patua tracking-wide  text-center">Weighted Reward Calculation Mechanism</h1>
+            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl   tracking-wide  text-center">Weighted Reward Calculation Mechanism</h1>
             <div className="flex justify-center">
                 <div data-aos={"fade-up"} className="mt-10 text-center max-w-[62.5rem] px-2 flex justify-center font-medium tracking-wide text-[#263238]">SurveyBull employs a sophisticated reward distribution mechanism, meticulously designed to ensure fairness and to uphold our commitment to rewarding participation while nurturing community growth. Our weighted approach to distributing rewards benefits both participants and stakeholders alike. Here's a breakdown of how it operates:</div>
             </div>

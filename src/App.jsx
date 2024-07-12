@@ -7,7 +7,7 @@ import Roadmap from './components/Home/Roadmap'
 import Pricing from './components/Pricing/Pricing'
 import Blog from './components/Blog/Blog'
 import FAQs from './components/FAQs/FAQs'
-
+import './App.css';
 function App() {
 
   return (
