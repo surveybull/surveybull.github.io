@@ -8,7 +8,7 @@ import {
 import SurveybullLogo from "../../../public/SurveybullLogo.svg";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import Sheetpng from '../../../public/sheetpng.png'
+import Sheetpng from '../../assets/background/sheetpng.png'
 import twitterLogo from '../../assets/twitterLogo.svg'
 import mailLogo from '../../assets/mailLogo.svg'
 import telegramLogo from '../../assets/telegramLogo.svg'

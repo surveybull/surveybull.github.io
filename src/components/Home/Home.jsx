@@ -15,12 +15,10 @@ import Invite from "./Invite";
 import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
-import IntroBg from "../../../public/IntroBg.svg";
+import IntroBg from "../../assets/background/IntroBg.jpg";
 function Home() {
   return (
     <>
-
-     
       <div
         style={{
           backgroundImage: `url(${IntroBg})`,
@@ -37,6 +35,7 @@ function Home() {
         
         </div>
       </div>
+    
       {/* <div className="xl:max-w-[1300px] mx-auto ">
         <div id="why" className="p-1">
           <Why />
