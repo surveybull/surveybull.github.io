@@ -1,8 +1,10 @@
 import React from 'react'
-
+import NavBar from '../Navbar/NavBar'
 function Pricing() {
   return (
-    <div>Pricing</div>
+    <div>
+      <NavBar visitedPage={"Pricing"}/>
+      Pricing</div>
   )
 }
 

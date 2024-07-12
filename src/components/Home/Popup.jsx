@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import close from "../../assets/close.svg";
 import twitter from "../../assets/twitter.svg";
-import telegram from "../../assets/telegram.svg";
+import telegram from "../../assets/telegramLogo.svg";
 
 const calculateTimeLeft = () => {
   const difference = +new Date("2024-08-05T00:00:00Z") - +new Date();
