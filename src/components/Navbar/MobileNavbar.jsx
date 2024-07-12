@@ -14,7 +14,6 @@ import mailLogo from '../../assets/mailLogo.svg'
 import telegramLogo from '../../assets/telegramLogo.svg'
 function MobileNavbar({ NavbarData }) {
   const [id, setId] = useState([]);
-  console.log(id);
   return (
     <div className="flex items-center justify-between">
       <div>
