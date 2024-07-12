@@ -1,70 +1,48 @@
-import blockchainW from "../../assets/blockchainW.svg"
-import verifiedProfile from "../../assets/verifiedProfile.svg"
-import eyeVerification from "../../assets/eyeVerification.svg"
-import { useEffect } from "react"
-import AOS from 'aos';
-import "aos/dist/aos.css";
-
-const imgContainerClass = "xl:max-w-[300px] mt-10 mb-5";
-const textClass = "text-l text-center mt-12 font-bold px-5 xl:px-0";
-const descriptionClass = "text-l text-center mt-8 px-5 xl:px-0";
-
-const Card = ({ src, alt, text, description, delay }) => (
-    <div data-aos={"fade-up"} data-aos-delay={delay} className={imgContainerClass}>
-        <div className="flex justify-center">
-            <img width={140} height={140} src={src} alt={alt} />
-        </div>
-        <div className={textClass}>{text}</div>
-        <div className={descriptionClass}>{description}</div>
-    </div>
-);
-
+import Authenticity from "../../assets/Authenticity.svg"
+import Chain from "../../assets/Chain.svg"
+import Human from "../../assets/Human.svg"
 const cardData = [
     {
-        src: eyeVerification,
-        alt: "eyeVerification",
+        src: Authenticity,
+        alt: "Authenticity",
         text: "Authenticity Guaranteed",
         description: "Say farewell to the headache of fake reviews. SurveyBull's implementation of the WorldID protocol guarantees that every review collected is from a genuine individual, providing surveyors with authentic insights they can rely on.",
-        delay:'400'
     },
     {
-        src: verifiedProfile,
-        alt: "verifiedProfile",
+        src: Human,
+        alt: "Human",
         text: "Uniquely Human Responses",
         description: "SurveyBull ensures that only unique human responses are included in your survey data, eliminating the noise of duplicate or automated submissions and delivering high-quality, actionable insights.",
-        delay:'600'
     },
     {
-        src: blockchainW,
-        alt: "blockchainW",
+        src: Chain,
+        alt: "Chain",
         text: "On-Chain Verification",
         description: "With SurveyBull, surveyors can verify the authenticity of every response directly on the blockchain, providing an immutable record of the survey data and enhancing transparency and trust in the process.",
-        delay:'800'
     }
 ];
 
 const Surveyor = () => {
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
-
+  
     return (
-        <div className=" my-[4rem] xl:my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-center text-2xl md:text-4xl   tracking-wide mt-5  ">Revolutionize Surveying: Say Goodbye to Fake Reviews with On-Chain Verifiable Proof of Personhood</h1>
-            <div className="flex justify-center">
-                <div data-aos={"fade-up"} className="mt-24 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]">At SurveyBull, we're dedicated to equipping surveyors with the tools they need to gather authentic data and drive informed decisions. With pioneering WorldID protocol, we're eradicating fake reviews and unreliable responses, ensuring that surveyors receive only unique, human-generated feedback that is verifiable on the blockchain.</div>
+        <div className="flex flex-col items-center gap-20">
+        <div className="flex items-center md:flex-row flex-col gap-[1.5rem] md:pt-[200px] pt-[261px]">
+            <div className="flex-1 text-[#FFFFFF] text-[36px] fomt-[700]">Revolutionize Surveying: Say Goodbye to <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
             </div>
-            <div className=" xl:flex mt-24 justify-between px-4 ">
-                {
-                    cardData.map((x) => {
-                        return (
-                            <Card src={x.src} alt={x.alt} text={x.text} description={x.description} delay={x.delay} />
-                        )
-                    })
-                }
-            </div>
+            <hr className="bg-[#89919B] md:h-[100px] md:w-[1px] w-[50%] h-[1px]"></hr>
+            <div className="flex-1 text-[#89919B] text-[16px] font-[400]">At SurveyBull, we're dedicated to equipping surveyors with the tools they need to gather authentic data and drive informed decisions. With pioneering WorldID protocol, we're eradicating fake reviews and unreliable responses, ensuring that surveyors receive only unique, human-generated feedback that is verifiable on the blockchain.</div>
         </div>
+        <div className="flex md:flex-row justify-between flex-col gap-x-5 gap-y-7 md:pb-[200px] pb-10">
+            {cardData.map(card=>(
+                <div className="flex flex-col items-center justify-center border-[1.5px] border-[#56595f] hover:border-[#89919B] rounded-[15px] bg-[#132337] px-4 py-8 gap-4 group hover:cursor-pointer flex-1">
+                    <div><img src={card.src} alt={card.alt} width={20} height={20} className="w-[100px] h-[100px] transition ease-in-out group-hover:-translate-y-1 group-hover:scale-110 duration-700"></img></div>
+                    <div className="text-[#EDEFFF] text-center text-[18px] group-hover:text-[#978FFD]">{card.text}</div>
+                    <div className="text-[#89919B] text-center text-[14px]">{card.description}</div>
+                </div>
+            ))}
+        </div>
+    </div>
     )
 }
 

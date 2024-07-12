@@ -16,6 +16,7 @@ import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
 import IntroBg from "../../assets/background/IntroBg.jpg";
+import SurveyorBg from "../../assets/background/SurveyorBg.jpg"
 function Home() {
   return (
     <>
@@ -33,6 +34,18 @@ function Home() {
           <NavBar visitedPage={"Home"} />
           <Intro />
         
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${SurveyorBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          height:"100%",
+        }}
+        >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Surveyor />
         </div>
       </div>
     
