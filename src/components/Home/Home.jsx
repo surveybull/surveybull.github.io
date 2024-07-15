@@ -19,6 +19,9 @@ import IntroBg from "../../assets/background/IntroBg.jpg";
 import SurveyorBg from "../../assets/background/SurveyorBg.jpg"
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
+import midSection from "../../assets/background/midSection.jpg";
+
+import MidSection from "./MidSection";
 
 function Home() {
   return (
@@ -29,29 +32,46 @@ function Home() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-        
-        >
+      >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <NavBar visitedPage={"Home"} />
           <Intro />
         </div>
       </div>
-      <div className="hidden md:block" style={{
+      <div
+        className="hidden md:block"
+        style={{
           backgroundImage: `url(${whyBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-        }}>
+        }}
+      >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-        <Why />    
+          <Why />
         </div>
       </div>
-      <div className="block md:hidden" style={{
+      <div
+        className="block md:hidden"
+        style={{
           backgroundImage: `url(${whyIntroBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-        }}>
+        }}
+      >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-        <Why />    
+          <Why />
+        </div>
+      </div>
+      <div
+        className=""
+        style={{
+          backgroundImage: `url(${midSection})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <MidSection/>
         </div>
       </div>
       <div
@@ -78,6 +98,9 @@ function Home() {
         <Tokonomics />
         </div>
       </div>
+
+     
+
       {/* <div className="xl:max-w-[1300px] mx-auto ">
         <div id="why" className="p-1">
           <Why />

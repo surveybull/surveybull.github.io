@@ -8,7 +8,7 @@ import Tgs from "../../assets/tgs.svg?react";
 import Vhc from "../../assets/vhc.svg?react";
 
 const Why = () => {
-  const cardData = [
+  const columnItem = [
     {
       img: (
         <Frame className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
@@ -104,7 +104,7 @@ const Why = () => {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">
-        {cardData.map((item, index) => (
+        {columnItem.map((item, index) => (
           <div
             key={index}
             className={`flex flex-col items-center gap-[30px] mb-[30px] ${
