@@ -59,7 +59,7 @@ function Home() {
           backgroundImage: `url(${SurveyorBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height:"100%",
+    
         }}
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -71,7 +71,7 @@ function Home() {
           backgroundImage: `url(${SurveyorBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height:"100%",
+          
         }}
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">

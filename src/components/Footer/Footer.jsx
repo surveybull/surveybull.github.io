@@ -46,8 +46,7 @@ const Footer = () => {
             <div style={{
             backgroundImage: `url(${FooterBg})`,
             backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            height:"100%",
+            backgroundRepeat: "no-repeat"
           }} className="mt-11">
             <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
                 <div class="flex gap-10 lg:flex-row flex-col justify-center">
