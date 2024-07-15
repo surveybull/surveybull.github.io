@@ -16,6 +16,9 @@ import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
 import IntroBg from "../../assets/background/IntroBg.jpg";
+import whyBg from "../../assets/background/whyBg.jpg";
+import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
+
 function Home() {
   return (
     <>
@@ -24,15 +27,30 @@ function Home() {
           backgroundImage: `url(${IntroBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height:"100%",
-          // width:"100%",
         }}
         
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <NavBar visitedPage={"Home"} />
           <Intro />
-        
+        </div>
+      </div>
+      <div className="hidden md:block" style={{
+          backgroundImage: `url(${whyBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}>
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Why />    
+        </div>
+      </div>
+      <div className="block md:hidden" style={{
+          backgroundImage: `url(${whyIntroBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}>
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Why />    
         </div>
       </div>
     
