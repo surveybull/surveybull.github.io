@@ -23,6 +23,7 @@ import midSection from "../../assets/background/midSection.jpg";
 
 import MidSection from "./MidSection";
 
+import UsecaseBg from "../../assets/background/UsecaseBg.jpg"
 function Home() {
   return (
     <>
@@ -86,6 +87,18 @@ function Home() {
         <Surveyor />
         </div>
       </div>
+      <div
+        style={{
+          backgroundImage: `url(${UsecaseBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          
+        }}
+        >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Cases />
+        </div>
+        </div>
       <div
         style={{
           backgroundImage: `url(${SurveyorBg})`,
