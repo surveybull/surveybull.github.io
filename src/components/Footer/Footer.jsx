@@ -1,12 +1,15 @@
 
-import Logo from "../../assets/logoTitle.svg"
+import Logo from "../../../public/SurveybullLogo.svg"
 import facebook from "../../assets/facebook.svg"
 import instagram from "../../assets/instagram.svg"
 import twitter from "../../assets/twitter.svg"
 import reddit from "../../assets/Reddit.svg"
 import linkedin from "../../assets/linkedin.svg"
 import telegram from "../../assets/telegramLogo.svg"
-
+import FooterBg from "../../assets/background/FooterBg.jpg"
+import FooterTelegram from "../../assets/FooterTelegram.svg"
+import FooterMail from "../../assets/FooterMail.svg"
+import FooterTwitter from "../../assets/FooterTwitter.svg"
 const sectionsData = [
     { title: "Offering", links: ['Earn crypto', 'Stacking Reward', 'Bull token', 'Survey creation'] },
     { title: "Fundamentals", links: ['Tokenomics', 'World ID', 'Smart contract', 'Surveys'] },
@@ -16,13 +19,13 @@ const sectionsData = [
 
 const Section = ({ title, links }) => {
     return (
-        <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-black">{title}</p>
-            <nav className="mt-8">
-                <ul className="space-y-4 text-sm">
+        <div className="text-center lg:text-start w-max">
+            <p className="sm:text-[16px] text-[14px] font-[500] text-[#132337]">{title}</p>
+            <nav className="mt-4">
+                <ul className="flex flex-col gap-y-2">
                     {links.map((link, index) => (
                         <li key={index}>
-                            <a className="text-black transition hover:text-black/75" href="/">{link}</a>
+                            <a className="text-[#5A6573] text-[12px] sm:text-[14px] font-[400]" href="/">{link}</a>
                         </li>
                     ))}
                 </ul>
@@ -35,135 +38,47 @@ const Section = ({ title, links }) => {
 const Footer = () => {
 
     return (
-        <footer class="bg-white text-black">
-            <div class="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 xl:px-8 xl:pt-24">
-                <div class="grid grid-cols-1 gap-8 xl:grid-cols-3">
-                    <div>
-                        <div class="flex justify-center text-teal-300 ">
-                            <img src={Logo} />
+        <footer class="text-black" >
+            <div className='bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[6px] flex flex-wrap justify-center md:justify-between items-center gap-y-4 gap-x-1'>
+              <div className="text-[#FFFFFF] text-[24px] font-[700] text-center">Start Earning Rewards Or Get Insightful Data ?</div>
+              <button className="text-[#3B4EF4] text-[14px] font-[400] px-3 py-2 bg-[#FFFFFF] rounded-[6px] ">Get Started</button>
+            </div>
+            <div style={{
+            backgroundImage: `url(${FooterBg})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            height:"100%",
+          }} className="mt-11">
+            <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
+                <div class="flex gap-10 lg:flex-row flex-col justify-center">
+                    
+                        <div class="flex flex-col gap-y-7 lg:w-[25%] w-full items-center lg:items-start justify-between">
+                            <img src={Logo} className="w-[170px] sm:w-fit h-fit" />
+                            <div className="lg:text-start text-center text-[#5A6573] text-[14px] font-[400]">At SurveyBull, we're dedicated to equipping surveyors with the tools they need to gather authentic data and drive informed decisions.</div>
                         </div>
-                        <div className="flex justify-center ">
-                            <div class="grid grid-cols-2 mt-8 gap-2 max-w-[200px] w-full justify-center">
-
-                                {/* <a className="flex justify-center">
-                                    <img src={facebook} />
-                                </a>
-                                <a className="flex justify-center">
-                                    <img src={instagram} />
-                                </a>
-                                <a className="flex justify-center">
-                                    <img src={reddit} />
-                                </a>
-                                <a className="flex justify-center">
-                                    <img src={youtube} />
-                                </a> */}
-                                <a className="flex justify-center" href="https://t.me/official_surveybull" target="_blank">
-                                    <img src={telegram} />
-                                </a>
-                                <a className="flex justify-center " href="https://x.com/surveybull" target="_blank">
-                                    <img src={twitter} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:col-span-2 xl:grid-cols-4">
+                        
+                   
+                    <div class="flex flex-wrap  gap-11 flex-1 lg:w-[85%] w-full sm:justify-evenly justify-center items-center ">
                         {sectionsData.map((section, index) => (
                             <Section key={index} title={section.title} links={section.links} />
                         ))}
-                        <div class="text-center sm:text-left">
+                       
+                    </div>
+                    <div class="flex flex-col gap-y-4 items-center">
                             <p class="text-lg font-medium text-black">Contact Us</p>
-                            <ul class="mt-8 space-y-4 text-sm">
-                                <li>
-                                    <a
-                                        class="flex items-center justify-center sm:justify-start gap-1.5 group"
-                                        href="/"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 text-black shrink-0"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                            />
-                                        </svg>
-
-                                        <span class="text-black transition group-hover:text-black/75">
-                                            info@surveybull.com
-                                        </span>
-                                    </a>
-                                </li>
-                                {/* <li>
-                                    <a
-                                        class="flex items-center justify-center sm:justify-start gap-1.5 group"
-                                        href="/"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 text-black shrink-0"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                            />
-                                        </svg>
-
-                                        <span class="text-black transition group-hover:text-black/75">
-                                           XXXXX90088
-                                        </span>
-                                    </a>
-                                </li>
-                                <li
-                                    class="flex items-start justify-center gap-1.5 sm:justify-start"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="w-5 h-5 text-black shrink-0"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                        />
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                        />
-                                    </svg>
-                                    <address class="-mt-0.5 not-italic text-black">
-                                        xxxx
-                                    </address>
-                                </li> */}
-                            </ul>
+                            <div className="flex gap-2 items-center">
+                                <img src={FooterMail} alt="FooterMail" />
+                                <img src={FooterTelegram} alt="FooterTelegram" />
+                                <img src={FooterTwitter} alt="FooterTwitter" />
+                            </div>
                         </div>
-                    </div>
                 </div>
-                <div class="pt-6 mt-12 border-t border-gray-800">
-                    <div class="text-center sm:flex sm:justify-between sm:text-left">
-                        <p class="text-sm text-gray-400">
-                            <span class="block sm:inline">All rights reserved.</span>
-                        </p>
-                        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                            &copy; 2024 Survey Bull
-                        </p>
-                    </div>
+                <div class="pt-6 mt-12 border-t border-[#5A6573] flex justify-center text-center text-[#5A6573] sm:text-[14px] text-[12px] font-[400]">
+                &copy; 2024 Survey Bull All rights reserved. 
                 </div>
             </div>
+            </div>
+           
         </footer>
     )
 }
