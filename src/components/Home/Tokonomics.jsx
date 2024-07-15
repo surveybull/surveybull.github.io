@@ -1,32 +1,35 @@
-import tokonomics from "../../assets/tokonomics.svg";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import tokonomics from "../../assets/tokonomicsChart.svg";
+import tokonomicsBg from "../../assets/background/tokonomicsBg.jpg"
 const cardData = [
-  {
-    title: "Founders",
-    text: "6",
-    tokens: "600,000,000",
-    tge: "10%",
-    cliff: "2m",
-    color: "#23CE6B",
-  },
   {
     title: "Marketing",
     text: "5",
     tokens: "500,000,000",
     tge: "10%",
     cliff: "1m",
-    color: "#EC4AA1",
+    textColor: "#F35B72",
+    startColor: "#E590C4",
+    endColor: "#F35B72",
   },
+  {
+    title: "Founders",
+    text: "6",
+    tokens: "600,000,000",
+    tge: "10%",
+    cliff: "2m",
+    textColor: "#F37B51",
+    startColor: "#FCA283",
+    endColor: "#F37B51"
+  },
+
   {
     title: "Partnership & Growth",
     text: "10",
     tokens: "1,000,000,000",
     tge: "10%",
-    cliff: "3m",
-    color: "#FDEE6D",
+    textColor: "#997CF4",
+    startColor: "#C6B9EF",
+    endColor: "#997CF4"
   },
   {
     title: "Ecosystem & Devlopment",
@@ -34,70 +37,72 @@ const cardData = [
     tokens: "1,000,000,000",
     tge: "10%",
     cliff: "2m",
-    color: "#006DF2",
+    textColor: "#5CF1B1",
+     startColor: "#A7ECFF",
+    endColor: "#5CF1B1"
   },
   {
     title: "Staking & Community Incentive ",
     text: "15",
     tokens: "1,500,000,000",
     cliff: "7d",
-    color: "#FE6B43",
+    textColor: "#FFCB69",
+     startColor: "#FFCB69",
+    endColor: "#FFDB9A"
   },
   {
     title: "Liquidity",
     text: "54",
     tokens: "5,400,000,000",
-    color: "#9133EE",
+    textColor: "#7C91FF",
+    startColor: "#7C91FF",
+    endColor: "#41AFFF"
   },
 ];
 
 const Card = ({ data }) => {
   return (
     <div
-      data-aos={"fade-up"}
-      className={`w-full mt-4 border border-l-4 shadow-xl rounded-xl `}
-      style={{ borderLeftColor: data.color }}
+      className={`w-full border-r-[2px] border-t-[2px] border-b-[2px] border-[#FFFFFF14] shadow-xl relative rounded-xl `}
+     
     >
-      <div className="px-4 py-2 font-semibold">{data.title}</div>
-      <div className="flex justify-between pr-3">
-        <div className="px-4 py-2">{data.text}% Allocation</div>
-        <div className="px-4 py-2">{data.tokens} Tokens</div>
-      </div>
-      {(data?.tge || data?.cliff) && (
-        <div className="flex justify-between pr-3">
-          {data?.cliff ? (
-            <div className="px-4 py-2">{data.cliff} Cliff</div>
-          ) : (
-            <div></div>
-          )}
-          {data?.tge ? (
-            <div className="px-4 py-2">{data.tge} TGE</div>
-          ) : (
-            <div></div>
-          )}
+<div
+    className="absolute left-[1px] top-[-2px] bottom-[-2px] w-2"
+    style={{
+      background: `linear-gradient(to bottom, ${data.startColor}, ${data.endColor})`,
+      borderRadius: '12px 0px 0 12px'
+    }}
+  ></div>
+      <div className="h-full w-full flex flex-col justify-evenly px-4 py-3 gap-y-5 rounded-xl" >
+        <div className="flex justify-between items-center">
+          <span className="text-[16px] font-[500]" style={{color:data.textColor}}>{data.title}</span>
+          <span className="text-[14px] font-[400] text-[#B8BDC3] text-end">{data.text}% allocation</span>
         </div>
-      )}
+        <div className="flex justify-between items-center">
+          <span className="text-[14px] text-[#E7E9EB] font-[500]">{data.tokens} Tokens</span>
+          <div className="text-[14px] font-[400] text-[#B8BDC3] text-end">
+            {data.cliff && <span>{data.cliff} CLIFF</span>}
+            {data.cliff && data.tge && <span>, </span>}
+            {data.tge && <span>{data.tge} TGE</span>}
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
 
 const Tokonomics = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   return (
-    <div className=" my-[6rem]">
-      <h1
-        data-aos={"fade-up"}
-        className="text-2xl md:text-4xl flex justify-center text-center   tracking-wide  text-[#484848] "
-      >
+    <div className="sm:mt-[8rem] mt-[12rem] sm:mb-[8rem] mb-[4rem]" >
+      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-[700]">
         Tokenomics
       </h1>
-      <div className="md:flex mt-20 px-2  ">
-        <div data-aos={"fade-up"} className="w-full flex items-center">
-          <img src={tokonomics} />
+      <div className="flex gap-8 lg:flex-row flex-col sm:mt-10 mt-6 rounded-[25px] sm:p-10 p-5  bg-[#FFFFFF0A] border-2 border-[#FFFFFF0A] " >
+        <div className="flex items-center justify-center">
+          <img src={tokonomics} className="md:min-w-[500px] md:min-h-[500px] min-w-[200px] min-h-[200px]" />
         </div>
-        <div className=" max-w-[500px] px-3 md:pl-6 w-full">
+        <div className="w-full grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {cardData.map((item) => {
             return <Card data={item} />;
           })}

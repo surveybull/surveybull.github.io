@@ -48,7 +48,18 @@ function Home() {
         <Surveyor />
         </div>
       </div>
-    
+      <div
+        style={{
+          backgroundImage: `url(${SurveyorBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          height:"100%",
+        }}
+        >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Tokonomics />
+        </div>
+      </div>
       {/* <div className="xl:max-w-[1300px] mx-auto ">
         <div id="why" className="p-1">
           <Why />
