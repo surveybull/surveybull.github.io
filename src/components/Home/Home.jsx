@@ -20,7 +20,7 @@ import SurveyorBg from "../../assets/background/SurveyorBg.jpg"
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
-
+import SDKBg from "./../../assets/background/SDKBg.jpg";
 import MidSection from "./MidSection";
 
 import UsecaseBg from "../../assets/background/UsecaseBg.jpg"
@@ -87,6 +87,18 @@ function Home() {
         <Surveyor />
         </div>
       </div>
+      <div
+        style={{
+          backgroundImage: `url(${SDKBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          
+        }}
+        >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <SDK />
+        </div>
+        </div>
       <div
         style={{
           backgroundImage: `url(${UsecaseBg})`,
