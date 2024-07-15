@@ -1,114 +1,123 @@
-import blockchain from "../../assets/blockchain.svg"
-import userprofile from "../../assets/userprofile.svg"
-import health from "../../assets/health.svg"
-import crypto from "../../assets/Crypto.svg"
-import investor from "../../assets/investor.svg"
-import marketTrend from "../../assets/marketTrend.svg"
-import realestate from "../../assets/realestate.svg"
-import politicalImg from "../../assets/politicalImg.svg"
-import gated from "../../assets/gated.svg"
-import airdrop from "../../assets/postHook.svg"
+import blockchain from "../../assets/BlockchainAdoption.svg";
+import userprofile from "../../assets/User_Satisfaction_Surveys.svg";
+import health from "../../assets/Healthcare_Research_Consortium.svg";
+import crypto from "../../assets/Cryptocurrency_Education_&_Awareness.svg";
+import investor from "../../assets/STO_Investor_Sentiment_Analysis.svg";
+import marketTrend from "../../assets/Crypto_Market_Trends_and_Predictions.svg";
+import realestate from "../../assets/RealEstate.svg";
+import Political_Engagement_Tracker from "../../assets/Political_Engagement_Tracker.svg";
+import TokenGatedSurvey from "../../assets/TokenGatedSurvey.svg";
+import Airdrop from "../../assets/Airdrop.svg";
 
-
-import { useEffect } from "react"
-import AOS from 'aos';
+import { useEffect } from "react";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const SurveyCard = ({ imageSrc, title, description }) => {
-    return (
-        <div data-aos={"fade-up"} class="flex h-fit items-center justify-center bg-white">
-            <div class="group h-[18.75rem] w-[16.875rem] [perspective:1000px]">
-                <div class="relative h-full w-full rounded-xl shadow-[0_3px_10px_rgb(88,49,200,0.4)]  transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div class="absolute inset-0 ">
-                        <div className="flex flex-col items-center h-full justify-center">
-                            <img class="h-[180px] w-[180px] mx-auto " src={imageSrc} alt="" />
-                            <div className="mt-3 px-2 text-center" >{title} </div>
-                        </div>
-                    </div>
-                    <div class="absolute inset-0 h-full w-full rounded-xl bg-[#5831C8]/95 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                        <div class="flex min-h-full flex-col items-center justify-center">
-                            <p class="font-semibold ">{description}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="flex h-full flex-col justify-start sm:max-w-[20rem] w-full gap-y-4 mx-auto group hover:cursor-pointer">
+      <div>
+        <img src={imageSrc} alt="" />
+      </div>
+      <div className="flex h-max gap-2 w-full relative">
+        <div className="h-[30%] bg-[#3B4EF4] group-hover:h-full w-[2px] transition-height duration-500 ease-in-out absolute left-[-10px]"></div>
+        <div className="flex flex-col gap-y-2">
+          <span className="text-[#132337] text-[16px] font-[500]">{title}</span>
+          <span className="text-[#5A6573] text-[14px] font-[400]">
+            {description}
+          </span>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
-
 const Cases = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, [])
-
-    return (
-        <div className="  md:my-[8rem]">
-            <h1 data-aos={"fade-up"} className="text-2xl md:text-4xl flex justify-center   text-[#484848] ">Use Cases</h1>
-            <div className="  my-20 ">
-                <div
-                    className="xl:flex grid grid-cols-1 justify-evenly gap-12 mb-[3rem] xl:mb-0 ">
-                        <SurveyCard
-                       imageSrc={airdrop}
-                       title="Token Airdrops"
-                       description="Revamp the crypto airdrop process by collecting feedback from prospective cryptocurrency product users"
-                   />
-                        <SurveyCard
-                            imageSrc={gated}
-                            title="Token Gated Surveys"
-                            description="Our platform employs a technique wherein only individuals possessing a specific token, along with the requisite amount, are permitted to participate in the survey."
-                        />
-                    <SurveyCard
-                        imageSrc={blockchain}
-                        title="Blockchain Adoption Surveys"
-                        description="Blockchain startups and projects use the survey platform to gather feedback on user experiences, preferences, and challenges related to adopting blockchain technology."
-                    />
-                </div>
-               
-                <div className="grid grid-cols-1 xl:grid-cols-4 gap-12 mt-7 ">
-                <SurveyCard
-                        imageSrc={crypto}
-                        title="Cryptocurrency Education & Awareness"
-                        description="A crypto education platform utilizes surveys to understand the knowledge gaps and learning preferences of its audience."
-                    />
-                    <SurveyCard
-                        imageSrc={investor}
-                        title="ICO/STO Investor Sentiment Analysis"
-                        description="Companies launching Initial Coin Offerings (ICOs) or Security Token Offerings (STOs) use the survey platform to gauge investor sentiment."
-                    />
-                        <SurveyCard
-                            imageSrc={marketTrend}
-                            title="Crypto Market Trends and Predictions"
-                            description="A market research firm in the crypto space conducts regular surveys to gather predictions and opinions on market trends, price movements, and potential upcoming developments."
-                        />
-                    <SurveyCard
-                            imageSrc={realestate}
-                            title="Real Estate Market Analysis"
-                            description="Real estate developers leverage the platform to conduct market research on evolving housing preferences."
-                        />
-                </div>
-                <div className="xl:flex grid grid-cols-1 justify-evenly gap-12 mt-7">
-                    <SurveyCard
-                        imageSrc={politicalImg}
-                        title="Political Engagement Tracker"
-                        description="A civic engagement group employs the platform to gauge public sentiment on political issues over time."
-                    />
-                    <SurveyCard
-                            imageSrc={userprofile}
-                            title="User Satisfaction Surveys"
-                            description="A cryptocurrency wallet provider conducts regular surveys to understand user satisfaction, feature preferences, and security concerns."
-                        />
-                        <SurveyCard
-                            imageSrc={health}
-                            title="Healthcare Research Consortium"
-                            description="A consortium of healthcare researchers collaborates on a platform to gather data for epidemiological studies."
-                        />
-                </div>
-            </div>
+  return (
+    <div className="flex flex-col gap-y-10">
+      <h1 className="flex justify-center text-[#132337] sm:text-[36px] text-[24px] font-[700] ">
+      Applications
+      </h1>
+      <div className="flex flex-col gap-y-12 justify-center items-center">
+        <div className="xl:flex grid sm:grid-cols-2 grid-cols-1 justify-evenly gap-12 ">
+          <SurveyCard
+            imageSrc={Airdrop}
+            title="Token Airdrops"
+            description="Revamp the crypto airdrop process by collecting feedback from prospective cryptocurrency product users"
+          />
+          <SurveyCard
+            imageSrc={TokenGatedSurvey}
+            title="Token Gated Surveys"
+            description="Our platform employs a technique wherein only individuals possessing a specific token, along with the requisite amount, are permitted to participate in the survey."
+          />
+          <SurveyCard
+            imageSrc={blockchain}
+            title="Blockchain Adoption Surveys"
+            description="Blockchain startups and projects use the survey platform to gather feedback on user experiences, preferences, and challenges related to adopting blockchain technology."
+          />
+          <div className="xl:hidden block">
+            <SurveyCard
+              imageSrc={crypto}
+              title="Cryptocurrency Education & Awareness"
+              description="A crypto education platform utilizes surveys to understand the knowledge gaps and learning preferences of its audience."
+            />
+          </div>
         </div>
-    )
-}
 
+        <div className="grid grid-cols-1     sm:grid-cols-2 xl:grid-cols-4 gap-12 ">
+          <div className="xl:block hidden">
+            <SurveyCard
+              imageSrc={crypto}
+              title="Cryptocurrency Education & Awareness"
+              description="A crypto education platform utilizes surveys to understand the knowledge gaps and learning preferences of its audience."
+            />
+          </div>
 
-export default Cases
+          <SurveyCard
+            imageSrc={investor}
+            title="ICO/STO Investor Sentiment Analysis"
+            description="Companies launching Initial Coin Offerings (ICOs) or Security Token Offerings (STOs) use the survey platform to gauge investor sentiment."
+          />
+          <SurveyCard
+            imageSrc={marketTrend}
+            title="Crypto Market Trends and Predictions"
+            description="A market research firm in the crypto space conducts regular surveys to gather predictions and opinions on market trends, price movements, and potential upcoming developments."
+          />
+          <SurveyCard
+            imageSrc={realestate}
+            title="Real Estate Market Analysis"
+            description="Real estate developers leverage the platform to conduct market research on evolving housing preferences."
+          />
+          <div className="xl:hidden block">
+            <SurveyCard
+              imageSrc={Political_Engagement_Tracker}
+              title="Political Engagement Tracker"
+              description="A civic engagement group employs the platform to gauge public sentiment on political issues over time."
+            />
+          </div>
+        </div>
+        <div className="xl:flex grid sm:grid-cols-2 grid-cols-1 justify-evenly gap-12  ">
+          <div className="xl:block hidden">
+            <SurveyCard
+              imageSrc={Political_Engagement_Tracker}
+              title="Political Engagement Tracker"
+              description="A civic engagement group employs the platform to gauge public sentiment on political issues over time."
+            />
+          </div>
+          <SurveyCard
+            imageSrc={userprofile}
+            title="User Satisfaction Surveys"
+            description="A cryptocurrency wallet provider conducts regular surveys to understand user satisfaction, feature preferences, and security concerns."
+          />
+          <SurveyCard
+            imageSrc={health}
+            title="Healthcare Research Consortium"
+            description="A consortium of healthcare researchers collaborates on a platform to gather data for epidemiological studies."
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cases;
