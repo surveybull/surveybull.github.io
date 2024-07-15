@@ -6,13 +6,13 @@ import Roadmap from './components/Roadmap/Roadmap'
 import Pricing from './components/Pricing/Pricing'
 import Blog from './components/Blog/Blog'
 import FAQs from './components/FAQs/FAQs'
-import './App.css';
+// import './App.css';
 function App() {
 
   return (
     
     <Router>
-      <div className='flex flex-col'>
+      <div className=''>
            <Routes>
            <Route path='/' Component={Home}></Route>
            <Route path='/roadmap' Component={Roadmap}></Route>
