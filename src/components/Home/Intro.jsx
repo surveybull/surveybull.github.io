@@ -4,13 +4,13 @@ const Intro = () => {
   return (
     <div className="flex justify-between py-4 mt-[3rem] md:mt-[4rem] gap-6 flex-col md:flex-row">
       <div className="flex flex-col gap-y-4 justify-center items-start flex-1">
-        <div className="md:h-[170px] h-[90px] overflow-hidden flex items-end">
+        <div className="h-[90px] md:h-[150px] lg:h-[90px] 2xl:h-[170px] overflow-hidden flex items-end">
         <WordRotate
-      className="text-start text-[#3B4EF4] font-[700] text-[28px] md:text-[40px] lg:text-[56px]"
+      className="text-start text-[#3B4EF4] font-[700] text-[28px] md:text-[40px] 2xl:text-[56px]"
       words={["Craft, Share, Analyse", "Your Opinion, Your Impact","Engage, Participate, Earn"]}
     />
         </div>
-        <div className="text-start text-[#132337] font-[700] text-[28px] md:text-[40px] lg:text-[56px]">Embark on Your Survey Adventure Today!</div>
+        <div className="text-start text-[#132337] font-[700] text-[28px] md:text-[40px] 2xl:text-[56px]">Embark on Your Survey Adventure Today!</div>
         <div className="text-start text-[#132337] text-[14px] md:text-[18px] lg:text-[20px] font-[400]">
           Unlock the power of Blockchain Supported Survey, Earn reward for your
           data!
