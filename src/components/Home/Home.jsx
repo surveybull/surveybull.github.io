@@ -21,6 +21,9 @@ import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
 import SDKBg from "./../../assets/background/SDKBg.jpg";
+import DecentralizedBg from "../../assets/background/decentralizedBg.jpg";
+
+
 import MidSection from "./MidSection";
 import WeightCalculationBg from "../../assets/background/WeightCalculationBg.png"
 import UsecaseBg from "../../assets/background/UsecaseBg.jpg"
@@ -71,7 +74,7 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
           <MidSection/>
         </div>
       </div>
@@ -89,10 +92,20 @@ function Home() {
       </div>
       <div
         style={{
+          backgroundImage: `url(${DecentralizedBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <DecentralizedAction/>
+        </div>
+      </div>
+      <div
+        style={{
           backgroundImage: `url(${SurveyorBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-    
         }}
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
