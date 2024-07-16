@@ -1,169 +1,173 @@
-import preHook from "../../assets/preHook.svg"
-import postHook from "../../assets/postHook.svg"
-import { useEffect } from "react"
-import AOS from 'aos';
-import "aos/dist/aos.css";
+import preHook from "../../assets/onChainPre.svg";
+import postHook from "../../assets/onChainPost.svg";
+import bluetick from "../../assets/bluetick.svg";
 
-const data = [{
+const data = [
+  {
     imageSrc: preHook,
     imageAlt: "preHook",
     title: "On Chain Pre Verification Hooks",
     sections: [
-        { text: "Develop smart contracts for user eligibility verification before survey ", delay: "300" },
-        { text: "Define eligibility criteria like token ownership or participation history. ", delay: "400" },
-        { text: "Implement validation functions within contracts to assess user credentials.", delay: "500" },
-        { text: "Proceed with survey submission if criteria met, reject otherwise ", delay: "600" }
+      {
+        text: "Develop smart contracts for user eligibility verification before survey ",
+      },
+      {
+        text: "Define eligibility criteria like token ownership or participation history. ",
+      },
+      {
+        text: "Implement validation functions within contracts to assess user credentials.",
+      },
+      {
+        text: "Proceed with survey submission if criteria met, reject otherwise ",
+      },
     ],
-    reverse: false
-},
-{
+    reverse: false,
+  },
+  {
     imageSrc: postHook,
     imageAlt: "postHook",
     title: "On Chain Post Action Hooks",
     sections: [
-        { text: "Set triggers for post-submission actions, like token distribution or airdrops, based on conditions. ", delay: "300" },
-        { text: "Define triggering conditions such as response thresholds or specific outcomes.", delay: "400" },
-        { text: "Monitor submission progress and verify conditions for action triggers.", delay: "500" },
-        { text: "Execute predefined actions, like distributing tokens, using smart contracts upon meeting conditions.", delay: "600" },
+      {
+        text: "Set triggers for post-submission actions, like token distribution or airdrops, based on conditions. ",
+      },
+      {
+        text: "Define triggering conditions such as response thresholds or specific outcomes.",
+      },
+      {
+        text: "Monitor submission progress and verify conditions for action triggers.",
+      },
+      {
+        text: "Execute predefined actions, like distributing tokens, using smart contracts upon meeting conditions.",
+      },
     ],
-    reverse: true
-}]
+    reverse: true,
+  },
+];
 
-const SmartContractStep = ({ description, keep, delay }) => {
-    return (
-        <div data-aos={"fade-up"} data-aos-delay={delay} className="flex">
-            <div className="flex flex-col items-center mr-4">
-                <div>
-                    <div className="flex items-center justify-center w-10 h-10 border bg-[#5831C8] rounded-full">
-                        <svg className="w-6 text-white" stroke="currentColor" viewBox="0 0 24 24">
-                            <polyline fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" points="6,12 10,16 18,8"></polyline>
-                        </svg>
-                    </div>
-                </div>
-                {/* {keep &&
-                    <div className="w-px h-full bg-gray-300"></div>
-                } */}
-            </div>
-            <div className="pt-2 pb-8">
-                <p className="text-gray-700">{description}</p>
-            </div>
+const SmartContractStep = ({ description }) => {
+  return (
+    <div className=" m-3 group mt-14 xl:mt-3   relative rounded-[10px] bg-white shadow-[8px_8px_30px_0px_rgba(151,143,253,0.1)]">
+      <div className=" top-[-14px] left-[15px] absolute ">
+        <img
+          className="h-[34px] w-[34px] group-hover:scale-125 transition duration-500 ease-in-out mx-2"
+          src={bluetick}
+          alt=""
+        />
+      </div>
+      <div className="relative h-min flex  pt-7 mt-3 px-2 pb-8">
+        <div className="absolute  w-[3px]  h-[30%] mx-2 group-hover:h-[60%] transition-height duration-500 ease-in-out  bg-[#3B4EF4]"></div>
+        <div className="text-gray-700 group-hover:text-[#3B4EF4] ml-5">
+          {description}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 const DecentralizedAction = () => {
+  const contentContainerClass = "max-w-xl";
 
-    useEffect(() => {
-        AOS.init();
-      }, [])
-
-    const contentContainerClass = "max-w-xl";
-    const titleClass = "  text-4xl mt-5";
-
-    const ContentComponent = ({ imageSrc, imageAlt, title, subTitle, sections, reverse }) => (
-        <div className={reverse ? "flex flex-row-reverse justify-around py-[30px]" : "flex flex-row justify-around py-[80px]"}>
-            <div data-aos={"fade-up"} className={contentContainerClass}>
-                <div className={titleClass}>{title}</div>
-                <div className="my-5">
-                    <div className="lg:py-6 lg:pr-16">
-                        {sections.map((x, index) => {
-                            if (index === sections.length - 1) {
-                                return <SmartContractStep description={x.text} keep={false} delay={x.delay} />
-                            } else {
-                                return <SmartContractStep description={x.text} keep={true} />
-                            }
-                        })}
-                    </div>
-                </div>
+  const ContentComponent = ({
+    imageSrc,
+    imageAlt,
+    title,
+    subTitle,
+    sections,
+    reverse,
+  }) => (
+    <div
+      className={
+        reverse
+          ? "flex flex-row-reverse justify-between py-[30px]"
+          : "flex flex-row justify-between "
+      }
+    >
+      <div className={contentContainerClass}>
+        {/* <div className={titleClass}>{title}</div> */}
+        <div className="my-5">
+          <div className="lg:py-6 grid grid-cols-2  ">
+            <div className="flex flex-col ">
+              <SmartContractStep description={sections[0].text} />
+              <SmartContractStep description={sections[1].text} />
             </div>
-            <div data-aos={"fade-up"} className="  flex align-middle">
-                <img width={350} height={400} src={imageSrc} alt={imageAlt} />
+            <div className="flex flex-col md:mt-12">
+              <SmartContractStep description={sections[2].text} />
+              <SmartContractStep description={sections[3].text} />
             </div>
+          </div>
         </div>
-    );
+      </div>
+      <div data-aos={"fade-up"} className="  flex align-middle">
+        <img src={imageSrc} alt={imageAlt} />
+      </div>
+    </div>
+  );
 
-
-    const MobileViewCard = ({ data }) => {
-        return (
-            <div  className=" bg-white rounded-2xl shadow-2xl my-3 mx-6 mt-8">
-                <div className="px-5 py-3">
-                    <div  className="text-center   text-lg ">
-                        {data.title}
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="max-w-[180px] max-h-[180px] w-full h-full mt-5 ">
-                            <img src={data.imageSrc} alt={"preHook"} />
-                        </div>
-                    </div>
-                    <div className="my-4 py-4">
-                        {data.sections.map((x, index) => {
-                            if (index === data.sections.length - 1) {
-                                return <SmartContractStep description={x.text} keep={false} delay={x.delay} />
-                            } else {
-                                return <SmartContractStep description={x.text} keep={true} />
-                            }
-                        })}
-                    </div>
-                </div>
-            </div>
-        )
-    }
-
+  const MobileViewCard = ({ data }) => {
     return (
-
-        <div className=" my-[4rem]">
-            <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl   tracking-wide  text-center">Decentralized Actions: Elevating Survey Engagement in Crypto Products</h1>
-            <div className="flex justify-center">
-                <div data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]">At SurveyBull, we value your opinions and insights. That's why we've created an opportunity for you to earn tokens simply by sharing your thoughts through surveys. Our platform offers a seamless experience where your contributions are not only appreciated but also rewarded. Here's how it works</div>
+      <div className=" my-3 mx-6 mt-8">
+        <div className="px-5 py-3">
+          <div className="text-center   text-lg ">{data.title}</div>
+          <div className="flex justify-center">
+            <div className=" flex justify-center w-full h-full mt-5 ">
+              <img src={data.imageSrc} alt={"preHook"} />
             </div>
-            {/* <div className="xl:grid xl:grid-cols-2 xl:gap-16 mt-12 px-4" >
-                <div className="flex flex-col py-4 rounded-2xl bg-[#E7F4FC] ">
-                    <div className="font-extrabold text-xl mt-6 px-4">Enhanced Survey Experience</div>
-                    <div className="flex-1 flex items-center px-4">
-                        <div>
-                            <div className="my-3">Imagine conducting a survey on a new blockchain-based social media platform. In addition to answering questions, participants may follow a decentralized profile, interact with smart contracts, or engage in community governance votes. This feature transcends data collection, creating an immersive and interactive survey experience.</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="mt-4 xl:mt-0 flex flex-col py-4  rounded-2xl bg-[#E7F4FC] ">
-                    <div className="font-extrabold text-xl mt-6 px-4">On-Chain Verification Hooks</div>
-                    <div className="flex-1 flex items-center px-4">
-                        <div>
-                            <div className="my-8">Tailored for Crypto product surveys, the On-chain Verification Hooks feature provides advanced customization and functionality. Requesters establish specialized on-chain hooks executed upon participant survey submission. Particularly impactful for token-gated surveys or token airdrops, it ensures eligibility based on personalized criteria..</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> */}
-            <div className="hidden xl:block">
-                {data.map((element) => {
-                    return (
-                        <ContentComponent
-                            imageSrc={element.imageSrc}
-                            imageAlt={element.imageAlt}
-                            title={element.title}
-                            subTitle={element.subTitle}
-                            sections={element.sections}
-                            reverse={element.reverse}
-                        />
-                    )
-                })}
-            </div>
-            
-            {/* <div className="flex justify-center">
-                <div data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-medium tracking-wide text-[#263238]"><p><b>Use Case : </b> 
-Picture a requester conducting a token distribution survey. By setting on-chain verification hooks, they ensure participants meet specific criteria, like holding a minimum token balance or engaging with decentralized applications. This feature extends beyond traditional survey mechanics, enabling seamless integration of blockchain-based verification processes for secure and targeted token distribution.
-</p></div>
-            </div> */}
-            <div className="xl:hidden">
-                {data.map((element) => {
-                    return (
-                        <MobileViewCard data={element} />
-                    )
-                })}
-            </div>
+          </div>
+          <div className="my-4 py-4">
+            {data.sections.map((x, index) => {
+              return <SmartContractStep description={x.text} />;
+            })}
+          </div>
         </div>
-    )
-}
+      </div>
+    );
+  };
 
-export default DecentralizedAction
+  return (
+    <div className=" my-[4rem]">
+      <div className=" text-4xl font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl   text-center mx-24">
+        {"Decentralized Actions: Elevating "}
+        <span className=" text-[rgba(59,78,244,1)]">
+          {" Survey Engagement "}
+        </span>{" "}
+        in Crypto Products
+      </div>
+      <div className="flex justify-center">
+        <div className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-[400] tracking-wide text-[#5A6573]">
+          At SurveyBull, we value your opinions and insights. That's why we've
+          created an opportunity for you to earn tokens simply by sharing your
+          thoughts through surveys. Our platform offers a seamless experience
+          where your contributions are not only appreciated but also rewarded.
+          Here's how it works
+        </div>
+      </div>
+      <div className="hidden xl:block">
+        {data.map((element) => {
+          return (
+            <div>
+              <div className="text-center text-[28px] mt-14 font-[500] ">
+                {element.title}
+              </div>
+              <ContentComponent
+                imageSrc={element.imageSrc}
+                imageAlt={element.imageAlt}
+                title={element.title}
+                subTitle={element.subTitle}
+                sections={element.sections}
+                reverse={element.reverse}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="xl:hidden">
+        {data.map((element) => {
+          return <MobileViewCard data={element} />;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default DecentralizedAction;

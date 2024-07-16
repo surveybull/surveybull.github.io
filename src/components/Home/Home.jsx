@@ -20,6 +20,8 @@ import SurveyorBg from "../../assets/background/SurveyorBg.jpg"
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
+import DecentralizedBg from "../../assets/background/decentralizedBg.jpg";
+
 
 import MidSection from "./MidSection";
 
@@ -70,8 +72,19 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
           <MidSection/>
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${DecentralizedBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <DecentralizedAction/>
         </div>
       </div>
       <div
@@ -79,7 +92,6 @@ function Home() {
           backgroundImage: `url(${SurveyorBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-    
         }}
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
