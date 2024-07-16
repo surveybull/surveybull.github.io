@@ -22,7 +22,7 @@ import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
 import SDKBg from "./../../assets/background/SDKBg.jpg";
 import MidSection from "./MidSection";
-
+import WeightCalculationBg from "../../assets/background/WeightCalculationBg.png"
 import UsecaseBg from "../../assets/background/UsecaseBg.jpg"
 function Home() {
   return (
@@ -73,6 +73,18 @@ function Home() {
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <MidSection/>
+        </div>
+      </div>
+      <div
+        className=""
+        style={{
+          backgroundImage: `url(${WeightCalculationBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Distribution />
         </div>
       </div>
       <div
