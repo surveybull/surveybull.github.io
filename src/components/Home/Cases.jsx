@@ -34,7 +34,7 @@ const SurveyCard = ({ imageSrc, title, description }) => {
 
 const Cases = () => {
   return (
-    <div className="flex flex-col gap-y-10">
+    <div className="flex flex-col gap-y-10 py-[80px]">
       <h1 className="flex justify-center text-[#132337] sm:text-[36px] text-[24px] font-[700] ">
       Applications
       </h1>

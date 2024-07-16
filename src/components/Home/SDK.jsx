@@ -1,7 +1,7 @@
 import SDKSnippet from "../../assets/SDKSnippet.svg";
 const SDK = () => {
   return (
-    <div className="flex flex-col gap-y-7">
+    <div className="flex flex-col gap-y-7 py-[180px]">
       <div className="flex flex-col gap-y-5">
         <span className="text-center md:text-[36px] text-[24px] font-[700] text-[#132337]"><span className="text-[#3B4EF4]">Software</span> Development Kit (SDK) for Seamless <span className="text-[#3B4EF4]">Survey Integration</span></span>
         <span className="text-center text-[#5A6573] text-[14px] font-[400] md:text-[16px]">The SurveyBull SDK empowers effortless creation and management of on-chain surveys, offering seamless participant sign-up and survey submission functionalities. This versatile SDK is meticulously crafted for integration with any web3 or web2 product, unlocking the full array of SurveyBull features.</span>

@@ -1,5 +1,5 @@
 import bluetick from "../../assets/bluetick.svg";
-
+import intro from "../../assets/Intro.svg"
 const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="text-base py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
@@ -9,9 +9,9 @@ const SurveyBuilding = () => {
   );
 
   return (
-    <div className="flex my-14 ">
-      <div className="w-[50%]">
-        <div className="text-4xl font-HelveticaNeueBold">
+    <div className="flex md:flex-row flex-col-reverse my-14 ">
+      <div className="md:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           <span className=" text-[rgba(59,78,244,1)]">
             {"Effortless Survey"}
           </span>
@@ -41,7 +41,9 @@ const SurveyBuilding = () => {
           </div>
         </div>
       </div>
-      <div className="w-[50%]  "></div>
+      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
+          <img src={intro} alt="intro" />
+      </div>
     </div>
   );
 };
@@ -77,9 +79,9 @@ const EarnToken = () => {
   );
 
   return (
-    <div className="flex my-15 ">
-      <div className="w-[50%]">
-        <div className="text-4xl font-HelveticaNeueBold">
+    <div className="flex md:flex-row flex-col-reverse my-15 ">
+      <div className="md:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           <span className=" text-[rgba(59,78,244,1)]">{"Earn Tokens"}</span>
           &nbsp;{"For"}&nbsp;
           <span className=" text-[rgba(59,78,244,1)]">{"Sharing"}</span>
@@ -104,7 +106,9 @@ const EarnToken = () => {
           </div>
         </div>
       </div>
-      <div className="w-[50%]  "></div>
+      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
+      <img src={intro} alt="intro" />
+      </div>
     </div>
   );
 };
@@ -136,9 +140,9 @@ const Grow = () => {
   );
 
   return (
-    <div className="flex my-14 ">
-      <div className="w-[50%]">
-        <div className="text-4xl font-HelveticaNeueBold">
+    <div className="flex md:flex-row flex-col-reverse my-14 ">
+      <div className="md:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           Grow With Us:&nbsp;
           <span className=" text-[rgba(59,78,244,1)]">{"Refer & Earn"}</span>
         </div>
@@ -156,7 +160,9 @@ const Grow = () => {
           ))}
         </div>
       </div>
-      <div className="w-[50%]  "></div>
+      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
+      <img src={intro} alt="intro" />
+      </div>
     </div>
   );
 };
@@ -188,9 +194,9 @@ const Boost = () => {
       );
   
     return (
-      <div className="flex my-14 ">
-        <div className="w-[50%]">
-          <div className="text-4xl font-HelveticaNeueBold">
+      <div className="flex md:flex-row flex-col-reverse my-14 ">
+        <div className="md:w-[50%] w-full">
+          <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           Boost Your Rewards With Staking&nbsp;
             <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
           </div>
@@ -207,7 +213,9 @@ const Boost = () => {
             ))}
           </div>
         </div>
-        <div className="w-[50%]  "></div>
+        <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
+        <img src={intro} alt="intro" />
+        </div>
       </div>
     );
   };
