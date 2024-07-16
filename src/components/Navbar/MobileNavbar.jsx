@@ -73,7 +73,7 @@ function MobileNavbar({ NavbarData }) {
             )}
           </div>
           <div>
-          <button className='bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] rounded-[7px] px-3 py-2 text-[#FFFFFF] font-[500] text-[16px]'>Get Started</button>
+          <button className='bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-[500] text-[16px]'>Get Started</button>
           </div>
           </div>
         </SheetContent>
