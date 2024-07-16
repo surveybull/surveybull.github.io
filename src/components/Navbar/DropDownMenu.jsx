@@ -38,7 +38,7 @@ function DropDownMenu({ option, visitedPage }) {
           >
             {option.title}
           </Link>
-          <hr
+          <div
             className={`${
               visitedPage === option.title
                 ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"

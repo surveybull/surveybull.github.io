@@ -82,7 +82,7 @@ function Questions() {
               />
             </div>
           </AccordionTrigger>
-          <AccordionContent className="bg-[#FFFFFF] rounded-[9px] px-10 py-4 font-[400] text-[#5A6573] text-base">
+          <AccordionContent className="bg-[#FFFFFF] rounded-[9px] px-10 py-6 font-[400] text-[#5A6573] md:text-[16px] text-[12px] leading-[26px]">
             {data.ans}
           </AccordionContent>
         </AccordionItem>

@@ -12,7 +12,7 @@ function DesktopNavbar({NavbarData,visitedPage}) {
         {NavbarData.map((option)=>(
            option.childItem.length > 0 ? (<DropDownMenu option={option} visitedPage={visitedPage}/>):(<div className='flex flex-col justify-center items-center gap-y-1'>
             <Link to={option.path} className={`${visitedPage == option.title ? "text-[#3B4EF4] font-[500]":"text-[#132337]"} font-[400] text-[18px]`}>{option.title}</Link>
-            <hr className={`${visitedPage == option.title ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]" : "bg-none h-[2.5px]"}`}></hr>
+            <div className={`${visitedPage == option.title ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]" : "bg-none h-[2.5px]"}`}></div>
          </div>)
           
            
