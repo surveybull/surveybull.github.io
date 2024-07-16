@@ -98,7 +98,7 @@ const DecentralizedAction = () => {
           </div>
         </div>
       </div>
-      <div data-aos={"fade-up"} className="  flex align-middle">
+      <div className="  flex align-middle">
         <img src={imageSrc} alt={imageAlt} />
       </div>
     </div>
