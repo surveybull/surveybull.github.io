@@ -1,5 +1,9 @@
 import bluetick from "../../assets/bluetick.svg";
 import intro from "../../assets/Intro.svg"
+import Staking from "../../assets/Staking.svg"
+import Effortless from "../../assets/gif/Effortless.gif"
+import EarnTokenGif from "../../assets/gif/EarnToken.gif"
+import Refer from "../../assets/gif/Refer.gif"
 const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="text-base py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
@@ -9,7 +13,7 @@ const SurveyBuilding = () => {
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-14 ">
+    <div className="flex md:flex-row flex-col-reverse my-14 gap-12 ">
       <div className="md:w-[50%] w-full">
         <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           <span className=" text-[rgba(59,78,244,1)]">
@@ -42,7 +46,7 @@ const SurveyBuilding = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
-          <img src={intro} alt="intro" />
+          <img src={Effortless} alt="intro" />
       </div>
     </div>
   );
@@ -79,7 +83,7 @@ const EarnToken = () => {
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-15 ">
+    <div className="flex md:flex-row flex-col-reverse my-15 gap-12">
       <div className="md:w-[50%] w-full">
         <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           <span className=" text-[rgba(59,78,244,1)]">{"Earn Tokens"}</span>
@@ -107,7 +111,7 @@ const EarnToken = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
-      <img src={intro} alt="intro" />
+      <img src={EarnTokenGif} alt="intro" />
       </div>
     </div>
   );
@@ -140,7 +144,7 @@ const Grow = () => {
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-14 ">
+    <div className="flex md:flex-row flex-col-reverse my-14 gap-12 ">
       <div className="md:w-[50%] w-full">
         <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           Grow With Us:&nbsp;
@@ -161,7 +165,7 @@ const Grow = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
-      <img src={intro} alt="intro" />
+      <img src={Refer} alt="intro" />
       </div>
     </div>
   );
@@ -194,7 +198,7 @@ const Boost = () => {
       );
   
     return (
-      <div className="flex md:flex-row flex-col-reverse my-14 ">
+      <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
         <div className="md:w-[50%] w-full">
           <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           Boost Your Rewards With Staking&nbsp;
@@ -214,7 +218,7 @@ const Boost = () => {
           </div>
         </div>
         <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
-        <img src={intro} alt="intro" />
+        <img src={Staking} alt="intro" />
         </div>
       </div>
     );
