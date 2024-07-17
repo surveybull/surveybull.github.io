@@ -98,7 +98,8 @@ const Tokonomics = () => {
       <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-[700]">
         Tokenomics
       </h1>
-      <div className="flex gap-8 lg:flex-row flex-col sm:mt-10 mt-6 rounded-[25px] sm:p-10 p-5  bg-[#FFFFFF0A] border-2 border-[#FFFFFF0A] " >
+      <div className="flex gap-8 lg:flex-row flex-col sm:mt-10 mt-6 rounded-[25px] sm:p-10 p-5  bg-[#FFFFFF0A] border-2 border-[#FFFFFF0A] 
+ " >
         <div className="flex items-center justify-center">
           <img src={tokonomics} className="md:min-w-[500px] md:min-h-[500px] min-w-[200px] min-h-[200px]" />
         </div>

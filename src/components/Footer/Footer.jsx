@@ -39,9 +39,9 @@ const Footer = () => {
 
     return (
         <footer class="text-black" >
-            <div className='bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[6px] flex flex-wrap justify-center md:justify-between items-center gap-y-4 gap-x-1'>
+            <div className='bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[6px] flex flex-wrap justify-center md:justify-between items-center gap-y-4 gap-x-1 shadow-[0px_4px_34px_0px_rgba(90,106,248,0.4)]'>
               <div className="text-[#FFFFFF] text-[24px] font-[700] text-center">Start Earning Rewards Or Get Insightful Data ?</div>
-              <button className="text-[#3B4EF4] text-[14px] font-[400] px-3 py-2 bg-[#FFFFFF] rounded-[6px] ">Get Started</button>
+              <button className="text-[#3B4EF4] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] ">Get Started</button>
             </div>
             <div style={{
             backgroundImage: `url(${FooterBg})`,
