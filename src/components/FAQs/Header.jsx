@@ -3,7 +3,7 @@ import SearchIcon from "../../assets/SearchIcon.svg";
 function Header({searchQuery,setSearchQuery}) {
   return (
     <div className="flex flex-col gap-y-7 justify-center items-center">
-      <div className="px-4 md:pt-28 pt-14 md:text-[56px] text-[28px] text-[#132337] font-[700] text-center">
+      <div className="px-4 md:pt-28 pt-14 md:text-[56px] text-[28px] text-[#132337] font-HelveticaNeueBold font text-center">
         Frequently asked <span className="text-[#3B4EF4]">questions</span>
       </div>
       <div className="bg-gradient-to-b from-[#FFFFFFB2] to-[#FFFFFF33] w-[80vw] max-w-[600px] shadow-[3px_9px_35px_0_rgb(19,35,55,0.06)] rounded-[7px] p-[2px]">
