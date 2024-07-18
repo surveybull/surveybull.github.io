@@ -19,7 +19,12 @@ function DropDownMenu({ option, visitedPage }) {
   const handleChildItemClick = () => {
     setIsDropdownOpen(false);
   };
-
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="flex items-center justify-center">
       <div
@@ -47,8 +52,8 @@ function DropDownMenu({ option, visitedPage }) {
           />
         </div>
 
-        {/* visitedPage === option.path.toLowerCase() && */}
-        {isDropdownOpen && (
+    
+        {visitedPage === option.path.toLowerCase() && isDropdownOpen && (
           <div className="absolute z-50 flex flex-col bg-[#FFFFFF]  text-[#132337] shadow-xl border-[1px] border-[#E7E9EB] rounded-[7px] w-max">
             {option.childItem.map((child, index) => (
               <a
@@ -56,7 +61,7 @@ function DropDownMenu({ option, visitedPage }) {
                 className="block font-semibold hover:bg-[#EDEFFF] "
                 onClick={handleChildItemClick} 
               >
-                <div  onMouseEnter={(e) => {
+                <div onClick={()=>{scrollToSection(child.id)}}  onMouseEnter={(e) => {
                      e.currentTarget.querySelectorAll('span')[0].style.color = '#3B4EF4';
                      e.currentTarget.querySelectorAll('span')[1].style.color = '#132337'; 
                   }}

@@ -30,10 +30,10 @@ const NavBar = () => {
       title: "Home",
       path: "/",
       childItem: [
-        { id: 0, title: "Why SurveyBull?", path: "/", subtitle: "reasons to choose surveybull" },
-        { id: 1, title: "Survey Building", path: "/", subtitle: "Crafting made easy" },
-        { id: 2, title: "Earn Token", path: "/", subtitle: "earn tokens with your data" },
-        { id: 3, title: "Distribution", path: "/", subtitle: "know your share" },
+        { id: "Why", title: "Why SurveyBull?", path: "/", subtitle: "reasons to choose surveybull" },
+        { id: "Survey", title: "Survey Building", path: "/", subtitle: "Crafting made easy" },
+        { id: "Earn", title: "Earn Token", path: "/", subtitle: "earn tokens with your data" },
+        { id: "Distribution", title: "Distribution", path: "/", subtitle: "know your share" },
       ],
     },
     {
@@ -70,7 +70,7 @@ const NavBar = () => {
         <DesktopNavbar NavbarData={NavbarData} visitedPage={visitedPage} />
       </div>
       <div className={`md:hidden block bg-[#FFFFFF40] fixed top-0 w-full backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)] transition-all duration-500 ${visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}>
-        <MobileNavbar NavbarData={NavbarData} />
+        <MobileNavbar NavbarData={NavbarData} visitedPage={visitedPage} />
       </div>
     </div>
   );

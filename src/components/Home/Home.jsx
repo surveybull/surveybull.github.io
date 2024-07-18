@@ -56,6 +56,7 @@ function Home() {
         </div>
       </div>
       <div
+      id="Why"
         className="hidden md:block"
         style={{
           backgroundImage: `url(${whyBg})`,
@@ -68,6 +69,7 @@ function Home() {
         </div>
       </div>
       <div
+      id="Why"
         className="block md:hidden"
         style={{
           backgroundImage: `url(${whyIntroBg})`,
@@ -91,6 +93,7 @@ function Home() {
         </div>
       </div>
       <div
+      id="Earn"
         className=""
         style={{
           backgroundImage: `url(${midSection})`,
@@ -103,6 +106,7 @@ function Home() {
         </div>
       </div>
       <div
+      id="Distribution"
         className=""
         style={{
           backgroundImage: `url(${WeightCalculationBg})`,
@@ -127,6 +131,7 @@ function Home() {
       </div>
      
       <div
+      id="Survey"
         style={{
           backgroundImage: `url(${SDKBg})`,
           backgroundSize: "cover",

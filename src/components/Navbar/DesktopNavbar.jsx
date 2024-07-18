@@ -14,8 +14,6 @@ function DesktopNavbar({NavbarData,visitedPage}) {
             <Link to={option.path} className={`${visitedPage == option.path.toLowerCase() ? "text-[#3B4EF4] font-[500]":"text-[#132337]"} font-[400] text-[18px]`}>{option.title}</Link>
             <div className={`${visitedPage == option.path.toLowerCase() ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]" : "bg-none h-[2.5px]"}`}></div>
          </div>)
-          
-           
         ))}
        </div>
        <div>
