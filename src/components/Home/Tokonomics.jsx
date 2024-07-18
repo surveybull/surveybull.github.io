@@ -74,11 +74,11 @@ const Card = ({ data }) => {
   ></div>
       <div className="h-full w-full flex flex-col justify-evenly px-4 py-3 gap-y-5 rounded-xl" >
         <div className="flex justify-between items-center">
-          <span className="text-[16px] font-[500]" style={{color:data.textColor}}>{data.title}</span>
+          <span className="text-[16px] font-HelveticaNeueMedium" style={{color:data.textColor}}>{data.title}</span>
           <span className="text-[14px] font-[400] text-[#B8BDC3] text-end">{data.text}% allocation</span>
         </div>
         <div className="flex justify-between items-center">
-          <span className="text-[14px] text-[#E7E9EB] font-[500]">{data.tokens} Tokens</span>
+          <span className="text-[14px] text-[#E7E9EB] font-HelveticaNeueMedium">{data.tokens} Tokens</span>
           <div className="text-[14px] font-[400] text-[#B8BDC3] text-end">
             {data.cliff && <span>{data.cliff} CLIFF</span>}
             {data.cliff && data.tge && <span>, </span>}
@@ -94,7 +94,7 @@ const Card = ({ data }) => {
 const Tokonomics = () => {
   return (
     <div className="sm:mt-[8rem] mt-[12rem] sm:mb-[8rem] mb-[4rem]" >
-      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-[700]">
+      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-HelveticaNeueBold">
         Tokenomics
       </h1>
       <div className="flex gap-8 lg:flex-row flex-col sm:mt-10 mt-6 rounded-[25px] sm:p-10 p-5  bg-[#FFFFFF0A] border-2 border-[#FFFFFF0A] 

@@ -28,10 +28,10 @@ const Surveyor = () => {
     return (
         <div className="flex flex-col items-center gap-20">
         <div className="flex items-center md:flex-row flex-col gap-[1.5rem] md:pt-[200px] pt-[261px]">
-            <div className="flex-1 text-[#FFFFFF] md:text-[36px] text-[24px] fomt-[700]">Revolutionize Surveying: Say Goodbye to <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
+            <div className="flex-1 text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold ">Revolutionize Surveying: Say Goodbye to <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
             </div>
             <hr className="bg-[#89919B] md:h-[100px] md:w-[1px] w-[50%] h-[1px]"></hr>
-            <div className="flex-1 text-[#89919B] md:text-[16px] text-[14px] font-[400]">At SurveyBull, we're dedicated to equipping surveyors with the tools they need to gather authentic data and drive informed decisions. With pioneering WorldID protocol, we're eradicating fake reviews and unreliable responses, ensuring that surveyors receive only unique, human-generated feedback that is verifiable on the blockchain.</div>
+            <div className="flex-1 text-[#89919B] md:text-[16px] text-[14px] font-[400]">Our mission is to provide surveyors with the essential tools to gather reliable, authentic data that informs sound decisions. Leveraging our pioneering WorldID protocol, we eliminate fake reviews and unreliable responses, delivering surveyors with verified, human-generated feedback that is transparently recorded on the blockchain.</div>
         </div>
         <div className="flex md:flex-row justify-between flex-col gap-x-5 gap-y-7 md:pb-[200px] pb-10">
             {cardData.map(card=>(

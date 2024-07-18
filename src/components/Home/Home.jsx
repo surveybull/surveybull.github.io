@@ -56,7 +56,7 @@ function Home() {
         </div>
       </div>
       <div
-      id="Why"
+      
         className="hidden md:block"
         style={{
           backgroundImage: `url(${whyBg})`,
@@ -64,12 +64,12 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
       </div>
       <div
-      id="Why"
+      
         className="block md:hidden"
         style={{
           backgroundImage: `url(${whyIntroBg})`,
@@ -77,7 +77,7 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
       </div>

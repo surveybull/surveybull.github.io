@@ -7,7 +7,7 @@ function Report() {
         <img src={Reportimg} alt="Report" />
       </div>
       <div className="md:w-[50%] w-full flex flex-col justify-center gap-y-7">
-        <span className="text-[24px] md:text-[36px] font-[700] text-[#132337]">
+        <span className="text-[24px] md:text-[36px] font-HelveticaNeueBold  text-[#132337]">
         <span className='text-[#3B4EF4]'>Uncover insights</span> that you can act on quickly
         </span>
         <span className="md:text-[16px] text-[#5A6573] font-[400] text-[12px]">

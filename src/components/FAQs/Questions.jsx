@@ -20,7 +20,7 @@ function Questions(
           value={index + 1}
           className="border-[1px] border-[#D0D3D7] rounded-[10px]"
         >
-          <AccordionTrigger className="group hover:no-underline data-[state=open]:bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] data-[state=open]:rounded-t-[9px] data-[state=open]:rounded-b-none rounded-[10px] data-[state=closed]:bg-[#FFFFFF] px-10 md:text-[16px] data-[state=open]:font-[700] font-[400] data-[state=open]:text-[#FFFFFF] text-[#132337] text-[14px]">
+          <AccordionTrigger className="group hover:no-underline data-[state=open]:bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] data-[state=open]:rounded-t-[9px] data-[state=open]:rounded-b-none rounded-[10px] data-[state=closed]:bg-[#FFFFFF] px-10 md:text-[16px] data-[state=open]:font-HelveticaNeueBold font-[400] data-[state=open]:text-[#FFFFFF] text-[#132337] text-[14px]">
             <div className="flex justify-between items-center w-full gap-x-2">
               <span className="text-start">{data.que}</span>
               <LuPlus

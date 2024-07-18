@@ -38,7 +38,7 @@ const Distribution = () => {
 
     return (
         <div className="flex flex-col items-start my-[10rem] gap-y-7">
-            <h1 className="md:text-[36px] text-[24px] font-[700] text-[#FFFFFF] ">Weighted <span className="text-[#978FFD]">Reward Calculation</span> Mechanism
+            <h1 className="md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] ">Weighted <span className="text-[#978FFD]">Revenue Sharing</span> Mechanism
             </h1>
             <div className="text-[14px] font-[400] text-[#89919B] md:text-[16px]">
                 SurveyBull employs a sophisticated reward distribution mechanism, meticulously designed to ensure fairness and to uphold our commitment to rewarding participation while nurturing community growth. Our weighted approach to distributing rewards benefits both participants and stakeholders alike. Here's a breakdown of how it operates:
@@ -51,7 +51,7 @@ const Distribution = () => {
                      <div className="flex flex-col justify-center gap-y-3">
                         <div className="flex gap-2 items-center">
                             <img src={data.imgSrc} alt="rewardData" />
-                            <span className="text-[#FFFFFF] md:text-[18px] text-[14px] font-[500]">{data.title}</span>
+                            <span className="text-[#FFFFFF] md:text-[18px] text-[14px] font-HelveticaNeueMedium">{data.title}</span>
                         </div>
                         <div className="md:text-[16px] text-[12px] font-[400] text-[#89919B]">{data.description}</div>
                      </div>

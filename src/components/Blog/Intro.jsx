@@ -7,7 +7,7 @@ function Intro() {
         <img src={FormIntro} alt="FormIntro" />
       </div>
       <div className="md:w-[50%] w-full flex flex-col justify-center gap-y-7">
-        <span className="text-[24px] md:text-[36px] font-[700] text-[#132337]">
+        <span className="text-[24px] md:text-[36px] font-HelveticaNeueBold text-[#132337]">
           <span className="text-[#3B4EF4]">Easily</span> create{" "}
           <span className="text-[#3B4EF4]">surveys</span> and forms fast
         </span>

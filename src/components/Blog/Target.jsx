@@ -27,7 +27,7 @@ function Target() {
     <div className="flex flex-col gap-y-[9rem] my-[11rem]">
       <div className="flex w-full lg:flex-row flex-col gap-12">
         <div className="lg:w-[50%] w-full flex flex-col gap-y-7 justify-center">
-          <span className="md:text-[36px] font-[700] text-[24px] text-[#FFFFFF]">
+          <span className="md:text-[36px] font-HelveticaNeueBold text-[24px] text-[#FFFFFF]">
             <span className="text-[#978FFD]">Target</span> who you want, when
             you want
           </span>
@@ -61,7 +61,7 @@ function Target() {
               </div>
             ))}
           </div>
-          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-[500] md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
+          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
             Choose your audience
           </button>
         </div>
@@ -74,7 +74,7 @@ function Target() {
           <img src={TargetImg} alt="TargetImg" />
         </div>
         <div className="lg:w-[50%] w-full flex flex-col gap-y-7 justify-center">
-          <span className=" md:text-[36px] text-[24px] font-[700] text-[#FFFFFF]">
+          <span className=" md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF]">
             Get better insights, <span className="text-[#978FFD]">faster</span>
           </span>
           <span className="md:text-[16px] text-[14px] font-[400] text-[#E7E9EB]">
@@ -83,7 +83,7 @@ function Target() {
             or insights professional. Get actionable insights in as little as an
             hour.
           </span>
-          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-[500] md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
+          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
             Get insights fast
           </button>
         </div>

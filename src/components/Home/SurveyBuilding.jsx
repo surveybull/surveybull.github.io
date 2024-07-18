@@ -59,7 +59,7 @@ const SurveyBuilding = () => {
         <div className=" my-[4rem] xl:mb-[4rem]">
             <h1 data-aos={"fade-up"} className="flex justify-center text-2xl md:text-4xl text-center   tracking-wide  ">Effortless Survey Building with SurveyBull</h1>
             <div className="flex justify-center">
-                <div  data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] flex justify-center font-medium tracking-wide text-[#263238] px-4">SurveyBull simplifies the process of creating surveys, empowering users with intuitive tools and robust features. Whether you're a seasoned researcher or a novice user, our platform offers a seamless experience from start to finish. Here's how we make survey building effortless</div>
+                <div  data-aos={"fade-up"} className="mt-10 text-center max-w-[1000px] flex justify-center font-medium tracking-wide text-[#263238] px-4">SurveyBull's intuitive tools and robust features simplify the survey creation process, empowering users of all experience levels. Our platform delivers a seamless, effortless experience from start to finish, whether you're a seasoned researcher or new to survey building</div>
             </div>
             <div className="lg:grid lg:grid-cols-2  xl:grid xl:grid-cols-3 xl:gap-y-12 xl:justify-items-stretch xl:justify-between my-12 px-4">
                 {

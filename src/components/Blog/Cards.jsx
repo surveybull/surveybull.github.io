@@ -86,7 +86,7 @@ const Cards = () => {
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-[500] font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
+          <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
             {title}{" "}
           </div>
           <div className="mt-8 font-HelveticaNeueLight md:text-[14px] text-[12px] text-[#5A6573]  ">
@@ -99,7 +99,7 @@ const Cards = () => {
 
   return (
     <div className="flex flex-col gap-y-6">
-      <div className=" md:text-[36px] text-[24px] flex justify-center font-[700] font-HelveticaNeueBold leading-9 text-[#132337]">
+      <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold font-HelveticaNeueBold leading-9 text-[#132337]">
       Get started with<span className="text-[#3B4EF4]">&nbsp;best practices</span>
       </div>
 

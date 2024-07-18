@@ -22,11 +22,8 @@ const SurveyBuilding = () => {
           &nbsp;{"Building With SurveyBull"}
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
-          SurveyBull simplifies the process of creating surveys, empowering
-          users with intuitive tools and robust features. Whether you're a
-          seasoned researcher or a novice user, our platform offers a seamless
-          experience from start to finish. Here's how we make survey building
-          effortless
+        SurveyBull's intuitive tools and robust features simplify the survey creation process, empowering users of all experience levels. Our platform delivers a seamless, effortless experience from start to finish, whether you're a seasoned researcher or new to survey building.
+
         </div>
         <div className=" my-12 grid grid-cols-2">
           <div className="">
@@ -57,17 +54,17 @@ const EarnToken = () => {
     {
       title: "Participation Rewards",
       description:
-        "Participate in surveys on SurveyBull to earn tokens for your time and effort. Our smart contracts guarantee transparency and fairness in reward distribution, ensuring you're compensated fairly for your contributions. Trust us for a rewarding survey experience.",
+        "Earn tokens by participating in surveys on our platform. Our smart contracts ensure transparent and fair reward distribution, guaranteeing you fair compensation for your contributions. Trust us to provide a rewarding survey experience.",
     },
     {
       title: "Transparent Process",
       description:
-        "Our reward system, built on smart contracts, securely holds tokens until distribution to participants. Surveys close and rewards are calculated automatically, following predefined criteria like response quality and completeness. This ensures a transparent and efficient distribution process.",
+        "Our smart contract-based reward system securely holds tokens until they are distributed to participants. Once surveys close, the system automatically calculates rewards based on predefined criteria such as response quality and completeness, ensuring a transparent and efficient distribution process.",
     },
     {
       title: "Claiming Your Rewards",
       description:
-        "After a survey closes, participants are alerted on the SurveyBull platform about available rewards. Claiming rewards is easy: interact with the smart contract via our user-friendly interface to begin. Trust that our transparent and deterministic distribution logic ensures you receive your fair share of tokens based on your contributions.",
+        "Once a survey closes, participants on the SurveyBull platform are notified of the available rewards. Claiming these rewards is straightforward - simply interact with the smart contract through our intuitive user interface to get started. You can trust that our transparent and deterministic distribution process will ensure you receive the appropriate token allocation based on your contributions.",
     },
   ];
 
@@ -92,11 +89,7 @@ const EarnToken = () => {
           &nbsp;{"Your Thoughts"}
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
-          At SurveyBull, we value your opinions and insights. That's why we've
-          created an opportunity for you to earn tokens simply by sharing your
-          thoughts through surveys. Our platform offers a seamless experience
-          where your contributions are not only appreciated but also rewarded.
-          Here's how it works
+        At SurveyBull, we deeply value your opinions and insights. We've created a unique opportunity for you to earn rewards by sharing your thoughts through surveys. Our platform provides a seamless experience where your contributions are not only appreciated, but also generously rewarded.
         </div>
         <div className=" my-12 mr-10 ">
           <div className="">
