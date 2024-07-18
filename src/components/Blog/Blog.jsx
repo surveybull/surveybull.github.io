@@ -9,6 +9,7 @@ import Cards from "./Cards";
 import Target from "./Target";
 import TragetBg from "../../assets/background/TargetBg.jpg";
 import BlogMobileBg from "../../assets/background/BlogMobileBg.jpg";
+import SurveyorBg from "../../assets/background/Surveyor4.svg"
 function Blog() {
   return (
     <>
@@ -59,13 +60,15 @@ function Blog() {
         </div>
       </div>
       <div
-        style={{
-          backgroundImage: `url(${TragetBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+         className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] "
+         style={{
+   
+           backgroundImage: `url(${SurveyorBg})`,
+           backgroundSize:"cover",
+           backgroundRepeat: "no-repeat",
+         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 mx-auto mt-[40px]">
           <Target />
         </div>
       </div>

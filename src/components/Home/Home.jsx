@@ -16,7 +16,7 @@ import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
 import IntroBg from "../../assets/background/IntroBg.jpg";
-import SurveyorBg from "../../assets/background/SurveyorBg.jpg"
+import SurveyorBg from "../../assets/background/Surveyor.svg"
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
@@ -41,6 +41,7 @@ function Home() {
         <div className="xl:max-w-[1300px] p-7 mx-auto">
          
           <Intro />
+
         </div>
       </div>
       <div
@@ -82,13 +83,15 @@ function Home() {
         </div>
       </div>
       <div
+      className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit "
         style={{
+  
           backgroundImage: `url(${SurveyorBg})`,
-          backgroundSize: "cover",
+          backgroundSize:"cover",
           backgroundRepeat: "no-repeat",
         }}
         >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 mx-auto mt-[40px]">
         <Surveyor />
         </div>
       </div>
@@ -107,12 +110,13 @@ function Home() {
       </div>
       <div
       id="Distribution"
-        className=""
-        style={{
-          backgroundImage: `url(${WeightCalculationBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+      className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] "
+      style={{
+
+        backgroundImage: `url(${SurveyorBg})`,
+        backgroundSize:"cover",
+        backgroundRepeat: "no-repeat",
+      }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
         <Distribution />
@@ -156,12 +160,13 @@ function Home() {
         </div>
         </div>
       <div
-        style={{
-          backgroundImage: `url(${TokenomicsBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          
-        }}
+         className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] "
+         style={{
+   
+           backgroundImage: `url(${SurveyorBg})`,
+           backgroundSize:"cover",
+           backgroundRepeat: "no-repeat",
+         }}
         >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
         <Tokonomics />

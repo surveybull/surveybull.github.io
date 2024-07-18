@@ -12,7 +12,7 @@ function Header({searchQuery,setSearchQuery}) {
             value={searchQuery}
             type="text"
             placeholder="Find any question you have..."
-            className="outline-none ring-0 border-none bg-transparent w-full"
+            className="outline-none ring-0 border-none bg-transparent w-full placeholder-[#5A6573]"
             onChange={(event)=>{
              setSearchQuery(event.target.value)
             }}

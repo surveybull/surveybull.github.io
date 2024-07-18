@@ -37,7 +37,7 @@ const rewardData = [
 const Distribution = () => {
 
     return (
-        <div className="flex flex-col items-start my-[10rem] gap-y-7">
+        <div className="flex flex-col items-start gap-y-7 skew-y-6 xl:skew-y-3 py-16">
             <h1 className="md:text-[36px] text-[24px] font-[700] text-[#FFFFFF] ">Weighted <span className="text-[#978FFD]">Reward Calculation</span> Mechanism
             </h1>
             <div className="text-[14px] font-[400] text-[#89919B] md:text-[16px]">

@@ -24,7 +24,7 @@ function Target() {
     },
   ];
   return (
-    <div className="flex flex-col gap-y-[9rem] my-[11rem]">
+    <div className="flex flex-col gap-y-[9rem] skew-y-6 xl:skew-y-3 py-16">
       <div className="flex w-full lg:flex-row flex-col gap-12">
         <div className="lg:w-[50%] w-full flex flex-col gap-y-7 justify-center">
           <span className="md:text-[36px] font-[700] text-[24px] text-[#FFFFFF]">
