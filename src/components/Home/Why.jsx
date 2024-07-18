@@ -1,17 +1,17 @@
-import Frame from "../../assets/Frame.svg?react";
-import Cwr from "../../assets/cwr.svg?react";
-import Fc from "../../assets/fc.svg?react";
-import Ia from "../../assets/ia.svg?react";
-import Ic from "../../assets/ic.svg?react";
-import Si from "../../assets/si.svg?react";
-import Tgs from "../../assets/tgs.svg?react";
-import Vhc from "../../assets/vhc.svg?react";
+import BlockchainTransparency from "../../assets/BlockchainTransparency.svg?react";
+import CompliancewithRegulations from "../../assets/CompliancewithRegulations.svg?react";
+import FairCompensation from "../../assets/FairCompensation.svg?react";
+import InclusiveApproach from "../../assets/InclusiveApproach.svg?react";
+import IndustryCollaboration from "../../assets/IndustryCollaboration.svg?react";
+import SeamlessIntegration from "../../assets/SeamlessIntegration.svg?react";
+import TokenGatedSurveys from "../../assets/TokenGatedSurveys.svg?react";
+import VerifiedHumanContributors from "../../assets/VerifiedHumanContributors.svg?react";
 
 const Why = () => {
   const columnItem = [
     {
       img: (
-        <Frame className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <BlockchainTransparency className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Blockchain Transparency",
       description:
@@ -19,7 +19,7 @@ const Why = () => {
     },
     {
       img: (
-        <Vhc className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <VerifiedHumanContributors className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Verified Human Contributors ",
       description:
@@ -28,7 +28,7 @@ const Why = () => {
     {
       title: "Fair Compensation",
       img: (
-        <Fc className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <FairCompensation className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
 
       description:
@@ -36,7 +36,7 @@ const Why = () => {
     },
     {
       img: (
-        <Tgs className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Token Gated Surveys",
       description:
@@ -44,7 +44,7 @@ const Why = () => {
     },
     {
       img: (
-        <Ia className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <InclusiveApproach className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Inclusive Approach",
       description:
@@ -52,7 +52,7 @@ const Why = () => {
     },
     {
       img: (
-        <Ic className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <IndustryCollaboration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Industry Collaboration",
       description:
@@ -60,7 +60,7 @@ const Why = () => {
     },
     {
       img: (
-        <Cwr className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Compliance with Regulations",
       description:
@@ -68,7 +68,7 @@ const Why = () => {
     },
     {
       img: (
-        <Si className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <SeamlessIntegration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Seamless Integration",
       description:
