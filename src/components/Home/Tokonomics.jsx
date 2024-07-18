@@ -1,5 +1,4 @@
 import tokonomics from "../../assets/tokonomicsChart.svg";
-import tokonomicsBg from "../../assets/background/tokonomicsBg.jpg"
 const cardData = [
   {
     title: "Marketing",

@@ -22,8 +22,8 @@ import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
 import midSection from "../../assets/background/midSection.jpg";
 import SDKBg from "./../../assets/background/SDKBg.jpg";
 import DecentralizedBg from "../../assets/background/decentralizedBg.jpg";
-
-
+import IntroMobileBg from "../../assets/background/IntroMobileBg.jpg"
+import TokenomicsBg from "../../assets/background/TokenomicsBg.jpg"
 import MidSection from "./MidSection";
 import WeightCalculationBg from "../../assets/background/WeightCalculationBg.png"
 import UsecaseBg from "../../assets/background/UsecaseBg.jpg"
@@ -31,8 +31,22 @@ function Home() {
   return (
     <>
       <div
+      className="hidden md:block"
         style={{
           backgroundImage: `url(${IntroBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <NavBar visitedPage={"Home"} />
+          <Intro />
+        </div>
+      </div>
+      <div
+      className="block md:hidden"
+        style={{
+          backgroundImage: `url(${IntroMobileBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -64,6 +78,17 @@ function Home() {
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${SurveyorBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <Surveyor />
         </div>
       </div>
       <div
@@ -101,17 +126,7 @@ function Home() {
           <DecentralizedAction/>
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${SurveyorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-        >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-        <Surveyor />
-        </div>
-      </div>
+     
       <div
         style={{
           backgroundImage: `url(${SDKBg})`,
@@ -138,7 +153,7 @@ function Home() {
         </div>
       <div
         style={{
-          backgroundImage: `url(${SurveyorBg})`,
+          backgroundImage: `url(${TokenomicsBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           

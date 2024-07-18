@@ -4,6 +4,7 @@ import FAQsBg from "../../assets/background/FAQsBg.jpg"
 import Header from './Header'
 import Questions from './Questions'
 import QuestionsBg from "../../assets/background/QuestionsBg.jpg"
+import FAQsMobileBg from "../../assets/background/FAQsMobileBg.jpg"
 function FAQs() {
   const faqs = [
     {
@@ -67,8 +68,22 @@ function FAQs() {
   return (
     <>
     <div
+    className='hidden md:block'
         style={{
           backgroundImage: `url(${FAQsBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <NavBar visitedPage={"FAQs"} />
+          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+        </div>
+      </div>
+      <div
+      className='block md:hidden'
+        style={{
+          backgroundImage: `url(${FAQsMobileBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
