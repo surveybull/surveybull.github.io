@@ -126,7 +126,7 @@ const DecentralizedAction = () => {
 
   return (
     <div className=" my-[4rem]">
-      <div className=" text-4xl font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl   text-center mx-24">
+      <div className=" text-2xl  font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl   text-center md:mx-24">
         {"Decentralized Actions: Elevating "}
         <span className=" text-[rgba(59,78,244,1)]">
           {" Survey Engagement "}

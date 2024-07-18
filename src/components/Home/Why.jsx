@@ -98,7 +98,7 @@ const Why = () => {
 
   return (
     <div className=" my-[4rem] xl:my-[4rem]">
-      <h1 className=" text-[36px] xl:text-4xl flex justify-center font-medium font-HelveticaNeueBold leading-9 tracking-wider text-[#484848]">
+      <h1 className=" text-3xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold leading-9 tracking-wider text-[#484848]">
         {"Why"}&nbsp;
         <span className=" text-[rgba(59,78,244,1)]">SurveyBull</span>&nbsp;?
       </h1>
