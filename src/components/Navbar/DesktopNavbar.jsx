@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom'
 import DropDownMenu from './DropDownMenu';
 function DesktopNavbar({NavbarData,visitedPage}) {
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between xl:max-w-[1300px] mx-auto w-full px-7 py-4'>
        <div>
         <img src={SurveybullLogo} width={170} height={170}></img>
        </div>
        <div className='flex items-center gap-x-8'>
         {NavbarData.map((option)=>(
            option.childItem.length > 0 ? (<DropDownMenu option={option} visitedPage={visitedPage}/>):(<div className='flex flex-col justify-center items-center gap-y-1'>
-            <Link to={option.path} className={`${visitedPage == option.title ? "text-[#3B4EF4] font-[500]":"text-[#132337]"} font-[400] text-[18px]`}>{option.title}</Link>
-            <div className={`${visitedPage == option.title ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]" : "bg-none h-[2.5px]"}`}></div>
+            <Link to={option.path} className={`${visitedPage == option.path.toLowerCase() ? "text-[#3B4EF4] font-[500]":"text-[#132337]"} font-[400] text-[18px]`}>{option.title}</Link>
+            <div className={`${visitedPage == option.path.toLowerCase() ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]" : "bg-none h-[2.5px]"}`}></div>
          </div>)
           
            

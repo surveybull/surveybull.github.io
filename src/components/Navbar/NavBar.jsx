@@ -1,7 +1,29 @@
+import React, { useState, useEffect } from "react";
 import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
+import { useLocation } from "react-router-dom";
 
-const NavBar = ({ visitedPage }) => {
+const NavBar = () => {
+  const {pathname} = useLocation();
+  const visitedPage = pathname.toLowerCase();
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const scrollingUp = prevScrollPos > currentScrollPos;
+      const isTop = currentScrollPos < 0; // Adjust as needed
+
+      setVisible(isTop || scrollingUp);
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const NavbarData = [
     {
       id: 0,
@@ -18,12 +40,7 @@ const NavBar = ({ visitedPage }) => {
       id: 1,
       title: "Roadmap",
       path: "/roadmap",
-      childItem: [
-        { id: 0, title: "Why SurveyBull?", path: "/", subtitle: "reasons to choose surveybull" },
-        { id: 1, title: "Survey Building", path: "/", subtitle: "Crafting made easy" },
-        { id: 2, title: "Earn Token", path: "/", subtitle: "earn tokens with your data" },
-        { id: 3, title: "Distribution", path: "/", subtitle: "know your share" },
-      ],
+      childItem: [],
     },
     {
       id: 2,
@@ -44,13 +61,15 @@ const NavBar = ({ visitedPage }) => {
       childItem: [],
     },
   ];
- 
+  
   return (
-    <div className="mx-auto w-full">
-      <div className="md:block hidden">
+    <div className="w-full mx-auto">
+      <div className={`transition-all duration-500 ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      } md:block hidden  bg-[#FFFFFF40] fixed top-0 w-full backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]`}>
         <DesktopNavbar NavbarData={NavbarData} visitedPage={visitedPage} />
       </div>
-      <div className="md:hidden block">
+      <div className={`md:hidden block bg-[#FFFFFF40] fixed top-0 w-full backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)] transition-all duration-500 ${visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}>
         <MobileNavbar NavbarData={NavbarData} />
       </div>
     </div>

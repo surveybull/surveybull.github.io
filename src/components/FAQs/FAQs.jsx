@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import NavBar from '../Navbar/NavBar'
-import FAQsBg from "../../assets/background/FAQsBg.jpg"
-import Header from './Header'
-import Questions from './Questions'
-import QuestionsBg from "../../assets/background/QuestionsBg.jpg"
-import FAQsMobileBg from "../../assets/background/FAQsMobileBg.jpg"
+import React, { useState } from "react";
+import NavBar from "../Navbar/NavBar";
+import FAQsBg from "../../assets/background/FAQsBg.jpg";
+import Header from "./Header";
+import Questions from "./Questions";
+import QuestionsBg from "../../assets/background/QuestionsBg.jpg";
+import FAQsMobileBg from "../../assets/background/FAQsMobileBg.jpg";
 function FAQs() {
   const faqs = [
     {
@@ -60,15 +60,18 @@ function FAQs() {
       ans: "SurveyBull charges surveyors based on the number of responses they seek and the filters they apply. If a survey is closed before reaching the response limit, SurveyBull allows surveyors to redeem the excess fees. This means surveyors only pay for the responses they receive and can get back the excess amount.",
     },
   ];
-  const [searchQuery,setSearchQuery] = useState("");
-  const filterData = searchQuery === ""
-  ? faqs 
-  : faqs.filter(data => data.que.toLowerCase().includes(searchQuery.toLowerCase()));
-  console.log(filterData,"-");
+  const [searchQuery, setSearchQuery] = useState("");
+  const filterData =
+    searchQuery === ""
+      ? faqs
+      : faqs.filter((data) =>
+          data.que.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+  console.log(filterData, "-");
   return (
     <>
-    <div
-    className='hidden md:block'
+      <div
+        className="hidden md:block"
         style={{
           backgroundImage: `url(${FAQsBg})`,
           backgroundSize: "cover",
@@ -76,12 +79,11 @@ function FAQs() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"FAQs"} />
-          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </div>
       <div
-      className='block md:hidden'
+        className="block md:hidden"
         style={{
           backgroundImage: `url(${FAQsMobileBg})`,
           backgroundSize: "cover",
@@ -89,8 +91,7 @@ function FAQs() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"FAQs"} />
-          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </div>
       <div
@@ -101,11 +102,11 @@ function FAQs() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <Questions faqs={filterData}/>
+          <Questions faqs={filterData} />
         </div>
       </div>
-      </>
-  )
+    </>
+  );
 }
 
-export default FAQs
+export default FAQs;

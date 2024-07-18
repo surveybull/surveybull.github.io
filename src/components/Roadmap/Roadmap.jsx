@@ -3,7 +3,6 @@ import NavBar from '../Navbar/NavBar'
 function Roadmap() {
   return (
     <div>
-      <NavBar visitedPage={"Roadmap"}/>
       Roadmap</div>
   )
 }

@@ -15,7 +15,7 @@ import telegramLogo from '../../assets/telegramLogo.svg'
 function MobileNavbar({ NavbarData }) {
   const [id, setId] = useState([]);
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between mx-auto w-full px-7 py-4 ">
       <div>
         <img src={SurveybullLogo} width={150} height={150}></img>
       </div>

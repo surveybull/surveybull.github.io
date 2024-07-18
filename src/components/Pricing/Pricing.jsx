@@ -16,13 +16,13 @@ import PricingKey from "./PricingKey";
 import PricePayment from "./PricePayment";
 import GettingStarted from "./GettingStarted";
 import LearnMore from "./LearnMore";
-import PricingMobileBg from "../../assets/background/PricingMobileBg.jpg"
+import PricingMobileBg from "../../assets/background/PricingMobileBg.jpg";
 
 function Pricing() {
   return (
     <>
       <div
-      className="hidden md:block"
+        className="hidden md:block"
         style={{
           backgroundImage: `url(${PricingIntroBg})`,
           backgroundSize: "cover",
@@ -31,12 +31,11 @@ function Pricing() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Pricing"} />
           <PricingIntro />
         </div>
       </div>
       <div
-      className="block md:hidden"
+        className="block md:hidden"
         style={{
           backgroundImage: `url(${PricingMobileBg})`,
           backgroundSize: "cover",
@@ -45,7 +44,6 @@ function Pricing() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Pricing"} />
           <PricingIntro />
         </div>
       </div>

@@ -1,19 +1,19 @@
-import NavBar from '../Navbar/NavBar'
-import React from 'react'
-import BlogBg from "../../assets/background/BlogBg.jpg"
-import Header from './Header'
-import SurveyForm from './SurveyForm'
-import SurveyFormBg from "../../assets/background/SurveyFormBg.jpg"
-import BlogCardsBg from "../../assets/background/BlogCardsBg.jpg"
-import Cards from './Cards'
-import Target from './Target'
-import TragetBg from "../../assets/background/TargetBg.jpg"
-import BlogMobileBg from "../../assets/background/BlogMobileBg.jpg"
+import NavBar from "../Navbar/NavBar";
+import React from "react";
+import BlogBg from "../../assets/background/BlogBg.jpg";
+import Header from "./Header";
+import SurveyForm from "./SurveyForm";
+import SurveyFormBg from "../../assets/background/SurveyFormBg.jpg";
+import BlogCardsBg from "../../assets/background/BlogCardsBg.jpg";
+import Cards from "./Cards";
+import Target from "./Target";
+import TragetBg from "../../assets/background/TargetBg.jpg";
+import BlogMobileBg from "../../assets/background/BlogMobileBg.jpg";
 function Blog() {
   return (
     <>
       <div
-      className='hidden md:block'
+        className="hidden md:block"
         style={{
           backgroundImage: `url(${BlogBg})`,
           backgroundSize: "cover",
@@ -21,12 +21,11 @@ function Blog() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Blog"} />
-           <Header/>
+          <Header />
         </div>
       </div>
       <div
-      className='block md:hidden'
+        className="block md:hidden"
         style={{
           backgroundImage: `url(${BlogMobileBg})`,
           backgroundSize: "cover",
@@ -34,8 +33,7 @@ function Blog() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Blog"} />
-           <Header/>
+          <Header />
         </div>
       </div>
       <div
@@ -46,7 +44,7 @@ function Blog() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-           <SurveyForm/>
+          <SurveyForm />
         </div>
       </div>
       <div
@@ -57,7 +55,7 @@ function Blog() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-           <Cards/>
+          <Cards />
         </div>
       </div>
       <div
@@ -68,12 +66,11 @@ function Blog() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-           <Target/>
+          <Target />
         </div>
       </div>
     </>
-   
-  )
+  );
 }
 
-export default Blog
+export default Blog;

@@ -6,12 +6,14 @@ import Roadmap from './components/Roadmap/Roadmap'
 import Pricing from './components/Pricing/Pricing'
 import Blog from './components/Blog/Blog'
 import FAQs from './components/FAQs/FAQs'
+import NavBar from './components/Navbar/NavBar'
 // import './App.css';
 function App() {
 
   return (
     
     <Router>
+      <NavBar/>
       <div className=''>
            <Routes>
            <Route path='/' Component={Home}></Route>

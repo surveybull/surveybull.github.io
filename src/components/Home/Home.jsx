@@ -39,7 +39,7 @@ function Home() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Home"} />
+         
           <Intro />
         </div>
       </div>
@@ -52,7 +52,6 @@ function Home() {
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <NavBar visitedPage={"Home"} />
           <Intro />
         </div>
       </div>
