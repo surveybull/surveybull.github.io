@@ -84,7 +84,7 @@ const Cards = () => {
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
+          <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
             {title}{" "}
           </div>
           <div className="mt-8 font-HelveticaNeueLight md:text-[14px] text-[12px] text-[#5A6573]  ">
