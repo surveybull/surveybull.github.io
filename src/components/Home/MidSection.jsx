@@ -194,7 +194,7 @@ const Boost = () => {
       <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
         <div className="md:w-[50%] w-full">
           <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
-          Boost Your Rewards With Staking&nbsp;
+          Boost Your Rewards With&nbsp;
             <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
           </div>
           <div className=" text-base  text-[rgba(90,101,115,1)] mt-12 mr-20 ">
