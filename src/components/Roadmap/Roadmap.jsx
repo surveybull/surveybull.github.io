@@ -21,13 +21,13 @@ function Roadmap() {
           backgroundImage: `url(${RoadmapBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
+          paddingBottom: "200px",
         }}
       >
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <div className="py-4 mt-[2rem] md:mt-[3rem]">
             <div className="text-center font-HelveticaNeueBold text-[28px] md:text-[56px]">
-              RoadMap
+              Roadmap
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ const PriceWork = () => {
       <div className="flex justify-center">
         <div className="m-6 w-[760px] rounded-xl px-8 py-8 border-white shadow-[3px_9px_35px_0px_rgb(19,35,55,0.06)] ">
           <div>
-            <div className="text-2xl font-[500] font-HelveticaNeueMedium my-3 ">
+            <div className="text-2xl font-HelveticaNeueMedium my-3 ">
               Cost per Response
             </div>
             <div className="text-sm font-[400] text-[#5A6573] my-4">

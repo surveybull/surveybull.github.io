@@ -34,7 +34,7 @@ const PricingKey = () => {
                   />
                 </div>
                 <div className="pl-3 md:pl-0">
-                  <div className="text-base md:text-base font-[500] font-HelveticaNeueMedium">
+                  <div className="text-base md:text-base  font-HelveticaNeueMedium">
                     Transparent Pricing
                   </div>
                   <div className="text-xs md:text-sm  text-[#5A6573] py-[8px]">
@@ -55,7 +55,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base font-[500] font-HelveticaNeueMedium">
+                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
                       Currency Conversion
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -77,7 +77,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base font-[500] font-HelveticaNeueMedium">
+                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
                       Blockchain Security
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -98,7 +98,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base font-[500] font-HelveticaNeueMedium">
+                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
                       Flexible Customization
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -119,7 +119,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base font-[500] font-HelveticaNeueMedium">
+                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
                       API Integration
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">

@@ -10,7 +10,7 @@ const PriceCalculation = () => {
         <div className="max-w-[700px] w-full">
           <div className="max-w-[700px] w-full ">
             <div className="m-5  rounded-xl px-6 py-4 border-white shadow-[3px_9px_35px_0px_rgb(19,35,55,0.06)] ">
-              <div className="text-2xl font-[500] font-HelveticaNeueMedium my-3 ">
+              <div className="text-2xl font-HelveticaNeueMedium my-3 ">
                 Let's create a hypothetical survey:
               </div>
 
@@ -44,7 +44,7 @@ const PriceCalculation = () => {
 
           <div className="max-w-[700px] w-full ">
             <div className="m-5   rounded-xl px-6 py-4 border-white shadow-[3px_9px_35px_0px_rgb(19,35,55,0.06)] ">
-              <div className="text-2xl font-[500] font-HelveticaNeueMedium my-3 ">
+              <div className="text-2xl font-HelveticaNeueMedium my-3 ">
                 Calculation:
               </div>
 

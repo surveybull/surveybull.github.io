@@ -70,7 +70,7 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
       </div>
@@ -83,7 +83,7 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
       </div>

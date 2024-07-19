@@ -9,16 +9,16 @@ const data = [
     title: "On Chain Pre Verification Hooks",
     sections: [
       {
-        text: "Develop smart contracts for user eligibility verification before survey ",
+        text: "Craft smart contracts to verify user eligibility before survey participation",
       },
       {
-        text: "Define eligibility criteria like token ownership or participation history. ",
+        text: "Define criteria such as token ownership or participation history ",
       },
       {
-        text: "Implement validation functions within contracts to assess user credentials.",
+        text: "Implement validation functions within contracts to evaluate user credentials",
       },
       {
-        text: "Proceed with survey submission if criteria met, reject otherwise ",
+        text: "Facilitate seamless survey submissions upon meeting criteria, ensuring efficiency and accuracy",
       },
     ],
     reverse: false,
@@ -29,16 +29,16 @@ const data = [
     title: "On Chain Post Action Hooks",
     sections: [
       {
-        text: "Set triggers for post-submission actions, like token distribution or airdrops, based on conditions. ",
+        text: "Establish triggers for post-submission actions, such as token distribution or airdrops, governed by specified conditions. ",
       },
       {
-        text: "Define triggering conditions such as response thresholds or specific outcomes.",
+        text: "Define conditions like response thresholds or specific outcomes to activate triggers.",
       },
       {
-        text: "Monitor submission progress and verify conditions for action triggers.",
+        text: "Monitor submission progress and verify conditions for trigger activation.",
       },
       {
-        text: "Execute predefined actions, like distributing tokens, using smart contracts upon meeting conditions.",
+        text: "Utilize smart contracts to automatically execute defined actions, such as distributing tokens, upon meeting the specified conditions",
       },
     ],
     reverse: true,
@@ -135,18 +135,18 @@ const DecentralizedAction = () => {
       </div>
       <div className="flex justify-center">
         <div className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-[400] tracking-wide text-[#5A6573]">
-          At SurveyBull, we value your opinions and insights. That's why we've
-          created an opportunity for you to earn tokens simply by sharing your
-          thoughts through surveys. Our platform offers a seamless experience
-          where your contributions are not only appreciated but also rewarded.
-          Here's how it works
+          At SurveyBull, we deeply value your opinions and insights. We've
+          created a unique opportunity for you to earn rewards by sharing your
+          thoughts through surveys. Our platform provides a seamless experience
+          where your contributions are not only appreciated, but also generously
+          rewarded.
         </div>
       </div>
       <div className="hidden xl:block">
         {data.map((element) => {
           return (
             <div>
-              <div className="text-center text-[28px] mt-14 font-[500] ">
+              <div className="text-center text-[28px] mt-14 font-HelveticaNeueMedium ">
                 {element.title}
               </div>
               <ContentComponent

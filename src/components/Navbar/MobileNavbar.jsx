@@ -13,6 +13,7 @@ import twitterLogo from "../../assets/twitterLogo.svg";
 import mailLogo from "../../assets/mailLogo.svg";
 import telegramLogo from "../../assets/telegramLogo.svg";
 import { Link } from "react-router-dom";
+
 function MobileNavbar({ NavbarData, visitedPage }) {
   const [id, setId] = useState([]);
   const scrollToSection = (sectionId) => {
@@ -92,7 +93,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                                 : "border-b-2 border-[#E7E9EB]"
                             } flex flex-col gap-y-1 py-3 px-2 w-full hover:bg-[#EDEFFF] group`}
                           >
-                            <span className="text-start group-hover:text-[#3B4EF4] text-[#132337] font-[500] text-[14px]">
+                            <span className="text-start group-hover:text-[#3B4EF4] text-[#132337] font-HelveticaNeueMedium text-[14px]">
                               {child.title}
                             </span>{" "}
                             <span className="text-start group-hover:text-[#132337] text-[#89919B] font-[400] text-[12px]">
@@ -113,7 +114,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
               )}
             </div>
             <div>
-              <button className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-[500] text-[16px]">
+              <button className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]">
                 Get Started
               </button>
             </div>

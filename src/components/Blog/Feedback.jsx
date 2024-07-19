@@ -14,7 +14,7 @@ function Feedback() {
           on your website. We also offer a global panel that you can leverage to
           collect valuable market insights.
         </span>
-        <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#3B4EF4] font-[400] md:text-[16px] text-[14px] border border-[#5868F8] w-fit ">
+        <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#3B4EF4] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#5868F8] w-fit ">
           Sign up free
         </button>
       </div>
