@@ -7,14 +7,10 @@ import {
 } from "../../@/components/ui/accordion";
 import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
-import noData from "../../../public/noData.png"
-function Questions(
-  {faqs}
-) {
-  
-  return (
-    
-      faqs.length > 0 ?  <Accordion type="multiple" className="flex flex-col gap-y-7 py-10 md:py-12">
+import noData from "../../../public/noData.png";
+function Questions({ faqs }) {
+  return faqs.length > 0 ? (
+    <Accordion type="multiple" className="flex flex-col gap-y-7 py-10 md:py-12">
       {faqs.map((data, index) => (
         <AccordionItem
           value={index + 1}
@@ -38,12 +34,14 @@ function Questions(
           </AccordionContent>
         </AccordionItem>
       ))}
-    </Accordion> : <div className="flex flex-col justify-center items-center w-full mt-20">
-      <img src={noData} alt="noData" height={170} width={170}/>
-      <span className="text-[5A6573] md:text-[34px] text-[24px] font-semibold">No Question Found</span>
+    </Accordion>
+  ) : (
+    <div className="flex flex-col justify-center items-center w-full mt-20">
+      <img src={noData} alt="noData" height={170} width={170} />
+      <span className="text-[5A6573] md:text-[34px] text-[24px] font-semibold">
+        No Question Found
+      </span>
     </div>
-    
-   
   );
 }
 

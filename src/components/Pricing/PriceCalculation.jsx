@@ -6,7 +6,7 @@ const PriceCalculation = () => {
       <div className="text-center text-4xl font-HelveticaNeueBold">
         <span className=" text-[rgba(59,78,244,1)]"> Example</span> Calculation
       </div>
-      <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center" >
+      <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center">
         <div className="max-w-[700px] w-full">
           <div className="max-w-[700px] w-full ">
             <div className="m-5  rounded-xl px-6 py-4 border-white shadow-[3px_9px_35px_0px_rgb(19,35,55,0.06)] ">

@@ -36,7 +36,7 @@ const Cases = () => {
   return (
     <div className="flex flex-col gap-y-10 py-[80px]">
       <h1 className="flex justify-center text-[#132337] sm:text-[36px] text-[24px] font-[700] ">
-      Applications
+        Applications
       </h1>
       <div className="flex flex-col gap-y-12 justify-center items-center">
         <div className="xl:flex grid sm:grid-cols-2 grid-cols-1 justify-evenly gap-12 ">

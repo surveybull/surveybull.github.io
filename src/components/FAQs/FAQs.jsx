@@ -5,6 +5,7 @@ import Header from "./Header";
 import Questions from "./Questions";
 import QuestionsBg from "../../assets/background/QuestionsBg.jpg";
 import FAQsMobileBg from "../../assets/background/FAQsMobileBg.jpg";
+import SEO from "../SEO";
 function FAQs() {
   const faqs = [
     {
@@ -70,6 +71,12 @@ function FAQs() {
   console.log(filterData, "-");
   return (
     <>
+      <SEO
+        name={"SurveyBull"}
+        title={"SurveyBull | FAQs"}
+        type={"FAQs"}
+        description={"FAQs Page"}
+      />
       <div
         className="hidden md:block"
         style={{
@@ -78,7 +85,7 @@ function FAQs() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </div>
@@ -90,7 +97,7 @@ function FAQs() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </div>

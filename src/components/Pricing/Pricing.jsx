@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../Navbar/NavBar";
-
 import PricingIntroBg from "../../assets/background/PricingIntroBg.jpg";
 import PricingWorkBg from "../../assets/background/PricingWorkBg.jpg";
 import CalculationBg from "../../assets/background/CalculationBg.jpg";
@@ -17,10 +16,17 @@ import PricePayment from "./PricePayment";
 import GettingStarted from "./GettingStarted";
 import LearnMore from "./LearnMore";
 import PricingMobileBg from "../../assets/background/PricingMobileBg.jpg";
+import SEO from "../SEO";
 
 function Pricing() {
   return (
     <>
+      <SEO
+        name={"SurveyBull"}
+        title={"SurveyBull | Pricing"}
+        type={"Article"}
+        description={"Pricing Section"}
+      />
       <div
         className="hidden md:block"
         style={{
@@ -30,7 +36,7 @@ function Pricing() {
           paddingBottom: "50px",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <PricingIntro />
         </div>
       </div>
@@ -43,7 +49,7 @@ function Pricing() {
           paddingBottom: "50px",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <PricingIntro />
         </div>
       </div>

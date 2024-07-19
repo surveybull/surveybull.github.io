@@ -7,7 +7,6 @@ import FeatureChaser from "../../assets/FeatureChaser.svg?react";
 import FeedbackBox from "../../assets/FeedbackBox.svg?react";
 import Product from "../../assets/product.svg?react";
 
-
 const Cards = () => {
   const columnItem = [
     {
@@ -72,8 +71,7 @@ const Cards = () => {
         <FeedbackBox className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
       ),
       title: "Feedback Box",
-      description:
-        "Give users the chance to share feedback in a single click.",
+      description: "Give users the chance to share feedback in a single click.",
     },
   ];
 
@@ -100,7 +98,8 @@ const Cards = () => {
   return (
     <div className="flex flex-col gap-y-6">
       <div className=" md:text-[36px] text-[24px] flex justify-center font-[700] font-HelveticaNeueBold leading-9 text-[#132337]">
-      Get started with<span className="text-[#3B4EF4]">&nbsp;best practices</span>
+        Get started with
+        <span className="text-[#3B4EF4]">&nbsp;best practices</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">

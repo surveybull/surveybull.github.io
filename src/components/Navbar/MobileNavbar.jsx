@@ -17,6 +17,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   const [id, setId] = useState([]);
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    console.log(section);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -77,14 +78,16 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                           : "hidden"
                       }`}
                     >
-                      {option.childItem.map((child) => (
+                      {option.childItem.map((child, index) => (
                         <SheetClose>
                           <div
                             onClick={() => {
-                              scrollToSection(child.id);
+                              scrollToSection(
+                                child.mobileid ? child.mobileid : child.id
+                              );
                             }}
                             className={`${
-                              option.childItem.length - 1 == child.id
+                              option.childItem.length - 1 == index
                                 ? "border-b-2 border-transparent"
                                 : "border-b-2 border-[#E7E9EB]"
                             } flex flex-col gap-y-1 py-3 px-2 w-full hover:bg-[#EDEFFF] group`}

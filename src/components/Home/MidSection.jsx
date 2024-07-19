@@ -1,9 +1,9 @@
 import bluetick from "../../assets/bluetick.svg";
-import intro from "../../assets/Intro.svg"
-import Staking from "../../assets/Staking.svg"
-import Effortless from "../../assets/gif/Effortless.gif"
-import EarnTokenGif from "../../assets/gif/EarnToken.gif"
-import Refer from "../../assets/gif/Refer.gif"
+import intro from "../../assets/Intro.svg";
+import Staking from "../../assets/Staking.svg";
+import Effortless from "../../assets/gif/Effortless.gif";
+import EarnTokenGif from "../../assets/gif/EarnToken.gif";
+import Refer from "../../assets/gif/Earn&Refer.gif";
 const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="text-base py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
@@ -19,7 +19,7 @@ const SurveyBuilding = () => {
           <span className=" text-[rgba(59,78,244,1)]">
             {"Effortless Survey"}
           </span>
-          &nbsp;{"Building With SurveyBull"}
+          &nbsp;{"Building With SurveyBull"}---
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
           SurveyBull simplifies the process of creating surveys, empowering
@@ -46,7 +46,7 @@ const SurveyBuilding = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
-          <img src={Effortless} alt="intro" />
+        <img src={Effortless} alt="intro" />
       </div>
     </div>
   );
@@ -111,7 +111,7 @@ const EarnToken = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
-      <img src={EarnTokenGif} alt="intro" />
+        <img src={EarnTokenGif} alt="intro" />
       </div>
     </div>
   );
@@ -138,7 +138,9 @@ const Grow = () => {
 
   const ReferralCard = ({ title, description }) => (
     <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4]">
-      <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">{title}</div>
+      <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">
+        {title}
+      </div>
       <div className="mr-4 text-sm text-[#5A6573] my-2">{description}</div>
     </div>
   );
@@ -165,66 +167,68 @@ const Grow = () => {
         </div>
       </div>
       <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
-      <img src={Refer} alt="intro" />
+        <img src={Refer} alt="intro" />
       </div>
     </div>
   );
 };
 
 const Boost = () => {
-    const sections = [
-      {
-        title: "Support Platform Growth",
-        description:
-          "Staking your BULL Tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
-      },
-      {
-        title: "Earn Additional Incentives",
-        description:
-          "As a token staker, you become eligible to earn a share of rewards reserved specifically for participants who stake their tokens. The more tokens you stake, the greater your potential rewards.",
-      },
-      {
-        title: "Participate in Governance",
-        description:
-          "Stakers may also have the opportunity to participate in governance decisions, helping shape the future direction of the platform.",
-      },
-    ];
-  
-    const Card = ({ title, description }) => (
-        <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4]">
-          <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">{title}</div>
-          <div className="mr-4 text-sm text-[#5A6573] my-2">{description}</div>
-        </div>
-      );
-  
-    return (
-      <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
-        <div className="md:w-[50%] w-full">
-          <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
+  const sections = [
+    {
+      title: "Support Platform Growth",
+      description:
+        "Staking your BULL Tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
+    },
+    {
+      title: "Earn Additional Incentives",
+      description:
+        "As a token staker, you become eligible to earn a share of rewards reserved specifically for participants who stake their tokens. The more tokens you stake, the greater your potential rewards.",
+    },
+    {
+      title: "Participate in Governance",
+      description:
+        "Stakers may also have the opportunity to participate in governance decisions, helping shape the future direction of the platform.",
+    },
+  ];
+
+  const Card = ({ title, description }) => (
+    <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4]">
+      <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">
+        {title}
+      </div>
+      <div className="mr-4 text-sm text-[#5A6573] my-2">{description}</div>
+    </div>
+  );
+
+  return (
+    <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
+      <div className="md:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
           Boost Your Rewards With Staking&nbsp;
-            <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
-          </div>
-          <div className=" text-base  text-[rgba(90,101,115,1)] mt-12 mr-20 ">
-          By staking your BULL Tokens, you not only contribute to the stability and growth of the SurveyBull ecosystem but also unlock a stream of additional rewards. Here's how staking works:
-          </div>
-          <div className="my-12">
-            {sections.map((section, index) => (
-              <Card
-                key={index}
-                title={section.title}
-                description={section.description}
-              />
-            ))}
-          </div>
+          <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
         </div>
-        <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
-        <img src={Staking} alt="intro" />
+        <div className=" text-base  text-[rgba(90,101,115,1)] mt-12 mr-20 ">
+          By staking your BULL Tokens, you not only contribute to the stability
+          and growth of the SurveyBull ecosystem but also unlock a stream of
+          additional rewards. Here's how staking works:
+        </div>
+        <div className="my-12">
+          {sections.map((section, index) => (
+            <Card
+              key={index}
+              title={section.title}
+              description={section.description}
+            />
+          ))}
         </div>
       </div>
-    );
-  };
-
-
+      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
+        <img src={Staking} alt="intro" />
+      </div>
+    </div>
+  );
+};
 
 const MidSection = () => {
   return (
@@ -232,7 +236,7 @@ const MidSection = () => {
       <SurveyBuilding />
       <EarnToken />
       <Grow />
-      <Boost/>
+      <Boost />
     </div>
   );
 };

@@ -15,11 +15,10 @@ const PricingKey = () => {
           </div>
           <div className="flex">
             <img
-            style={{height:"340px"}}
+              style={{ height: "340px" }}
               className="mt-[2px] hidden md:block   h-max  sm:w-[16px] sm:h-[340px] "
               src={KeyPointLine}
               height={340}
-              
               alt="Your Image"
             />{" "}
             <div className="md:px-4 max-w-[600px]">

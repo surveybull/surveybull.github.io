@@ -1,6 +1,6 @@
 import React from "react";
 import SearchIcon from "../../assets/SearchIcon.svg";
-function Header({searchQuery,setSearchQuery}) {
+function Header({ searchQuery, setSearchQuery }) {
   return (
     <div className="flex flex-col gap-y-7 justify-center items-center">
       <div className="px-4 md:pt-28 pt-14 md:text-[56px] text-[28px] text-[#132337] font-HelveticaNeueBold font text-center">
@@ -13,8 +13,8 @@ function Header({searchQuery,setSearchQuery}) {
             type="text"
             placeholder="Find any question you have..."
             className="outline-none ring-0 border-none bg-transparent w-full placeholder-[#5A6573]"
-            onChange={(event)=>{
-             setSearchQuery(event.target.value)
+            onChange={(event) => {
+              setSearchQuery(event.target.value);
             }}
           ></input>
           <img src={SearchIcon} alt="SearchIcon" />

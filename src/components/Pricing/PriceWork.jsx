@@ -13,7 +13,9 @@ const PriceWork = () => {
             <div className="text-sm font-[400] text-[#5A6573] my-4">
               The cost per response is configured in USD. For example, if the
               cost is 1 USD per response, the platform calculates the equivalent
-              amount in <span className=" text-[rgba(59,78,244,1)]"> BULL tokens </span> based on the current exchange rate.
+              amount in{" "}
+              <span className=" text-[rgba(59,78,244,1)]"> BULL tokens </span>{" "}
+              based on the current exchange rate.
             </div>
             <div className="font-HelveticaNeueMedium text-base my-3">
               Example:
@@ -54,10 +56,11 @@ const PriceWork = () => {
           </div>
           <div>
             <div className="text-2xl font-[500] font-HelveticaNeueMedium my-3 ">
-            Additional Attribute Cost
+              Additional Attribute Cost
             </div>
             <div className="text-sm font-[400] text-[#5A6573] my-4">
-            Each additional attribute selected adds to the total cost of the survey. For example, if each attribute costs an additional 10 USD:
+              Each additional attribute selected adds to the total cost of the
+              survey. For example, if each attribute costs an additional 10 USD:
             </div>
             <div className="font-HelveticaNeueMedium text-base my-3">
               Example:
