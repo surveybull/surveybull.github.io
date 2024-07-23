@@ -111,7 +111,7 @@ const Tokonomics = () => {
         <div className="flex items-center justify-center">
           <img
             src={tokonomics}
-            className="md:min-w-[500px] md:min-h-[500px] min-w-[200px] min-h-[200px]"
+            className="md:min-w-[600px] md:min-h-[600px] min-w-[200px] min-h-[200px]"
           />
         </div>
         <div className="w-full grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-4 ">

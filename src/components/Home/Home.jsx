@@ -15,7 +15,7 @@ import Invite from "./Invite";
 import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
-import IntroBg from "../../assets/background/IntroBg.jpg";
+import IntroBg from "../../assets/gif/Hero.gif";
 import SurveyorBg from "../../assets/background/Surveyor.svg";
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
@@ -87,6 +87,13 @@ function Home() {
           <Why />
         </div>
       </div>
+      <div  style={{
+          backgroundImage: `url(${whyIntroBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        >
+       
       <div
         className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit "
         style={{
@@ -95,10 +102,12 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto mt-[40px]">
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Surveyor />
         </div>
       </div>
+      </div>
+     
       <div
         id="Earn"
         className=""
@@ -112,9 +121,16 @@ function Home() {
           <MidSection />
         </div>
       </div>
+      <div style={{
+          backgroundImage: `url(${midSection})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        >
+
       <div
         id="Distribution"
-        className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] "
+        className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit"
         style={{
           backgroundImage: `url(${SurveyorBg})`,
           backgroundSize: "cover",
@@ -125,6 +141,8 @@ function Home() {
           <Distribution />
         </div>
       </div>
+      </div>
+    
       <div
         style={{
           backgroundImage: `url(${DecentralizedBg})`,

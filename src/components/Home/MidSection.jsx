@@ -19,13 +19,13 @@ const SurveyBuilding = () => {
           <span className=" text-[rgba(59,78,244,1)]">
             {"Effortless Survey"}
           </span>
-          &nbsp;{"Building With SurveyBull"}---
+          &nbsp;{"Building With SurveyBull"}
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
         SurveyBull's intuitive tools and robust features simplify the survey creation process, empowering users of all experience levels. Our platform delivers a seamless, effortless experience from start to finish, whether you're a seasoned researcher or new to survey building.
 
         </div>
-        <div className=" my-12 grid grid-cols-2">
+        <div className=" my-12 grid sm:grid-cols-2 grid-cols-1">
           <div className="">
             <FeatureItem text="User-Friendly Interface" />
             <div className="text-base py-2 flex items-center border-l-2 h-2"></div>
@@ -198,7 +198,7 @@ const Boost = () => {
     <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
       <div className="md:w-[50%] w-full">
         <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
-          Boost Your Rewards With Staking&nbsp;
+          Boost Your Rewards With&nbsp;
           <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
         </div>
         <div className=" text-base  text-[rgba(90,101,115,1)] mt-12 mr-20 ">

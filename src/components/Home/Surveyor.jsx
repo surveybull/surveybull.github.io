@@ -45,7 +45,7 @@ const Surveyor = () => {
       </div>
       <div className="flex md:flex-row justify-between flex-col gap-x-5 gap-y-7">
         {cardData.map((card) => (
-          <div className="flex flex-col items-center justify-center border-[1.5px] border-[#56595f] hover:border-[#89919B] rounded-[15px] bg-gradient-to-r from-[#FFFFFF05] to-[#FFFFFF33]  px-4 py-8 gap-4 group hover:cursor-pointer flex-1 transition-colors duration-500 ease-in-out">
+          <div className="flex flex-col items-center justify-center border-[1.5px] border-[#56595f] hover:border-[#89919B] rounded-[15px] bg-gradient-to-r from-[#FFFFFF05] to-[#FFFFFF33] hover:bg-gradient-to-r hover:fron-[#FFFFFF0F] hover:to-[#FFFFFF40]  px-4 py-8 gap-4 group hover:cursor-pointer flex-1 transition-colors duration-500 ease-in-out shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]">
             <div>
               <img
                 src={card.src}

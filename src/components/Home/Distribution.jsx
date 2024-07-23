@@ -57,7 +57,7 @@ const Distribution = () => {
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         {rewardData.map((data) => (
-          <div className="flex flex-col justify-center gap-y-3">
+          <div className="flex flex-col gap-y-3">
             <div className="flex gap-2 items-center">
               <img src={data.imgSrc} alt="rewardData" />
               <span className="text-[#FFFFFF] md:text-[18px] text-[14px] font-[500]">

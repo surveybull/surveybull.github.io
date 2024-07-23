@@ -68,10 +68,7 @@ const Popup = () => {
       className="fixed z-50 inset-0 bg-black flex justify-center items-center bg-opacity-20 overflow-auto  backdrop-blur-sm"
     >
       <div
-        // style={{
-        //   background: "linear-gradient(to bottom right, #3b1caf, #d60191)",
-        // }}
-        className="p-2  w-10/12 md:w-1/2 lg:1/3 max-h-[95vh]  shadow-inner border-e-emerald-600 rounded-2xl py-5 bg-[#EDEFFF]"
+        className="p-2  w-10/12 md:w-1/2 lg:1/3 max-h-[95vh] flex flex-col md:gap-6 gap-4  shadow-inner border-e-emerald-600 rounded-2xl py-5 bg-[#EDEFFF]"
         style={{
           backgroundImage: `url(${popupbg})`,
           backgroundSize: "cover",

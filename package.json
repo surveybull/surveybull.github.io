@@ -23,15 +23,18 @@
     "embla-carousel-react": "^8.0.1",
     "lucide": "^0.364.0",
     "lucide-react": "^0.364.0",
+    "rc-slider": "^11.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icon": "^1.0.0",
     "react-icons": "^5.2.1",
+   
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.0",
-    "vite-plugin-svgr": "^4.2.0"
+    "vite-plugin-svgr": "^4.2.0",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

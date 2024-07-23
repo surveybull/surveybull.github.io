@@ -20,9 +20,9 @@ const SurveyCard = ({ imageSrc, title, description }) => {
         <img src={imageSrc} alt="" />
       </div>
       <div className="flex h-max gap-2 w-full relative">
-        <div className="h-[30%] bg-[#3B4EF4] group-hover:h-full w-[2px] transition-height duration-500 ease-in-out absolute left-[-10px]"></div>
+        <div className="h-[30%] bg-[#3B4EF4] group-hover:h-full w-[1px] transition-height duration-500 ease-in-out absolute left-[-10px]"></div>
         <div className="flex flex-col gap-y-2">
-          <span className="text-[#132337] text-[16px] font-HelveticaNeueMedium">{title}</span>
+          <span className="text-[#132337] text-[16px] font-HelveticaNeueMedium group-hover:text-[#3B4EF4] transition-height duration-500 ease-in-out">{title}</span>
           <span className="text-[#5A6573] text-[14px] font-[400]">
             {description}
           </span>

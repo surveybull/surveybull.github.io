@@ -7,7 +7,7 @@ import KeyFeatureBg from "../../assets/background/KeyFeatureBg.jpg";
 import PaymentProcessBg from "../../assets/background/PaymentProcessBg.jpg";
 import GetStartedBg from "../../assets/background/GetStartedBg.jpg";
 import LearnMoreBg from "../../assets/background/LearnMoreBg.jpg";
-
+import CalculatorBg from "../../assets/background/CalculatorBg.jpg"
 import PricingIntro from "./PricingIntro";
 import PriceWork from "./PriceWork";
 import PriceCalculation from "./PriceCalculation";
@@ -17,6 +17,8 @@ import GettingStarted from "./GettingStarted";
 import LearnMore from "./LearnMore";
 import PricingMobileBg from "../../assets/background/PricingMobileBg.jpg";
 import SEO from "../SEO";
+import Calculator from "./Calculator";
+import { getPerResponseFees } from "../../helper/getPerResponseFees";
 
 function Pricing() {
   return (
@@ -53,16 +55,28 @@ function Pricing() {
           <PricingIntro />
         </div>
       </div>
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${PricingWorkBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
+         
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PriceWork />
+        </div>
+      </div> */}
+      <div
+        style={{
+          backgroundImage: `url(${CalculatorBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+         
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+         <Calculator/>
         </div>
       </div>
       <div
@@ -70,7 +84,7 @@ function Pricing() {
           backgroundImage: `url(${CalculationBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
+          
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -82,7 +96,7 @@ function Pricing() {
           backgroundImage: `url(${KeyFeatureBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
+
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -94,7 +108,7 @@ function Pricing() {
           backgroundImage: `url(${PaymentProcessBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
+
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -106,7 +120,6 @@ function Pricing() {
           backgroundImage: `url(${GetStartedBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
