@@ -7,7 +7,7 @@ import KeyFeatureBg from "../../assets/background/KeyFeatureBg.jpg";
 import PaymentProcessBg from "../../assets/background/PaymentProcessBg.jpg";
 import GetStartedBg from "../../assets/background/GetStartedBg.jpg";
 import LearnMoreBg from "../../assets/background/LearnMoreBg.jpg";
-import CalculatorBg from "../../assets/background/CalculatorBg.jpg"
+import CalculatorBg from "../../assets/background/CalculatorBg.jpg";
 import PricingIntro from "./PricingIntro";
 import PriceWork from "./PriceWork";
 import PriceCalculation from "./PriceCalculation";
@@ -72,11 +72,10 @@ function Pricing() {
           backgroundImage: `url(${CalculatorBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-         
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
-         <Calculator/>
+          <Calculator />
         </div>
       </div>
       <div
@@ -84,7 +83,6 @@ function Pricing() {
           backgroundImage: `url(${CalculationBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -96,7 +94,6 @@ function Pricing() {
           backgroundImage: `url(${KeyFeatureBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -108,7 +105,6 @@ function Pricing() {
           backgroundImage: `url(${PaymentProcessBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-
         }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">

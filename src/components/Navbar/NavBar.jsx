@@ -95,12 +95,18 @@ const NavBar = () => {
       <div
         className={`transition-all duration-500 ${
           visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        } md:block hidden ${scrolledFromTop && " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"}  fixed top-0 w-full `}
+        } md:block hidden ${
+          scrolledFromTop &&
+          " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
+        }  fixed top-0 w-full `}
       >
         <DesktopNavbar NavbarData={NavbarData} visitedPage={visitedPage} />
       </div>
       <div
-        className={`md:hidden block fixed top-0 w-full ${scrolledFromTop && " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"} transition-all duration-500 ${
+        className={`md:hidden block fixed top-0 w-full ${
+          scrolledFromTop &&
+          " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
+        } transition-all duration-500 ${
           visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >

@@ -22,8 +22,11 @@ const SurveyBuilding = () => {
           &nbsp;{"Building With SurveyBull"}
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
-        SurveyBull's intuitive tools and robust features simplify the survey creation process, empowering users of all experience levels. Our platform delivers a seamless, effortless experience from start to finish, whether you're a seasoned researcher or new to survey building.
-
+          SurveyBull's intuitive tools and robust features simplify the survey
+          creation process, empowering users of all experience levels. Our
+          platform delivers a seamless, effortless experience from start to
+          finish, whether you're a seasoned researcher or new to survey
+          building.
         </div>
         <div className=" my-12 grid sm:grid-cols-2 grid-cols-1">
           <div className="">
@@ -89,7 +92,11 @@ const EarnToken = () => {
           &nbsp;{"Your Thoughts"}
         </div>
         <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
-        At SurveyBull, we deeply value your opinions and insights. We've created a unique opportunity for you to earn rewards by sharing your thoughts through surveys. Our platform provides a seamless experience where your contributions are not only appreciated, but also generously rewarded.
+          At SurveyBull, we deeply value your opinions and insights. We've
+          created a unique opportunity for you to earn rewards by sharing your
+          thoughts through surveys. Our platform provides a seamless experience
+          where your contributions are not only appreciated, but also generously
+          rewarded.
         </div>
         <div className=" my-12 mr-10 ">
           <div className="">

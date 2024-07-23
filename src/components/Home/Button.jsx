@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
-
 function ArrowIcon(props) {
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
@@ -27,9 +26,13 @@ const variantStyles = {
   text: "text-teal-500 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300",
 };
 
-
-
-export function Button({ variant = "primary", className, children, arrow, ...props }) {
+export function Button({
+  variant = "primary",
+  className,
+  children,
+  arrow,
+  ...props
+}) {
   className = clsx(
     "inline-flex gap-0.5 justify-center items-center overflow-hidden font-medium transition text-center",
     variantStyles[variant],

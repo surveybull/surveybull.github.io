@@ -46,6 +46,3 @@ function Questions({ faqs }) {
 }
 
 export default Questions;
-// border-[2px] border-[#D0D3D7] rounded-[8px]
-
-//className="data-[state=open]:bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] data-[state=open]:border-[2px] data-[state=open]:border-r-none data-[state=open]:border-l-none data-[state=open]:border-y-transparent border-[2px] border-[#D0D3D7] rounded-[8px] data-[state=open]:rounded-b-none data-[state=open]:border-l-[#3B4EF4] data-[state=open]:border-r-[#978FFD] px-[20px]

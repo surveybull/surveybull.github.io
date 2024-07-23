@@ -18,7 +18,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   const [id, setId] = useState([]);
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    console.log(section);
+
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }

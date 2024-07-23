@@ -87,27 +87,27 @@ function Home() {
           <Why />
         </div>
       </div>
-      <div  style={{
+      <div
+        style={{
           backgroundImage: `url(${whyIntroBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-        >
-       
-      <div
-        className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit "
-        style={{
-          backgroundImage: `url(${SurveyorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <Surveyor />
+        <div
+          className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit "
+          style={{
+            backgroundImage: `url(${SurveyorBg})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="xl:max-w-[1300px] p-7 mx-auto">
+            <Surveyor />
+          </div>
         </div>
       </div>
-      </div>
-     
+
       <div
         id="Earn"
         className=""
@@ -121,28 +121,28 @@ function Home() {
           <MidSection />
         </div>
       </div>
-      <div style={{
+      <div
+        style={{
           backgroundImage: `url(${midSection})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-        >
-
-      <div
-        id="Distribution"
-        className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit"
-        style={{
-          backgroundImage: `url(${SurveyorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
       >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <Distribution />
+        <div
+          id="Distribution"
+          className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit"
+          style={{
+            backgroundImage: `url(${SurveyorBg})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="xl:max-w-[1300px] p-7 mx-auto">
+            <Distribution />
+          </div>
         </div>
       </div>
-      </div>
-    
+
       <div
         style={{
           backgroundImage: `url(${DecentralizedBg})`,

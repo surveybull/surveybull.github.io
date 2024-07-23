@@ -68,7 +68,7 @@ function FAQs() {
       : faqs.filter((data) =>
           data.que.toLowerCase().includes(searchQuery.toLowerCase())
         );
-  console.log(filterData, "-");
+
   return (
     <>
       <SEO
