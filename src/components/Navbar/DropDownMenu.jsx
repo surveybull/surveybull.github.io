@@ -62,6 +62,36 @@ function DropDownMenu({ option, visitedPage }) {
               >
                 <div
                   onClick={() => {
+                    scrollToSection(child.mdid ? child.mdid : child.id);
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.querySelectorAll("span")[0].style.color =
+                      "#3B4EF4";
+                    e.currentTarget.querySelectorAll("span")[1].style.color =
+                      "#132337";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.querySelectorAll("span")[0].style.color =
+                      "#132337";
+                    e.currentTarget.querySelectorAll("span")[1].style.color =
+                      "#89919B";
+                  }}
+                  className={`${
+                    option.childItem.length - 1 == child.id
+                      ? "border-none"
+                      : "border-b border-[#E7E9EB]"
+                  } flex flex-col gap-y-1 px-9 py-5 font-semibold lg:hidden`}
+                >
+                  <span className="text-[#132337] text-[16px] font-[500] text-start">
+                    {child.title}
+                  </span>
+                  <span className="text-[#89919B] text-[14px] font-[400] text-start">
+                    {child.subtitle}
+                  </span>
+                </div>
+                <div
+                  onClick={() => {
                     scrollToSection(child.id);
                   }}
                   onMouseEnter={(e) => {
@@ -81,7 +111,7 @@ function DropDownMenu({ option, visitedPage }) {
                     option.childItem.length - 1 == child.id
                       ? "border-none"
                       : "border-b border-[#E7E9EB]"
-                  } flex flex-col gap-y-1 px-9 py-5 font-semibold`}
+                  } lg:flex flex-col gap-y-1 px-9 py-5 font-semibold hidden`}
                 >
                   <span className="text-[#132337] text-[16px] font-[500] text-start">
                     {child.title}

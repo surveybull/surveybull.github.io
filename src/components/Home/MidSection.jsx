@@ -6,29 +6,36 @@ import EarnTokenGif from "../../assets/gif/EarnToken.gif";
 import Refer from "../../assets/gif/Earn&Refer.gif";
 const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
-    <div className="text-base py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
-      <img className="h-[28px] w-[28px] mx-2" src={bluetick} alt="" />
+    <div className="sm:text-base text-[14px] py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
+      <img
+        className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] mx-2"
+        src={bluetick}
+        alt=""
+      />
       {text}
     </div>
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-14 gap-12 ">
-      <div className="md:w-[50%] w-full">
-        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
+    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-12 ">
+      <div className="lg:w-[50%] w-full">
+        <div className="md:text-4xl lg:text-start text-center text-2xl font-HelveticaNeueBold">
           <span className=" text-[rgba(59,78,244,1)]">
             {"Effortless Survey"}
           </span>
           &nbsp;{"Building With SurveyBull"}
         </div>
-        <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
+        <div className=" text-[14px] md:text-[16px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 lg:text-start text-center lg:mr-20 ">
           SurveyBull's intuitive tools and robust features simplify the survey
           creation process, empowering users of all experience levels. Our
           platform delivers a seamless, effortless experience from start to
           finish, whether you're a seasoned researcher or new to survey
           building.
         </div>
-        <div className=" my-12 grid sm:grid-cols-2 grid-cols-1">
+        <div className="w-full flex items-center justify-center lg:hidden mt-8">
+          <img src={Effortless} alt="intro" />
+        </div>
+        <div className=" my-12 grid sm:grid-cols-2 grid-cols-1 gap-5">
           <div className="">
             <FeatureItem text="User-Friendly Interface" />
             <div className="text-base py-2 flex items-center border-l-2 h-2"></div>
@@ -45,7 +52,7 @@ const SurveyBuilding = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden ">
         <img src={Effortless} alt="intro" />
       </div>
     </div>
@@ -73,32 +80,33 @@ const EarnToken = () => {
 
   const Section = ({ title, description }) => (
     <div className="">
-      <div className="text-xl font-medium font-HelveticaNeueMedium text-[rgba(59,78,244,1)] px-2 border-l-2 border-l-[#3B4EF4]">
+      <div className="md:text-xl text-[14px] font-medium font-HelveticaNeueMedium text-[rgba(59,78,244,1)] px-2 border-l-2 border-l-[#3B4EF4]">
         {title}
       </div>
-      <div className="text-sm font-HelveticaNeueLight text-[rgba(90,101,115,1)] border-l-2 px-2 py-5">
+      <div className="md:text-sm text-[12px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] border-l-2 px-2 py-5">
         {description}
       </div>
     </div>
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-15 gap-12">
-      <div className="md:w-[50%] w-full">
-        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
-          <span className=" text-[rgba(59,78,244,1)]">{"Earn Tokens"}</span>
-          &nbsp;{"For"}&nbsp;
-          <span className=" text-[rgba(59,78,244,1)]">{"Sharing"}</span>
-          &nbsp;{"Your Thoughts"}
+    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-12">
+      <div className="lg:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl text-center lg:text-start font-HelveticaNeueBold">
+          <span className="text-[#3B4EF4]">Earn Tokens</span> For{" "}
+          <span className="text-[#3B4EF4]">Sharing</span> Your Thoughts
         </div>
-        <div className=" text-base font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 mr-20 ">
+        <div className=" md:text-base text-[14px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-12 lg:mr-20 text-center lg:text-start">
           At SurveyBull, we deeply value your opinions and insights. We've
           created a unique opportunity for you to earn rewards by sharing your
           thoughts through surveys. Our platform provides a seamless experience
           where your contributions are not only appreciated, but also generously
           rewarded.
         </div>
-        <div className=" my-12 mr-10 ">
+        <div className="w-full flex items-center justify-center lg:hidden mt-8">
+          <img src={EarnTokenGif} alt="intro" />
+        </div>
+        <div className=" my-12 lg:mr-10 ">
           <div className="">
             {sections.map((section, index) => (
               <Section
@@ -110,7 +118,7 @@ const EarnToken = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden">
         <img src={EarnTokenGif} alt="intro" />
       </div>
     </div>
@@ -137,24 +145,29 @@ const Grow = () => {
   ];
 
   const ReferralCard = ({ title, description }) => (
-    <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4]">
-      <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">
+    <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4] transition-colors duration-700 ease-in-out">
+      <div className="font-HelveticaNeueMedium text-[#384ef4] text-[14px] md:text-lg">
         {title}
       </div>
-      <div className="mr-4 text-sm text-[#5A6573] my-2">{description}</div>
+      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2">
+        {description}
+      </div>
     </div>
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-14 gap-12 ">
-      <div className="md:w-[50%] w-full">
-        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
+    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-12 ">
+      <div className="lg:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl font-HelveticaNeueBold text-center lg:text-start">
           Grow With Us:&nbsp;
           <span className=" text-[rgba(59,78,244,1)]">{"Refer & Earn"}</span>
         </div>
-        <div className=" text-base  text-[rgba(90,101,115,1)] mt-10 mr-20 ">
+        <div className=" md:text-base text-[14px] lg:text-start text-center  text-[rgba(90,101,115,1)] mt-10 lg:mr-20 ">
           Invite others to join the SurveyBull community and reap the rewards
           through our referral program. Here's how you can benefit:
+        </div>
+        <div className="w-full flex items-center justify-center lg:hidden mt-8">
+          <img src={Refer} alt="intro" />
         </div>
         <div className="my-12">
           {referralSections.map((section, index) => (
@@ -166,7 +179,7 @@ const Grow = () => {
           ))}
         </div>
       </div>
-      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center ">
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden">
         <img src={Refer} alt="intro" />
       </div>
     </div>
@@ -193,25 +206,30 @@ const Boost = () => {
   ];
 
   const Card = ({ title, description }) => (
-    <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4]">
-      <div className="font-HelveticaNeueMedium text-[#384ef4] text-lg">
+    <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#3B4EF4] border-l-4 my-5 hover:border-[#384ef4] transition-colors duration-700 ease-in-out">
+      <div className="font-HelveticaNeueMedium text-[#384ef4] md:text-[18px] text-[14px]">
         {title}
       </div>
-      <div className="mr-4 text-sm text-[#5A6573] my-2">{description}</div>
+      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2">
+        {description}
+      </div>
     </div>
   );
 
   return (
-    <div className="flex md:flex-row flex-col-reverse my-14 gap-12">
-      <div className="md:w-[50%] w-full">
-        <div className="md:text-4xl text-2xl font-HelveticaNeueBold">
+    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-12">
+      <div className="lg:w-[50%] w-full">
+        <div className="md:text-4xl text-2xl lg:text-start text-center font-HelveticaNeueBold">
           Boost Your Rewards With&nbsp;
           <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
         </div>
-        <div className=" text-base  text-[rgba(90,101,115,1)] mt-12 mr-20 ">
+        <div className=" md:text-base text-[14px] text-center lg:text-start text-[rgba(90,101,115,1)] mt-12 lg:mr-20 ">
           By staking your BULL Tokens, you not only contribute to the stability
           and growth of the SurveyBull ecosystem but also unlock a stream of
           additional rewards. Here's how staking works:
+        </div>
+        <div className="w-full flex items-center justify-center lg:hidden mt-8 ">
+          <img src={Staking} alt="intro" />
         </div>
         <div className="my-12">
           {sections.map((section, index) => (
@@ -223,7 +241,7 @@ const Boost = () => {
           ))}
         </div>
       </div>
-      <div className="md:w-[50%] w-full flex md:justify-end items-center justify-center">
+      <div className="lg:w-[50%] w-full lg:flex lg:justify-end items-center justify-center hidden">
         <img src={Staking} alt="intro" />
       </div>
     </div>

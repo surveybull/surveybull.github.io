@@ -15,7 +15,7 @@ import Invite from "./Invite";
 import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
-import IntroBg from "../../assets/gif/Hero.gif";
+import IntroBg from "../../assets/background/Intro.jpg";
 import SurveyorBg from "../../assets/background/Surveyor.svg";
 import whyBg from "../../assets/background/whyBg.jpg";
 import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
@@ -28,6 +28,10 @@ import MidSection from "./MidSection";
 import WeightCalculationBg from "../../assets/background/WeightCalculationBg.png";
 import UsecaseBg from "../../assets/background/UsecaseBg.jpg";
 import SEO from "../SEO";
+import Investor from "./Investor";
+import InvestorBg from "../../assets/background/InvestorBg.jpg";
+import MidsectionMobileBg from "../../assets/background/MidsectionMobileBg.jpg";
+import SDKMobileBg from "../../assets/background/SDKMobileBg.jpg"
 function Home() {
   return (
     <>
@@ -38,29 +42,29 @@ function Home() {
         type={"Home"}
       />
       <div
-        className="hidden md:block"
-        style={{
-          backgroundImage: `url(${IntroBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="sm:bg-[url('./assets/background/Intro.jpg')] bg-[url('./assets/background/IntroMobileBg.jpg')]   bg-cover bg-repeat-round "
+        // style={{
+        //   backgroundImage: `url(${IntroBg})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>
       </div>
-      <div
-        className="block md:hidden"
-        style={{
-          backgroundImage: `url(${IntroMobileBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+      {/* <div
+        className="block md:hidden bg-repeat-round bg-[url('./assets/background/IntroMobileBg.jpg')]"
+        // style={{
+        //   backgroundImage: `url(${IntroMobileBg})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>
-      </div>
+      </div> */}
       <div
         id="Why"
         className="hidden md:block"
@@ -110,9 +114,22 @@ function Home() {
 
       <div
         id="Earn"
-        className=""
+        className="lg:block hidden"
         style={{
           backgroundImage: `url(${midSection})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
+          <MidSection />
+        </div>
+      </div>
+      <div
+        id="MbEarn"
+        className="lg:hidden block"
+        style={{
+          backgroundImage: `url(${MidsectionMobileBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -156,6 +173,20 @@ function Home() {
       </div>
 
       <div
+        className="md:hidden block"
+        id="SurveyMb"
+        style={{
+          backgroundImage: `url(${SDKMobileBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <SDK />
+        </div>
+      </div>
+      <div
+        className="md:block hidden"
         id="Survey"
         style={{
           backgroundImage: `url(${SDKBg})`,
@@ -188,6 +219,17 @@ function Home() {
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Tokonomics />
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${InvestorBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <Investor />
         </div>
       </div>
       <Popup />

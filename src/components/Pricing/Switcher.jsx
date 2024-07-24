@@ -22,14 +22,14 @@ function Switcher() {
     state.setIsChecked,
   ]);
   return (
-    <div className=" flex flex-col gap-y-3 mt-5">
-      <span className="text-[#132337] text-[18px]">
+    <div className=" flex flex-col gap-y-4 mt-5">
+      <span className="text-[#132337] text-[14px] md:text-[18px]">
         Additional Attribute Cost
       </span>
       <div className="flex justify-between flex-wrap md:flex-nowrap gap-x-2 gap-y-4">
         {PossibleSwitch.map((item) => (
           <div className="flex items-center gap-2">
-            <span className="text-[#89919B] text-[14px] ">{item}</span>
+            <span className="text-[#89919B] text-[12px] md:text-[14px] ">{item}</span>
             <label
               className={`flex items-center relative w-max select-none rounded-full ${
                 sliderValue > 25 ? "cursor-pointer" : "cursor-not-allowed"

@@ -51,7 +51,7 @@ function TokenSwitcher() {
         <span className="text-[#5A6573] text-[18px] font-HelveticaNeueLight">
           Total Payble BULL token
         </span>
-        <span className="text-[#3B4EF4] text-[24px] font-HelveticaNeueBold">
+        <span className="text-[#3B4EF4] text-[24px] font-HelveticaNeueBold sm:text-start text-center">
           800 BULL
         </span>
       </div>

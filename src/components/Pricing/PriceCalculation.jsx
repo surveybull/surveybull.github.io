@@ -3,7 +3,7 @@ import calculator from "../../assets/Calculator.svg";
 const PriceCalculation = () => {
   return (
     <div className="py-4 mt-[2rem] md:mt-[2rem]">
-      <div className="text-center text-4xl font-HelveticaNeueBold">
+      <div className="text-center text-4xl font-HelveticaNeueBold pb-10">
         <span className=" text-[rgba(59,78,244,1)]"> Example</span> Calculation
       </div>
       <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center">

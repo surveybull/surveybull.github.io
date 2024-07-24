@@ -84,7 +84,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                           <div
                             onClick={() => {
                               scrollToSection(
-                                child.mobileid ? child.mobileid : child.id
+                                child.mobileid ? child.mobileid : child.mdid ? child.mdid : child.id
                               );
                             }}
                             className={`${

@@ -45,13 +45,8 @@ const NavBar = () => {
           subtitle: "reasons to choose surveybull",
         },
         {
-          id: "Survey",
-          title: "Survey Building",
-          path: "/",
-          subtitle: "Crafting made easy",
-        },
-        {
           id: "Earn",
+          mdid: "MbEarn",
           title: "Earn Token",
           path: "/",
           subtitle: "earn tokens with your data",
@@ -61,6 +56,13 @@ const NavBar = () => {
           title: "Distribution",
           path: "/",
           subtitle: "know your share",
+        },
+        {
+          id: "Survey",
+          mobileid:"SurveyMb",
+          title: "Survey Building",
+          path: "/",
+          subtitle: "Crafting made easy",
         },
       ],
     },

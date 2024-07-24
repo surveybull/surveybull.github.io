@@ -1,5 +1,6 @@
 import introLogo from "../../assets/Intro.svg";
 import WordRotate from "../../@/components/magicui/word-rotate";
+
 const Intro = () => {
   return (
     <div className="flex justify-center mt-[3rem] md:mt-[7rem] mb-[3rem] gap-6 flex-col md:flex-row">
@@ -15,11 +16,12 @@ const Intro = () => {
             ]}
           />
         </div>
-        <div className=" text-[#132337] font-[700] text-[28px] md:text-[40px] 2xl:text-[56px] mt-[-20px] text-start md:text-center max-w-[600px]">
+        <div className=" text-[#132337] font-HelveticaNeueBold text-[28px] md:text-[40px] 2xl:text-[56px] mt-[-20px] text-start md:text-center max-w-[600px]">
           Embark on Your Survey Adventure Today!
         </div>
         <div className="text-start text-[#132337] text-[14px] md:text-[18px] lg:text-[20px] font-[400]">
-          Unlock Insights, Earn Rewards: The Blockchain Survey Revolution
+          Unlock the power of Blockchain Supported Survey, Earn reward for your
+          data!
         </div>
         <div>
           <button className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] sm:px-[30px] sm:py-[12px] px-[20px] py-[10px] text-[#FFFFFF] sm:font-HelveticaNeueMedium sm:text-[16px] text-[14px] font-[400]">

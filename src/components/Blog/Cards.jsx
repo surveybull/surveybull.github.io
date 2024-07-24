@@ -11,7 +11,7 @@ const Cards = () => {
   const columnItem = [
     {
       img: (
-        <InterviewPrompt className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <InterviewPrompt className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Interview Prompt",
       description:
@@ -19,7 +19,7 @@ const Cards = () => {
     },
     {
       img: (
-        <Product className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <Product className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Product-Market Fit Survey",
       description:
@@ -28,7 +28,7 @@ const Cards = () => {
     {
       title: "Onboarding Segments",
       img: (
-        <OnboardingSegments className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <OnboardingSegments className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
 
       description:
@@ -36,7 +36,7 @@ const Cards = () => {
     },
     {
       img: (
-        <Learn_from_churn className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <Learn_from_churn className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Learn from Churn",
       description:
@@ -44,7 +44,7 @@ const Cards = () => {
     },
     {
       img: (
-        <Improve_Trial_CR className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <Improve_Trial_CR className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Improve Trial CR",
       description:
@@ -52,7 +52,7 @@ const Cards = () => {
     },
     {
       img: (
-        <DocsFeedback className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <DocsFeedback className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
       title: "Docs Feedback",
       description:
@@ -60,7 +60,7 @@ const Cards = () => {
     },
     {
       img: (
-        <FeatureChaser className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <FeatureChaser className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Feature Chaser",
       description:
@@ -68,7 +68,7 @@ const Cards = () => {
     },
     {
       img: (
-        <FeedbackBox className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <FeedbackBox className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
       title: "Feedback Box",
       description: "Give users the chance to share feedback in a single click.",
@@ -77,10 +77,10 @@ const Cards = () => {
 
   const Card = ({ imageSrc, title, description }) => {
     return (
-      <div class="h-[300px] group rounded-xl w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-500 ease-in-out">
+      <div class="h-[300px] group rounded-xl w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
         <div className="px-4 ">
           <div className="mt-8">
-            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-500 ease-in-out flex justify-center items-center">
+            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>
@@ -97,7 +97,7 @@ const Cards = () => {
 
   return (
     <div className="flex flex-col gap-y-6">
-      <div className=" md:text-[36px] text-[24px] flex justify-center font-[700] font-HelveticaNeueBold leading-9 text-[#132337]">
+      <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
         Get started with
         <span className="text-[#3B4EF4]">&nbsp;best practices</span>
       </div>

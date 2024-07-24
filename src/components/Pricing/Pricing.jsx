@@ -78,7 +78,7 @@ function Pricing() {
           <Calculator />
         </div>
       </div>
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${CalculationBg})`,
           backgroundSize: "cover",
@@ -88,7 +88,7 @@ function Pricing() {
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PriceCalculation />
         </div>
-      </div>
+      </div> */}
       <div
         style={{
           backgroundImage: `url(${KeyFeatureBg})`,

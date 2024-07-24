@@ -57,7 +57,7 @@ const SmartContractStep = ({ description }) => {
       </div>
       <div className="relative h-min flex  pt-7 mt-3 px-2 pb-8">
         <div className="absolute  w-[3px]  h-[30%] mx-2 group-hover:h-[60%] transition-height duration-500 ease-in-out  bg-[#3B4EF4]"></div>
-        <div className="text-gray-700 group-hover:text-[#3B4EF4] ml-5">
+        <div className="text-gray-700 group-hover:text-[#3B4EF4] ml-5 md:text-[16px] text-[14px]">
           {description}
         </div>
       </div>
@@ -107,18 +107,16 @@ const DecentralizedAction = () => {
   const MobileViewCard = ({ data }) => {
     return (
       <div className=" my-3 mx-6 mt-8">
-        <div className="px-5 py-3">
-          <div className="text-center   text-lg ">{data.title}</div>
-          <div className="flex justify-center">
-            <div className=" flex justify-center w-full h-full mt-5 ">
-              <img src={data.imageSrc} alt={"preHook"} />
-            </div>
+        <div className="text-center text-lg ">{data.title}</div>
+        <div className="flex justify-center">
+          <div className=" flex justify-center w-full h-full mt-5 ">
+            <img src={data.imageSrc} alt={"preHook"} />
           </div>
-          <div className="my-4 py-4">
-            {data.sections.map((x, index) => {
-              return <SmartContractStep description={x.text} />;
-            })}
-          </div>
+        </div>
+        <div className="py-4">
+          {data.sections.map((x, index) => {
+            return <SmartContractStep description={x.text} />;
+          })}
         </div>
       </div>
     );
@@ -126,7 +124,7 @@ const DecentralizedAction = () => {
 
   return (
     <div className=" my-[4rem]">
-      <div className=" text-4xl font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl mx-0 sm:mx-24   text-center ">
+      <div className=" text-[24px] font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl mx-0 sm:mx-24   text-center ">
         {"Decentralized Actions: Elevating "}
         <span className=" text-[rgba(59,78,244,1)]">
           {" Survey Engagement "}
@@ -134,7 +132,7 @@ const DecentralizedAction = () => {
         in Crypto Products
       </div>
       <div className="flex justify-center">
-        <div className="mt-10 text-center max-w-[1000px] px-2 flex justify-center font-[400] tracking-wide text-[#5A6573]">
+        <div className="mt-10 text-center max-w-[1000px] px-2 flex justify-center text-[14px] md:text-[16px] font-[400] tracking-wide text-[#5A6573]">
           At SurveyBull, we deeply value your opinions and insights. We've
           created a unique opportunity for you to earn rewards by sharing your
           thoughts through surveys. Our platform provides a seamless experience

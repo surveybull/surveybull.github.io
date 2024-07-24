@@ -5,13 +5,13 @@ import InclusiveApproach from "../../assets/InclusiveApproach.svg?react";
 import IndustryCollaboration from "../../assets/IndustryCollaboration.svg?react";
 import SeamlessIntegration from "../../assets/SeamlessIntegration.svg?react";
 import TokenGatedSurveys from "../../assets/TokenGatedSurveys.svg?react";
-import VerifiedHumanContributors from "../../assets/VerifiedHumanContributors.svg?react";
+import WorldCoin from "../../assets/worldCoin.svg?react";
 
 const Why = () => {
   const columnItem = [
     {
       img: (
-        <BlockchainTransparency className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <BlockchainTransparency className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Blockchain Transparency",
       description:
@@ -19,7 +19,7 @@ const Why = () => {
     },
     {
       img: (
-        <VerifiedHumanContributors className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <WorldCoin className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Verified Human Contributors ",
       description:
@@ -28,7 +28,7 @@ const Why = () => {
     {
       title: "Fair Compensation",
       img: (
-        <FairCompensation className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <FairCompensation className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
 
       description:
@@ -36,7 +36,7 @@ const Why = () => {
     },
     {
       img: (
-        <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Token Gated Surveys",
       description:
@@ -44,7 +44,7 @@ const Why = () => {
     },
     {
       img: (
-        <InclusiveApproach className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <InclusiveApproach className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Inclusive Approach",
       description:
@@ -52,7 +52,7 @@ const Why = () => {
     },
     {
       img: (
-        <IndustryCollaboration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <IndustryCollaboration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Industry Collaboration",
       description:
@@ -60,7 +60,7 @@ const Why = () => {
     },
     {
       img: (
-        <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Compliance with Regulations",
       description:
@@ -68,7 +68,7 @@ const Why = () => {
     },
     {
       img: (
-        <SeamlessIntegration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white " />
+        <SeamlessIntegration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Seamless Integration",
       description:
@@ -78,10 +78,10 @@ const Why = () => {
 
   const Card = ({ imageSrc, title, description }) => {
     return (
-      <div class="h-[356px] group rounded-xl w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-500 ease-in-out">
+      <div class="h-[356px] group rounded-xl w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
         <div className="px-4 ">
           <div className="mt-8">
-            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-500 ease-in-out flex justify-center items-center">
+            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>

@@ -101,7 +101,7 @@ const Card = ({ data }) => {
 const Tokonomics = () => {
   return (
     <div className="skew-y-6 xl:skew-y-3 py-16">
-      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-[700]">
+      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-HelveticaNeueBold">
         Tokenomics
       </h1>
       <div

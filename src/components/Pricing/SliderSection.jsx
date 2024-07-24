@@ -9,14 +9,14 @@ function SliderSection() {
   ]);
 
   return (
-    <div className="w-full flex flex-col gap-y-2">
-      <span className="font-HelveticaNeueBold bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] bg-clip-text text-transparent text-[24px] leading-normal">
+    <div className="w-full flex flex-col gap-y-3">
+      <span className="font-HelveticaNeueBold bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] bg-clip-text text-transparent text-[16px] md:text-[24px] leading-normal">
         Pricing Calculator
       </span>
-      <span className="text-[#132337] text-[18px] ">
+      <span className="text-[#132337] text-[16px] md:text-[18px] ">
         Number of Survey Responses
       </span>
-      <span className="text-[22px] font-HelveticaNeueBold text-[#132337]">
+      <span className="text-[20px] md:text-[22px] font-HelveticaNeueBold text-[#132337]">
         {sliderValue}
       </span>
       <Slider
@@ -32,12 +32,12 @@ function SliderSection() {
               color: "#89919B",
               left: "3px",
               fontWeight: "bold",
-              fontSize: "14px",
+              fontSize: "13px",
             },
             label: "1",
           },
           10000: {
-            style: { color: "#89919B", fontWeight: "bold", fontSize: "14px" },
+            style: { color: "#89919B", fontWeight: "bold", fontSize: "13px" },
             label: "10,000",
           },
         }}

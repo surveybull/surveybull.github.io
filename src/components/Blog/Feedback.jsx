@@ -4,7 +4,7 @@ function Feedback() {
   return (
     <div className="flex md:flex-row flex-col gap-6">
       <div className="md:w-[50%] w-full flex flex-col justify-center gap-y-7">
-        <span className="text-[24px] md:text-[36px] font-[700] text-[#132337]">
+        <span className="text-[24px] md:text-[36px] font-HelveticaNeueBold text-[#132337]">
           <span className="text-[#3B4EF4]">Collect information</span> and{" "}
           <span className="text-[#3B4EF4]">feedback</span> from almost anywhere
         </span>
