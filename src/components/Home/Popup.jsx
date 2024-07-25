@@ -32,7 +32,7 @@ const CountdownUnit = ({ value, label }) => (
     <span className="text-[22px] lg:text-[30px] font-HelveticaNeueBold mt-3">
       {formatNumber(value)}
     </span>
-    <span className="text-[14px] lg:text-[16px] font-HelveticaNeueMedium">
+    <span className="text-[14px] lg:text-[16px] font-HelveticaNeueLight">
       {label}
     </span>
   </div>
@@ -44,10 +44,10 @@ const Popup = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   const timeUnits = [
-    { label: "DAYS", value: timeLeft.days },
-    { label: "HOURS", value: timeLeft.hours },
-    { label: "MINS", value: timeLeft.minutes },
-    { label: "SEC", value: timeLeft.seconds },
+    { label: "Days", value: timeLeft.days },
+    { label: "Hours", value: timeLeft.hours },
+    { label: "Minutes", value: timeLeft.minutes },
+    { label: "Seconds", value: timeLeft.seconds },
   ];
 
   useEffect(() => {
