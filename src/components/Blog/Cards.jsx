@@ -77,7 +77,7 @@ const Cards = () => {
 
   const Card = ({ imageSrc, title, description }) => {
     return (
-      <div class="h-[300px] group rounded-xl w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
+      <div class="min-h-[300px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
         <div className="px-4 ">
           <div className="mt-8">
             <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
@@ -98,8 +98,10 @@ const Cards = () => {
   return (
     <div className="flex flex-col gap-y-6">
       <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
-        Get started with
-        <span className="text-[#3B4EF4]">&nbsp;best practices</span>
+        <span className="text-center">
+          Get started with{" "}
+          <span className="text-[#3B4EF4]">best practices</span>
+        </span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">

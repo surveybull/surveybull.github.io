@@ -77,37 +77,13 @@ function FAQs() {
         type={"FAQs"}
         description={"FAQs Page"}
       />
-      <div
-        className="hidden md:block"
-        style={{
-          backgroundImage: `url(${FAQsBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </div>
-      <div
-        className="block md:hidden"
-        style={{
-          backgroundImage: `url(${FAQsMobileBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
-          <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${QuestionsBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+
+      <div className="sm:bg-[url('./assets/background/QuestionsBg.jpg')] bg-[url('./assets/background/QuestionMobileBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Questions faqs={filterData} />
         </div>

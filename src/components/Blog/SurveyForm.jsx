@@ -5,7 +5,7 @@ import Report from "./Report";
 
 function SurveyForm() {
   return (
-    <div className="flex flex-col pt-[1rem] pb-[4rem] md:gap-[7rem] gap-[4rem]">
+    <div className="flex flex-col pb-[3rem] md:gap-[7rem] gap-[4rem]">
       <Intro />
       <Feedback />
       <Report />

@@ -4,6 +4,7 @@ import FooterTelegram from "../../assets/FooterTelegram.svg";
 import FooterMail from "../../assets/FooterMail.svg";
 import FooterTwitter from "../../assets/FooterTwitter.svg";
 import discord from "../../assets/Discord.svg";
+import FooterMobileBg from "../../assets/background/FooterMobileBg.jpg";
 const sectionsData = [
   {
     title: "Offering",
@@ -55,12 +56,12 @@ const Footer = () => {
         </button>
       </div>
       <div
-        style={{
-          backgroundImage: `url(${FooterBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="mt-11"
+        className="sm:bg-[url('./assets/background/FooterBg.jpg')] bg-[url('./assets/background/FooterMobileBg.jpg')] bg-cover bg-repeat-round mt-11"
+        // style={{
+        //   backgroundImage: `url(${FooterBg})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
           <div class="flex gap-10 lg:flex-row flex-col justify-center">

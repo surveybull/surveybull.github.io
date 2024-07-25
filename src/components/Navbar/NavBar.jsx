@@ -39,14 +39,12 @@ const NavBar = () => {
       childItem: [
         {
           id: "Why",
-          mobileid: "MWhy",
           title: "Why SurveyBull?",
           path: "/",
           subtitle: "reasons to choose surveybull",
         },
         {
           id: "Earn",
-          mdid: "MbEarn",
           title: "Earn Token",
           path: "/",
           subtitle: "earn tokens with your data",
@@ -59,7 +57,6 @@ const NavBar = () => {
         },
         {
           id: "Survey",
-          mobileid:"SurveyMb",
           title: "Survey Building",
           path: "/",
           subtitle: "Crafting made easy",

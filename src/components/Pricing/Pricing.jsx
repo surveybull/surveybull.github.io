@@ -29,106 +29,34 @@ function Pricing() {
         type={"Article"}
         description={"Pricing Section"}
       />
-      <div
-        className="hidden md:block"
-        style={{
-          backgroundImage: `url(${PricingIntroBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
-        }}
-      >
+      <div className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <PricingIntro />
         </div>
       </div>
-      <div
-        className="block md:hidden"
-        style={{
-          backgroundImage: `url(${PricingMobileBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          paddingBottom: "50px",
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
-          <PricingIntro />
-        </div>
-      </div>
-      {/* <div
-        style={{
-          backgroundImage: `url(${PricingWorkBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-         
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <PriceWork />
-        </div>
-      </div> */}
-      <div
-        style={{
-          backgroundImage: `url(${CalculatorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+
+      <div className="bg-[url('./assets/background/CalculatorBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Calculator />
         </div>
       </div>
-      {/* <div
-        style={{
-          backgroundImage: `url(${CalculationBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <PriceCalculation />
-        </div>
-      </div> */}
-      <div
-        style={{
-          backgroundImage: `url(${KeyFeatureBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+
+      <div className="bg-[url('./assets/background/KeyFeatureBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PricingKey />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${PaymentProcessBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[url('./assets/background/PaymentProcessBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PricePayment />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${GetStartedBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[url('./assets/background/GetStartedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <GettingStarted />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${LearnMoreBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[url('./assets/background/LearnMoreBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <LearnMore />
         </div>

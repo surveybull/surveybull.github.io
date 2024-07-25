@@ -5,6 +5,7 @@ import discord from "../../assets/Discord.svg";
 import twitter from "../../assets/FooterTwitter.svg";
 import telegram from "../../assets/FooterTelegram.svg";
 import popupbg from "../../assets/background/PopupBg.jpg";
+import { X } from "lucide-react";
 const calculateTimeLeft = () => {
   const difference = +new Date("2024-08-05T00:00:00Z") - +new Date();
   let timeLeft = {};
@@ -76,13 +77,11 @@ const Popup = () => {
         }}
       >
         <div className="flex justify-end">
-          <img
+          <X
             className="mr-3 cursor-pointer "
-            color="black"
-            onClick={() => setOpenPopup(false)}
             width={25}
             height={25}
-            src={close}
+            onClick={() => setOpenPopup(false)}
           />
         </div>
         <div className="w-full p-3 justify-center items-center">

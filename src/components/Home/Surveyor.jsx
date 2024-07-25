@@ -35,11 +35,11 @@ const Surveyor = () => {
           <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain{" "}
           <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
         </div>
-        <div className="w-full lg:hidden block ">
+        <div className="w-full lg:hidden flex justify-center ">
           <img
             src={SurveyorGif}
             alt="SurveyorGif"
-            className="h-full relative left-[-43px]"
+            className="max-h-[550px]"
           />
         </div>
         <div className="flex flex-col gap-y-7">

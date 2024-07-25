@@ -12,6 +12,7 @@ import Sheetpng from "../../assets/background/sheetpng.png";
 import twitterLogo from "../../assets/twitterLogo.svg";
 import mailLogo from "../../assets/mailLogo.svg";
 import telegramLogo from "../../assets/telegramLogo.svg";
+import MenuButton from "../../assets/MenuButton.svg";
 import { Link } from "react-router-dom";
 
 function MobileNavbar({ NavbarData, visitedPage }) {
@@ -30,15 +31,15 @@ function MobileNavbar({ NavbarData, visitedPage }) {
       </div>
       <Sheet>
         <SheetTrigger>
-          <FiMenu size={25} />
+          <img src={MenuButton} alt="MenuButton" />
         </SheetTrigger>
         <SheetContent
-          style={{
-            backgroundImage: `url(${Sheetpng})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="overflow-auto"
+          // style={{
+          //   backgroundImage: `url(${Sheetpng})`,
+          //   backgroundSize: "cover",
+          //   backgroundRepeat: "no-repeat",
+          // }}
+          className="overflow-auto bg-[url('./assets/background/sheetpng.png')] bg-cover bg-repeat-round bg-fixed"
         >
           <div className="flex flex-col gap-y-6 mt-[2.5rem]">
             <div className="flex justify-evenly items-center">
@@ -83,9 +84,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                         <SheetClose>
                           <div
                             onClick={() => {
-                              scrollToSection(
-                                child.mobileid ? child.mobileid : child.mdid ? child.mdid : child.id
-                              );
+                              scrollToSection(child.id);
                             }}
                             className={`${
                               option.childItem.length - 1 == index

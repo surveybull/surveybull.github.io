@@ -15,23 +15,11 @@ import Invite from "./Invite";
 import Popup from "./Popup";
 import NavBar from "../Navbar/NavBar";
 import Intro from "./Intro";
-import IntroBg from "../../assets/background/Intro.jpg";
 import SurveyorBg from "../../assets/background/Surveyor.svg";
-import whyBg from "../../assets/background/whyBg.jpg";
-import whyIntroBg from "../../assets/background/whyMobileBg.jpg";
-import midSection from "../../assets/background/MidsectionBg.jpg";
-import SDKBg from "./../../assets/background/SDKBg.jpg";
-import DecentralizedBg from "../../assets/background/decentralizedBg.jpg";
-import IntroMobileBg from "../../assets/background/IntroMobileBg.jpg";
-import TokenomicsBg from "../../assets/background/TokenomicsBg.jpg";
 import MidSection from "./MidSection";
-import WeightCalculationBg from "../../assets/background/WeightCalculationBg.png";
-import UsecaseBg from "../../assets/background/UsecaseBg.jpg";
 import SEO from "../SEO";
 import Investor from "./Investor";
-import InvestorBg from "../../assets/background/InvestorBg.jpg";
-import MidsectionMobileBg from "../../assets/background/MidsectionMobileBg.jpg";
-import SDKMobileBg from "../../assets/background/SDKMobileBg.jpg"
+import db from "../../assets/background/Distribution.svg";
 function Home() {
   return (
     <>
@@ -41,193 +29,75 @@ function Home() {
         title={"SurveyBull | Home"}
         type={"Home"}
       />
-      <div
-        className="sm:bg-[url('./assets/background/Intro.jpg')] bg-[url('./assets/background/IntroMobileBg.jpg')]   bg-cover bg-repeat-round "
-        // style={{
-        //   backgroundImage: `url(${IntroBg})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-      >
+
+      <div className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round ">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>
       </div>
-      {/* <div
-        className="block md:hidden bg-repeat-round bg-[url('./assets/background/IntroMobileBg.jpg')]"
-        // style={{
-        //   backgroundImage: `url(${IntroMobileBg})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-      >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <Intro />
-        </div>
-      </div> */}
+
       <div
         id="Why"
-        className="hidden md:block"
-        style={{
-          backgroundImage: `url(${whyBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="md:bg-[url('./assets/background/whyBg.jpg')] bg-[url('./assets/background/whyMobileBg.jpg')] bg-cover bg-repeat-round"
       >
-        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
       </div>
-      <div
-        id="MWhy"
-        className="block md:hidden"
-        style={{
-          backgroundImage: `url(${whyIntroBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div id="Why" className="xl:max-w-[1300px] p-7 mx-auto">
-          <Why />
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${whyIntroBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div
-          className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit "
-          style={{
-            backgroundImage: `url(${SurveyorBg})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+
+      <section className="py-10 ">
+        <div className="bg-[#132337] bg-[url('./assets/background/SurveyorMobile.svg')] lg:bg-[url('./assets/background/Surveyor.svg')] bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit">
           <div className="xl:max-w-[1300px] p-7 mx-auto">
             <Surveyor />
           </div>
         </div>
-      </div>
+      </section>
 
       <div
         id="Earn"
-        className="lg:block hidden"
-        style={{
-          backgroundImage: `url(${midSection})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="lg:bg-[url('./assets/background/MidsectionBg.jpg')] bg-[url('./assets/background/MidsectionMobileBg.jpg')] bg-cover bg-repeat-round"
       >
         <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
           <MidSection />
-        </div>
-      </div>
-      <div
-        id="MbEarn"
-        className="lg:hidden block"
-        style={{
-          backgroundImage: `url(${MidsectionMobileBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
-          <MidSection />
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${midSection})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div
-          id="Distribution"
-          className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit"
-          style={{
-            backgroundImage: `url(${SurveyorBg})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="xl:max-w-[1300px] p-7 mx-auto">
-            <Distribution />
-          </div>
         </div>
       </div>
 
       <div
-        style={{
-          backgroundImage: `url(${DecentralizedBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        id="Distribution"
+        className="bg-[#132337] bg-[url('./assets/background/DistributionMobile.svg')] lg:bg-[url('./assets/background/Distribution.svg')] bg-cover  lg:bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit"
       >
+        <div className="xl:max-w-[1300px] p-7 mx-auto">
+          <Distribution />
+        </div>
+      </div>
+      {/* </div> */}
+
+      <div className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <DecentralizedAction />
         </div>
       </div>
 
       <div
-        className="md:hidden block"
-        id="SurveyMb"
-        style={{
-          backgroundImage: `url(${SDKMobileBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
-          <SDK />
-        </div>
-      </div>
-      <div
-        className="md:block hidden"
+        className="md:bg-[url('./assets/background/SDKBg.jpg')] bg-[url('./assets/background/SDKMobileBg.jpg')] bg-cover bg-repeat-round]"
         id="Survey"
-        style={{
-          backgroundImage: `url(${SDKBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <SDK />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${UsecaseBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+
+      <div className="bg-[url('./assets/background/UsecaseBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Cases />
         </div>
       </div>
-      <div
-        className="bg-[#132337] -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] "
-        style={{
-          backgroundImage: `url(${SurveyorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[#132337] bg-[url('./assets/background/TokenomicsMobile.svg')] md:bg-[url('./assets/background/Tokenomics.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Tokonomics />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${InvestorBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="bg-[url('./assets/background/InvestorBg.jpg')] bg-repeat-round bg-cover">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Investor />
         </div>

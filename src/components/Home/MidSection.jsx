@@ -33,7 +33,7 @@ const SurveyBuilding = () => {
           building.
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8">
-          <img src={Effortless} alt="intro" />
+          <img src={Effortless} alt="intro" className="max-h-[450px] " />
         </div>
         <div className=" my-12 grid sm:grid-cols-2 grid-cols-1 gap-5">
           <div className="">
@@ -52,8 +52,8 @@ const SurveyBuilding = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[50%] lg:flex lg:justify-end hidden ">
-        <img src={Effortless} alt="intro" />
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden items-center">
+        <img src={Effortless} alt="intro" className="h-fit " />
       </div>
     </div>
   );
@@ -104,7 +104,7 @@ const EarnToken = () => {
           rewarded.
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8">
-          <img src={EarnTokenGif} alt="intro" />
+          <img src={EarnTokenGif} alt="intro" className="max-h-[600px]" />
         </div>
         <div className=" my-12 lg:mr-10 ">
           <div className="">
@@ -118,8 +118,8 @@ const EarnToken = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[50%] lg:flex lg:justify-end hidden">
-        <img src={EarnTokenGif} alt="intro" />
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden items-center">
+        <img src={EarnTokenGif} alt="intro" className="h-fit" />
       </div>
     </div>
   );
@@ -167,7 +167,7 @@ const Grow = () => {
           through our referral program. Here's how you can benefit:
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8">
-          <img src={Refer} alt="intro" />
+          <img src={Refer} alt="intro" className="max-h-[570px]" />
         </div>
         <div className="my-12">
           {referralSections.map((section, index) => (
@@ -179,8 +179,8 @@ const Grow = () => {
           ))}
         </div>
       </div>
-      <div className="lg:w-[50%] lg:flex lg:justify-end hidden">
-        <img src={Refer} alt="intro" />
+      <div className="lg:w-[50%] lg:flex lg:justify-end hidden items-center">
+        <img src={Refer} alt="intro" className="h-fit"/>
       </div>
     </div>
   );
@@ -229,7 +229,7 @@ const Boost = () => {
           additional rewards. Here's how staking works:
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8 ">
-          <img src={Staking} alt="intro" />
+          <img src={Staking} alt="intro" className="max-h-[500px]"/>
         </div>
         <div className="my-12">
           {sections.map((section, index) => (
@@ -241,8 +241,8 @@ const Boost = () => {
           ))}
         </div>
       </div>
-      <div className="lg:w-[50%] w-full lg:flex lg:justify-end items-center justify-center hidden">
-        <img src={Staking} alt="intro" />
+      <div className="lg:w-[50%] w-full lg:flex lg:justify-end items-center  hidden">
+        <img src={Staking} alt="intro" className="h-fit"/>
       </div>
     </div>
   );
