@@ -26,9 +26,9 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   };
   return (
     <div className="flex items-center justify-between mx-auto w-full px-7 py-4 ">
-      <div>
+      <Link to={"/"}>
         <img src={SurveybullLogo} width={150} height={150}></img>
-      </div>
+      </Link>
       <Sheet>
         <SheetTrigger>
           <img src={MenuButton} alt="MenuButton" />

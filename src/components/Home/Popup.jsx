@@ -27,10 +27,14 @@ const formatNumber = (number) => {
 };
 
 const CountdownUnit = ({ value, label }) => (
-  <div className="flex flex-col flex-1 text-[#132337] justify-center items-center bg-[#dadceb] rounded-[8.12px] py-6 relative">
-    <div className="rounded-t-[8.12px] bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] h-[13px] text-[#132337] w-full absolute top-0"></div>
-    <span>{formatNumber(value)}</span>
-    <span>{label}</span>
+  <div className="flex flex-col flex-1 text-[#132337] justify-center items-center bg-[#dadceb] rounded-[8.12px] py-3 relative">
+    <div className="rounded-t-[8.12px] bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] h-[10px] lg:h-[13px] text-[#132337] w-full absolute top-0"></div>
+    <span className="text-[22px] lg:text-[30px] font-HelveticaNeueBold mt-3">
+      {formatNumber(value)}
+    </span>
+    <span className="text-[14px] lg:text-[16px] font-HelveticaNeueMedium">
+      {label}
+    </span>
   </div>
 );
 

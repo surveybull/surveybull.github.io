@@ -5,9 +5,9 @@ import DropDownMenu from "./DropDownMenu";
 function DesktopNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between xl:max-w-[1300px] mx-auto w-full px-7 py-4">
-      <div>
+      <Link to={"/"}>
         <img src={SurveybullLogo} width={170} height={170}></img>
-      </div>
+      </Link>
       <div className="flex items-center gap-x-8">
         {NavbarData.map((option) =>
           option.childItem.length > 0 ? (
