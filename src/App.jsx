@@ -7,12 +7,12 @@ import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
 import FAQs from "./components/FAQs/FAQs";
 import NavBar from "./components/Navbar/NavBar";
-// import './App.css';
+import './App.css';
 function App() {
   return (
     <Router>
       <NavBar />
-      <div className="">
+      <div className="no-scrollbar">
         <Routes>
           <Route path="/" Component={Home}></Route>
           <Route path="/roadmap" Component={Roadmap}></Route>
