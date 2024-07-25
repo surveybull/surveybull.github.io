@@ -77,17 +77,17 @@ function FAQs() {
         type={"FAQs"}
         description={"FAQs Page"}
       />
-      <div className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
-      </div>
+      </section>
 
-      <div className="sm:bg-[url('./assets/background/QuestionsBg.jpg')] bg-[url('./assets/background/QuestionMobileBg.jpg')] bg-cover bg-repeat-round">
+      <section className="sm:bg-[url('./assets/background/QuestionsBg.jpg')] bg-[url('./assets/background/QuestionMobileBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Questions faqs={filterData} />
         </div>
-      </div>
+      </section>
     </>
   );
 }

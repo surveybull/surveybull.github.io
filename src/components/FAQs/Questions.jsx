@@ -10,7 +10,7 @@ import { LuMinus } from "react-icons/lu";
 import noData from "../../../public/noData.png";
 function Questions({ faqs }) {
   return faqs.length > 0 ? (
-    <Accordion type="multiple" className="flex flex-col gap-y-7 py-10 md:py-12">
+    <Accordion type="multiple" className="flex flex-col gap-y-7 pt-10 md:pt-12">
       {faqs.map((data, index) => (
         <AccordionItem
           value={index + 1}

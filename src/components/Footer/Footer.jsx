@@ -46,7 +46,7 @@ const Section = ({ title, links }) => {
 
 const Footer = () => {
   return (
-    <footer class="text-black">
+    <footer class="text-black -mt-[50px]">
       <div className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[8px] sm:rounded-[20px] flex flex-wrap justify-center lg:justify-between items-center gap-y-4 gap-x-1 shadow-[0px_4px_34px_0px_rgba(90,106,248,0.4)]">
         <div className="text-[#FFFFFF] text-[24px] font-HelveticaNeueBold text-center">
           Start Earning Rewards Or Get Insightful Data ?
@@ -55,14 +55,7 @@ const Footer = () => {
           Get Started
         </button>
       </div>
-      <div
-        className="sm:bg-[url('./assets/background/FooterBg.jpg')] bg-[url('./assets/background/FooterMobileBg.jpg')] bg-cover bg-repeat-round mt-11"
-        // style={{
-        //   backgroundImage: `url(${FooterBg})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-      >
+      <div className="sm:bg-[url('./assets/background/FooterBg.jpg')] bg-[url('./assets/background/FooterMobileBg.jpg')] bg-cover bg-repeat-round mt-11">
         <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
           <div class="flex gap-10 lg:flex-row flex-col justify-center">
             <div class="flex flex-col gap-y-7 lg:w-[25%] w-full items-center lg:items-start justify-between">

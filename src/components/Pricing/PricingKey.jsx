@@ -4,13 +4,13 @@ import Dot from "../../assets/Dot.svg";
 
 const PricingKey = () => {
   return (
-    <div className="py-4 mt-[2rem] md:mt-[2rem]">
-      <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center">
+    <div className="">
+      <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center gap-8">
         <div className="flex mt-4  lg:mt-0 justify-center items-center">
           <img src={KeyFeature} alt="Your Image" class="" />{" "}
         </div>
         <div className="">
-          <div className="text-left text-4xl my-4 font-HelveticaNeueBold">
+          <div className="text-left text-2xl md:text-4xl my-4 font-HelveticaNeueBold">
             Key <span className=" text-[rgba(59,78,244,1)]"> Features</span>
           </div>
           <div className="flex">
@@ -30,11 +30,10 @@ const PricingKey = () => {
                     height={16}
                     width={16}
                     alt="Your Image"
-                    class=""
                   />
                 </div>
                 <div className="pl-3 md:pl-0">
-                  <div className="text-base md:text-base  font-HelveticaNeueMedium">
+                  <div className="text-[14px] md:text-base  font-HelveticaNeueMedium">
                     Transparent Pricing
                   </div>
                   <div className="text-xs md:text-sm  text-[#5A6573] py-[8px]">
@@ -55,7 +54,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
+                    <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Currency Conversion
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -77,7 +76,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
+                    <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Blockchain Security
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -88,7 +87,7 @@ const PricingKey = () => {
               </div>
               <div className="mt-[18px]">
                 <div className="flex">
-                  <div className="flex item md:hidden m-[2px] w-[16px]  ">
+                  <div className="flex items-start md:hidden m-[2px] w-[16px]  ">
                     <img
                       src={Dot}
                       className="w-[16px] min-w-4 "
@@ -98,7 +97,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
+                    <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Flexible Customization
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
@@ -119,7 +118,7 @@ const PricingKey = () => {
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
-                    <div className="text-base md:text-base  font-HelveticaNeueMedium">
+                    <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       API Integration
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">

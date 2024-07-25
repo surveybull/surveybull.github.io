@@ -21,27 +21,29 @@ function Blog() {
         type={"Blog"}
         title={"SurveyBull | Blog"}
       />
-      <div className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header />
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[url('./assets/background/SurveyFormMobileBg.jpg')] md:bg-[url('./assets/background/SurveyFormBg.jpg')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/background/SurveyFormMobileBg.jpg')] md:bg-[url('./assets/background/SurveyFormBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <SurveyForm />
         </div>
-      </div>
-      <div className="bg-[url('./assets/background/BlogCardsBg.jpg')] bg-cover sm:bg-repeat-round">
+      </section>
+
+      <section className="bg-[url('./assets/background/BlogCardsBg.jpg')] bg-cover sm:bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Cards />
         </div>
-      </div>
-      <div className="bg-[#132337] bg-[url('./assets/background/TargetMobile.svg')] md:bg-[url('./assets/background/Target.svg')] bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
+      </section>
+
+      <section className="bg-[#132337] mb-10 bg-[url('./assets/background/TargetMobile.svg')] md:bg-[url('./assets/background/Target.svg')] bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
         <div className="xl:max-w-[1300px] p-7 mx-auto mt-[40px]">
           <Target />
         </div>
-      </div>
+      </section>
     </>
   );
 }

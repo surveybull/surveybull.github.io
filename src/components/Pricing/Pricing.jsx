@@ -29,38 +29,41 @@ function Pricing() {
         type={"Article"}
         description={"Pricing Section"}
       />
-      <div className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <PricingIntro />
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[url('./assets/background/CalculatorBg.jpg')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/background/CalculatorBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Calculator />
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[url('./assets/background/KeyFeatureBg.jpg')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/background/KeyFeatureBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PricingKey />
         </div>
-      </div>
-      <div className="bg-[url('./assets/background/PaymentProcessBg.jpg')] bg-cover bg-repeat-round">
+      </section>
+      
+      <section className="bg-[url('./assets/background/PaymentProcessBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PricePayment />
         </div>
-      </div>
-      <div className="bg-[url('./assets/background/GetStartedBg.jpg')] bg-cover bg-repeat-round">
+      </section>
+
+      <section className="bg-[url('./assets/background/GetStartedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <GettingStarted />
         </div>
-      </div>
-      <div className="bg-[url('./assets/background/LearnMoreBg.jpg')] bg-cover bg-repeat-round">
+      </section>
+
+      <section className="bg-[url('./assets/background/LearnMoreBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <LearnMore />
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -30,20 +30,20 @@ function Home() {
         type={"Home"}
       />
 
-      <div className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round ">
+      <section className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round ">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         id="Why"
         className="md:bg-[url('./assets/background/whyBg.jpg')] bg-[url('./assets/background/whyMobileBg.jpg')] bg-cover bg-repeat-round"
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Why />
         </div>
-      </div>
+      </section>
 
       <section className="py-10 ">
         <div className="bg-[#132337] bg-[url('./assets/background/SurveyorMobile.svg')] lg:bg-[url('./assets/background/Surveyor.svg')] bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit">
@@ -53,55 +53,57 @@ function Home() {
         </div>
       </section>
 
-      <div
+      <section
         id="Earn"
         className="lg:bg-[url('./assets/background/MidsectionBg.jpg')] bg-[url('./assets/background/MidsectionMobileBg.jpg')] bg-cover bg-repeat-round"
       >
         <div className="xl:max-w-[1300px] p-7 pb-10 mx-auto">
           <MidSection />
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         id="Distribution"
         className="bg-[#132337] bg-[url('./assets/background/DistributionMobile.svg')] lg:bg-[url('./assets/background/Distribution.svg')] bg-cover  lg:bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit"
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Distribution />
         </div>
-      </div>
-      {/* </div> */}
+      </section>
 
-      <div className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <DecentralizedAction />
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         className="md:bg-[url('./assets/background/SDKBg.jpg')] bg-[url('./assets/background/SDKMobileBg.jpg')] bg-cover bg-repeat-round]"
         id="Survey"
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <SDK />
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[url('./assets/background/UsecaseBg.jpg')] bg-cover bg-repeat-round">
+      <section className="bg-[url('./assets/background/UsecaseBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Cases />
         </div>
-      </div>
-      <div className="bg-[#132337] bg-[url('./assets/background/TokenomicsMobile.svg')] md:bg-[url('./assets/background/Tokenomics.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
+      </section>
+
+      <section className="bg-[#132337] bg-[url('./assets/background/TokenomicsMobile.svg')] md:bg-[url('./assets/background/Tokenomics.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Tokonomics />
         </div>
-      </div>
-      <div className="bg-[url('./assets/background/InvestorBg.jpg')] bg-repeat-round bg-cover">
+      </section>
+
+      <section className="bg-[url('./assets/background/InvestorBg.jpg')] bg-repeat-round bg-cover">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Investor />
         </div>
-      </div>
+      </section>
+
       <Popup />
     </>
   );

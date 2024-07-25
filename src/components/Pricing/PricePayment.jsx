@@ -25,7 +25,7 @@ const PricePayment = () => {
 
   return (
     <div className="py-4 mt-[2rem] md:mt-[2rem]">
-      <div className="text-center text-4xl font-HelveticaNeueMedium">
+      <div className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
         Payment <span className=" text-[rgba(59,78,244,1)]"> Process </span>
       </div>
       <div className="flex flex-col justify-center">
@@ -54,10 +54,10 @@ const PricePayment = () => {
                 </div>
               </div>
               <div className="mt-16">
-                <div className="text-center font-HelveticaNeueMedium">
+                <div className="text-center text-sm md:text-base font-HelveticaNeueMedium">
                   {item.title}
                 </div>
-                <div className="my-3 text-center text-sm text-[rgba(90,101,115,1)]">
+                <div className="my-3 md:text-sm text-xs text-center  text-[rgba(90,101,115,1)]">
                   {item.description}
                 </div>
               </div>
