@@ -42,7 +42,7 @@ const Distribution = () => {
   return (
     <div className="flex flex-col items-start gap-y-7 skew-y-6 xl:skew-y-3 py-16">
       <h1 className="md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] ">
-        Weighted <span className="text-[#978FFD]">Reward Calculation</span>{" "}
+        Weighted <span className="text-[#978FFD]">Revenue Sharing</span>{" "}
         Mechanism
       </h1>
       <div className="text-[14px] leading-[26px] max-w-[1000px] font-[400] text-[#89919B] md:text-[16px]">

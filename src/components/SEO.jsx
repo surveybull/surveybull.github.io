@@ -1,10 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 function SEO({ name, type, description, title }) {
+  const des =
+    "survey suveybull SurveyBull cryptocurrencies crpto technologies Decentralization Participants surveyors Automated Calculation tech tokenomics Authentication Smart Contracts SmartContracts WorldCoin Blockchainnetwork Blockchain network bullnetwork compensation Payment distribution Wallet Investor token reward decentralized web3 airdrop tokengated gate tokens drop gifts blockchain block chain question answer quetions answer worldid device orb participation incentivized technology platform traceability data integrity authenticity transparent trustworthy BULL bull feedback  ";
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={des} />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
