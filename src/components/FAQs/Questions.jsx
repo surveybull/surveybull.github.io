@@ -10,10 +10,10 @@ import { LuMinus } from "react-icons/lu";
 import noData from "../../../public/noData.png";
 function Questions({ faqs }) {
   return faqs.length > 0 ? (
-    <Accordion type="multiple" className="flex flex-col gap-y-7 pt-10 md:pt-12">
+    <Accordion type="multiple" defaultValue={"Item-1"} className="flex flex-col gap-y-7 pt-10 md:pt-12">
       {faqs.map((data, index) => (
         <AccordionItem
-          value={index + 1}
+          value={`Item-${data.id}`}
           className="border-[1px] border-[#D0D3D7] rounded-[10px]"
         >
           <AccordionTrigger className="group hover:no-underline data-[state=open]:bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] data-[state=open]:rounded-t-[9px] data-[state=open]:rounded-b-none rounded-[10px] data-[state=closed]:bg-[#FFFFFF] px-10 md:text-[16px] data-[state=open]:font-HelveticaNeueBold font-[400] data-[state=open]:text-[#FFFFFF] text-[#132337] text-[14px]">

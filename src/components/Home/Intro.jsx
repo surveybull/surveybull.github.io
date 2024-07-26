@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="flex flex-col gap-y-8 justify-center md:items-center items-start flex-1">
         <div className="h-[90px] md:h-[150px] lg:h-[90px] 2xl:h-[170px] overflow-hidden flex items-end">
           <WordRotate
-            className="text-start md:text-center text-[#3B4EF4] font-HelveticaNeueBold text-[28px] md:text-[40px] 2xl:text-[56px]"
+            className="text-start md:text-center text-[#3B4EF4] font-HelveticaNeueBold text-[28px] md:text-[40px] lg:text-[68px]"
             words={[
               "Craft, Share, Analyse",
               "Your Opinion, Your Impact",
@@ -16,10 +16,10 @@ const Intro = () => {
             ]}
           />
         </div>
-        <div className=" text-[#132337] font-HelveticaNeueBold text-[28px] md:text-[40px] 2xl:text-[56px] mt-[-20px] text-start md:text-center max-w-[600px]">
+        <div className=" text-[#132337] font-HelveticaNeueBold text-[28px] md:text-[40px] xl:text-[60px] mt-[-20px] md:leading-[65px] xl:leading-[75px] text-start md:text-center max-w-[700px]">
           Embark on Your Survey Adventure Today!
         </div>
-        <div className="text-start text-[#132337] text-[14px] md:text-[18px] lg:text-[20px] font-[400]">
+        <div className="text-start text-[#132337] text-[14px] md:text-[20px] font-[400]">
           Unlock the power of Blockchain Supported Survey, Earn reward for your
           data!
         </div>

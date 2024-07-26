@@ -10,7 +10,7 @@ import Phase5 from "../../assets/Phase5.svg";
 import Phase6 from "../../assets/Phase6.svg";
 import Phase7 from "../../assets/Phase7.svg";
 import Phase8 from "../../assets/Phase8.svg";
-
+import line from "../../assets/MainLine.svg";
 import Phase1line from "../../assets/Phase1line.svg";
 import Phase2line from "../../assets/Phase2line.svg";
 import Phase3line from "../../assets/Phase3line.svg";
@@ -256,17 +256,18 @@ const Map = () => {
   return (
     <div className=" my-[6rem]">
       <div className=" relative flex md:justify-center my-24">
-        <div className="absolute w-4 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div>
-        <div className="absolute w-4 bottom-0 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div>
-        <div class="absolute w-[2px] z-10 rounded-2xl ml-[8px] md:ml-0 h-full border-dashed border-2 border-indigo-600 "></div>
-        <div className="w-full flex flex-col justify-between">
+        <img className="absolute z-10 h-full " src={line} alt="" />
+        {/* <div className="absolute w-4 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div> */}
+        {/* <div className="absolute w-4 bottom-0 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div> */}
+        {/* <div class="absolute w-[2px] z-10 rounded-2xl ml-[8px] md:ml-0 h-full border-dashed border-2 border-indigo-600 "></div> */}
+        <div className="w-full flex flex-col justify-between my-[50px]">
           <div className=" my-10 md:flex  h-fit w-full">
             <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-12px] md:ml-0 ">
                 <img src={Phase1} alt="Your Image" class="" />
               </div>
             </div>
-            <div className="md:w-[50%] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
+            <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
               June 2023
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
@@ -296,7 +297,7 @@ const Map = () => {
                 <Card data={data[1]} />
               </div>
             </div>
-            <div className="pl-12 md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
+            <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
               July 2024
             </div>
           </div>
@@ -307,7 +308,7 @@ const Map = () => {
                 <img src={Phase3} alt="Your Image" class="" />
               </div>
             </div>
-            <div className="md:w-[50%] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
+            <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
               Aug 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
@@ -337,7 +338,7 @@ const Map = () => {
                 <Card data={data[3]} />
               </div>
             </div>
-            <div className="pl-12 md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
+            <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
               Aug 2024
             </div>
           </div>
@@ -348,7 +349,7 @@ const Map = () => {
                 <img src={Phase5} alt="Your Image" class="" />
               </div>
             </div>
-            <div className="md:w-[50%] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
+            <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
               Aug 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
@@ -378,7 +379,7 @@ const Map = () => {
                 <Card data={data[5]} />
               </div>
             </div>
-            <div className="pl-12 md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
+            <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
               Aug 2024
             </div>
           </div>
@@ -389,7 +390,7 @@ const Map = () => {
                 <img src={Phase7} alt="Your Image" class="" />
               </div>
             </div>
-            <div className="md:w-[50%] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
+            <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
               Aug 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
@@ -419,7 +420,7 @@ const Map = () => {
                 <Card data={data[7]} />
               </div>
             </div>
-            <div className="pl-12 md:pl-2 pt-4 pb-2 font-HelveticaNeueMedium  lg:w-[47%] md:w-[45%]">
+            <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 font-HelveticaNeueMedium  lg:w-[47%] md:w-[45%]">
               Aug 2024
             </div>
           </div>

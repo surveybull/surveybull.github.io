@@ -33,19 +33,24 @@ function MobileNavbar({ NavbarData, visitedPage }) {
         <SheetTrigger>
           <img src={MenuButton} alt="MenuButton" />
         </SheetTrigger>
-        <SheetContent
-          // style={{
-          //   backgroundImage: `url(${Sheetpng})`,
-          //   backgroundSize: "cover",
-          //   backgroundRepeat: "no-repeat",
-          // }}
-          className="overflow-auto bg-[url('./assets/background/sheetpng.png')] bg-cover bg-repeat-round bg-fixed"
-        >
+        <SheetContent className="overflow-auto bg-[url('./assets/background/sheetpng.png')] bg-cover bg-repeat-round bg-fixed">
           <div className="flex flex-col gap-y-6 mt-[2.5rem]">
             <div className="flex justify-evenly items-center">
-              <img src={mailLogo} width={20} height={20}></img>
-              <img src={telegramLogo} width={20} height={20}></img>
-              <img src={twitterLogo} width={20} height={20}></img>
+              {/* <img src={mailLogo} width={20} height={20}></img> */}
+              <a
+                href=" https://t.me/surveybull"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={telegramLogo} width={20} height={20}></img>
+              </a>
+              <a
+                href="https://x.com/surveybull"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitterLogo} width={20} height={20}></img>
+              </a>
             </div>
             <div className="py-3">
               <img src={SurveybullLogo} width={140} height={140}></img>

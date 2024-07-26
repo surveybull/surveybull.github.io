@@ -22,10 +22,10 @@ const SurveyCard = ({ imageSrc, title, description }) => {
       <div className="flex h-max gap-2 w-full relative">
         <div className="h-[30%] bg-[#3B4EF4] group-hover:h-full w-[1px] transition-height duration-700 ease-in-out absolute left-[-10px]"></div>
         <div className="flex flex-col gap-y-2">
-          <span className="text-[#132337] text-[16px] font-HelveticaNeueMedium group-hover:text-[#3B4EF4] transition-height duration-700 ease-in-out">
+          <span className="text-[#132337] text-[14px] md:text-[16px] font-HelveticaNeueMedium group-hover:text-[#3B4EF4] transition-height duration-700 ease-in-out">
             {title}
           </span>
-          <span className="text-[#5A6573] text-[14px] font-[400]">
+          <span className="text-[#5A6573] text-[12px] md:text-[14px] md:leading-[24px] leading-[20px] font-[400]">
             {description}
           </span>
         </div>
@@ -36,8 +36,8 @@ const SurveyCard = ({ imageSrc, title, description }) => {
 
 const Cases = () => {
   return (
-    <div className="flex flex-col gap-y-10 py-[80px]">
-      <h1 className="flex justify-center text-[#132337] sm:text-[36px] text-[24px] font-HelveticaNeueBold ">
+    <div className="flex flex-col gap-y-10 pb-[80px]">
+      <h1 className="flex justify-center text-[#132337] md:text-[36px] text-[24px] font-HelveticaNeueBold ">
         Applications
       </h1>
       <div className="flex flex-col gap-y-12 justify-center items-center">

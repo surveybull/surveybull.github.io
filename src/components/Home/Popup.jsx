@@ -7,7 +7,7 @@ import telegram from "../../assets/FooterTelegram.svg";
 import popupbg from "../../assets/background/PopupBg.jpg";
 import { X } from "lucide-react";
 const calculateTimeLeft = () => {
-  const difference = +new Date("2024-08-05T00:00:00Z") - +new Date();
+  const difference = +new Date("2024-09-02T00:00:00Z") - +new Date();
   let timeLeft = {};
 
   if (difference > 0) {
@@ -77,7 +77,7 @@ const Popup = () => {
         style={{
           backgroundImage: `url(${popupbg})`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "round",
         }}
       >
         <div className="flex justify-end">
@@ -108,26 +108,29 @@ const Popup = () => {
           ))}
         </div>
         <div className="w-full mt-3 gap-3 flex justify-center items-center">
-          <img
-            src={mail}
-            alt=""
-            className="w-[26px] h-[26px] md:w-auto md:h-auto"
-          />
-          <img
-            src={telegram}
-            alt=""
-            className="w-[26px] h-[26px] md:w-auto md:h-auto"
-          />
-          <img
-            src={twitter}
-            alt=""
-            className="w-[26px] h-[26px] md:w-auto md:h-auto"
-          />
-          <img
-            src={discord}
-            alt=""
-            className="w-[26px] h-[26px] md:w-auto md:h-auto"
-          />
+          <a
+            href=" https://t.me/surveybull"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={telegram} alt="FooterTelegram" />
+          </a>
+
+          <a
+            href=" https://x.com/surveybull"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={twitter} alt="FooterTwitter" />
+          </a>
+
+          <a
+            href="https://discord.gg/vBMPHe7dqK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={discord} alt="discord" />
+          </a>
         </div>
       </div>
     </div>

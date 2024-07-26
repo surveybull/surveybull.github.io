@@ -8,7 +8,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
       <Link to={"/"}>
         <img src={SurveybullLogo} width={170} height={170}></img>
       </Link>
-      <div className="flex items-center gap-x-8">
+      <div className="flex items-center  gap-x-4 lg:gap-x-8">
         {NavbarData.map((option) =>
           option.childItem.length > 0 ? (
             <DropDownMenu option={option} visitedPage={visitedPage} />
@@ -20,7 +20,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
                   visitedPage == option.path.toLowerCase()
                     ? "text-[#3B4EF4] font-[500]"
                     : "text-[#132337]"
-                } font-[400] text-[18px]`}
+                } font-[400] text-[16px] lg:text-[18px]`}
               >
                 {option.title}
               </Link>

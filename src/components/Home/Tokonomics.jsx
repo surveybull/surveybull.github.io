@@ -65,7 +65,7 @@ const Card = ({ data }) => {
       className={`w-full border-r-[2px] border-t-[2px] border-b-[2px] border-[#FFFFFF14] shadow-xl relative rounded-xl `}
     >
       <div
-        className="absolute left-[1px] top-[-2px] bottom-[-2px] w-2"
+        className="absolute left-[3px] md:left-[1px] top-[-2px] bottom-[-2px] w-2"
         style={{
           background: `linear-gradient(to bottom, ${data.startColor}, ${data.endColor})`,
           borderRadius: "12px 0px 0 12px",
@@ -74,20 +74,20 @@ const Card = ({ data }) => {
       <div className="h-full w-full flex flex-col justify-evenly px-4 py-3 gap-y-5 rounded-xl">
         <div className="flex justify-between items-center">
           <span
-            className="text-[16px] font-[500]"
+            className="text-[14px] md:text-[16px] font-[500]"
             style={{ color: data.textColor }}
           >
             {data.title}
           </span>
-          <span className="text-[14px] font-[400] text-[#B8BDC3] text-end">
+          <span className="md:text-[14px] text-[12px] font-[400] text-[#B8BDC3] text-end">
             {data.text}% allocation
           </span>
         </div>
         <div className="flex justify-between items-center">
-          <span className="text-[14px] text-[#E7E9EB] font-[500]">
+          <span className="md:text-[14px] text-[12px] text-[#E7E9EB] font-[500]">
             {data.tokens} Tokens
           </span>
-          <div className="text-[14px] font-[400] text-[#B8BDC3] text-end">
+          <div className="md:text-[14px] text-[12px] font-[400] text-[#B8BDC3] text-end">
             {data.cliff && <span>{data.cliff} CLIFF</span>}
             {data.cliff && data.tge && <span>, </span>}
             {data.tge && <span>{data.tge} TGE</span>}
@@ -101,7 +101,7 @@ const Card = ({ data }) => {
 const Tokonomics = () => {
   return (
     <div className="skew-y-6 xl:skew-y-3 py-16">
-      <h1 className="flex justify-center text-center text-[#FFFFFF] sm:text-[36px] text-[24px] font-HelveticaNeueBold">
+      <h1 className="flex justify-center text-center text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold">
         Tokenomics
       </h1>
       <div

@@ -123,8 +123,8 @@ const DecentralizedAction = () => {
   };
 
   return (
-    <div className=" my-[4rem]">
-      <div className=" text-[24px] font-HelveticaNeueBold leading-9 tracking-wider md:text-4xl mx-0 sm:mx-24   text-center ">
+    <div className=" mt-[4.5rem]">
+      <div className=" text-[24px] font-HelveticaNeueBold leading-[40px] tracking-wider md:text-4xl md:leading-[52px] mx-0 sm:mx-24   text-center ">
         {"Decentralized Actions: Elevating "}
         <span className=" text-[rgba(59,78,244,1)]">
           {" Survey Engagement "}
@@ -132,7 +132,7 @@ const DecentralizedAction = () => {
         in Crypto Products
       </div>
       <div className="flex justify-center">
-        <div className="mt-10 text-center max-w-[1000px] px-2 flex justify-center text-[14px] md:text-[16px] font-[400] tracking-wide text-[#5A6573]">
+        <div className="mt-10 text-center max-w-[1100px] px-2 flex justify-center text-[14px] md:text-[16px] font-[400] tracking-wide text-[#5A6573]">
           At SurveyBull, we deeply value your opinions and insights. We've
           created a unique opportunity for you to earn rewards by sharing your
           thoughts through surveys. Our platform provides a seamless experience
@@ -144,7 +144,7 @@ const DecentralizedAction = () => {
         {data.map((element) => {
           return (
             <div>
-              <div className="text-center text-[28px] mt-14 font-HelveticaNeueMedium ">
+              <div className="text-center text-[18px] md:text-[28px] mt-14 font-HelveticaNeueMedium ">
                 {element.title}
               </div>
               <ContentComponent

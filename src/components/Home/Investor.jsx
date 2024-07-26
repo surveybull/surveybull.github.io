@@ -61,8 +61,8 @@ function Investor() {
   ];
   return (
     <div className="my-[4rem]">
-      <span className=" flex justify-center sm:text-[36px] text-[24px] font-HelveticaNeueBold">
-        Investors & Partners
+      <span className=" flex justify-center md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#132337]">
+        Investors & <span className="text-[#3B4EF4]">Partners</span>
       </span>
       <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 sm:gap-14 gap-8 mt-10 ">
         {cardData.map((item) => (

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   useBULLtokenSwitcher,
   useEtheriumSwitcher,
@@ -11,6 +11,19 @@ function TokenSwitcher() {
   const [isEtheriumClicked, setIsEtheriumClicked] = useEtheriumSwitcher(
     (state) => [state.isClicked, state.setIsClicked]
   );
+  const fetchData = async () => {
+    try {
+     console.log("fetch data");
+    } catch (error) {
+      setError(error);
+    }
+  };
+   useEffect(() => {
+     fetchData();
+     const intervalId = setInterval(fetchData, 60000);
+     return () => clearInterval(intervalId);
+   }, []);
+
   return (
     <>
       <div className="border border-[#E7E9EB] bg-[#FFFFFF] rounded-[6px] p-2 flex gap-2">

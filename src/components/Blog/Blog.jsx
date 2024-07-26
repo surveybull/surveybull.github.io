@@ -39,7 +39,7 @@ function Blog() {
         </div>
       </section>
 
-      <section className="bg-[#132337] mb-10 bg-[url('./assets/background/TargetMobile.svg')] md:bg-[url('./assets/background/Target.svg')] bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
+      <section className="bg-[#132337] mb-10 bg-[url('./assets/background/TargetMobile.svg')] md:bg-[url('./assets/background/Target.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
         <div className="xl:max-w-[1300px] p-7 mx-auto mt-[40px]">
           <Target />
         </div>

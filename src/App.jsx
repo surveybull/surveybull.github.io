@@ -17,7 +17,7 @@ function App() {
           <Route path="/" Component={Home}></Route>
           <Route path="/roadmap" Component={Roadmap}></Route>
           <Route path="/pricing" Component={Pricing}></Route>
-          <Route path="/blog" Component={Blog}></Route>
+          <Route path="/surveycreation" Component={Blog}></Route>
           <Route path="/faqs" Component={FAQs}></Route>
         </Routes>
         <Footer />

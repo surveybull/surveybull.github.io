@@ -77,8 +77,8 @@ const NavBar = () => {
     },
     {
       id: 3,
-      title: "Blog",
-      path: "/blog",
+      title: "Survey Creation",
+      path: "/surveycreation",
       childItem: [],
     },
     {

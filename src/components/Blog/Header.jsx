@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="flex md:flex-row flex-col py-4 mt-[2rem] md:mt-[3rem] gap-6">
       <div className="md:w-[50%] w-full flex flex-col justify-center gap-y-7">
-        <span className="text-[26px] md:text-[40px] lg:text-[56px] font-HelveticaNeueBold text-[#132337]">
+        <span className="text-[26px] md:text-[40px] md:leading-[74px] lg:text-[56px] font-HelveticaNeueBold text-[#132337]">
           Create your own <span className="text-[#3B4EF4]">surveys</span>
         </span>
         <span className="md:text-[20px] text-[#132337] font-[400] text-[14px]">

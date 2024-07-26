@@ -13,7 +13,7 @@ const cardData = [
   {
     src: Human,
     alt: "Human",
-    text: "Uniquely Human Responses",
+    text: "Unique Human Responses",
     description:
       "SurveyBull ensures that only unique human responses are included in your survey data, eliminating the noise of duplicate or automated submissions and delivering high-quality, actionable insights.",
   },
@@ -36,16 +36,14 @@ const Surveyor = () => {
           <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
         </div>
         <div className="w-full lg:hidden flex justify-center ">
-          <img
-            src={SurveyorGif}
-            alt="SurveyorGif"
-            className="max-h-[550px]"
-          />
-        </div>
+          <img src={SurveyorGif} alt="SurveyorGif" className="max-h-[550px]" />
+        </div>{" "}
         <div className="flex flex-col gap-y-7">
           {cardData.map((card) => (
-            <div className="flex lg:flex-row flex-col items-center border-[1.5px] border-[#56595f] rounded-[15px] bg-gradient-to-r from-[#FFFFFF05] to-[#FFFFFF33]  px-4 py-8 gap-4 group hover:cursor-pointer flex-1 shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]">
-              <div className="flex justify-start w-full">
+            <div
+              className="flex lg:flex-row flex-col items-center border-[1.5px] border-[#56595f] rounded-[15px]  bg-[radial-gradient(241.99%_676.79%_at_50%_50.24%,rgba(255,255,255,0.02)_0%,rgba(255,255,255,0.2)_100%)] md:p-8 p-6 gap-5 group hover:cursor-pointer flex-1 shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]"
+            >
+              <div className="flex justify-start w-full lg:w-fit">
                 <img
                   src={card.src}
                   alt={card.alt}
@@ -58,7 +56,7 @@ const Surveyor = () => {
                 <div className="md:text-[18px] text-[14px] text-[#978FFD]">
                   {card.text}
                 </div>
-                <div className="text-[#89919B]  md:text-[14px] text-[12px]">
+                <div className="text-[#89919B]  text-[12px]">
                   {card.description}
                 </div>
               </div>

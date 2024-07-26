@@ -4,6 +4,7 @@ import Gender from "../../assets/Gender.svg";
 import Income from "../../assets/Income.svg";
 import Location from "../../assets/Location.svg";
 import Age from "../../assets/Age.svg";
+import glob from "../../assets/gif/EarthGlob.mp4"
 function Target() {
   const miniCard = [
     {
@@ -66,7 +67,9 @@ function Target() {
           </button>
         </div>
         <div className="lg:w-[50%] w-full flex lg:justify-start justify-center">
-          <img src={TargetImg} alt="TargetImg" />
+          <video autoPlay muted loop>
+            <source src={glob} type="video/mp4" />
+          </video>
         </div>
       </div>
       <div className="flex w-full lg:flex-row flex-col-reverse gap-12">

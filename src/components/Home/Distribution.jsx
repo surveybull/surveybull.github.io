@@ -45,7 +45,7 @@ const Distribution = () => {
         Weighted <span className="text-[#978FFD]">Reward Calculation</span>{" "}
         Mechanism
       </h1>
-      <div className="text-[14px] font-[400] text-[#89919B] md:text-[16px]">
+      <div className="text-[14px] leading-[26px] max-w-[1000px] font-[400] text-[#89919B] md:text-[16px]">
         SurveyBull employs a sophisticated reward distribution mechanism,
         meticulously designed to ensure fairness and to uphold our commitment to
         rewarding participation while nurturing community growth. Our weighted

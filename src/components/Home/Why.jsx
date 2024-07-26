@@ -10,6 +10,7 @@ import WorldCoin from "../../assets/worldCoin.svg?react";
 const Why = () => {
   const columnItem = [
     {
+      id: "1",
       img: (
         <BlockchainTransparency className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -18,6 +19,7 @@ const Why = () => {
         "We leverage decentralized blockchain technology to ensure transparency and accountability in data transactions.",
     },
     {
+      id: "2",
       img: (
         <WorldCoin className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -26,6 +28,7 @@ const Why = () => {
         "Through the integration of the WorldCoin protocol, we authenticate each data contributor, eliminating the risk of fake or duplicate submissions and ensuring the integrity of the data.",
     },
     {
+      id: "3",
       title: "Fair Compensation",
       img: (
         <FairCompensation className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
@@ -35,6 +38,7 @@ const Why = () => {
         "Our platform rewards data providers fairly and promptly with BULL Tokens, providing tangible incentives for their valuable contributions and promoting a sustainable data economy.",
     },
     {
+      id: "4",
       img: (
         <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -43,6 +47,7 @@ const Why = () => {
         "Our platform employs a technique wherein only individuals possessing a specific token, along with the requisite amount, are permitted to participate in the survey.",
     },
     {
+      id: "5",
       img: (
         <InclusiveApproach className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -51,6 +56,7 @@ const Why = () => {
         " From traditional platforms to emerging Web3 applications, we empower a diverse range of platforms to embrace transparent and decentralized survey mechanisms.",
     },
     {
+      id: "6",
       img: (
         <IndustryCollaboration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -59,6 +65,7 @@ const Why = () => {
         "We facilitate collaboration with existing data brokers, incentivizing their adoption of our system and ensuring a sustainable decentralized survey ecosystem.",
     },
     {
+      id: "7",
       img: (
         <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -67,6 +74,7 @@ const Why = () => {
         "Our platform adheres to stringent data protection regulations like GDPR, safeguarding user rights and privacy.",
     },
     {
+      id: "8",
       img: (
         <SeamlessIntegration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -76,19 +84,19 @@ const Why = () => {
     },
   ];
 
-  const Card = ({ imageSrc, title, description }) => {
+  const Card = ({ imageSrc, title, description,id }) => {
     return (
-      <div class="min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
+      <div class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${Number(id)%2 ==0 && "xl:relative xl:top-[2rem]"}`}>
         <div className="px-4 ">
           <div className="mt-8">
             <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
+          <div className="mt-8 font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)] text-[14px] md:text-[16px] ">
             {title}{" "}
           </div>
-          <div className="mt-8 font-HelveticaNeueLight text-[14px] text-[#5A6573]  ">
+          <div className="mt-8 font-HelveticaNeueLight text-[12px] md:text-[14px] text-[#5A6573]  ">
             {description}{" "}
           </div>
         </div>
@@ -97,8 +105,8 @@ const Why = () => {
   };
 
   return (
-    <div className=" my-[4rem] xl:my-[4rem]">
-      <h1 className=" text-3xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold leading-9 tracking-wider text-[#484848]">
+    <div className="mt-[2rem] md:mb-[5rem] mb-[3rem]">
+      <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold leading-9 mb-[2.75rem] tracking-wider text-[#484848]">
         {"Why"}&nbsp;
         <span className=" text-[rgba(59,78,244,1)]">SurveyBull</span>&nbsp;?
       </h1>
@@ -107,14 +115,15 @@ const Why = () => {
         {columnItem.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center gap-[30px] mb-[30px] ${
-              index % 2 === 0 ? "xl:mb-[50px]" : "xl:mt-[50px]"
+            className={`flex flex-col items-center gap-[30px] mb-[30px] xl:mb-[0px] ${
+              index % 2 === 0 ? "xl:mb-[30px]" : "xl:mt-[30px]"
             }`}
           >
             <Card
               imageSrc={item.img}
               title={item.title}
               description={item.description}
+              id={item.id}
             />
           </div>
         ))}

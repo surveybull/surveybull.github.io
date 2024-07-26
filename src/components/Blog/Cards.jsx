@@ -10,6 +10,7 @@ import Product from "../../assets/product.svg?react";
 const Cards = () => {
   const columnItem = [
     {
+      id: 1,
       img: (
         <InterviewPrompt className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -18,6 +19,7 @@ const Cards = () => {
         "Ask only power users to book a time in your calendar. Get those juicy details.",
     },
     {
+      id: 2,
       img: (
         <Product className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -26,6 +28,7 @@ const Cards = () => {
         "Find out how disappointed people would be if they could not use your service any more.",
     },
     {
+      id: 3,
       title: "Onboarding Segments",
       img: (
         <OnboardingSegments className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
@@ -35,6 +38,7 @@ const Cards = () => {
         "Get to know your users right from the start. Ask a few questions early, let us enrich the profile.",
     },
     {
+      id: 4,
       img: (
         <Learn_from_churn className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -43,6 +47,7 @@ const Cards = () => {
         "Churn is hard, but insightful. Learn from users who changed their mind.",
     },
     {
+      id: 5,
       img: (
         <Improve_Trial_CR className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -51,6 +56,7 @@ const Cards = () => {
         "Take guessing out, convert more trials to paid users with insights.",
     },
     {
+      id: 6,
       img: (
         <DocsFeedback className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
@@ -59,6 +65,7 @@ const Cards = () => {
         "Clear docs lead to more adoption. Understand granularly what's confusing.",
     },
     {
+      id: 7,
       img: (
         <FeatureChaser className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
@@ -67,6 +74,7 @@ const Cards = () => {
         "Show a survey about a new feature shown only to people who used it.",
     },
     {
+      id: 8,
       img: (
         <FeedbackBox className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
@@ -75,9 +83,13 @@ const Cards = () => {
     },
   ];
 
-  const Card = ({ imageSrc, title, description }) => {
+  const Card = ({ imageSrc, title, description, id }) => {
     return (
-      <div class="min-h-[300px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out">
+      <div
+        class={`min-h-[300px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${
+          id % 2 == 0 && "xl:relative xl:top-[2rem]"
+        }`}
+      >
         <div className="px-4 ">
           <div className="mt-8">
             <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
@@ -96,7 +108,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="flex flex-col gap-y-6">
+    <div className="flex flex-col gap-y-6 mt-[4rem] xl:mb-[6rem]">
       <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
         <span className="text-center">
           Get started with{" "}
@@ -108,14 +120,15 @@ const Cards = () => {
         {columnItem.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center gap-[30px] mb-[30px] ${
-              index % 2 === 0 ? "xl:mb-[50px]" : "xl:mt-[50px]"
+            className={`flex flex-col items-center gap-[30px] mb-[30px] xl:mb-[0px] ${
+              index % 2 === 0 ? "xl:mb-[30px]" : "xl:mt-[30px]"
             }`}
           >
             <Card
               imageSrc={item.img}
               title={item.title}
               description={item.description}
+              id={item.id}
             />
           </div>
         ))}
