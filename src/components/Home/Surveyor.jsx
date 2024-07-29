@@ -1,7 +1,7 @@
 import Authenticity from "../../assets/Authenticity.svg";
 import Chain from "../../assets/Chain.svg";
 import Human from "../../assets/Human.svg";
-import SurveyorGif from "../../assets/gif/Revolutionize-Surveying-GIF.gif";
+import SurveyorGif from "../../assets/gif/SurveyorGif.mp4";
 const cardData = [
   {
     src: Authenticity,
@@ -30,19 +30,19 @@ const Surveyor = () => {
   return (
     <div className="flex lg:flex-row flex-col items-center gap-20 skew-y-6 xl:skew-y-3 py-16">
       <div className="flex items-center flex-col gap-[1.5rem]  ">
-        <div className="flex-1 text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold">
+        <div className="flex-1 text-[#FFFFFF] md:text-[36px] text-[24px] leading-[34px] md:leading-[52px] font-HelveticaNeueBold">
           Revolutionize Surveying: Say Goodbye to{" "}
           <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain{" "}
           <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
         </div>
         <div className="w-full lg:hidden flex justify-center ">
-          <img src={SurveyorGif} alt="SurveyorGif" className="max-h-[550px]" />
+          <video autoPlay loop muted className="max-h-[550px]">
+            <source src={SurveyorGif}></source>
+          </video>
         </div>{" "}
         <div className="flex flex-col gap-y-7">
           {cardData.map((card) => (
-            <div
-              className="flex lg:flex-row flex-col items-center border-[1.5px] border-[#56595f] rounded-[15px]  bg-[radial-gradient(241.99%_676.79%_at_50%_50.24%,rgba(255,255,255,0.02)_0%,rgba(255,255,255,0.2)_100%)] md:p-8 p-6 gap-5 group hover:cursor-pointer flex-1 shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]"
-            >
+            <div className="flex lg:flex-row flex-col items-center border-[1.5px] border-[#56595f] rounded-[15px]  bg-[radial-gradient(241.99%_676.79%_at_50%_50.24%,rgba(255,255,255,0.02)_0%,rgba(255,255,255,0.2)_100%)] md:p-8 p-6 gap-5 group hover:cursor-pointer flex-1 shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]">
               <div className="flex justify-start w-full lg:w-fit">
                 <img
                   src={card.src}
@@ -56,7 +56,7 @@ const Surveyor = () => {
                 <div className="md:text-[18px] text-[14px] text-[#978FFD]">
                   {card.text}
                 </div>
-                <div className="text-[#89919B]  text-[12px]">
+                <div className="text-[#89919B]  text-[12px] leading-[20px]">
                   {card.description}
                 </div>
               </div>
@@ -65,7 +65,9 @@ const Surveyor = () => {
         </div>
       </div>
       <div className="h-full w-full lg:block hidden">
-        <img src={SurveyorGif} alt="SurveyorGif" className="h-full w-full" />
+        <video autoPlay loop muted>
+          <source src={SurveyorGif}></source>
+        </video>
       </div>
     </div>
   );

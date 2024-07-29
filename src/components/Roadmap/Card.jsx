@@ -25,7 +25,7 @@ function Card({ data }) {
             <span className="text-[#132337] text-[14px] font-[400]">
               {card.heading}
             </span>
-            <ul className="ml-[1.75rem] text-[#5A6573] text-[12px] font-[400] flex flex-col gap-y-3">
+            <ul className="ml-[1.75rem] text-[#5A6573] text-[12px] font-[400] flex flex-col gap-y-3 leading-[18px]">
               {card.description.map((des) => (
                 <li className="list-disc">{des}</li>
               ))}

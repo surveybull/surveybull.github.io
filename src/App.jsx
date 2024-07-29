@@ -1,5 +1,5 @@
 import Home from "./components/Home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Why from "./components/Home/Why";
 import Roadmap from "./components/Roadmap/Roadmap";
@@ -10,7 +10,7 @@ import NavBar from "./components/Navbar/NavBar";
 import './App.css';
 function App() {
   return (
-    <Router>
+    <>
       <NavBar />
       <div className="no-scrollbar">
         <Routes>
@@ -22,7 +22,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

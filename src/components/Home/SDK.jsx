@@ -22,7 +22,7 @@ const SDK = () => {
             <span className="md:text-[20px] text-[18px] font-HelveticaNeueMedium text-[#3B4EF4]">
               Streamlined Integration
             </span>
-            <span className="md:text-[16px] text-[14px] font-[400] text-[#5A6573]">
+            <span className="md:text-[16px] text-[14px] font-[400] text-[#5A6573] leading-[24px] md:leading-[26px]">
               Imagine creating a Telegram Bot customized for surveys using the
               SurveyBull SDK. With this integration, generating surveys within
               the Telegram app becomes intuitive, facilitating survey
@@ -36,7 +36,7 @@ const SDK = () => {
             <span className="md:text-[20px] text-[18px] font-HelveticaNeueMedium text-[#3B4EF4]">
               Expanding Accessibility
             </span>
-            <span className="md:text-[16px] text-[14px] font-[400] text-[#5A6573]">
+            <span className="md:text-[16px] text-[14px] font-[400] text-[#5A6573] leading-[24px] md:leading-[26px]">
               Furthermore, the SurveyBull SDK extends its utility to existing
               web2 data brokers seeking to adopt web3 survey capabilities. By
               seamlessly integrating the SDK, these data brokers can transition
@@ -49,7 +49,7 @@ const SDK = () => {
           </div>
         </div>
         <div className="flex-1">
-          <img src={SDKSnippet} alt="SDKSnippet" className="max-h-[450px]"/>
+          <img src={SDKSnippet} alt="SDKSnippet" className="max-h-[450px]" />
         </div>
       </div>
     </div>

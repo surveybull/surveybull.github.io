@@ -8,7 +8,7 @@ const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="sm:text-base text-[14px] py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
       <img
-        className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] mx-2"
+        className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] ml-4 mr-2"
         src={bluetick}
         alt=""
       />
@@ -83,7 +83,7 @@ const EarnToken = () => {
       <div className="md:text-xl text-[14px] font-medium font-HelveticaNeueMedium text-[rgba(59,78,244,1)] px-2 border-l-2 border-l-[#3B4EF4]">
         {title}
       </div>
-      <div className="md:text-sm text-[12px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] border-l-2 px-2 py-5">
+      <div className="md:text-sm text-[12px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] border-l-2 px-2 py-5 leading-[20px]">
         {description}
       </div>
     </div>
@@ -149,7 +149,7 @@ const Grow = () => {
       <div className="font-HelveticaNeueMedium text-[#384ef4] text-[14px] md:text-lg">
         {title}
       </div>
-      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2">
+      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2 leading-[20px]">
         {description}
       </div>
     </div>
@@ -210,7 +210,7 @@ const Boost = () => {
       <div className="font-HelveticaNeueMedium text-[#384ef4] md:text-[18px] text-[14px]">
         {title}
       </div>
-      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2">
+      <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2 leading-[20px]">
         {description}
       </div>
     </div>

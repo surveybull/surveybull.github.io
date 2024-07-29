@@ -65,13 +65,13 @@ const Card = ({ data }) => {
       className={`w-full border-r-[2px] border-t-[2px] border-b-[2px] border-[#FFFFFF14] shadow-xl relative rounded-xl `}
     >
       <div
-        className="absolute left-[3px] md:left-[1px] top-[-2px] bottom-[-2px] w-2"
+        className="absolute left-[3px] md:left-[2px] top-[-2px] bottom-[-2px] w-2"
         style={{
           background: `linear-gradient(to bottom, ${data.startColor}, ${data.endColor})`,
           borderRadius: "12px 0px 0 12px",
         }}
       ></div>
-      <div className="h-full w-full flex flex-col justify-evenly px-4 py-3 gap-y-5 rounded-xl">
+      <div className="h-full w-full flex flex-col justify-evenly pl-6 pr-4 py-3 gap-y-5 rounded-xl">
         <div className="flex justify-between items-center">
           <span
             className="text-[14px] md:text-[16px] font-[500]"

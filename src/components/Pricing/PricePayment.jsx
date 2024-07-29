@@ -24,7 +24,7 @@ const PricePayment = () => {
   ];
 
   return (
-    <div className="py-4 mt-[2rem] md:mt-[2rem]">
+    <div className="mt-[2rem]">
       <div className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
         Payment <span className=" text-[rgba(59,78,244,1)]"> Process </span>
       </div>
@@ -34,7 +34,7 @@ const PricePayment = () => {
           alt="curve"
           className="relative md:top-[7.3rem] lg:top-[8.2rem] md:block hidden w-[60vw] xl:w-auto mx-auto"
         />
-        <div className="md:flex md:justify-between my-14">
+        <div className="md:flex md:justify-between my-10 md:my-14">
           {data.map((item, index) => (
             <div
               className={`max-w-[300px] mx-auto ${
@@ -53,11 +53,11 @@ const PricePayment = () => {
                   />
                 </div>
               </div>
-              <div className="mt-16">
+              <div className="mt-6 md:mt-16">
                 <div className="text-center text-sm md:text-base font-HelveticaNeueMedium">
                   {item.title}
                 </div>
-                <div className="my-3 md:text-sm text-xs text-center  text-[rgba(90,101,115,1)]">
+                <div className="my-3 md:text-sm text-xs text-center  text-[rgba(90,101,115,1)] leading-[20px] md:leading-[24px]">
                   {item.description}
                 </div>
               </div>

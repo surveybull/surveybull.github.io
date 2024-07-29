@@ -4,7 +4,7 @@ const PricingIntro = () => {
       <div className="text-center font-HelveticaNeueBold text-[28px] md:text-[56px]">
         Plans and <span className=" text-[rgba(59,78,244,1)]">Pricing</span>
       </div>
-      <div className="text-center text-[14px] md:text-base font-[400] flex mx-auto max-w-[800px] my-8">
+      <div className="text-center text-[14px] md:text-base font-[400] flex mx-auto max-w-[1000px] my-8 md:leading-[26px] leading-[20px]">
         Welcome to our blockchain-based survey platform! Our pricing model is
         designed to offer flexibility and transparency, allowing you to conduct
         surveys seamlessly while utilizing BULL tokens for payments.

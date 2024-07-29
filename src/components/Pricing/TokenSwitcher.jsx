@@ -54,7 +54,7 @@ function TokenSwitcher() {
             setIsEtheriumClicked(true);
           }}
         >
-          <span className="text-[14px] font-HelveticaNeueMedium">Etherium</span>
+          <span className="text-[14px] font-HelveticaNeueMedium">Ethereum</span>
           <span className="text-[12px] font-HelveticaNeueLight">
             Price - 3,494.78 USD
           </span>
