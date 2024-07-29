@@ -17,9 +17,9 @@ function Blog() {
     <>
       <SEO
         name={"SurveyBull"}
-        description={"Blog Page"}
-        type={"Blog"}
-        title={"SurveyBull | Blog"}
+        description={"Survey Creation Page"}
+        type={"Survey Creation"}
+        title={"SurveyBull | Survey Creation"}
       />
       <section className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
