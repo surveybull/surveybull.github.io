@@ -54,7 +54,7 @@ function Target() {
           </ul>
           <div className="flex gap-x-2 sm:gap-x-[1.5rem] sm:justify-start justify-between">
             {miniCard.map((data) => (
-              <div className="flex flex-col justify-center items-center gap-y-3 bg-gradient-to-r from-[#FFFFFF05] to-[#FFFFFF05] border border-[#FFFFFF1F] sm:w-[130px] sm:h-[130px] w-[90px] h-[90px] rounded-[10px]">
+              <div className="flex flex-col justify-center items-center gap-y-3 bg-[radial-gradient(241.99%_676.79%_at_50%_50.24%,rgba(255,255,255,0.02)_0%,rgba(255,255,255,0.2)_100%)] border border-[#FFFFFF1F] sm:w-[130px] sm:h-[130px] w-[90px] h-[90px] rounded-[10px]">
                 <img src={data.imgSrc} alt={data.title} />
                 <div className="md:text-[16px] text-[12px] text-[#FFFFFF] font-[400]">
                   {data.title}
@@ -66,7 +66,7 @@ function Target() {
             Choose your audience
           </button>
         </div>
-        <div className="lg:w-[50%] w-full flex lg:justify-start justify-center">
+        <div className="lg:w-[50%] w-full flex justify-center">
           <video autoPlay muted loop className="max-h-[555px]">
             <source src={glob} type="video/mp4" />
           </video>

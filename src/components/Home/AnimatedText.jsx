@@ -1,0 +1,50 @@
+import React, { useState, useEffect } from "react";
+
+function AnimatedText() {
+  const items = [
+    "Craft, Share, Analyse",
+    "Your Opinion, Your Impact",
+    "Engage, Participate, Earn",
+    "Discover, Earn, Empower",
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(1); 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        let newIndex = prevIndex + direction;
+        if (newIndex >= items.length) {
+          newIndex = items.length - 2;
+          setDirection(-1);
+        } else if (newIndex < 0) {
+          newIndex = 1;
+          setDirection(1);
+        }
+        return newIndex;
+      });
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, [direction, items.length]);
+  return (
+    <div className="relative overflow-hidden h-[100px] w-full mt-5 sm:mt-10">
+      <div
+        className="absolute inset-0 transition-transform duration-1000 ease-in-out w-full"
+        style={{
+          transform: `translateY(-${currentIndex * 100}%)`,
+        }}
+      >
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="h-24 md:mx-auto flex items-center md:justify-center text-[#3B4EF4] text-[28px] md:text-[40px] lg:text-[68px] font-HelveticaNeueBold"
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default AnimatedText;

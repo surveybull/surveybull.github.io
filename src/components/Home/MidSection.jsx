@@ -8,7 +8,7 @@ const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="sm:text-base text-[14px] py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
       <img
-        className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] mx-2"
+        className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] ml-4 mr-2"
         src={bluetick}
         alt=""
       />
