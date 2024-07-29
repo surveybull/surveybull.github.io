@@ -86,17 +86,21 @@ const Why = () => {
 
   const Card = ({ imageSrc, title, description,id }) => {
     return (
-      <div class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${Number(id)%2 ==0 && "xl:relative xl:top-[2rem]"}`}>
+      <div
+        class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${
+          Number(id) % 2 == 0 && "xl:relative xl:top-[2rem]"
+        }`}
+      >
         <div className="px-4 ">
           <div className="mt-8">
             <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)] text-[14px] md:text-[16px] ">
+          <div className="mt-8 font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)] text-[14px] md:text-[16px] md:leading-[16px] leading-[14px] ">
             {title}{" "}
           </div>
-          <div className="mt-8 font-HelveticaNeueLight text-[12px] md:text-[14px] text-[#5A6573]  ">
+          <div className="mt-8 font-HelveticaNeueLight text-[12px] md:text-[14px] text-[#5A6573]  md:leading-[24px] leading-[20px]  ">
             {description}{" "}
           </div>
         </div>
@@ -105,8 +109,8 @@ const Why = () => {
   };
 
   return (
-    <div className="mt-[2rem] md:mb-[5rem] mb-[3rem]">
-      <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold leading-9 mb-[2.75rem] tracking-wider text-[#484848]">
+    <div className="xl:mb-[5rem] sm:mb-[1rem]">
+      <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
         {"Why"}&nbsp;
         <span className=" text-[rgba(59,78,244,1)]">SurveyBull</span>&nbsp;?
       </h1>

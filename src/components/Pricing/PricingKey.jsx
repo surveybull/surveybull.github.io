@@ -10,7 +10,7 @@ const PricingKey = () => {
           <img src={KeyFeature} alt="Your Image" class="" />{" "}
         </div>
         <div className="">
-          <div className="text-left text-2xl md:text-4xl my-4 font-HelveticaNeueBold">
+          <div className="text-left text-2xl md:text-4xl mb-7 font-HelveticaNeueBold">
             Key <span className=" text-[rgba(59,78,244,1)]"> Features</span>
           </div>
           <div className="flex">
@@ -36,7 +36,7 @@ const PricingKey = () => {
                   <div className="text-[14px] md:text-base  font-HelveticaNeueMedium">
                     Transparent Pricing
                   </div>
-                  <div className="text-xs md:text-sm  text-[#5A6573] py-[8px]">
+                  <div className="text-xs md:text-sm  text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
                     Know the cost upfront in BULL tokens based on your survey
                     configuration.
                   </div>
@@ -57,7 +57,7 @@ const PricingKey = () => {
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Currency Conversion
                     </div>
-                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
+                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
                       USD pricing is converted into BULL tokens at the
                       prevailing exchange rate at the time of survey creation.
                     </div>
@@ -79,7 +79,7 @@ const PricingKey = () => {
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Blockchain Security
                     </div>
-                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
+                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
                       Utilize BULL tokens for secure and efficient transactions.
                     </div>
                   </div>
@@ -100,7 +100,7 @@ const PricingKey = () => {
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Flexible Customization
                     </div>
-                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
+                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
                       Tailor surveys with advanced targeting options.
                     </div>
                   </div>{" "}
@@ -121,7 +121,7 @@ const PricingKey = () => {
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       API Integration
                     </div>
-                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px]">
+                    <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
                       Seamlessly integrate with your existing systems for
                       streamlined data management.
                     </div>

@@ -118,7 +118,12 @@ function MobileNavbar({ NavbarData, visitedPage }) {
               )}
             </div>
             <div>
-              <button className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]">
+              <button
+                className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]"
+                onClick={() => {
+                  window.open("https://testnet.surveybull.io/auth/login");
+                }}
+              >
                 Get Started
               </button>
             </div>

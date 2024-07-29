@@ -99,7 +99,7 @@ const Cards = () => {
           <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
             {title}{" "}
           </div>
-          <div className="mt-8 font-HelveticaNeueLight md:text-[14px] text-[12px] text-[#5A6573]  ">
+          <div className="mt-4 font-HelveticaNeueLight md:text-[14px] text-[12px] text-[#5A6573] md:leading-[24px] leading-[20px] ">
             {description}{" "}
           </div>
         </div>
@@ -108,7 +108,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="flex flex-col gap-y-6 mt-[4rem] xl:mb-[6rem]">
+    <div className="flex flex-col gap-y-6 xl:mb-20">
       <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
         <span className="text-center">
           Get started with{" "}
