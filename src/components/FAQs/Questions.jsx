@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -9,8 +9,14 @@ import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
 import noData from "../../../public/noData.png";
 function Questions({ faqs }) {
+  const [accordion, setAccordion] = useState();
+
   return faqs.length > 0 ? (
-    <Accordion type="multiple" defaultValue={"Item-1"} className="flex flex-col gap-y-7 pt-10 md:pt-12">
+    <Accordion
+      type="multiple"
+      defaultValue={["Item-1"]}
+      className="flex flex-col gap-y-7 pt-10 md:pt-12"
+    >
       {faqs.map((data, index) => (
         <AccordionItem
           value={`Item-${data.id}`}
