@@ -6,10 +6,10 @@ function SEO({ name, type, description, title }) {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="description" content={des} />
+      <meta name="description" content={description} />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={des} />
       <meta name="twitter:creator" content={name} />
       <meta name="twitter:card" content={type} />
       <meta name="twitter:title" content={title} />

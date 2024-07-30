@@ -27,7 +27,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between mx-auto w-full px-7 py-4 ">
       <Link to={"/"}>
-        <img src={SurveybullLogo} width={150} height={150}></img>
+        <img src={SurveybullLogo} alt="SurveybullLogo" width={150} height={150}></img>
       </Link>
       <Sheet>
         <SheetTrigger>
@@ -42,18 +42,18 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={telegramLogo} width={20} height={20}></img>
+                <img src={telegramLogo} alt="telegramLogo" width={20} height={20}></img>
               </a>
               <a
                 href="https://x.com/surveybull"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={twitterLogo} width={20} height={20}></img>
+                <img src={twitterLogo} alt="twitterLogo" width={20} height={20}></img>
               </a>
             </div>
             <div className="py-3">
-              <img src={SurveybullLogo} width={140} height={140}></img>
+              <img src={SurveybullLogo} alt="SurveybullLogo" width={140} height={140}></img>
             </div>
             <div className="flex flex-col gap-y-5">
               {NavbarData.map((option) =>

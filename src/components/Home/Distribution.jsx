@@ -53,7 +53,7 @@ const Distribution = () => {
         stakeholders alike. Here's a breakdown of how it operates:
       </div>
       <div className="flex justify-center items-center p-5 w-full">
-        <img src={distribution} className="max-h-[600px] " />
+        <img src={distribution} alt="sharing" className="max-h-[600px] " />
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         {rewardData.map((data) => (

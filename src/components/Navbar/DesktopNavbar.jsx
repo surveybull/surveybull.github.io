@@ -6,7 +6,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between xl:max-w-[1300px] mx-auto w-full px-7 py-4">
       <Link to={"/"}>
-        <img src={SurveybullLogo} width={170} height={170}></img>
+        <img src={SurveybullLogo} alt="SurveybullLogo" width={170} height={170}></img>
       </Link>
       <div className="flex items-center  gap-x-4 lg:gap-x-8">
         {NavbarData.map((option) =>

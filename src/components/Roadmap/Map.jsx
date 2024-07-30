@@ -60,7 +60,7 @@ const data = [
       {
         heading: "Conceptualization and Planning",
         description: [
-          "Define the purpose and goals of the token project.",
+          "Define the purpose and goals of the project.",
           "Conduct market research and identify target audience and competitors.",
           "Outline the tokenomics, including token supply, distribution, and utility.",
         ],
@@ -75,7 +75,7 @@ const data = [
         heading: "White Paper Development",
         description: [
           "Create a comprehensive whitepaper outlining the project's vision, technical details, tokenomics, and roadmap.",
-          "Review and refine the whitepaper based on feedback from advisors and stakeholders.",
+          "Review and refine the whitepaper based on feedback from team members.",
         ],
       },
     ],
@@ -93,19 +93,13 @@ const data = [
       {
         heading: "Survey Platform Development",
         description: [
-          "Develop the survey platform for survey creation and participation, integrating blockchain technology for data storage and security.",
+          "Develop the survey platform for survey creation and participation, integrating blockchain technology for  transperant reward distribution, data storage and security.",
         ],
       },
       {
         heading: "Staking Dashboard Development",
         description: [
           "Develop the frontend components of the staking dashboard using modern web development frameworks and libraries..",
-        ],
-      },
-      {
-        heading: "Token Wallet Integration",
-        description: [
-          "Integrate the token with popular cryptocurrency wallets to ensure compatibility and ease of use for users.",
         ],
       },
     ],
@@ -124,7 +118,7 @@ const data = [
       {
         heading: "Staking Platform Launch (Beta)",
         description: [
-          "Launch the staking platform in beta mode, allowing early adopters to stake tokens and earn rewards.",
+          "Launch the staking platform in beta mode, allowing early investors to test staking platforms.",
           "Gather feedback from beta testers to identify any issues or improvements needed before the full launch.",
         ],
       },
@@ -137,7 +131,8 @@ const data = [
       {
         heading: "Survey Platform Development",
         description: [
-          "Develop the survey platform for survey creation and participation, integrating blockchain technology for data storage and security.",
+          "Develop the survey platform for survey creation and participation, integrating blockchain technology for transperant reward distribution, data storage and security.",
+          "Integrate the worldcoin protocol for unique human responses",
           "Conduct testing on the testnet to ensure platform functionality, scalability, and security.",
         ],
       },
@@ -164,8 +159,8 @@ const data = [
       {
         heading: "Token Sale and Distribution",
         description: [
-          "Plan and execute the token sale, including public sales, and token distribution events.",
-          "Implement a marketing strategy to generate awareness and attract investors to the token sale.",
+          "Plan and execute the token launch events.",
+          "Implement a marketing strategy to generate awareness and attract investors to purchase the token.",
         ],
       },
       {
@@ -192,7 +187,7 @@ const data = [
       {
         heading: "Public Launch and Promotion",
         description: [
-          "Officially launch the staking platform on the mainnet, opening it to the public for staking and governance participation.",
+          "Officially launch the staking platform on the mainnet, opening it to the public for staking participation.",
           "Implement a marketing strategy to attract stakers and incentivize participation in the staking ecosystem.",
         ],
       },
@@ -206,7 +201,7 @@ const data = [
         heading: "Public Launch and Promotion",
         description: [
           "Officially launch the survey platform on the mainnet, opening it to the public for survey creation and participation.",
-          "Implement a marketing strategy to generate awareness and attract surveyors and participants to the platform.",
+          "Implement a marketing strategy and campaigns to generate awareness and attract surveyors and participants to the platform.",
         ],
       },
     ],
@@ -235,13 +230,6 @@ const data = [
           "Digital Marketing: Use social media, SEO, PPC, and email marketing to reach potential participants.",
           "Incentives: Offer incentives such as token rewards to encourage users onboarding and information gathering.",
           "Content Marketing: Create engaging content (blogs, videos, infographics) to educate and attract potential survey participants.",
-        ],
-      },
-      {
-        heading: "Ecosystem Development",
-        description: [
-          "Develop and support an ecosystem of dApps, services, and platforms that utilize the token for various purposes.",
-          "Foster innovation and creativity within the ecosystem to drive long-term value and sustainability.",
         ],
       },
     ],
@@ -298,7 +286,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              July 2024
+              Aug 2024
             </div>
           </div>
 
@@ -309,7 +297,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
-              Aug 2024
+              Sep 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -339,7 +327,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              Aug 2024
+              Sep 2024
             </div>
           </div>
 
@@ -350,7 +338,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
-              Aug 2024
+              Sep 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -380,7 +368,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              Aug 2024
+              Sep 2024
             </div>
           </div>
 
@@ -391,7 +379,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
-              Aug 2024
+              Sep 2024
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -421,7 +409,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 font-HelveticaNeueMedium  lg:w-[47%] md:w-[45%]">
-              Aug 2024
+              Sep 2024
             </div>
           </div>
         </div>

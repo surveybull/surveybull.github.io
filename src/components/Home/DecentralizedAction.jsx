@@ -133,11 +133,7 @@ const DecentralizedAction = () => {
       </div>
       <div className="flex justify-center">
         <div className="mt-10 text-center max-w-[1100px] leading-[24px] m:leading-[26px] px-2 flex justify-center text-[14px] md:text-[16px] font-[400] tracking-wide text-[#5A6573]">
-          At SurveyBull, we deeply value your opinions and insights. We've
-          created a unique opportunity for you to earn rewards by sharing your
-          thoughts through surveys. Our platform provides a seamless experience
-          where your contributions are not only appreciated, but also generously
-          rewarded.
+        SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, including token airdrops, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.
         </div>
       </div>
       <div className="hidden xl:block">

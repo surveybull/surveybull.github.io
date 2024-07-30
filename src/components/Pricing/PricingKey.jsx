@@ -37,7 +37,7 @@ const PricingKey = () => {
                     Transparent Pricing
                   </div>
                   <div className="text-xs md:text-sm  text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
-                    Know the cost upfront in BULL tokens based on your survey
+                    Know the cost upfront in ETH and BULL tokens based on your survey
                     configuration.
                   </div>
                 </div>
