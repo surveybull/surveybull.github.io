@@ -31,7 +31,7 @@ function SliderSection() {
           {getDecimalSeparateNum(sliderValue)}
         </span>
         <div className="bg-gradient-to-b from-[#FFFFFFB2] to-[#FFFFFF33] shadow-[3px_9px_35px_0_rgb(19,35,55,0.06)] rounded-[7px] p-[2px] border lg:hidden md:block sm:hidden block ">
-          <div className="flex gap-4 items-center justify-between px-3 py-1 bg-gradient-to-t from-[#d5d2d24d] to-[#FFFFFF1A] w-full rounded-[5px]">
+          <div className="flex gap-4 items-center justify-between px-3 py-1 bg-white w-full rounded-[5px]">
             <input
               type="text"
               value={inputValue}
@@ -66,6 +66,7 @@ function SliderSection() {
           }}
           onChange={(value) => {
             setSliderValue(value);
+            setInputValue(value);
           }}
           styles={{
             track: {
@@ -88,8 +89,8 @@ function SliderSection() {
             }),
           }}
         />
-        <div className="bg-gradient-to-b from-[#FFFFFFB2] to-[#FFFFFF33] shadow-[3px_9px_35px_0_rgb(19,35,55,0.06)] rounded-[7px] p-[2px] border lg:block md:hidden sm:block hidden ">
-          <div className="flex gap-4 items-center justify-between px-3 py-1 bg-gradient-to-t from-[#d5d2d24d] to-[#FFFFFF1A] w-full rounded-[5px]">
+        <div className="bg-gradient-to-b from-[#FFFFFFB2] to-[#FFFFFF33] shadow-[3px_9px_35px_0_rgb(19,35,55,0.06)] rounded-[7px] p-[2px] border lg:block md:hidden sm:block hidden -mt-[16px] ">
+          <div className="flex gap-4 items-center justify-between px-3 py-1 bg-white w-full rounded-[5px]">
             <input
               type="text"
               value={inputValue}

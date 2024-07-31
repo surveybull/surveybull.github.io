@@ -65,7 +65,9 @@ function TokenSwitcher() {
             setIsEtheriumClicked(false);
           }}
         >
-          <span className="text-[14px] font-HelveticaNeueMedium">BULL</span>
+          <span className="text-[14px] font-HelveticaNeueMedium sm:text-start text-center w-full">
+            BULL
+          </span>
           <span className="text-[12px] font-HelveticaNeueLight">
             Price - 0.25 USD
           </span>
@@ -80,7 +82,9 @@ function TokenSwitcher() {
             setIsEtheriumClicked(true);
           }}
         >
-          <span className="text-[14px] font-HelveticaNeueMedium">Ethereum</span>
+          <span className="text-[14px] font-HelveticaNeueMedium sm:text-start text-center w-full">
+            Ethereum
+          </span>
           <span className="text-[12px] font-HelveticaNeueLight">
             Price - {ethUSD} USD
           </span>

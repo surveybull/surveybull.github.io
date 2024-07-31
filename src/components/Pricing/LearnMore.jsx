@@ -5,7 +5,7 @@ const LearnMore = () => {
     <div className="pt-4 ">
       <div className="text-center text-2xl md:text-4xl font-HelveticaNeueBold">
         Learn More{" "}
-        <span className=" text-[rgba(59,78,244,1)]"> About BULL </span>Tokens
+        <span className=" text-[rgba(59,78,244,1)]"> About BULL </span>tokens
       </div>
       <div className="m-6 flex justify-center">
         <div className="text-center text-xs md:text-base">

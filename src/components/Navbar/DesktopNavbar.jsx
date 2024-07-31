@@ -22,7 +22,10 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
                   visitedPage == option.path.toLowerCase().split("/")[1]
                     ? "text-[#3B4EF4] font-[500]"
                     : "text-[#132337]"
-                } font-[400] text-[16px] lg:text-[18px]`}
+                  } font-[400] text-[16px] lg:text-[18px]`}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
               >
                 {option.title}
               </Link>

@@ -8,7 +8,7 @@ const rewardData = [
   {
     title: "Stakers(30%)",
     description:
-      "Reserved for people who staked their BULL Tokens, supporting the platform and earning additional incentives.",
+      "Reserved for people who staked their BULL tokens, supporting the platform and earning additional incentives.",
     imgSrc: Staker,
   },
   {
@@ -33,7 +33,7 @@ const rewardData = [
   {
     title: "Staker Participants(20%)",
     description:
-      "Participants who staked their BULL Tokens receive an additional portion of rewards, calculated based on their stake weight. This incentivizes long-term engagement and commitment to the platform.",
+      "Participants who staked their BULL tokens receive an additional portion of rewards, calculated based on their stake weight. This incentivizes long-term engagement and commitment to the platform.",
     imgSrc: Staker_prts,
   },
 ];

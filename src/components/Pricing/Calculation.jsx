@@ -71,7 +71,7 @@ function Calculation() {
                 (data, index) =>
                   checkedState[index].isChecked && (
                     <div className="flex justify-between gap-1 items-center">
-                      <span className="text-[#89919B] text-[12px] font-HelveticaNeueMedium">
+                      <span className="text-[#89919B] text-[12px] font-HelveticaNeueMedium capitalize">
                         {data.title} ({SurveyResponseCost} × {data.mul} USD)
                       </span>
 

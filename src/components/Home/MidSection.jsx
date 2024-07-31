@@ -187,7 +187,7 @@ const Boost = () => {
     {
       title: "Support Platform Growth",
       description:
-        "Staking your BULL Tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
+        "Staking your BULL tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
     },
     {
       title: "Earn Additional Incentives",
@@ -220,7 +220,7 @@ const Boost = () => {
           <span className=" text-[rgba(59,78,244,1)]">{"Staking"}</span>
         </div>
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] text-center lg:text-start text-[rgba(90,101,115,1)] mt-[1.5rem]">
-          By staking your BULL Tokens, you not only contribute to the stability
+          By staking your BULL tokens, you not only contribute to the stability
           and growth of the SurveyBull ecosystem but also unlock a stream of
           additional rewards. Here's how you can benefit:
         </div>

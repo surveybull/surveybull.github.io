@@ -7,7 +7,7 @@ import TokenSwitcher from "./TokenSwitcher";
 function Calculator() {
   return (
     <>
-      <div className="text-center md:text-4xl text-2xl font-HelveticaNeueMedium pb-10">
+      <div className="text-center md:text-4xl text-2xl font-HelveticaNeueBold pb-10">
         Pricing <span className=" text-[rgba(59,78,244,1)]"> Calculator </span>
       </div>
       <div className="flex flex-col mb-10">

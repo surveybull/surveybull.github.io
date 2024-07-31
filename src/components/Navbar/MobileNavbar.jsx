@@ -34,7 +34,12 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between mx-auto w-full px-7 py-4 ">
       <Link to={"/"}>
-        <img src={SurveybullLogo} alt="SurveybullLogo" width={150} height={150}></img>
+        <img
+          src={SurveybullLogo}
+          alt="SurveybullLogo"
+          width={150}
+          height={150}
+        ></img>
       </Link>
       <Sheet>
         <SheetTrigger>
@@ -66,6 +71,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                   <div>
                     <div
                       onClick={() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
                         if (id?.includes(option.id)) {
                           setId(id?.filter((i) => i !== option.id));
                         } else {
@@ -113,7 +119,12 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                     </div>
                   </div>
                 ) : (
-                  <Link to={option.path}>
+                  <Link
+                    to={option.path}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
                     <SheetClose className="flex justify-start w-full">
                       <div className="font-semibold">{option.title}</div>
                     </SheetClose>

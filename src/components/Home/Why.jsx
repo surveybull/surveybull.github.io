@@ -35,7 +35,7 @@ const Why = () => {
       ),
 
       description:
-        "Our platform rewards data providers fairly and promptly with BULL Tokens, providing tangible incentives for their valuable contributions and promoting a sustainable data economy.",
+        "Our platform rewards data providers fairly and promptly with BULL tokens, providing tangible incentives for their valuable contributions and promoting a sustainable data economy.",
     },
     {
       id: "4",

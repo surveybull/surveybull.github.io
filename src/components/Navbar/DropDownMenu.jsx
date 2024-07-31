@@ -41,6 +41,9 @@ function DropDownMenu({ option, visitedPage }) {
                 ? "text-[#3B4EF4] font-[500]"
                 : visitedPage === "text-[#132337]"
             } font-[400] text-[18px]`}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             {option.title}
           </Link>
