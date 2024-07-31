@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../Navbar/NavBar";
 import FAQsBg from "../../assets/background/FAQsBg.jpg";
 import Header from "./Header";
@@ -87,7 +87,9 @@ function FAQs() {
       : faqs.filter((data) =>
           data.que.toLowerCase().includes(searchQuery.toLowerCase())
         );
-
+ useEffect(() => {
+   window.scrollTo({ top: 0, behavior: "smooth" });
+ }, []);
   return (
     <>
       <SEO

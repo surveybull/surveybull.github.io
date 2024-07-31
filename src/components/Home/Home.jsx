@@ -22,7 +22,9 @@ import Investor from "./Investor";
 import db from "../../assets/background/Distribution.svg";
 
 function Home() {
-  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <SEO
