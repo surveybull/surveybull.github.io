@@ -45,10 +45,10 @@ function MobileNavbar({ NavbarData, visitedPage }) {
             <div className="flex justify-evenly items-center">
               {/* <img src={mailLogo} width={20} height={20}></img> */}
               <a href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={telegramLogo}></img>
+                <img src={telegramLogo} alt="telegramLogo"></img>
               </a>
               <a href={TWITTER_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={twitterLogo}></img>
+                <img src={twitterLogo} alt="twitterLogo"></img>
               </a>
               <a href={DISCORD_LINK} target="_blank" rel="noopener noreferrer">
                 <img src={discordLogo} alt="discord" />
@@ -56,7 +56,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
             </div>
             <div className="py-3">
               <Link to={"/"}>
-                <img src={SurveybullLogo} width={140} height={140}></img>
+                <img src={SurveybullLogo} alt="SurveybullLogo" width={140} height={140}></img>
               </Link>
             </div>
             <div className="flex flex-col gap-y-5">
