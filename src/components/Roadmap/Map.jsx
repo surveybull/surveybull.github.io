@@ -244,7 +244,7 @@ const Map = () => {
   return (
     <div className=" my-[6rem]">
       <div className=" relative flex md:justify-center my-24">
-        <img className="absolute z-10 h-full " src={line} alt="" />
+        <img className="absolute z-10 h-full " src={line} alt="da" />
         {/* <div className="absolute w-4 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div> */}
         {/* <div className="absolute w-4 bottom-0 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div> */}
         {/* <div class="absolute w-[2px] z-10 rounded-2xl ml-[8px] md:ml-0 h-full border-dashed border-2 border-indigo-600 "></div> */}

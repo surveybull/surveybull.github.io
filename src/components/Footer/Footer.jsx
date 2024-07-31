@@ -102,9 +102,13 @@ const Footer = () => {
         <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
           <div class="flex gap-10 lg:flex-row flex-col justify-center">
             <div class="flex flex-col gap-y-7 lg:w-[25%] w-full items-center lg:items-start justify-between">
-              <img src={Logo} className="w-[170px] sm:w-fit h-fit" />
+              <img src={Logo} alt="logo" className="w-[170px] sm:w-fit h-fit" />
               <div className="lg:text-start text-center text-[#5A6573] text-[14px] font-[400] leading-[20px] md:leading-[26px]">
-              Our mission is to provide surveyors with the essential tools to gather reliable, authentic data that informs sound decisions. Leveraging our pioneering WorldID protocol, we eliminate fake reviews and unreliable responses, delivering surveyors with verified, human-generated feedback that is transparently recorded on the blockchain.
+                Our mission is to provide surveyors with the essential tools to
+                gather reliable and authentic data. Leveraging our pioneering
+                WorldID protocol, we eliminate fake reviews and unreliable
+                responses, delivering verified, human-generated feedback that is
+                recorded on the blockchain.
               </div>
             </div>
 

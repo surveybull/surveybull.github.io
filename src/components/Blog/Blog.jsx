@@ -1,5 +1,5 @@
 import NavBar from "../Navbar/NavBar";
-import React from "react";
+import React, { useEffect } from "react";
 import BlogBg from "../../assets/background/BlogBg.jpg";
 import Header from "./Header";
 import SurveyForm from "./SurveyForm";
@@ -13,6 +13,9 @@ import BlogMobileBg from "../../assets/background/BlogMobileBg.jpg";
 import SurveyorBg from "../../assets/background/Surveyor4.svg";
 import SEO from "../SEO";
 function Blog() {
+  //  useEffect(() => {
+  //    window.scrollTo({ top: 0, behavior: "smooth" });
+  //  }, []);
   return (
     <>
       <SEO

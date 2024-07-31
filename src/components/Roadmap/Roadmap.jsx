@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import NavBar from "../Navbar/NavBar";
 import RoadmapBg from "../../assets/background/FAQsBg.jpg";
@@ -8,6 +8,9 @@ import Map from "./Map";
 import SEO from "../SEO";
 
 function Roadmap() {
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
   return (
     <>
       <SEO
