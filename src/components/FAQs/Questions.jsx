@@ -7,7 +7,7 @@ import {
 } from "../../@/components/ui/accordion";
 import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
-import noData from "../../../public/noData.png";
+import noData from "../../assets/noData.png"
 function Questions({ faqs }) {
   const [accordion, setAccordion] = useState();
 

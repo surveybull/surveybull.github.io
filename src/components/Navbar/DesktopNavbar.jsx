@@ -1,5 +1,6 @@
 import React from "react";
-import SurveybullLogo from "../../../public/SurveybullLogo.svg";
+import SurveybullLogo from "../../assets/SurveybullLogo.svg";
+
 import { Link } from "react-router-dom";
 import DropDownMenu from "./DropDownMenu";
 function DesktopNavbar({ NavbarData, visitedPage }) {

@@ -10,7 +10,7 @@ const SurveyBuilding = () => {
       <img
         className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] ml-4 mr-2"
         src={bluetick}
-        alt=""
+        alt="bluetick"
       />
       {text}
     </div>

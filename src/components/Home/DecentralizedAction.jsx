@@ -52,7 +52,7 @@ const SmartContractStep = ({ description }) => {
         <img
           className="h-[34px] w-[34px] group-hover:scale-125 transition duration-500 ease-in-out mx-2"
           src={bluetick}
-          alt=""
+          alt="blue tick"
         />
       </div>
       <div className="relative h-min flex  pt-7 mt-3 px-2 pb-8">

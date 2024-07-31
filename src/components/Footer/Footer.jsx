@@ -1,4 +1,4 @@
-import Logo from "../../../public/SurveybullLogo.svg";
+import Logo from "../../assets/SurveybullLogo.svg";
 import FooterBg from "../../assets/background/FooterBg.jpg";
 import FooterTelegram from "../../assets/FooterTelegram.svg";
 import FooterMail from "../../assets/FooterMail.svg";

@@ -5,7 +5,7 @@ import {
   SheetClose,
   SheetTrigger,
 } from "../../@/components/ui/sheet";
-import SurveybullLogo from "../../../public/SurveybullLogo.svg";
+import SurveybullLogo from "../../assets/SurveybullLogo.svg";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Sheetpng from "../../assets/background/sheetpng.png";
