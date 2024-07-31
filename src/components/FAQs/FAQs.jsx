@@ -76,7 +76,8 @@ function FAQs() {
     {
       id: 14,
       que: " How does SurveyBull charge surveyors for creating surveys?",
-      ans: "SurveyBull charges surveyors based on the number of responses they seek and the filters they apply. If a survey is closed before reaching the response limit, SurveyBull allows surveyors to redeem the excess fees. This means surveyors only pay for the responses they receive and can get back the excess amount. Please refer to the pricing calculator here.",
+      ans: "SurveyBull charges surveyors based on the number of responses they seek and the filters they apply. If a survey is closed before reaching the response limit, SurveyBull allows surveyors to redeem the excess fees. This means surveyors only pay for the responses they receive and can get back the excess amount.",
+      link: "Please refer to the pricing calculator here.",
     },
   ];
   const [searchQuery, setSearchQuery] = useState("");

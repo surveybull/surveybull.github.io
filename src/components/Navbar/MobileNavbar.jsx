@@ -9,11 +9,18 @@ import SurveybullLogo from "../../../public/SurveybullLogo.svg";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Sheetpng from "../../assets/background/sheetpng.png";
-import twitterLogo from "../../assets/twitterLogo.svg";
-import mailLogo from "../../assets/mailLogo.svg";
-import telegramLogo from "../../assets/telegramLogo.svg";
+import telegramLogo from "../../assets/FooterTelegram.svg";
+import mailLogo from "../../assets/FooterMail.svg";
+import twitterLogo from "../../assets/FooterTwitter.svg";
+import discordLogo from "../../assets/Discord.svg";
 import MenuButton from "../../assets/MenuButton.svg";
 import { Link } from "react-router-dom";
+import {
+  DISCORD_LINK,
+  TELEGRAM_LINK,
+  TESTNET_LINK,
+  TWITTER_LINK,
+} from "../../constant/app";
 
 function MobileNavbar({ NavbarData, visitedPage }) {
   const [id, setId] = useState([]);
@@ -37,28 +44,25 @@ function MobileNavbar({ NavbarData, visitedPage }) {
           <div className="flex flex-col gap-y-6 mt-[2.5rem]">
             <div className="flex justify-evenly items-center">
               {/* <img src={mailLogo} width={20} height={20}></img> */}
-              <a
-                href=" https://t.me/surveybull"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={telegramLogo} width={20} height={20}></img>
+              <a href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+                <img src={telegramLogo}></img>
               </a>
-              <a
-                href="https://x.com/surveybull"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={twitterLogo} width={20} height={20}></img>
+              <a href={TWITTER_LINK} target="_blank" rel="noopener noreferrer">
+                <img src={twitterLogo}></img>
+              </a>
+              <a href={DISCORD_LINK} target="_blank" rel="noopener noreferrer">
+                <img src={discordLogo} alt="discord" />
               </a>
             </div>
             <div className="py-3">
-              <img src={SurveybullLogo} width={140} height={140}></img>
+              <Link to={"/"}>
+                <img src={SurveybullLogo} width={140} height={140}></img>
+              </Link>
             </div>
             <div className="flex flex-col gap-y-5">
               {NavbarData.map((option) =>
                 option.childItem.length > 0 &&
-                visitedPage == option.path.toLowerCase() ? (
+                visitedPage == option.path.toLowerCase().split("/")[1] ? (
                   <div>
                     <div
                       onClick={() => {
@@ -121,7 +125,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
               <button
                 className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]"
                 onClick={() => {
-                  window.open("https://testnet.surveybull.io/auth/login");
+                  window.open(TESTNET_LINK);
                 }}
               >
                 Get Started

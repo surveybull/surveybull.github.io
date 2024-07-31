@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 import { useLocation } from "react-router-dom";
+import { transferGivenRoute } from "../../helper/transferGivenRoute";
 
 const NavBar = () => {
-  const { pathname } = useLocation();
-  const visitedPage = pathname.toLowerCase();
+  const location = useLocation();
+
+  const visitedPage = location.pathname.toLowerCase().split("/")[1];
   const [visible, setVisible] = useState(true);
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
+  useEffect(() => {
+    transferGivenRoute(location);
+  }, [location.hash]);
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
 
@@ -96,15 +101,15 @@ const NavBar = () => {
           visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         } md:block hidden ${
           scrolledFromTop &&
-          " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
-        }  fixed top-0 w-full `}
+          " bg-[#ffffff] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
+        }  fixed top-0 w-full z-50 `}
       >
         <DesktopNavbar NavbarData={NavbarData} visitedPage={visitedPage} />
       </div>
       <div
         className={`md:hidden block fixed top-0 w-full ${
           scrolledFromTop &&
-          " bg-[#FFFFFF40] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
+          " bg-[#ffffff] backdrop-blur-md z-50 shadow-[0px_10px_40px_0px_rgba(19,35,55,0.15)]"
         } transition-all duration-500 ${
           visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}

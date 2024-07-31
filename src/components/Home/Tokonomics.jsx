@@ -1,4 +1,7 @@
+import { useLocation } from "react-router-dom";
 import tokonomics from "../../assets/tokonomicsChart.svg";
+import { useEffect } from "react";
+import { transferGivenRoute } from "../../helper/transferGivenRoute";
 const cardData = [
   {
     title: "Marketing",
@@ -99,9 +102,13 @@ const Card = ({ data }) => {
 };
 
 const Tokonomics = () => {
+ 
   return (
     <div className="skew-y-6 xl:skew-y-3 py-16">
-      <h1 className="flex justify-center text-center text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold">
+      <h1
+        className="flex justify-center text-center text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold"
+        
+      >
         Tokenomics
       </h1>
       <div

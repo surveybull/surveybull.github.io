@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LearnMore = () => {
   return (
     <div className="pt-4 ">
@@ -9,7 +11,9 @@ const LearnMore = () => {
         <div className="text-center text-xs md:text-base">
           Explore the advantages of using BULL tokens for survey payments and
           discover our{" "}
-          <span className=" text-[rgba(59,78,244,1)]"> tokenomics </span>
+          <Link to={"/#tokenomics"} className=" text-[rgba(59,78,244,1)]">
+            tokenomics
+          </Link>
         </div>
       </div>
     </div>

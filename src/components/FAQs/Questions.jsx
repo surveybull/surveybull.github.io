@@ -8,6 +8,7 @@ import {
 import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
 import noData from "../../../public/noData.png";
+import { Link } from "react-router-dom";
 function Questions({ faqs }) {
   const [accordion, setAccordion] = useState();
 
@@ -36,7 +37,10 @@ function Questions({ faqs }) {
             </div>
           </AccordionTrigger>
           <AccordionContent className="bg-[#FFFFFF] rounded-[9px] px-10 py-6 font-[400] text-[#5A6573] md:text-[16px] text-[12px] leading-[26px]">
-            {data.ans}
+            <div>{data.ans}</div>
+            <Link to={"/pricing/#calculator"} className="text-[#5868F8]">
+              {data.link && data.link}
+            </Link>
           </AccordionContent>
         </AccordionItem>
       ))}

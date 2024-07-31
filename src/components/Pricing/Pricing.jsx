@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../Navbar/NavBar";
 import PricingIntroBg from "../../assets/background/PricingIntroBg.jpg";
 import PricingWorkBg from "../../assets/background/PricingWorkBg.jpg";
@@ -36,7 +36,7 @@ function Pricing() {
       </section>
 
       <section className="bg-[url('./assets/background/CalculatorBg.jpg')] bg-cover bg-repeat-round">
-        <div className="xl:max-w-[1300px] p-7 mx-auto">
+        <div className="xl:max-w-[1300px] p-7 mx-auto" id="calculator">
           <Calculator />
         </div>
       </section>
@@ -46,7 +46,7 @@ function Pricing() {
           <PricingKey />
         </div>
       </section>
-      
+
       <section className="bg-[url('./assets/background/PaymentProcessBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <PricePayment />

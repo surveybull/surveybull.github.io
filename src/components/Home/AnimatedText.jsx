@@ -27,9 +27,9 @@ function AnimatedText() {
     return () => clearInterval(interval);
   }, [direction, items.length]);
   return (
-    <div className="relative overflow-hidden h-[100px] w-full mt-5 sm:mt-10">
+    <div className="relative overflow-hidden h-[100px] w-full mt-5 lg:mt-10">
       <div
-        className="absolute inset-0 transition-transform duration-1000 ease-in-out w-full"
+        className="  h-24 transition-transform duration-1000 ease-in-out w-full"
         style={{
           transform: `translateY(-${currentIndex * 100}%)`,
         }}
