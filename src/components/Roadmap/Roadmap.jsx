@@ -8,9 +8,9 @@ import Map from "./Map";
 import SEO from "../SEO";
 
 function Roadmap() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
   return (
     <>
       <SEO
