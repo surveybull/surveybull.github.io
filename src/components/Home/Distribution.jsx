@@ -42,7 +42,7 @@ const Distribution = () => {
   return (
     <div className="flex flex-col items-start gap-y-7 skew-y-6 xl:skew-y-3 py-16">
       <h1 className="md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] leading-[34px] md:leading-[52px] ">
-        Weighted <span className="text-[#978FFD]">Reward Calculation</span>{" "}
+        Weighted <span className="text-[#978FFD]">Revenue Sharing</span>{" "}
         Mechanism
       </h1>
       <div className="text-[14px] leading-[26px] max-w-[1000px] font-[400] text-[#89919B] md:text-[16px]">
@@ -53,7 +53,7 @@ const Distribution = () => {
         stakeholders alike. Here's a breakdown of how it operates:
       </div>
       <div className="flex justify-center items-center p-5 w-full">
-        <img src={distribution} className="max-h-[600px] " />
+        <img src={distribution} alt="sharing" className="max-h-[600px] " />
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         {rewardData.map((data) => (

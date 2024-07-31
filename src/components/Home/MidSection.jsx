@@ -10,7 +10,7 @@ const SurveyBuilding = () => {
       <img
         className="sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] ml-4 mr-2"
         src={bluetick}
-        alt=""
+        alt="bluetick"
       />
       {text}
     </div>
@@ -97,11 +97,7 @@ const EarnToken = () => {
           <span className="text-[#3B4EF4]">Sharing</span> Your Thoughts
         </div>
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-[1.5rem] text-center lg:text-start">
-          At SurveyBull, we deeply value your opinions and insights. We've
-          created a unique opportunity for you to earn rewards by sharing your
-          thoughts through surveys. Our platform provides a seamless experience
-          where your contributions are not only appreciated, but also generously
-          rewarded.
+        SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, including token airdrops, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8">
           <img src={EarnTokenGif} alt="intro" className="max-h-[600px]" />
@@ -135,7 +131,7 @@ const Grow = () => {
     {
       title: "Earn Rewards",
       description:
-        "For every successful referral, you'll earn rewards based on the referral's activity on the platform. The more referrals you bring in, the more you stand to earn.",
+        "For each successful referral, you'll earn rewards that increase with your total number of referrals on the platform. The more people you bring in, the greater your potential earnings.",
     },
     {
       title: "Foster Network Growth",
@@ -226,7 +222,7 @@ const Boost = () => {
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] text-center lg:text-start text-[rgba(90,101,115,1)] mt-[1.5rem]">
           By staking your BULL Tokens, you not only contribute to the stability
           and growth of the SurveyBull ecosystem but also unlock a stream of
-          additional rewards. Here's how staking works:
+          additional rewards. Here's how you can benefit:
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8 ">
           <img src={Staking} alt="intro" className="max-h-[500px]" />

@@ -15,13 +15,13 @@ const PricingKey = () => {
           </div>
           <div className="flex">
             <img
-              style={{ height: "340px" }}
-              className="mt-[2px] hidden md:block   h-max  sm:w-[16px] sm:h-[340px] "
+              // style={{ height: "380px" }}
+              className="mt-[2px] hidden md:block   h-max  sm:w-[20px] sm:h-[360px] lg:h-[385px] xl:h-[360px] "
               src={KeyPointLine}
-              height={340}
+              height={360}
               alt="Your Image"
             />{" "}
-            <div className="md:px-4 max-w-[600px]">
+            <div className="md:px-4  max-w-[600px]">
               <div className="flex">
                 <div className="block md:hidden m-[2px] w-[16px]  ">
                   <img
@@ -36,8 +36,8 @@ const PricingKey = () => {
                   <div className="text-[14px] md:text-base  font-HelveticaNeueMedium">
                     Transparent Pricing
                   </div>
-                  <div className="text-xs md:text-sm  text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
-                    Know the cost upfront in BULL tokens based on your survey
+                  <div className="text-xs md:text-sm  text-[#5A6573] py-[8px] lg:py-0  xl:py-[8px] md:leading-[24px] leading-[20px]">
+                    Know the cost upfront in ETH and BULL tokens based on your survey
                     configuration.
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const PricingKey = () => {
                       alt="Your Image"
                     />
                   </div>
-                  <div className="pl-3 md:pl-0">
+                  <div className="pl-3 lg:pt-2 xl:pt-0 md:pl-0">
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Blockchain Security
                     </div>
@@ -96,7 +96,7 @@ const PricingKey = () => {
                       alt="Your Image"
                     />
                   </div>
-                  <div className="pl-3 md:pl-0">
+                  <div className="pl-3 lg:pt-1 xl:pt-0 md:pl-0">
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       Flexible Customization
                     </div>
@@ -117,7 +117,7 @@ const PricingKey = () => {
                       alt="Your Image"
                     />
                   </div>
-                  <div className="pl-3 md:pl-0">
+                  <div className="pl-3 lg:pt-1 xl:pt-0 md:pl-0">
                     <div className="text-sm md:text-base  font-HelveticaNeueMedium">
                       API Integration
                     </div>

@@ -17,7 +17,7 @@ const SurveyCard = ({ imageSrc, title, description }) => {
   return (
     <div className="flex h-full flex-col justify-start sm:max-w-[20rem] w-full gap-y-4 mx-auto group hover:cursor-pointer">
       <div>
-        <img src={imageSrc} alt="" />
+        <img src={imageSrc} alt="scimg" />
       </div>
       <div className="flex h-max gap-2 w-full relative">
         <div className="h-[30%] bg-[#3B4EF4] group-hover:h-full w-[1px] transition-height duration-700 ease-in-out absolute left-[-10px]"></div>

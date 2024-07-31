@@ -5,7 +5,7 @@ import {
   SheetClose,
   SheetTrigger,
 } from "../../@/components/ui/sheet";
-import SurveybullLogo from "../../../public/SurveybullLogo.svg";
+import SurveybullLogo from "../../assets/SurveybullLogo.svg";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Sheetpng from "../../assets/background/sheetpng.png";
@@ -34,7 +34,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between mx-auto w-full px-7 py-4 ">
       <Link to={"/"}>
-        <img src={SurveybullLogo} width={150} height={150}></img>
+        <img src={SurveybullLogo} alt="SurveybullLogo" width={150} height={150}></img>
       </Link>
       <Sheet>
         <SheetTrigger>

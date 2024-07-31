@@ -34,7 +34,7 @@ const cardData = [
     endColor: "#997CF4",
   },
   {
-    title: "Ecosystem & Devlopment",
+    title: "Ecosystem & Development",
     text: "10",
     tokens: "1,000,000,000",
     tge: "10%",
@@ -118,6 +118,7 @@ const Tokonomics = () => {
         <div className="flex items-center justify-center">
           <img
             src={tokonomics}
+            alt="tokonomics"
             className="md:min-w-[600px] md:min-h-[600px] min-w-[200px] min-h-[200px]"
           />
         </div>

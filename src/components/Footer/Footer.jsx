@@ -1,4 +1,4 @@
-import Logo from "../../../public/SurveybullLogo.svg";
+import Logo from "../../assets/SurveybullLogo.svg";
 import FooterBg from "../../assets/background/FooterBg.jpg";
 import FooterTelegram from "../../assets/FooterTelegram.svg";
 import FooterMail from "../../assets/FooterMail.svg";
@@ -104,9 +104,7 @@ const Footer = () => {
             <div class="flex flex-col gap-y-7 lg:w-[25%] w-full items-center lg:items-start justify-between">
               <img src={Logo} className="w-[170px] sm:w-fit h-fit" />
               <div className="lg:text-start text-center text-[#5A6573] text-[14px] font-[400] leading-[20px] md:leading-[26px]">
-                At SurveyBull, we're dedicated to equipping surveyors with the
-                tools they need to gather authentic data and drive informed
-                decisions.
+              Our mission is to provide surveyors with the essential tools to gather reliable, authentic data that informs sound decisions. Leveraging our pioneering WorldID protocol, we eliminate fake reviews and unreliable responses, delivering surveyors with verified, human-generated feedback that is transparently recorded on the blockchain.
               </div>
             </div>
 

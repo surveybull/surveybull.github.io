@@ -10,7 +10,7 @@ const data = [
     imageAlt: "stakingW",
     title: "Staking Rewards",
     subTitle:
-      "By staking your BULL Tokens, you not only contribute to the stability and growth of the SurveyBull ecosystem but also unlock a stream of additional rewards. Here's how staking works:",
+      "By staking your BULL Tokens, you not only contribute to the stability and growth of the SurveyBull ecosystem but also unlock a stream of additional rewards. Here's how you can benefit:",
     sections: [
       {
         title: "Support Platform Growth ",
@@ -40,7 +40,7 @@ const data = [
       },
       {
         title: "Earn Rewards",
-        text: "For every successful referral, you'll earn rewards based on the referral's activity on the platform. The more referrals you bring in, the more you stand to earn.",
+        text: "For each successful referral, you'll earn rewards that increase with your total number of referrals on the platform. The more people you bring in, the greater your potential earnings.",
       },
       {
         title: "Foster Network Growth",

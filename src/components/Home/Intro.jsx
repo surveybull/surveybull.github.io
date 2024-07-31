@@ -10,8 +10,7 @@ const Intro = () => {
           Embark on Your Survey Adventure Today!
         </div>
         <div className="text-start text-[#132337] text-[14px] md:text-[20px] font-[400] md:leading-[30px] leading-[24px]">
-          Unlock the power of Blockchain Supported Survey, Earn reward for your
-          data!
+        Unlock Insights, Earn Rewards: The Blockchain Survey Revolution
         </div>
         <div>
           <button

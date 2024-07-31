@@ -26,7 +26,7 @@ const Roadmap = () => {
         <div className="w-full flex flex-col justify-between">
           <div className="  my-10 flex justify-start items-center h-fit w-full ">
             <div className="absolute flex justify-center w-full h-8 ">
-              <img className=" z-10" width={26} height={26} src={tick} />
+              <img className=" z-10" width={26} height={26} src={tick} alt="tick" />
             </div>
             <div
               data-aos={"zoom-in"}
@@ -55,6 +55,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={rightTriangle}
+                    alt="rightTriangle"
                   />
                 </div>
               </div>
@@ -88,6 +89,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={leftTriangle}
+                    alt="leftTriangle"
                   />
                 </div>
               </div>
@@ -124,6 +126,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={rightTriangle}
+                    alt="rightTriangle"
                   />
                 </div>
               </div>
@@ -160,6 +163,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={leftTriangle}
+                    alt="triangle"
                   />
                 </div>
               </div>
@@ -190,6 +194,8 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={rightTriangle}
+                    alt="triangle"
+
                   />
                 </div>
               </div>
@@ -220,6 +226,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={leftTriangle}
+                    alt="triangle"
                   />
                 </div>
               </div>
@@ -256,6 +263,7 @@ const Roadmap = () => {
                     width={40}
                     height={40}
                     src={rightTriangle}
+                    alt="triangle"
                   />
                 </div>
               </div>
