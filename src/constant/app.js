@@ -35,3 +35,7 @@ export const PossibleSwitch = [
   { title: "Served in Military", mul: 0.2 },
   { title: "Own Swimming pool", mul: 0.2 },
 ];
+export const ETH_PRICE_FETCHER =
+  "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd";
+export const BULL_PRICE_FETCHER =
+  "https://api.coingecko.com/api/v3/simple/price?ids=rune&vs_currencies=usd";

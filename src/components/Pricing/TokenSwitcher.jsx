@@ -5,8 +5,9 @@ import {
   useTotalCost,
 } from "../../store/Calculator";
 import { Loader } from "lucide-react";
-import { MdError } from "react-icons/md";
+import { MdError, MdErrorOutline } from "react-icons/md";
 import { getDecimalSeparateNum } from "../../helper/getDecimalSeparateNum";
+import { BULL_PRICE_FETCHER, ETH_PRICE_FETCHER } from "../../constant/app";
 
 function TokenSwitcher() {
   const [isBullTokenClicked, setIsBullTokenClicked] = useBULLtokenSwitcher(
@@ -16,23 +17,27 @@ function TokenSwitcher() {
     (state) => [state.isClicked, state.setIsClicked]
   );
   const [ethUSD, setEthUsd] = useState(null);
+  const [bullUSD, setBullUsd] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  console.log(error);
   const totalCost = useTotalCost((state) => state.totalCost);
   const fetchData = async () => {
     setLoading(true);
     setError(false); // Reset error state before fetching
     try {
-      const res = await fetch(
-        "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
-      );
-
-      if (!res.ok) {
-        throw new Error(`Error ${res.status}: ${res.statusText}`);
+      const eth = await fetch(ETH_PRICE_FETCHER);
+      const bull = await fetch(BULL_PRICE_FETCHER);
+      if (!eth.ok) {
+        throw new Error(`Error ${eth.status}: ${eth.statusText}`);
       }
-
-      const result = await res.json();
-      setEthUsd(result.ethereum.usd);
+      if (!bull.ok) {
+        throw new Error(`Error ${bull.status}: ${bull.statusText}`);
+      }
+      const ethPrice = await eth.json();
+      const bullPrice = await bull.json();
+      setEthUsd(ethPrice.ethereum.usd);
+      setBullUsd(bullPrice.rune.usd);
     } catch (error) {
       setError(true);
     } finally {
@@ -46,12 +51,15 @@ function TokenSwitcher() {
   }, []);
 
   let totalEth;
+  let totalBull;
   if (loading) {
     totalEth = <Loader className="animate-spin" />;
-  } else if (ethUSD) {
+    totalBull = <Loader className="animate-spin" />;
+  } else if (ethUSD && bullUSD) {
     totalEth = (Number(totalCost) / Number(ethUSD)).toFixed(2);
+    totalBull = (Number(totalCost) / Number(bullUSD)).toFixed(2);
   }
-  let totalBull = (Number(totalCost) / 0.25).toFixed(2);
+
   return (
     <>
       <div className="border border-[#E7E9EB] bg-[#FFFFFF] rounded-[6px] p-2 flex gap-2">
@@ -69,7 +77,7 @@ function TokenSwitcher() {
             BULL
           </span>
           <span className="text-[12px] font-HelveticaNeueLight">
-            Price - 0.25 USD
+            Price - {bullUSD} USD
           </span>
         </button>
         <button
@@ -96,13 +104,21 @@ function TokenSwitcher() {
         </span>
         <div className="text-[#3B4EF4] text-[24px] font-HelveticaNeueBold  flex items-center gap-2 sm:justify-end justify-center">
           <span>
-            {isBullTokenClicked
-              ? totalCost == "0"
-                ? "FREE"
-                : getDecimalSeparateNum(Number(Math.ceil(totalBull)))
-              : totalCost == "0"
-              ? "FREE"
-              : getDecimalSeparateNum(Number(totalEth))}
+            {isBullTokenClicked ? (
+              totalCost == "0" ? (
+                "FREE"
+              ) : Number(totalBull) ? (
+                getDecimalSeparateNum(Number(Math.ceil(totalBull)))
+              ) : (
+                <MdErrorOutline />
+              )
+            ) : totalCost == "0" ? (
+              "FREE"
+            ) : Number(totalEth) ? (
+              getDecimalSeparateNum(Number(totalEth))
+            ) : (
+              <MdErrorOutline />
+            )}
           </span>{" "}
           <span>
             {totalCost == "0" ? "" : isBullTokenClicked ? "BULL" : "ETH"}
