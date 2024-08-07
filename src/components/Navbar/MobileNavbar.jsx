@@ -61,7 +61,12 @@ function MobileNavbar({ NavbarData, visitedPage }) {
             </div>
             <div className="py-3">
               <Link to={"/"}>
-                <img src={SurveybullLogo} alt="SurveybullLogo" width={140} height={140}></img>
+                <img
+                  src={SurveybullLogo}
+                  alt="SurveybullLogo"
+                  width={140}
+                  height={140}
+                ></img>
               </Link>
             </div>
             <div className="flex flex-col gap-y-5">
@@ -131,6 +136,17 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                   </Link>
                 )
               )}
+              <Link
+                onClick={() => {
+                  window.open(
+                    "https://surveybull.gitbook.io/surveybull-whitepaper"
+                  );
+                }}
+              >
+                <SheetClose className="flex justify-start w-full">
+                  <div className="font-semibold">Docs</div>
+                </SheetClose>
+              </Link>
             </div>
             <div>
               <button

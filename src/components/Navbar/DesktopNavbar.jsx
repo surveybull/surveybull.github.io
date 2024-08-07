@@ -39,6 +39,28 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
             </div>
           )
         )}
+        <div className="flex flex-col justify-center items-center gap-y-1">
+              <Link
+                // to={option.path}
+                className={`${
+                  false
+                    ? "text-[#3B4EF4] font-[500]"
+                    : "text-[#132337]"
+                  } font-[400] text-[16px] lg:text-[18px]`}
+                  onClick={() => {
+                    window.open("https://surveybull.gitbook.io/surveybull-whitepaper");
+                  }}
+              >
+                Docs
+              </Link>
+              <div
+                className={`${
+                  false
+                    ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                    : "bg-none h-[2.5px]"
+                }`}
+              ></div>
+            </div>
       </div>
       <div>
         <button
