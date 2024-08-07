@@ -147,6 +147,16 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                   <div className="font-semibold">Docs</div>
                 </SheetClose>
               </Link>
+              <Link
+                to={"/faqs"}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <SheetClose className="flex justify-start w-full">
+                  <div className="font-semibold">{"FAQs"}</div>
+                </SheetClose>
+              </Link>
             </div>
             <div>
               <button

@@ -8,7 +8,12 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
   return (
     <div className="flex items-center justify-between xl:max-w-[1300px] mx-auto w-full px-7 py-4">
       <Link to={"/"}>
-        <img src={SurveybullLogo} alt="SurveybullLogo" width={170} height={170}></img>
+        <img
+          src={SurveybullLogo}
+          alt="SurveybullLogo"
+          width={170}
+          height={170}
+        ></img>
       </Link>
       <div className="flex items-center  gap-x-4 lg:gap-x-8">
         {NavbarData.map((option) =>
@@ -22,10 +27,10 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
                   visitedPage == option.path.toLowerCase().split("/")[1]
                     ? "text-[#3B4EF4] font-[500]"
                     : "text-[#132337]"
-                  } font-[400] text-[16px] lg:text-[18px]`}
-                  onClick={() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
+                } font-[400] text-[16px] lg:text-[18px]`}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 {option.title}
               </Link>
@@ -40,27 +45,49 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
           )
         )}
         <div className="flex flex-col justify-center items-center gap-y-1">
-              <Link
-                // to={option.path}
-                className={`${
-                  false
-                    ? "text-[#3B4EF4] font-[500]"
-                    : "text-[#132337]"
-                  } font-[400] text-[16px] lg:text-[18px]`}
-                  onClick={() => {
-                    window.open("https://surveybull.gitbook.io/surveybull-whitepaper");
-                  }}
-              >
-                Docs
-              </Link>
-              <div
-                className={`${
-                  false
-                    ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
-                    : "bg-none h-[2.5px]"
-                }`}
-              ></div>
-            </div>
+          <a
+            // to={"/"}
+            className={`${
+              false ? "text-[#3B4EF4] font-[500]" : "text-[#132337]"
+            } font-[400] text-[16px] lg:text-[18px] cursor-pointer`}
+            onClick={() => {
+              window.open(
+                "https://surveybull.gitbook.io/surveybull-whitepaper"
+              );
+            }}
+          >
+            Docs
+          </a>
+          <div
+            className={`${
+              false
+                ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                : "bg-none h-[2.5px]"
+            }`}
+          ></div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-y-1">
+          <Link
+            to={"/faqs"}
+            className={`${
+              visitedPage == "/faqs".toLowerCase().split("/")[1]
+                ? "text-[#3B4EF4] font-[500]"
+                : "text-[#132337]"
+            } font-[400] text-[16px] lg:text-[18px]`}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            {"FAQs"}
+          </Link>
+          <div
+            className={`${
+              visitedPage == "/faqs".toLowerCase().split("/")[1]
+                ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                : "bg-none h-[2.5px]"
+            }`}
+          ></div>
+        </div>
       </div>
       <div>
         <button

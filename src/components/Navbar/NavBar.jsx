@@ -86,12 +86,6 @@ const NavBar = () => {
       path: "/surveycreation",
       childItem: [],
     },
-    {
-      id: 4,
-      title: "FAQs",
-      path: "/faqs",
-      childItem: [],
-    },
   ];
 
   return (
