@@ -18,7 +18,7 @@ function Feedback() {
         <button
           className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#3B4EF4] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#5868F8] w-fit "
           onClick={() => {
-            window.open(TESTNET_LINK);
+            //window.open(TESTNET_LINK);
           }}
         >
           Sign up free
