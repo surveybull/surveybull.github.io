@@ -297,7 +297,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 font-HelveticaNeueMedium pr-10">
-              Oct 2024
+              Jan 2025
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -327,7 +327,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              Oct 2024
+              Jan 2025
             </div>
           </div>
 
@@ -338,7 +338,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
-              Oct 2024
+              Jan 2025
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -368,7 +368,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              Oct 2024
+              Jan 2025
             </div>
           </div>
 
@@ -379,7 +379,7 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
-              Oct 2024
+              Jan 2025
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
@@ -409,7 +409,7 @@ const Map = () => {
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 font-HelveticaNeueMedium  lg:w-[47%] md:w-[45%]">
-              Oct 2024
+              Jan 2025
             </div>
           </div>
         </div>
