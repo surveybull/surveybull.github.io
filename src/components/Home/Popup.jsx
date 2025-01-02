@@ -7,8 +7,13 @@ import telegram from "../../assets/FooterTelegram.svg";
 import popupbg from "../../assets/background/PopupBg.jpg";
 import { X } from "lucide-react";
 const calculateTimeLeft = () => {
-  const difference = +new Date("2025-01-01T00:00:00Z") - +new Date();
-  let timeLeft = {};
+  const difference = +new Date("2025-03-01T00:00:00Z") - +new Date();
+  let timeLeft = {
+    days: 0,
+    hours: 0,
+    minutes: 0, 
+    seconds: 0 
+  };
 
   if (difference > 0) {
     timeLeft = {
