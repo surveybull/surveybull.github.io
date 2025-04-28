@@ -10,11 +10,11 @@ const data = [
     imageAlt: "stakingW",
     title: "Staking Rewards",
     subTitle:
-      "By staking your BULL Tokens, you not only contribute to the stability and growth of the SurveyBull ecosystem but also unlock a stream of additional rewards. Here's how you can benefit:",
+      "By staking your WLD Tokens, you not only contribute to the stability and growth of the SurveyBull ecosystem but also unlock a stream of additional rewards. Here's how you can benefit:",
     sections: [
       {
         title: "Support Platform Growth ",
-        text: "Staking your BULL Tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
+        text: "Staking your WLD Tokens demonstrates your commitment to the SurveyBull platform, contributing to its long-term sustainability and success.",
       },
       {
         title: "Earn Additional Incentives ",

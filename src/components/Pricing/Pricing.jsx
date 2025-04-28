@@ -62,11 +62,11 @@ function Pricing() {
         </div>
       </section>
 
-      <section className="bg-[url('./assets/background/LearnMoreBg.jpg')] bg-cover bg-repeat-round">
+      {/* <section className="bg-[url('./assets/background/LearnMoreBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <LearnMore />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

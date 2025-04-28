@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
 import {
-  useBULLtokenSwitcher,
+  useWorldcoinSwitcher,
   useEtheriumSwitcher,
   useTotalCost,
 } from "../../store/Calculator";
 import { Loader } from "lucide-react";
 import { MdError, MdErrorOutline } from "react-icons/md";
 import { getDecimalSeparateNum } from "../../helper/getDecimalSeparateNum";
-import { BULL_PRICE_FETCHER, ETH_PRICE_FETCHER } from "../../constant/app";
+import { WLD_PRICE_FETCHER, ETH_PRICE_FETCHER } from "../../constant/app";
+
 
 function TokenSwitcher() {
-  const [isBullTokenClicked, setIsBullTokenClicked] = useBULLtokenSwitcher(
+  const [isWorldcoinClicked, setIsWorldcoinClicked] = useWorldcoinSwitcher(
     (state) => [state.isClicked, state.setIsClicked]
   );
   const [isEtheriumClicked, setIsEtheriumClicked] = useEtheriumSwitcher(
     (state) => [state.isClicked, state.setIsClicked]
   );
   const [ethUSD, setEthUsd] = useState(null);
-  const [bullUSD, setBullUsd] = useState(null);
+  const [wldUSD, setWldUsd] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   console.log(error);
@@ -27,17 +28,19 @@ function TokenSwitcher() {
     setError(false); // Reset error state before fetching
     try {
       const eth = await fetch(ETH_PRICE_FETCHER);
-      const bull = await fetch(BULL_PRICE_FETCHER);
+      const wld = await fetch(WLD_PRICE_FETCHER);
       if (!eth.ok) {
         throw new Error(`Error ${eth.status}: ${eth.statusText}`);
       }
-      if (!bull.ok) {
-        throw new Error(`Error ${bull.status}: ${bull.statusText}`);
+      if (!wld.ok) {
+        throw new Error(`Error ${wld.status}: ${wld.statusText}`);
       }
       const ethPrice = await eth.json();
-      const bullPrice = await bull.json();
-      setEthUsd(ethPrice.ethereum.usd);
-      setBullUsd(bullPrice.rune.usd);
+      const wldPrice = await wld.json();
+      console.log("🚀 ~ fetchData ~ wldPrice:", wldPrice)
+      
+      setEthUsd((Number(ethPrice.ethereum.usd)).toFixed(2));
+      setWldUsd((Number(wldPrice.data.attributes.token_prices["0x2cfc85d8e48f8eab294be644d9e25c3030863003"])).toFixed(2));
     } catch (error) {
       setError(true);
     } finally {
@@ -51,13 +54,13 @@ function TokenSwitcher() {
   }, []);
 
   let totalEth;
-  let totalBull;
+  let totalWld;
   if (loading) {
     totalEth = <Loader className="animate-spin" />;
-    totalBull = <Loader className="animate-spin" />;
-  } else if (ethUSD && bullUSD) {
+    totalWld = <Loader className="animate-spin" />;
+  } else if (ethUSD && wldUSD) {
     totalEth = (Number(totalCost) / Number(ethUSD)).toFixed(2);
-    totalBull = (Number(totalCost) / Number(bullUSD)).toFixed(2);
+    totalWld = (Number(totalCost) / Number(wldUSD)).toFixed(2);
   }
 
   return (
@@ -65,28 +68,11 @@ function TokenSwitcher() {
       <div className="border border-[#E7E9EB] bg-[#FFFFFF] rounded-[6px] p-2 flex gap-2">
         <button
           className={` ${
-            isBullTokenClicked &&
-            "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] text-[#FFFFFF]"
-          }  rounded-[4px] p-3 flex flex-col justify-center gap-y-1 `}
-          onClick={() => {
-            setIsBullTokenClicked(true);
-            setIsEtheriumClicked(false);
-          }}
-        >
-          <span className="text-[14px] font-HelveticaNeueMedium sm:text-start text-center w-full">
-            BULL
-          </span>
-          <span className="text-[12px] font-HelveticaNeueLight">
-            Price - {bullUSD} USD
-          </span>
-        </button>
-        <button
-          className={` ${
             isEtheriumClicked &&
             "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] text-[#FFFFFF]"
           }  rounded-[4px] p-3 flex flex-col justify-center gap-y-1 `}
           onClick={() => {
-            setIsBullTokenClicked(false);
+            setIsWorldcoinClicked(false);
             setIsEtheriumClicked(true);
           }}
         >
@@ -97,19 +83,36 @@ function TokenSwitcher() {
             Price - {ethUSD} USD
           </span>
         </button>
+        <button
+          className={` ${
+            isWorldcoinClicked &&
+            "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] text-[#FFFFFF]"
+          }  rounded-[4px] p-3 flex flex-col justify-center gap-y-1 `}
+          onClick={() => {
+            setIsWorldcoinClicked(true);
+            setIsEtheriumClicked(false);
+          }}
+        >
+          <span className="text-[14px] font-HelveticaNeueMedium sm:text-start text-center w-full">
+            Worldcoin
+          </span>
+          <span className="text-[12px] font-HelveticaNeueLight">
+            Price - {wldUSD} USD
+          </span>
+        </button>
       </div>
       <div className="flex flex-col justify-center gap-y-2">
         <span className="text-[#5A6573] text-[18px] font-HelveticaNeueLight">
-          Total Payable {isBullTokenClicked ? "BULL" : "ETH"} token
+          Total Payable {isWorldcoinClicked ? "WLD" : "ETH"} token
         </span>
         <div className="text-[#3B4EF4] text-[24px] font-HelveticaNeueBold  flex items-center gap-2 sm:justify-end justify-center">
           <span>
-            {isBullTokenClicked ? (
+            {isWorldcoinClicked ? (
               totalCost == "0" ? (
                 "FREE"
-              ) : Number(totalBull) ? (
-                getDecimalSeparateNum(Number(Math.ceil(totalBull)))
-              ) : (
+              ) : Number(totalWld) ? (
+                getDecimalSeparateNum(Number(Math.ceil(totalWld)))
+               ) : (
                 <MdErrorOutline />
               )
             ) : totalCost == "0" ? (
@@ -121,7 +124,7 @@ function TokenSwitcher() {
             )}
           </span>{" "}
           <span>
-            {totalCost == "0" ? "" : isBullTokenClicked ? "BULL" : "ETH"}
+            {totalCost == "0" ? "" : isWorldcoinClicked ? "WLD" : "ETH"}
           </span>
         </div>
       </div>

@@ -13,13 +13,13 @@ const PricePayment = () => {
       icon: PriceCalculation,
       title: "Price Calculation",
       description:
-        "The platform calculates the equivalent cost in ETH and BULL tokens based on the USD pricing and current exchange rate.",
+        "The platform calculates the equivalent cost in ETH and WLD tokens based on the USD pricing and current exchange rate.",
     },
     {
       icon: Payment,
       title: "Payment",
       description:
-        "Complete the payment securely in ETH or BULL tokens to activate your survey.",
+        "Complete the payment securely in ETH or WLD tokens to activate your survey.",
     },
   ];
 

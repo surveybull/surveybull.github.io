@@ -5,37 +5,37 @@ import Participants from "../../assets/Participants.svg";
 import Company from "../../assets/Company.svg";
 import Staker_prts from "../../assets/Staker_prts.svg";
 const rewardData = [
+  // {
+  //   title: "Stakers(30%)",
+  //   description:
+  //     "Reserved for people who staked their BULL tokens, supporting the platform and earning additional incentives.",
+  //   imgSrc: Staker,
+  // },
   {
-    title: "Stakers(30%)",
-    description:
-      "Reserved for people who staked their BULL tokens, supporting the platform and earning additional incentives.",
-    imgSrc: Staker,
-  },
-  {
-    title: "Referral Participants(20%)",
+    title: "Referral Participants(40%)",
     description:
       "Encourages community growth and network expansion by rewarding participants who have refered others to the platform, with rewards allocated based on their referrals.",
     imgSrc: Referral,
   },
 
   {
-    title: "Participants(20%)",
+    title: "Participants(40%)",
     description:
       "Directly allocated based on their engagement level and the quality of their responses. The more actively involved participants are, the greater their share of rewards.",
     imgSrc: Participants,
   },
   {
-    title: "Company(10%)",
+    title: "Company(20%)",
     description:
       "Allocated to support platform development, operations, and future initiatives, ensuring continuous improvement and sustainability.",
     imgSrc: Company,
   },
-  {
-    title: "Staker Participants(20%)",
-    description:
-      "Participants who staked their BULL tokens receive an additional portion of rewards, calculated based on their stake weight. This incentivizes long-term engagement and commitment to the platform.",
-    imgSrc: Staker_prts,
-  },
+  // {
+  //   title: "Staker Participants(20%)",
+  //   description:
+  //     "Participants who staked their BULL tokens receive an additional portion of rewards, calculated based on their stake weight. This incentivizes long-term engagement and commitment to the platform.",
+  //   imgSrc: Staker_prts,
+  // },
 ];
 
 const Distribution = () => {
@@ -54,6 +54,7 @@ const Distribution = () => {
       </div>
       <div className="flex justify-center items-center p-5 w-full">
         <img src={distribution} alt="sharing" className="max-h-[600px] " />
+
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         {rewardData.map((data) => (

@@ -37,5 +37,5 @@ export const PossibleSwitch = [
 ];
 export const ETH_PRICE_FETCHER =
   "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd";
-export const BULL_PRICE_FETCHER =
-  "https://api.coingecko.com/api/v3/simple/price?ids=rune&vs_currencies=usd";
+export const WLD_PRICE_FETCHER =
+  "https://api.geckoterminal.com/api/v2/simple/networks/world-chain/token_price/0x2cFc85d8E48F8EAB294be644d9E25C3030863003";
