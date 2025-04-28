@@ -21,15 +21,15 @@ const sectionsData = [
     links: [
       { title: "Survey Creation", path: "/surveycreation" },
       { title: "Earn Crypto", path: "/#Earn" },
-      { title: "Staking Rewards", path: "/#Distribution" },
+      // { title: "Staking Rewards", path: "/#Distribution" },
       { title: "Participation Rewards", path: "/#Distribution" },
-      { title: "Buy BULL Token", path: "/" },
+      { title: "Buy WLD Token", path: "/" },
     ],
   },
   {
     title: "Fundamentals",
     links: [
-      { title: "Tokenomics", path: "/#tokenomics" },
+      // { title: "Tokenomics", path: "/#tokenomics" },
       { title: "World ID", link: WORLD_ID },
       { title: "Smart Contracts", link: SMART_CONTRACT },
       { title: "Blockchain", link: BLOCKCHAIN_LINK },

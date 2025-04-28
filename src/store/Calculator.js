@@ -22,16 +22,16 @@ export const useSwitcherState = create((set) => ({
     })),
 }));
 
-export const useBULLtokenSwitcher = create((set) => {
+export const useWorldcoinSwitcher = create((set) => {
   return {
-    isClicked: true,
+    isClicked: false,
     setIsClicked: (value) => set((state) => ({ isClicked: value })),
   };
 });
 
 export const useEtheriumSwitcher = create((set) => {
   return {
-    isClicked: false,
+    isClicked: true,
     setIsClicked: (value) => set((state) => ({ isClicked: value })),
   };
 });

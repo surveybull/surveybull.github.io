@@ -62,7 +62,7 @@ const data = [
         description: [
           "Define the purpose and goals of the project.",
           "Conduct market research and identify target audience and competitors.",
-          "Outline the tokenomics, including token supply, distribution, and utility.",
+          // "Outline the tokenomics, including token supply, distribution, and utility.",
         ],
       },
       {
@@ -74,7 +74,7 @@ const data = [
       {
         heading: "White Paper Development",
         description: [
-          "Create a comprehensive whitepaper outlining the project's vision, technical details, tokenomics, and roadmap.",
+          "Create a comprehensive whitepaper outlining the project's vision, technical details, and roadmap.",
           "Review and refine the whitepaper based on feedback from team members.",
         ],
       },
@@ -82,12 +82,12 @@ const data = [
   },
   {
     heading: "Token & Platform Development",
-    status: "In-progress",
+    status: "Done",
     description: [
       {
         heading: "Smart Contract Development",
         description: [
-          "Develop the smart contracts for the token, vesting, staking, and survey platform.",
+          "Develop the smart contracts for survey platform.",
         ],
       },
       {
@@ -96,12 +96,12 @@ const data = [
           "Develop the survey platform for survey creation and participation, integrating blockchain technology for  transperant reward distribution, data storage and security.",
         ],
       },
-      {
-        heading: "Staking Dashboard Development",
-        description: [
-          "Develop the frontend components of the staking dashboard using modern web development frameworks and libraries..",
-        ],
-      },
+      // {
+      //   heading: "Staking Dashboard Development",
+      //   description: [
+      //     "Develop the frontend components of the staking dashboard using modern web development frameworks and libraries..",
+      //   ],
+      // },
     ],
   },
   {
@@ -126,7 +126,7 @@ const data = [
   },
   {
     heading: "Survey Platform Launch (Testnet)",
-    status: "Pending",
+    status: "Done",
     description: [
       {
         heading: "Survey Platform Development",
@@ -195,7 +195,7 @@ const data = [
   },
   {
     heading: "Survey Platform Launch (Mainnet)",
-    status: "Pending",
+    status: "Done",
     description: [
       {
         heading: "Public Launch and Promotion",
@@ -249,6 +249,7 @@ const Map = () => {
         {/* <div className="absolute w-4 bottom-0 h-4 ml-[3px] md:ml-0 rounded-full bg-[#8B97FF] z-50"></div> */}
         {/* <div class="absolute w-[2px] z-10 rounded-2xl ml-[8px] md:ml-0 h-full border-dashed border-2 border-indigo-600 "></div> */}
         <div className="w-full flex flex-col justify-between my-[50px]">
+          {/* 1 */}
           <div className=" my-10 md:flex  h-fit w-full">
             <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
@@ -268,6 +269,7 @@ const Map = () => {
             </div>
           </div>
 
+          {/* 2 */}
           <div className="  my-10 md:flex-row flex flex-col-reverse justify-end sm:justify-between  h-fit w-full ">
             <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
@@ -290,6 +292,7 @@ const Map = () => {
             </div>
           </div>
 
+          {/* 3 */}
           <div className=" my-10 md:flex  h-fit w-full">
             <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
@@ -304,11 +307,12 @@ const Map = () => {
                 <img src={Phase3line} width={90} alt="Your Image" class="" />
               </div>
               <div className="z-10">
-                <Card data={data[2]} />
+                <Card data={data[3]} />
               </div>
             </div>
           </div>
 
+          {/* 4 */}
           <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
             <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
@@ -323,14 +327,15 @@ const Map = () => {
                 <img src={Phase4line} width={90} alt="Your Image" class="" />
               </div>
               <div className="md:ml-6 ml-0 z-10">
-                <Card data={data[3]} />
+                <Card data={data[6]} />
               </div>
             </div>
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
-              Jan 2025
+              Apr 2025
             </div>
           </div>
 
+          {/* 5 */}
           <div className=" my-10 md:flex  h-fit w-full">
             <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
@@ -338,19 +343,20 @@ const Map = () => {
               </div>
             </div>
             <div className="md:w-[50%] md:text-[18px] text-[16px] pl-12 md:pl-0 flex justify-start md:justify-end pt-4 pb-2 pr-10 font-HelveticaNeueMedium">
-              Jan 2025
+              May 2025
             </div>
             <div className="relative w-[100%] md:w-[45%] pl-12 flex justify-end md:justify-center md:pl-8   ">
               <div className="absolute top-7 left-0">
                 <img src={Phase5line} width={90} alt="Your Image" class="" />
               </div>
               <div className="z-10">
-                <Card data={data[4]} />
+                <Card data={data[7]} />
               </div>
             </div>
           </div>
 
-          <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
+          {/* 6 */}
+          {/* <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
             <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
                 <img src={Phase6} alt="Your Image" class="" />
@@ -370,9 +376,10 @@ const Map = () => {
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 lg:w-[47%] md:w-[45%] font-HelveticaNeueMedium">
               Jan 2025
             </div>
-          </div>
+          </div> */}
 
-          <div className=" my-10 md:flex  h-fit w-full">
+          {/* 7 */}
+          {/* <div className=" my-10 md:flex  h-fit w-full">
             <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
                 <img src={Phase7} alt="Your Image" class="" />
@@ -389,9 +396,10 @@ const Map = () => {
                 <Card data={data[6]} />
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
+          {/* 8 */}
+          {/* <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
             <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
               <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
                 <img src={Phase8} alt="Your Image" class="" />
@@ -411,7 +419,7 @@ const Map = () => {
             <div className="pl-12 md:text-[18px] text-[16px] md:pl-2 pt-4 pb-2 font-HelveticaNeueMedium  lg:w-[47%] md:w-[45%]">
               Jan 2025
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

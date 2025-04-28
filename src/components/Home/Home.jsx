@@ -96,11 +96,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-[#132337] bg-[url('./assets/background/TokenomicsMobile.svg')] md:bg-[url('./assets/background/Tokenomics.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
+      {/* <section className="bg-[#132337] bg-[url('./assets/background/TokenomicsMobile.svg')] md:bg-[url('./assets/background/Tokenomics.svg')]  bg-cover bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit mt-[40px] ">
         <div className="xl:max-w-[1300px] p-7 mx-auto mb-8 md:mb-16" id="tokenomics">
           <Tokonomics />
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="bg-[url('./assets/background/InvestorBg.jpg')] bg-repeat-round bg-cover">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
@@ -108,7 +108,7 @@ function Home() {
         </div>
       </section> */}
 
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }

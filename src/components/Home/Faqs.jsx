@@ -20,7 +20,7 @@ const collapsibleData = [
     content: "No, you need to authenticate the World ID to the orb level.",
   },
   {
-    title: "How will i be profited by staking the Bull tokens?",
+    title: "How will i be profited by staking the WLD tokens?",
     content:
       "For every survey ends, Reward distribution has a portion of rewards for the stakers. That will be distributed as the Survey ends. The more you Stake the more you Earn",
   },

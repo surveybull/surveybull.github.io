@@ -38,16 +38,16 @@ function FAQs() {
       que: "What are the benefits of providing my personal details to SurveyBull?",
       ans: "Surveyors target participants based on specific attributes. By filling in your personal details, you increase your chances of being part of targeted audience groups, allowing you to earn more rewards by completing more surveys.",
     },
-    {
-      id: 7,
-      que: "Should I stake my BULL tokens?",
-      ans: " Definitely. Staking your BULL tokens can be beneficial as 20% of the survey fees are rewarded to stakers after each survey is completed. Additionally, 35% of the survey fees are distributed based on the participant's staking weight.",
-    },
-    {
-      id: 8,
-      que: "Which tokens will I earn as staking Rewards?",
-      ans: "You can earn ETH and BULL as staking rewards.",
-    },
+    // {
+    //   id: 7,
+    //   que: "Should I stake my BULL tokens?",
+    //   ans: " Definitely. Staking your BULL tokens can be beneficial as 20% of the survey fees are rewarded to stakers after each survey is completed. Additionally, 35% of the survey fees are distributed based on the participant's staking weight.",
+    // },
+    // {
+    //   id: 8,
+    //   que: "Which tokens will I earn as staking Rewards?",
+    //   ans: "You can earn ETH and BULL as staking rewards.",
+    // },
     {
       id: 9,
       que: "As a surveyor, can I target people with specific profession and demographic conditions?",
@@ -66,12 +66,12 @@ function FAQs() {
     {
       id: 12,
       que: "Why should I refer others to the SurveyBull platform?",
-      ans: "Referring others to SurveyBull can earn you more rewards, as 20% of the survey fees are rewarded to participants based on their referral weight. The higher your referral weight, the more BULL tokens you earn.",
+      ans: "Referring others to SurveyBull can earn you more rewards, as 20% of the survey fees are rewarded to participants based on their referral weight. The higher your referral weight, the more WLD tokens you earn.",
     },
     {
       id: 13,
-      que: "How does SurveyBull ensure the BULL token remains in demand?",
-      ans: "SurveyBull burns 5% of the survey fees for each survey. Over time, this creates high demand but limited supply for BULL tokens.",
+      que: "How does SurveyBull ensure the WLD token remains in demand?",
+      ans: "SurveyBull burns 5% of the survey fees for each survey. Over time, this creates high demand but limited supply for WLD tokens.",
     },
     {
       id: 14,

@@ -37,7 +37,7 @@ const PricingKey = () => {
                     Transparent Pricing
                   </div>
                   <div className="text-xs md:text-sm  text-[#5A6573] py-[8px] lg:py-0  xl:py-[8px] md:leading-[24px] leading-[20px]">
-                    Know the cost upfront in ETH and BULL tokens based on your survey
+                    Know the cost upfront in ETH and WLD tokens based on your survey
                     configuration.
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const PricingKey = () => {
                       Currency Conversion
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
-                      USD pricing is converted into BULL tokens at the
+                      USD pricing is converted into WLD tokens at the
                       prevailing exchange rate at the time of survey creation.
                     </div>
                   </div>
@@ -80,7 +80,7 @@ const PricingKey = () => {
                       Blockchain Security
                     </div>
                     <div className="text-xs md:text-sm text-[#5A6573] py-[8px] md:leading-[24px] leading-[20px]">
-                      Utilize BULL tokens for secure and efficient transactions.
+                      Utilize WLD tokens for secure and efficient transactions.
                     </div>
                   </div>
                 </div>

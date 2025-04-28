@@ -4,6 +4,7 @@ import Staking from "../../assets/Staking.svg";
 import Effortless from "../../assets/gif/Effortless.gif";
 import EarnTokenGif from "../../assets/gif/EarnToken.gif";
 import Refer from "../../assets/gif/Earn&Refer.gif";
+import ProductSurveySection from "./product-survey-section";
 const SurveyBuilding = () => {
   const FeatureItem = ({ text }) => (
     <div className="sm:text-base text-[14px] py-2 flex items-center border-l-2 hover:border-l-[#3B4EF4] hover:text-[#3B4EF4] transition-colors duration-500 ease-in-out">
@@ -247,10 +248,11 @@ const Boost = () => {
 const MidSection = () => {
   return (
     <div>
+      <ProductSurveySection />
       <SurveyBuilding />
       <EarnToken />
       <Grow />
-      <Boost />
+      {/* <Boost /> */}
     </div>
   );
 };
