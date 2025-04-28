@@ -3,6 +3,7 @@ export const MIN_RESPONSES = 26;
 export const MAX_FEES_PER_RESPONSE = 3;
 export const MIN_FEES_PER_RESPONSE = 0.5;
 export const TESTNET_LINK = "https://testnet.surveybull.io/auth/login";
+export const MAINNET_LINK = "https://app.surveybull.io";
 export const TELEGRAM_LINK = "https://t.me/surveybull";
 export const TWITTER_LINK = "https://x.com/surveybull";
 export const DISCORD_LINK = "https://discord.gg/vBMPHe7dqK";

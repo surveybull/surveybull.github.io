@@ -1,6 +1,6 @@
 import React from "react";
 import BlogHeader from "../../assets/BlogHeader.svg";
-import { TESTNET_LINK } from "../../constant/app";
+import { MAINNET_LINK } from "../../constant/app";
 function Header() {
   return (
     <div className="flex md:flex-row flex-col py-4 mt-[2rem] md:mt-[3rem] gap-6">
@@ -16,7 +16,7 @@ function Header() {
           <button
             className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#FFFFFF] font-HelveticaNeueMedium md:text-[16px] text-[14px] "
             onClick={() => {
-              //window.open(TESTNET_LINK);
+              window.open(MAINNET_LINK);
             }}
           >
             Sign up free

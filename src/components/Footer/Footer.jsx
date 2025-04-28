@@ -10,7 +10,7 @@ import {
   DISCORD_LINK,
   SMART_CONTRACT,
   TELEGRAM_LINK,
-  TESTNET_LINK,
+  MAINNET_LINK,
   TWITTER_LINK,
   WORLD_ID,
 } from "../../constant/app";
@@ -67,8 +67,8 @@ const Section = ({ title, links }) => {
               ) : (
                 <a
                   className="text-[#5A6573] text-[12px] sm:text-[14px] font-[400] hover:cursor-pointer"
-                    href={data.link}
-                    target="_blank"
+                  href={data.link}
+                  target="_blank"
                 >
                   {data.title}
                 </a>
@@ -92,7 +92,7 @@ const Footer = () => {
         <button
           className="text-[#3B4EF4] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] md:w-fit md:text-nowrap "
           onClick={() => {
-            //window.open(TESTNET_LINK);
+            window.open(MAINNET_LINK);
           }}
         >
           Get Started
