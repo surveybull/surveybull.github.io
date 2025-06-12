@@ -12,20 +12,20 @@ const rewardData = [
   //   imgSrc: Staker,
   // },
   {
-    title: "Referral Participants(40%)",
+    title: "Referral Participants(45%)",
     description:
       "Encourages community growth and network expansion by rewarding participants who have refered others to the platform, with rewards allocated based on their referrals.",
     imgSrc: Referral,
   },
 
   {
-    title: "Participants(40%)",
+    title: "Participants(45%)",
     description:
       "Directly allocated based on their engagement level and the quality of their responses. The more actively involved participants are, the greater their share of rewards.",
     imgSrc: Participants,
   },
   {
-    title: "Company(20%)",
+    title: "Company(10%)",
     description:
       "Allocated to support platform development, operations, and future initiatives, ensuring continuous improvement and sustainability.",
     imgSrc: Company,
