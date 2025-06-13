@@ -52,7 +52,7 @@ function Calculation() {
           <div className="flex justify-between items-center gap-1">
             <span className="text-[#89919B] text-[12px] font-HelveticaNeueMedium">
               Total Survey Responses Price ({getDecimalSeparateNum(sliderValue)}{" "}
-              × ${Number(getPerResponseFees(sliderValue)).toFixed(2)} USD)
+              × ${Number(getPerResponseFees(sliderValue))} USD)
             </span>
             <span className="text-[#5868F8] font-HelveticaNeueBold">
               {sliderValue > 25

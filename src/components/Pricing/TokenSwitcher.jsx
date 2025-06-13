@@ -59,8 +59,8 @@ function TokenSwitcher() {
     totalEth = <Loader className="animate-spin" />;
     totalWld = <Loader className="animate-spin" />;
   } else if (ethUSD && wldUSD) {
-    totalEth = (Number(totalCost) / Number(ethUSD)).toFixed(2);
-    totalWld = (Number(totalCost) / Number(wldUSD)).toFixed(2);
+    totalEth = (Number(totalCost) / Number(ethUSD)).toFixed(7);
+    totalWld = (Number(totalCost) / Number(wldUSD)).toFixed(7);
   }
 
   return (
@@ -111,7 +111,7 @@ function TokenSwitcher() {
               totalCost == "0" ? (
                 "FREE"
               ) : Number(totalWld) ? (
-                getDecimalSeparateNum(Number(Math.ceil(totalWld)))
+                getDecimalSeparateNum(Number(totalWld))
                ) : (
                 <MdErrorOutline />
               )
