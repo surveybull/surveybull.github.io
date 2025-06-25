@@ -23,6 +23,6 @@
 
 
 export function getPerResponseFees(totalResponses) {
-  const perResponseFees = totalResponses < Number(26) ?  "0" : "0.0001";
+  const perResponseFees = totalResponses < Number(26) ?  "0" : "0.001";
   return perResponseFees.toString();
 }
