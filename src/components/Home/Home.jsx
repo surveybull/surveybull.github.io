@@ -66,14 +66,14 @@ function Home() {
         </div>
       </section>
 
-      <section
+      {/* <section
         id="Distribution"
         className="bg-[#132337] bg-[url('./assets/background/DistributionMobile.svg')] lg:bg-[url('./assets/background/Distribution.svg')] bg-cover  lg:bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit"
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Distribution />
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">

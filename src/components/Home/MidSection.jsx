@@ -70,13 +70,13 @@ const EarnToken = () => {
     {
       title: "Transparent Process",
       description:
-        "Our smart contract-based reward system securely holds tokens until they are distributed to participants. Once surveys close, the system automatically calculates rewards based on predefined criteria such as response quality and completeness, ensuring a transparent and efficient distribution process.",
+        "Our smart contract-based reward system securely holds tokens until they are distributed to participants. Once a participant fills out a survey, the system automatically distributes rewards, ensuring a transparent and efficient distribution process.",
     },
-    {
-      title: "Claiming Your Rewards",
-      description:
-        "Once a survey closes, participants on the SurveyBull platform are notified of the available rewards. Claiming these rewards is straightforward - simply interact with the smart contract through our intuitive user interface to get started. You can trust that our transparent and deterministic distribution process will ensure you receive the appropriate token allocation based on your contributions.",
-    },
+    // {
+    //   title: "Claiming Your Rewards",
+    //   description:
+    //     "Once a survey closes, participants on the SurveyBull platform are notified of the available rewards. Claiming these rewards is straightforward - simply interact with the smart contract through our intuitive user interface to get started. You can trust that our transparent and deterministic distribution process will ensure you receive the appropriate token allocation based on your contributions.",
+    // },
   ];
 
   const Section = ({ title, description }) => (
@@ -98,7 +98,7 @@ const EarnToken = () => {
           <span className="text-[#3B4EF4]">Sharing</span> Your Thoughts
         </div>
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-[1.5rem] text-center lg:text-start">
-        SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, including token airdrops, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.
+        SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.
         </div>
         <div className="w-full flex items-center justify-center lg:hidden mt-8">
           <img src={EarnTokenGif} alt="intro" className="max-h-[600px]" />

@@ -49,34 +49,34 @@ function FAQs() {
     //   ans: "You can earn ETH and BULL as staking rewards.",
     // },
     {
-      id: 9,
+      id: 7,
       que: "As a surveyor, can I target people with specific profession and demographic conditions?",
       ans: "Yes, SurveyBull helps surveyors target their audience based on various geographical, profession, and cultural characteristics.",
     },
     {
-      id: 10,
+      id: 8,
       que: "As a surveyor, can I target people who hold specific ERC20, ERC721, or ERC1155 tokens?",
       ans: "Yes, as a Web3 product, SurveyBull offers a pre-check functionality to filter the target audience based on token-gated filters.",
     },
     {
-      id: 11,
+      id: 9,
       que: "As a surveyor, can I incentivize my participants to motivate them to complete the survey?",
       ans: " Yes, SurveyBull allows surveyors to incentivize participants post-response with any ERC20, ERC721, or ERC1155 tokens.",
     },
+    // {
+    //   id: 12,
+    //   que: "Why should I refer others to the SurveyBull platform?",
+    //   ans: "Referring others to SurveyBull can earn you more rewards, as 20% of the survey fees are rewarded to participants based on their referral weight. The higher your referral weight, the more WLD tokens you earn.",
+    // },
+    // {
+    //   id: 13,
+    //   que: "How does SurveyBull ensure the WLD token remains in demand?",
+    //   ans: "SurveyBull burns 5% of the survey fees for each survey. Over time, this creates high demand but limited supply for WLD tokens.",
+    // },
     {
-      id: 12,
-      que: "Why should I refer others to the SurveyBull platform?",
-      ans: "Referring others to SurveyBull can earn you more rewards, as 20% of the survey fees are rewarded to participants based on their referral weight. The higher your referral weight, the more WLD tokens you earn.",
-    },
-    {
-      id: 13,
-      que: "How does SurveyBull ensure the WLD token remains in demand?",
-      ans: "SurveyBull burns 5% of the survey fees for each survey. Over time, this creates high demand but limited supply for WLD tokens.",
-    },
-    {
-      id: 14,
+      id: 10,
       que: " How does SurveyBull charge surveyors for creating surveys?",
-      ans: "SurveyBull charges surveyors based on the number of responses they seek and the filters they apply. If a survey is closed before reaching the response limit, SurveyBull allows surveyors to redeem the excess fees. This means surveyors only pay for the responses they receive and can get back the excess amount.",
+      ans: "SurveyBull charges surveyors based on the number of responses they seek and the filters they apply.",
       link: "Please refer to the pricing calculator here.",
     },
   ];
