@@ -41,7 +41,7 @@ function Calculation() {
   }, [TotalCost]);
   return (
     <div className="flex flex-col gap-y-4 p-4 bg-[#EDEFFF] rounded-[10px] border border-[#E7E9EB] h-full">
-      <span className="font-HelveticaNeueBold gradient-text text-[16px] leading-normal">
+      <span className="w-fit font-HelveticaNeueBold gradient-text text-[16px] leading-normal">
         How Pricing Works
       </span>
       <div className="flex flex-col space-y-3 divide-y divide-[#E7E9EB] h-full">

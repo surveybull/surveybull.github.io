@@ -2,7 +2,7 @@ const GettingStarted = () => {
   return (
     <div className="py-4 bg-[#132337] text-white rounded-2xl">
       <div className="m-5 text-center text-2xl md:text-4xl font-HelveticaNeueBold">
-        Get Started <span className=" text-[rgba(59,78,244,1)]"> Today</span>
+        Get Started <span className="gradient-text"> Today</span>
       </div>
       <div className="m-4 flex justify-center">
         <div className="text-center md:text-base text-xs text-[#B8BDC3] max-w-[650px] md:leading-[26px] leading-[20px]">
