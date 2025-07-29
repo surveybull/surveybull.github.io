@@ -6,7 +6,7 @@ function Header() {
     <div className="flex md:flex-row flex-col py-4 mt-[2rem] md:mt-[3rem] gap-6">
       <div className="md:w-[50%] w-full flex flex-col justify-center sm:gap-y-7 gap-y-4">
         <span className="text-[26px] md:text-[40px] leading-[34px] md:leading-[74px] lg:text-[56px] font-HelveticaNeueBold text-[#132337]">
-          Create your own <span className="gradient-text">surveys</span>
+          Create your own <span className="gradient-text inline-block">surveys</span>
         </span>
         <span className="md:text-[20px] text-[#132337] font-[400] text-[14px] md:leading-[30px] leading-[20px]">
           Explore the platform to find out how easy it is to find the answers

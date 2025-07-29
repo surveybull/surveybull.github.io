@@ -4,9 +4,9 @@ const SDK = () => {
     <div className="flex flex-col gap-y-10 ">
       <div className="flex flex-col gap-y-7">
         <span className="text-center md:text-[36px] md:leading-[52px] text-[24px] leading-[40px] font-HelveticaNeueBold text-[#132337] max-w-[800px] mx-auto">
-          <span className="gradient-text">Software</span> Development Kit (SDK)
+          <span className="gradient-text inline-block">Software</span> Development Kit (SDK)
           for Seamless{" "}
-          <span className="gradient-text">Survey Integration</span>
+          <span className="gradient-text inline-block">Survey Integration</span>
         </span>
         <span className="text-center text-[#5A6573] text-[14px] leading-[24px] font-[400] md:text-[16px] md:leading-[26px] sm:px-11 lg:px-24">
           The SurveyBull SDK empowers effortless creation and management of

@@ -22,8 +22,8 @@ export default function ProductSurveySection() {
           className="text-center space-y-4"
         >
           <h2 className="md:text-4xl md:leading-[52px] text-center text-2xl leading-[40px] font-HelveticaNeueBold">
-            Product-Based
-            <span className="gradient-text"> Surveys </span>
+            Product-Based&nbsp;
+            <span className="gradient-text inline-block">Surveys</span>
           </h2>
           <p className="text-md md:text-lg text-[#5A6573] leading-[20px] max-w-3xl mx-auto">
             Connect directly with consumers through QR codes on your products. Get genuine feedback and reward
@@ -207,7 +207,7 @@ export default function ProductSurveySection() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center flex flex-col gap-5"
         >
-          <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className="gradient-text">Rewarding.</span></h3>
+          <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className="gradient-text inline-block">Rewarding.</span></h3>
           <p className="text-md md:text-lg text-[#5A6573] leading-[20px] max-w-3xl mx-auto">
             Join our blockchain survey platform that directly connects brands with real consumers. Brands get authentic
             feedback, consumers get instant rewards - all without middlemen.

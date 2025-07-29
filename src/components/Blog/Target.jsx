@@ -29,7 +29,7 @@ function Target() {
       <div className="flex w-full lg:flex-row flex-col gap-12">
         <div className="lg:w-[50%] w-full flex flex-col gap-y-7 justify-center">
           <span className="md:text-[36px] font-HelveticaNeueBold text-[24px] text-[#FFFFFF] md:leading-[52px] leading-[34px]">
-            <span className="text-[#978FFD]">Target</span> who you want, when
+            <span className="gradient-text inline-block">Target</span> who you want, when
             you want
           </span>
           <span className="md:text-[16px] font-[400] text-[#E7E9EB] text-[14px] md:leading-[26px] leading-[20px]">
@@ -49,7 +49,7 @@ function Target() {
             </li>
             <li className="list-disc leading-[20px] md:leading-[26px]">
               Gain access to our regularly refreshed, always up-to-date{" "}
-              <span className="text-[#978FFD]">respondent profiles</span>
+              <span className="gradient-text inline-block">respondent profiles</span>
             </li>
           </ul>
           <div className="flex gap-x-2 sm:gap-x-[1.5rem] sm:justify-start justify-between">
@@ -62,7 +62,7 @@ function Target() {
               </div>
             ))}
           </div>
-          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
+          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] gradient-text font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#9333EA]/60 w-fit ">
             Choose your audience
           </button>
         </div>
@@ -78,7 +78,7 @@ function Target() {
         </div>
         <div className="lg:w-[50%] w-full flex flex-col gap-y-7 justify-center">
           <span className=" md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] md:leading-[52px] leading-[34px]">
-            Get better insights, <span className="text-[#978FFD]">faster</span>
+            Get better insights, <span className="gradient-text inline-block">faster</span>
           </span>
           <span className="md:text-[16px] text-[14px] font-[400] text-[#E7E9EB] leading-[20px] md:leading-[26px]">
             With guided setup, you can easily design, set targeting, and field a
@@ -86,7 +86,7 @@ function Target() {
             or insights professional. Get actionable insights in as little as an
             hour.
           </span>
-          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#978FFD] font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#978FFD] w-fit ">
+          <button className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] gradient-text font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#9333EA]/60 w-fit ">
             Get insights fast
           </button>
         </div>

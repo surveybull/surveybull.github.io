@@ -98,7 +98,8 @@ function FAQs() {
         type={"FAQs"}
         description={"FAQs Page"}
       />
-      <section className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round">
+      {/* <section className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round"> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>

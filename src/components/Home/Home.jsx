@@ -34,7 +34,8 @@ function Home() {
         type={"Home"}
       />
 
-      <section className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round ">
+      {/* <section className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round "> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>

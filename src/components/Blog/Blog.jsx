@@ -24,7 +24,8 @@ function Blog() {
         type={"Survey Creation"}
         title={"SurveyBull | Survey Creation"}
       />
-      <section className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round">
+      {/* <section className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round"> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <Header />
         </div>

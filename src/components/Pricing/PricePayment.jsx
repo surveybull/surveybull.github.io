@@ -26,7 +26,7 @@ const PricePayment = () => {
   return (
     <div className="mt-[2rem]">
       <div className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
-        Payment <span className="gradient-text"> Process </span>
+        Payment <span className="gradient-text inline-block"> Process </span>
       </div>
       <div className="flex flex-col justify-center">
         <img

@@ -19,7 +19,8 @@ function Roadmap() {
         title={"SurveyBull | Roadmap"}
         type={"Article"}
       />
-      <section className="bg-[url('./assets/gif/Roadmap.gif')] bg-cover bg-repeat-round">
+      {/* <section className="bg-[url('./assets/gif/Roadmap.gif')] bg-cover bg-repeat-round"> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 pt-[5rem] mx-auto">
           <div className="py-4 mt-[2rem] md:mt-[3rem]">
             <div className="text-center font-HelveticaNeueBold text-[28px] md:text-[56px]">

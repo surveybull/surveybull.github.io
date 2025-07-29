@@ -112,7 +112,7 @@ const Why = () => {
     <div className="xl:mb-[5rem] sm:mb-[1rem]">
       <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
         {"Why"}&nbsp;
-        <span className="gradient-text">SurveyBull</span>&nbsp;?
+        <span className="gradient-text inline-block">SurveyBull</span>&nbsp;?
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">

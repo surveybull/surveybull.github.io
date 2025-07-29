@@ -126,7 +126,7 @@ const DecentralizedAction = () => {
     <div className=" mt-[4.5rem]">
       <div className=" text-[24px] font-HelveticaNeueBold leading-[40px] tracking-wider md:text-4xl md:leading-[52px] mx-0 sm:mx-24   text-center ">
         {"Decentralized Actions: Elevating "}
-        <span className="gradient-text">
+        <span className="gradient-text inline-block">
           {" Survey Engagement "}
         </span>{" "}
         in Crypto Products

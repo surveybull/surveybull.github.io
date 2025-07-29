@@ -22,7 +22,7 @@ const SurveyCard = ({ imageSrc, title, description }) => {
       <div className="flex h-max gap-2 w-full relative">
         <div className="h-[30%] gradient-bg group-hover:h-full w-[1px] transition-height duration-700 ease-in-out absolute left-[-10px]"></div>
         <div className="flex flex-col gap-y-2">
-          <span className="w-fit text-[#132337] text-[14px] md:text-[16px] font-HelveticaNeueMedium gradient-text-groupHover transition-height duration-700 ease-in-out">
+          <span className="w-fit inline-block text-[#132337] text-[14px] md:text-[16px] font-HelveticaNeueMedium gradient-text-groupHover transition-height duration-700 ease-in-out">
             {title}
           </span>
           <span className="text-[#5A6573] text-[12px] md:text-[14px] md:leading-[24px] leading-[20px] font-[400]">

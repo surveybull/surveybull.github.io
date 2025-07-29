@@ -32,8 +32,8 @@ const Surveyor = () => {
       <div className="flex items-center flex-col gap-[1.5rem]  ">
         <div className="flex-1 text-[#FFFFFF] md:text-[36px] text-[24px] leading-[34px] md:leading-[52px] font-HelveticaNeueBold">
           Revolutionize Surveying: Say Goodbye to{" "}
-          <span className="text-[#978FFD]">Fake Reviews</span> with On-Chain{" "}
-          <span className="text-[#978FFD]">Verifiable Proof</span> of Personhood
+          <span className="gradient-text inline-block">Fake Reviews</span> with On-Chain{" "}
+          <span className="gradient-text inline-block">Verifiable Proof</span> of Personhood
         </div>
         <div className="w-full lg:hidden flex justify-center ">
           <video autoPlay loop muted className="max-h-[550px]">
@@ -53,7 +53,7 @@ const Surveyor = () => {
                 ></img>
               </div>
               <div className="flex flex-col gap-y-3 ">
-                <div className="md:text-[18px] text-[14px] text-[#978FFD]">
+                <div className="w-fit md:text-[18px] text-[14px] gradient-text">
                   {card.text}
                 </div>
                 <div className="text-[#89919B]  text-[12px] leading-[20px]">

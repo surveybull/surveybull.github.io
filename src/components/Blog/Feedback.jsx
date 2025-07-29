@@ -6,8 +6,8 @@ function Feedback() {
     <div className="flex md:flex-row flex-col gap-6">
       <div className="md:w-[50%] w-full flex flex-col justify-center gap-y-7">
         <span className="text-[24px] md:text-[36px] font-HelveticaNeueBold text-[#132337] md:leading-[52px] leading-[34px]">
-          <span className="gradient-text">Collect information</span> and{" "}
-          <span className="gradient-text">feedback</span> from almost anywhere
+          <span className="gradient-text inline-block">Collect information</span> and{" "}
+          <span className="gradient-text inline-block">feedback</span> from almost anywhere
         </span>
         <span className="md:text-[16px] text-[#5A6573] font-[400] text-[12px] md:leading-[26px] leading-[20px]">
           Listen to what people want by collecting responses from your

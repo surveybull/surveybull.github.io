@@ -23,7 +23,7 @@ const SurveyBuilding = () => {
     <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem] ">
       <div className="lg:w-[50%] w-full">
         <div className="md:text-4xl md:leading-[52px]  lg:text-start text-center text-2xl leading-[40px] font-HelveticaNeueBold">
-          <span className="gradient-text">
+          <span className="gradient-text inline-block">
             {"Effortless Survey"}
           </span>
           &nbsp;{"Building With SurveyBull"}
@@ -96,8 +96,8 @@ const EarnToken = () => {
     <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem]">
       <div className="lg:w-[50%] w-full">
         <div className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] text-center lg:text-start font-HelveticaNeueBold">
-          <span className="gradient-text">Earn Tokens</span> For{" "}
-          <span className="gradient-text">Sharing</span> Your Thoughts
+          <span className="gradient-text inline-block">Earn Tokens</span> For{" "}
+          <span className="gradient-text inline-block">Sharing</span> Your Thoughts
         </div>
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] font-HelveticaNeueLight text-[rgba(90,101,115,1)] mt-[1.5rem] text-center lg:text-start">
         SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.
@@ -145,7 +145,7 @@ const Grow = () => {
 
   const ReferralCard = ({ title, description }) => (
     <div className="px-3 py-5 border rounded-md shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border-l-[#9333EA] border-l-4 my-5 hover:border-[#9333EA] transition-colors duration-700 ease-in-out">
-      <span className="font-HelveticaNeueMedium gradient-text text-[14px] md:text-lg">
+      <span className="inline-block font-HelveticaNeueMedium gradient-text text-[14px] md:text-lg">
         {title}
       </span>
       <div className="mr-4 text-[12px] md:text-sm text-[#5A6573] my-2 leading-[20px]">
@@ -159,7 +159,7 @@ const Grow = () => {
       <div className="lg:w-[50%] w-full">
         <div className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center lg:text-start">
           Grow With Us:&nbsp;
-          <span className="gradient-text">{"Refer & Earn"}</span>
+          <span className="gradient-text inline-block">{"Refer & Earn"}</span>
         </div>
         <div className=" md:text-base md:leading-[26px] text-[14px] leading-[24px] lg:text-start text-center  text-[rgba(90,101,115,1)] mt-[1.5rem] ">
           Invite others to join the SurveyBull community and reap the rewards
