@@ -87,7 +87,7 @@ const Why = () => {
   const Card = ({ imageSrc, title, description,id }) => {
     return (
       <div
-        class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-purple-600/60 transition-colors duration-700 ease-in-out ${
+        class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-purple-600/60 ${
           Number(id) % 2 == 0 && "xl:relative xl:top-[2rem]"
         }`}
       >
