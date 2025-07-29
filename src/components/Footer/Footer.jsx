@@ -85,12 +85,12 @@ const Footer = () => {
   const year = new Date();
   return (
     <footer class="text-black -mt-[50px]">
-      <div className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[8px] sm:rounded-[20px] flex md:flex-nowrap flex-wrap justify-center lg:justify-between items-center gap-y-4 gap-x-5 shadow-[0px_4px_34px_0px_rgba(90,106,248,0.4)]">
+      <div className="gradient-bg py-7 md:py-10 px-6 relative top-[6.5rem] w-[85vw] max-w-[1100px] mx-auto rounded-[8px] sm:rounded-[20px] flex md:flex-nowrap flex-wrap justify-center lg:justify-between items-center gap-y-4 gap-x-5 shadow-[0px_4px_34px_0px_rgba(90,106,248,0.4)]">
         <div className="text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold text-center">
           Start Earning Rewards Or Get Insightful Data ?
         </div>
         <button
-          className="text-[#3B4EF4] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] md:w-fit md:text-nowrap "
+          className="text-[#9333EA] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] md:w-fit md:text-nowrap "
           onClick={() => {
             window.open(MAINNET_LINK);
           }}

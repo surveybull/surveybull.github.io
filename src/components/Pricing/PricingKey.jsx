@@ -11,7 +11,7 @@ const PricingKey = () => {
         </div>
         <div className="">
           <div className="text-left text-2xl md:text-4xl mb-7 font-HelveticaNeueBold">
-            Key <span className=" text-[rgba(59,78,244,1)]"> Features</span>
+            Key <span className="gradient-text"> Features</span>
           </div>
           <div className="flex">
             <img

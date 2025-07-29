@@ -38,7 +38,7 @@ function DropDownMenu({ option, visitedPage }) {
             to={option.path}
             className={`${
               visitedPage === option.path.toLowerCase().split("/")[1]
-                ? "text-[#3B4EF4] font-[500]"
+                ? "gradient-text font-[500]"
                 : visitedPage === "text-[#132337]"
             } font-[400] text-[18px]`}
             onClick={() => {
@@ -50,7 +50,7 @@ function DropDownMenu({ option, visitedPage }) {
           <div
             className={`${
               visitedPage === option.path.toLowerCase().split("/")[1]
-                ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                ? "gradient-bg h-[2.5px] rounded-full w-[17px]"
                 : "bg-none h-[2.5px]"
             }`}
           />
@@ -71,7 +71,7 @@ function DropDownMenu({ option, visitedPage }) {
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.querySelectorAll("span")[0].style.color =
-                        "#3B4EF4";
+                        "#9333EA";
                       e.currentTarget.querySelectorAll("span")[1].style.color =
                         "#132337";
                     }}

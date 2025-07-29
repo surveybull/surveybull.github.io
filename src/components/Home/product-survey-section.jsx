@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Scan, Gift, FileText, BarChart4, QrCode, Coins, Users, Fingerprint, Wallet } from "lucide-react"
+import { ScanLine, Scan, Gift, FileText, BarChart4, QrCode, Coins, Users, Fingerprint, Wallet } from "lucide-react"
 import { MAINNET_LINK } from "../../constant/app"
 
 export default function ProductSurveySection() {
@@ -23,7 +23,7 @@ export default function ProductSurveySection() {
         >
           <h2 className="md:text-4xl md:leading-[52px] text-center text-2xl leading-[40px] font-HelveticaNeueBold">
             Product-Based
-            <span className="text-[rgba(59,78,244,1)]"> Surveys </span>
+            <span className="gradient-text"> Surveys </span>
           </h2>
           <p className="text-md md:text-lg text-[#5A6573] leading-[20px] max-w-3xl mx-auto">
             Connect directly with consumers through QR codes on your products. Get genuine feedback and reward
@@ -36,14 +36,14 @@ export default function ProductSurveySection() {
           <div className="flex flex-col sm:flex-row gap-3 bg-white/30 backdrop-blur-sm p-3 rounded-[30px] sm:rounded-full shadow-[0px_0px_40px_15px_rgba(151,143,253,0.1)]">
             <button
               onClick={() => setActiveTab("surveyor")}
-              className={`px-6 py-3  rounded-full text-lg font-medium transition-all duration-300 ${activeTab === "surveyor" ? "bg-blue-600 text-white shadow-md" : "text-gray-700 hover:bg-white/50"
+              className={`px-6 py-3  rounded-full text-lg font-medium transition-all duration-300 ${activeTab === "surveyor" ? "gradient-bg text-white shadow-md" : "text-gray-700 hover:bg-white/50"
                 }`}
             >
               For Surveyors
             </button>
             <button
               onClick={() => setActiveTab("participant")}
-              className={`px-6 py-3 rounded-full text-lg font-medium transition-all duration-300 ${activeTab === "participant" ? "bg-blue-600 text-white shadow-md" : "text-gray-700 hover:bg-white/50"
+              className={`px-6 py-3 rounded-full text-lg font-medium transition-all duration-300 ${activeTab === "participant" ? "gradient-bg text-white shadow-md" : "text-gray-700 hover:bg-white/50"
                 }`}
             >
               For Participants
@@ -72,35 +72,35 @@ export default function ProductSurveySection() {
 
                   <div className="space-y-7">
                     <Feature
-                      icon={<QrCode className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<QrCode strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Unique QR Codes"
                       description="Generate unique QR codes to place on your product packaging for direct consumer feedback."
                       delay={0.3}
                     />
 
                     <Feature
-                      icon={<BarChart4 className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<BarChart4 strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Genuine Insights"
                       description="Get authentic feedback from actual consumers who purchased your product."
                       delay={0.4}
                     />
 
                     <Feature
-                      icon={<Users className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<Users strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Real Human Feedback"
                       description="Ensure all feedback comes from real humans who actually used your product."
                       delay={0.45}
                     />
 
                     <Feature
-                      icon={<Fingerprint className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<Fingerprint strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Unique Responses"
                       description="Receive unique feedback from different consumers, preventing duplicate submissions."
                       delay={0.5}
                     />
 
                     <Feature
-                      icon={<Coins className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<Coins strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Custom Token Rewards"
                       description="Offer your own tokens as rewards, creating a transparent and direct incentive system."
                       delay={0.55}
@@ -164,28 +164,28 @@ export default function ProductSurveySection() {
 
                   <div className="space-y-7">
                     <Feature
-                      icon={<Scan className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<ScanLine strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Scan QR Code"
                       description="Simply scan the QR code found on product packaging to access the survey."
                       delay={0.3}
                     />
 
                     <Feature
-                      icon={<FileText className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<FileText strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Share Your Feedback"
                       description="Complete a quick survey about your experience with the product."
                       delay={0.4}
                     />
 
                     <Feature
-                      icon={<Gift className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<Gift strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Claim Your Reward"
                       description="Instantly receive token rewards directly to your wallet after completion."
                       delay={0.5}
                     />
 
                     <Feature
-                      icon={<Wallet className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-blue-600" />}
+                      icon={<Wallet strokeWidth={1.7} className="w-7 h-7 min-[400px]:w-10 min-[400px]:h-10 text-[#9333EA] group-hover:text-white" />}
                       title="Gas-Free Transactions"
                       description="Use our miniapp to fill out the survey and claim a reward without paying any gas fees."
                       delay={0.6}
@@ -207,12 +207,12 @@ export default function ProductSurveySection() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center flex flex-col gap-5"
         >
-          <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className=" text-[rgba(59,78,244,1)]">Rewarding.</span></h3>
+          <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className="gradient-text">Rewarding.</span></h3>
           <p className="text-md md:text-lg text-[#5A6573] leading-[20px] max-w-3xl mx-auto">
             Join our blockchain survey platform that directly connects brands with real consumers. Brands get authentic
             feedback, consumers get instant rewards - all without middlemen.
           </p>
-          <button onClick={() => { window.open(MAINNET_LINK);}} className="bg-blue-600 hover:bg-blue-700 text-white font-medium w-fit self-center px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+          <button onClick={() => { window.open(MAINNET_LINK);}} className="gradient-bg text-white font-medium w-fit self-center px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
             Get Started
           </button>
         </motion.div>
@@ -230,11 +230,11 @@ function Feature({ icon, title, description, delay = 0 }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5 }}
-      className="flex gap-4"
+      className="flex gap-4 group"
     >
-      <div className="flex-shrink-0 h-fit p-2 mt-1 bg-blue-100 rounded-xl">{icon}</div>
+      <div className="flex-shrink-0 h-fit p-2 mt-1 shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] gradient-bg-hover rounded-xl">{icon}</div>
       <div>
-        <h4 className="font-HelveticaNeueMedium text-[rgba(59,78,244,1)] text-[14px] md:text-lg">{title}</h4>
+        <h4 className="w-fit font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-lg">{title}</h4>
         <p className="text-[12px] md:text-sm text-[#5A6573] leading-[20px]">{description}</p>
       </div>
     </motion.div>
@@ -338,9 +338,9 @@ function ParticipantAnimation() {
             <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-gray-400 rounded-full" />
             <div className="flex-1 w-full flex items-center justify-center">
               <div className="relative">
-                <Scan className="w-16 h-16 text-blue-600" />
+                <ScanLine className="w-16 h-16 text-[#9333EA]" />
                 <motion.div
-                  className="absolute inset-0 border-2 border-blue-500 rounded-md"
+                  className="absolute inset-0 border-2 border-[#9333EA] rounded-md"
                   animate={{
                     opacity: [0, 1, 0],
                     scale: [0.8, 1.1, 0.8],
@@ -365,14 +365,14 @@ function ParticipantAnimation() {
               <div className="w-full h-3 bg-gray-300 rounded-full" />
               <div className="w-full h-3 bg-gray-300 rounded-full" />
               <div className="w-full flex justify-center mt-2">
-                <div className="w-4 h-4 rounded-full border-2 border-blue-500 mr-2" />
+                <div className="w-4 h-4 rounded-full border-2 border-[#9333EA] mr-2" />
                 <div className="w-16 h-3 bg-gray-300 rounded-full" />
               </div>
               <div className="w-full flex justify-center mt-1">
-                <div className="w-4 h-4 rounded-full border-2 border-blue-500 mr-2" />
+                <div className="w-4 h-4 rounded-full border-2 border-[#9333EA] mr-2" />
                 <div className="w-16 h-3 bg-gray-300 rounded-full" />
               </div>
-              <FileText className="w-10 h-10 text-blue-600 mt-2" />
+              <FileText className="w-10 h-10 text-[#9333EA] mt-2" />
             </div>
             <p className="text-xs text-center text-gray-600 mb-2">Filling Survey</p>
           </div>
@@ -395,7 +395,7 @@ function ParticipantAnimation() {
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
                 <div className="relative">
-                  <Gift className="w-16 h-16 text-purple-600" />
+                  <Gift className="w-16 h-16 text-[#9333EA]" />
                   <motion.div
                     className="absolute -inset-2"
                     animate={{
@@ -419,7 +419,7 @@ function ParticipantAnimation() {
           {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
-              className={`w-3 h-3 rounded-full ${step === i ? "bg-blue-600" : "bg-gray-300"}`}
+              className={`w-3 h-3 rounded-full ${step === i ? "bg-[#9333EA]" : "bg-gray-300"}`}
               animate={step === i ? { scale: [1, 1.2, 1] } : {}}
               transition={{ duration: 0.5 }}
             />

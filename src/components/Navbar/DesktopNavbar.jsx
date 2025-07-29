@@ -25,19 +25,19 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
                 to={option.path}
                 className={`${
                   visitedPage == option.path.toLowerCase().split("/")[1]
-                    ? "text-[#3B4EF4] font-[500]"
+                    ? "gradient-text font-[500]"
                     : "text-[#132337]"
                 } font-[400] text-[16px] lg:text-[18px]`}
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-              >
+              > 
                 {option.title}
               </Link>
               <div
                 className={`${
                   visitedPage == option.path.toLowerCase().split("/")[1]
-                    ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                    ? "gradient-bg h-[2.5px] rounded-full w-[17px]"
                     : "bg-none h-[2.5px]"
                 }`}
               ></div>
@@ -48,7 +48,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
           <a
             // to={"/"}
             className={`${
-              false ? "text-[#3B4EF4] font-[500]" : "text-[#132337]"
+              false ? "gradient-text font-[500]" : "text-[#132337]"
             } font-[400] text-[16px] lg:text-[18px] cursor-pointer`}
             onClick={() => {
               window.open(
@@ -61,7 +61,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
           <div
             className={`${
               false
-                ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                ? "gradient-bg h-[2.5px] rounded-full w-[17px]"
                 : "bg-none h-[2.5px]"
             }`}
           ></div>
@@ -71,7 +71,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
             to={"/faqs"}
             className={`${
               visitedPage == "/faqs".toLowerCase().split("/")[1]
-                ? "text-[#3B4EF4] font-[500]"
+                ? "gradient-text font-[500]"
                 : "text-[#132337]"
             } font-[400] text-[16px] lg:text-[18px]`}
             onClick={() => {
@@ -83,7 +83,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
           <div
             className={`${
               visitedPage == "/faqs".toLowerCase().split("/")[1]
-                ? "bg-[#3B4EF4] h-[2.5px] rounded-full w-[17px]"
+                ? "gradient-bg h-[2.5px] rounded-full w-[17px]"
                 : "bg-none h-[2.5px]"
             }`}
           ></div>
@@ -91,7 +91,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
       </div>
       <div>
         <button
-          className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-[500] text-[16px] "
+          className="gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-[500] text-[16px] "
           onClick={() => {
             window.open(MAINNET_LINK);
           }}

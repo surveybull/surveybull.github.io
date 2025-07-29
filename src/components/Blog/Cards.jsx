@@ -12,7 +12,7 @@ const Cards = () => {
     {
       id: 1,
       img: (
-        <InterviewPrompt className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <InterviewPrompt className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Interview Prompt",
       description:
@@ -21,7 +21,7 @@ const Cards = () => {
     {
       id: 2,
       img: (
-        <Product className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <Product className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Product-Market Fit Survey",
       description:
@@ -31,7 +31,7 @@ const Cards = () => {
       id: 3,
       title: "Onboarding Segments",
       img: (
-        <OnboardingSegments className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
+        <OnboardingSegments className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
 
       description:
@@ -40,7 +40,7 @@ const Cards = () => {
     {
       id: 4,
       img: (
-        <Learn_from_churn className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <Learn_from_churn className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Learn from Churn",
       description:
@@ -49,7 +49,7 @@ const Cards = () => {
     {
       id: 5,
       img: (
-        <Improve_Trial_CR className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <Improve_Trial_CR className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Improve Trial CR",
       description:
@@ -58,7 +58,7 @@ const Cards = () => {
     {
       id: 6,
       img: (
-        <DocsFeedback className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
+        <DocsFeedback className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
       title: "Docs Feedback",
       description:
@@ -67,7 +67,7 @@ const Cards = () => {
     {
       id: 7,
       img: (
-        <FeatureChaser className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <FeatureChaser className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Feature Chaser",
       description:
@@ -76,7 +76,7 @@ const Cards = () => {
     {
       id: 8,
       img: (
-        <FeedbackBox className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out " />
+        <FeedbackBox className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out " />
       ),
       title: "Feedback Box",
       description: "Give users the chance to share feedback in a single click.",
@@ -86,17 +86,17 @@ const Cards = () => {
   const Card = ({ imageSrc, title, description, id }) => {
     return (
       <div
-        class={`min-h-[300px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${
+        class={`min-h-[300px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-purple-600/60 transition-colors duration-700 ease-in-out ${
           id % 2 == 0 && "xl:relative xl:top-[2rem]"
         }`}
       >
         <div className="px-4 ">
           <div className="mt-8">
-            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
+            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] gradient-bg-hover transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)]  ">
+          <div className="w-fit mt-8 md:text-[16px] text-[14px] text-[#132337] font-HelveticaNeueMedium gradient-text-groupHover">
             {title}{" "}
           </div>
           <div className="mt-4 font-HelveticaNeueLight md:text-[14px] text-[12px] text-[#5A6573] md:leading-[24px] leading-[20px] ">
@@ -112,7 +112,7 @@ const Cards = () => {
       <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
         <span className="text-center">
           Get started with{" "}
-          <span className="text-[#3B4EF4]">best practices</span>
+          <span className="gradient-text">best practices</span>
         </span>
       </div>
 

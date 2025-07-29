@@ -69,7 +69,7 @@ function TokenSwitcher() {
         <button
           className={` ${
             isEtheriumClicked &&
-            "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] text-[#FFFFFF]"
+            "gradient-bg text-[#FFFFFF]"
           }  rounded-[4px] p-3 flex flex-col justify-center gap-y-1 `}
           onClick={() => {
             setIsWorldcoinClicked(false);
@@ -86,7 +86,7 @@ function TokenSwitcher() {
         <button
           className={` ${
             isWorldcoinClicked &&
-            "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] text-[#FFFFFF]"
+            "gradient-bg text-[#FFFFFF]"
           }  rounded-[4px] p-3 flex flex-col justify-center gap-y-1 `}
           onClick={() => {
             setIsWorldcoinClicked(true);

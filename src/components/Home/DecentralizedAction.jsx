@@ -56,8 +56,8 @@ const SmartContractStep = ({ description }) => {
         />
       </div>
       <div className="relative h-min flex  pt-7 mt-3 px-2 pb-8">
-        <div className="absolute  w-[3px]  h-[30%] mx-2 group-hover:h-[60%] transition-height duration-500 ease-in-out  bg-[#3B4EF4]"></div>
-        <div className="text-gray-700 group-hover:text-[#3B4EF4] ml-5 md:text-[16px] text-[14px] leading-[24px] md:leading-[26px]">
+        <div className="absolute w-[3px] h-[30%] mx-2 group-hover:h-[60%] transition-height duration-500 ease-in-out  gradient-bg"></div>
+        <div className="text-gray-700 gradient-text-groupHover ml-5 md:text-[16px] text-[14px] leading-[24px] md:leading-[26px]">
           {description}
         </div>
       </div>
@@ -126,7 +126,7 @@ const DecentralizedAction = () => {
     <div className=" mt-[4.5rem]">
       <div className=" text-[24px] font-HelveticaNeueBold leading-[40px] tracking-wider md:text-4xl md:leading-[52px] mx-0 sm:mx-24   text-center ">
         {"Decentralized Actions: Elevating "}
-        <span className=" text-[rgba(59,78,244,1)]">
+        <span className="gradient-text">
           {" Survey Engagement "}
         </span>{" "}
         in Crypto Products
