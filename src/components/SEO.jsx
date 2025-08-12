@@ -7,7 +7,7 @@ function SEO({ name, type, description, title }) {
   return (
     <Helmet>
       <title>
-        SurveyBull - The World's First Blockchain Based Survey Platform
+        SurveyBull – Blockchain-Powered Survey Platform
       </title>
       <meta
         name="description"
@@ -19,7 +19,7 @@ function SEO({ name, type, description, title }) {
       <meta
         property="og:title"
         content={
-          "SurveyBull - The World's First Blockchain Based Survey Platform"
+          "SurveyBull – Blockchain-Powered Survey Platform"
         }
       />
       <meta property="og:description" content={intro} />
@@ -32,7 +32,7 @@ function SEO({ name, type, description, title }) {
       <meta
         name="twitter:title"
         content={
-          "SurveyBull - The World's First Blockchain Based Survey Platform"
+          "SurveyBull – Blockchain-Powered Survey Platform"
         }
       />
       <meta

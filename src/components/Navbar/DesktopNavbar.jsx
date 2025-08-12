@@ -96,7 +96,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
             window.open(MAINNET_LINK);
           }}
         >
-          Get Started
+          Launch App
         </button>
       </div>
     </div>

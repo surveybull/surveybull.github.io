@@ -69,6 +69,7 @@ const Section = ({ title, links }) => {
                   className="text-[#5A6573] text-[12px] sm:text-[14px] font-[400] hover:cursor-pointer"
                   href={data.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {data.title}
                 </a>

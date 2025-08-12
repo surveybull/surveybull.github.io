@@ -47,7 +47,11 @@ function Questions({ faqs }) {
     </Accordion>
   ) : (
     <div className="flex flex-col justify-center items-center w-full mt-20">
-      <img src={noData} alt="noData" height={170} width={170} />
+      {/* <img src={noData} alt="noData" height={170} width={170} /> */}
+      <picture>
+        <source srcSet={noData.replace(/\.png$/, '.webp')} type="image/webp" />
+        <img src={noData} alt="No data illustration" height={170} width={170} />
+      </picture>
       <span className="text-[5A6573] md:text-[34px] text-[24px] font-semibold">
         No Question Found
       </span>
