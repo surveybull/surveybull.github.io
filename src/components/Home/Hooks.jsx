@@ -59,7 +59,7 @@ const MobileViewCard = ({ data }) => {
         <div className={"font-normal text-base  mt-3"}>{data.subTitle}</div>
         <div className="flex justify-center">
           <div className="max-w-[180px] max-h-[200px] mt-5 ">
-            <img src={data.imageSrc} alt={"stakingW"} />
+            <img src={data.imageSrc} alt={"stakingW"} loading="lazy" />
           </div>
         </div>
         <div className="my-4">
@@ -115,7 +115,7 @@ const Hooks = () => {
         </div>
       </div>
       <div data-aos={"fade-up"} className=" flex align-middle">
-        <img src={imageSrc} alt={imageAlt} />
+        <img src={imageSrc} alt={imageAlt} loading="lazy" />
       </div>
     </div>
   );

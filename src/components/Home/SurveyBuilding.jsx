@@ -40,6 +40,7 @@ const CardComponent = ({ item }) => {
             height={200}
             src={behind}
             alt={"cardimg"}
+            loading="lazy"
           />
           <div class="relative w-full h-[130px] flex  items-center justify-center">
             <h1 class="flex  items-center justify-center text-2xl text-white text-center font-medium">

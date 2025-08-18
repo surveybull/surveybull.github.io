@@ -97,9 +97,9 @@ const Why = () => {
               {imageSrc}
             </div>
           </div>
-          <div className="w-fit mt-8 font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-[16px] md:leading-[16px] leading-[14px] ">
+          <h5 className="w-fit mt-8 font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-[16px] md:leading-[16px] leading-[14px] ">
             {title}{" "}
-          </div>
+          </h5>
           <div className="mt-8 font-HelveticaNeueLight text-[12px] md:text-[14px] text-[#5A6573]  md:leading-[24px] leading-[20px]  ">
             {description}{" "}
           </div>
@@ -110,10 +110,10 @@ const Why = () => {
 
   return (
     <div className="xl:mb-[5rem] sm:mb-[1rem]">
-      <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
+      <h2 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
         {"Why"}&nbsp;
         <span className="gradient-text inline-block">SurveyBull</span>&nbsp;?
-      </h1>
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">
         {columnItem.map((item, index) => (

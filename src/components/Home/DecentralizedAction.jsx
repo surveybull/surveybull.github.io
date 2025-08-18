@@ -53,6 +53,7 @@ const SmartContractStep = ({ description }) => {
           className="h-[34px] w-[34px] group-hover:scale-125 transition duration-500 ease-in-out mx-2"
           src={bluetick}
           alt="blue tick"
+          loading="lazy"
         />
       </div>
       <div className="relative h-min flex  pt-7 mt-3 px-2 pb-8">
@@ -99,7 +100,7 @@ const DecentralizedAction = () => {
         </div>
       </div>
       <div className="  flex align-middle">
-        <img src={imageSrc} alt={imageAlt} />
+        <img src={imageSrc} alt={imageAlt} loading="lazy" />
       </div>
     </div>
   );
@@ -107,10 +108,10 @@ const DecentralizedAction = () => {
   const MobileViewCard = ({ data }) => {
     return (
       <div className=" my-3 mx-6 mt-8">
-        <div className="text-center text-lg ">{data.title}</div>
+        <h4 className="text-center text-lg ">{data.title}</h4>
         <div className="flex justify-center">
           <div className=" flex justify-center w-full h-full mt-5 ">
-            <img src={data.imageSrc} alt={"preHook"} />
+            <img src={data.imageSrc} alt={"preHook"} loading="lazy" />
           </div>
         </div>
         <div className="py-4">
@@ -124,13 +125,13 @@ const DecentralizedAction = () => {
 
   return (
     <div className=" mt-[4.5rem]">
-      <div className=" text-[24px] font-HelveticaNeueBold leading-[40px] tracking-wider md:text-4xl md:leading-[52px] mx-0 sm:mx-24   text-center ">
+      <h3 className=" text-[24px] font-HelveticaNeueBold leading-[40px] tracking-wider md:text-4xl md:leading-[52px] mx-0 sm:mx-24   text-center ">
         {"Decentralized Actions: Elevating "}
         <span className="gradient-text inline-block">
           {" Survey Engagement "}
         </span>{" "}
         in Crypto Products
-      </div>
+      </h3>
       <div className="flex justify-center">
         <div className="mt-10 text-center max-w-[1100px] leading-[24px] m:leading-[26px] px-2 flex justify-center text-[14px] md:text-[16px] font-[400] tracking-wide text-[#5A6573]">
         SurveyBull elevates survey engagement for crypto products by integrating pre-conditions such as token ownership or staking. Participants who meet these criteria can earn exclusive rewards, token distributions, and NFT giveaways. This approach not only drives higher participation rates but also enhances the value of involvement, aligning incentives with the unique ecosystem of crypto products.

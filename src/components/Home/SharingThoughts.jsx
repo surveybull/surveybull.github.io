@@ -42,7 +42,7 @@ const Card = ({ src, alt, text, description, delay }) => (
     className={imgContainerClass}
   >
     <div className="flex justify-center">
-      <img width={140} height={140} src={src} alt={alt} />
+      <img width={140} height={140} src={src} alt={alt} loading="lazy" />
     </div>
     <div className={textClass}>{text}</div>
     <div className={descriptionClass}>{description}</div>

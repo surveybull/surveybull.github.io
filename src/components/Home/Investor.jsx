@@ -27,7 +27,7 @@ import Decubate from "../../assets/Investor/Decubate.svg";
 function Card({ imgSrc, id }) {
   return (
     <div className="bg-gradient-to-r from-[#FFFFFF1A] to-[#FFFFFF4D] shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)] border border-[#FFFFFFB2] rounded-[3px] px-4 py-6 flex items-center justify-center">
-      <img src={imgSrc} alt="Alpha" />
+      <img src={imgSrc} alt="Alpha" loading="lazy" />
     </div>
   );
 }

@@ -39,24 +39,25 @@ function MobileNavbar({ NavbarData, visitedPage }) {
           alt="SurveybullLogo"
           width={150}
           height={150}
+          loading="lazy"
         ></img>
       </Link>
       <Sheet>
         <SheetTrigger>
-          <img src={MenuButton} alt="MenuButton" />
+          <img src={MenuButton} alt="MenuButton" loading="lazy" />
         </SheetTrigger>
         <SheetContent className="overflow-auto bg-[url('./assets/background/sheetpng.png')] bg-cover bg-repeat-round bg-fixed">
           <div className="flex flex-col gap-y-6 mt-[2.5rem]">
             <div className="flex justify-evenly items-center">
               {/* <img src={mailLogo} width={20} height={20}></img> */}
               <a href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={telegramLogo} alt="telegramLogo"></img>
+                <img src={telegramLogo} alt="telegramLogo" loading="lazy"></img>
               </a>
               <a href={TWITTER_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={twitterLogo} alt="twitterLogo"></img>
+                <img src={twitterLogo} alt="twitterLogo" loading="lazy"></img>
               </a>
               <a href={DISCORD_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={discordLogo} alt="discord" />
+                <img src={discordLogo} alt="discord" loading="lazy" />
               </a>
             </div>
             <div className="py-3">
@@ -66,6 +67,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
                   alt="SurveybullLogo"
                   width={140}
                   height={140}
+                  loading="lazy"
                 ></img>
               </Link>
             </div>

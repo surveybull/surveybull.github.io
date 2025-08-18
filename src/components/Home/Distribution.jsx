@@ -60,7 +60,7 @@ const Distribution = () => {
         {rewardData.map((data) => (
           <div className="flex flex-col gap-y-3">
             <div className="flex gap-2 items-center">
-              <img src={data.imgSrc} alt="rewardData" />
+              <img src={data.imgSrc} alt="rewardData" loading="lazy" />
               <span className="text-[#FFFFFF] md:text-[18px] text-[14px] font-[500]">
                 {data.title}
               </span>

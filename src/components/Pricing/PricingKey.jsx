@@ -7,12 +7,12 @@ const PricingKey = () => {
     <div className="">
       <div className="lg:flex-row  flex flex-col-reverse lg:justify-between justify-center items-center gap-8">
         <div className="flex mt-4  lg:mt-0 justify-center items-center">
-          <img src={KeyFeature} alt="Your Image" class="" />{" "}
+          <img src={KeyFeature} alt="Your Image" loading="lazy" class="" />{" "}
         </div>
         <div className="">
-          <div className="text-left text-2xl md:text-4xl mb-7 font-HelveticaNeueBold">
+          <h2 className="text-left text-2xl md:text-4xl mb-7 font-HelveticaNeueBold">
             Key <span className="gradient-text inline-block"> Features</span>
-          </div>
+          </h2>
           <div className="flex">
             <img
               // style={{ height: "380px" }}
@@ -20,6 +20,7 @@ const PricingKey = () => {
               src={KeyPointLine}
               height={360}
               alt="Your Image"
+              loading="lazy"
             />{" "}
             <div className="md:px-4  max-w-[600px]">
               <div className="flex">
@@ -30,6 +31,7 @@ const PricingKey = () => {
                     height={16}
                     width={16}
                     alt="Your Image"
+                    loading="lazy"
                   />
                 </div>
                 <div className="pl-3 md:pl-0">
@@ -51,6 +53,7 @@ const PricingKey = () => {
                       height={16}
                       width={16}
                       alt="Your Image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="pl-3 md:pl-0">
@@ -73,6 +76,7 @@ const PricingKey = () => {
                       height={16}
                       width={16}
                       alt="Your Image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="pl-3 lg:pt-2 xl:pt-0 md:pl-0">
@@ -94,6 +98,7 @@ const PricingKey = () => {
                       height={16}
                       width={16}
                       alt="Your Image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="pl-3 lg:pt-1 xl:pt-0 md:pl-0">
@@ -115,6 +120,7 @@ const PricingKey = () => {
                       height={16}
                       width={16}
                       alt="Your Image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="pl-3 lg:pt-1 xl:pt-0 md:pl-0">

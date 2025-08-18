@@ -120,6 +120,7 @@ const Tokonomics = () => {
             src={tokonomics}
             alt="tokonomics"
             className="md:min-w-[600px] md:min-h-[600px] min-w-[200px] min-h-[200px]"
+            loading="lazy"
           />
         </div>
         <div className="w-full grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-4 ">

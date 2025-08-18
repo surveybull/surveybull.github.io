@@ -17,7 +17,7 @@ const SurveyCard = ({ imageSrc, title, description }) => {
   return (
     <div className="flex h-full flex-col justify-start sm:max-w-[20rem] w-full gap-y-4 mx-auto group hover:cursor-pointer">
       <div>
-        <img src={imageSrc} alt="scimg" />
+        <img src={imageSrc} alt="scimg" loading="lazy"/>
       </div>
       <div className="flex h-max gap-2 w-full relative">
         <div className="h-[30%] gradient-bg group-hover:h-full w-[1px] transition-height duration-700 ease-in-out absolute left-[-10px]"></div>
@@ -37,9 +37,9 @@ const SurveyCard = ({ imageSrc, title, description }) => {
 const Cases = () => {
   return (
     <div className="flex flex-col gap-y-10 py-[40px] sm:py-[0px]">
-      <h1 className="flex justify-center text-[#132337] md:text-[36px] text-[24px] font-HelveticaNeueBold ">
+      <h2 className="flex justify-center text-[#132337] md:text-[36px] text-[24px] font-HelveticaNeueBold ">
         Applications
-      </h1>
+      </h2>
       <div className="flex flex-col gap-y-12 justify-center items-center">
         <div className="xl:flex grid sm:grid-cols-2 grid-cols-1 justify-evenly gap-12 ">
           <SurveyCard

@@ -50,7 +50,7 @@ function Questions({ faqs }) {
       {/* <img src={noData} alt="noData" height={170} width={170} /> */}
       <picture>
         <source srcSet={noData.replace(/\.png$/, '.webp')} type="image/webp" />
-        <img src={noData} alt="No data illustration" height={170} width={170} />
+        <img src={noData} alt="No data illustration" height={170} width={170} loading="lazy" />
       </picture>
       <span className="text-[5A6573] md:text-[34px] text-[24px] font-semibold">
         No Question Found

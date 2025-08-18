@@ -110,10 +110,10 @@ const Cards = () => {
   return (
     <div className="flex flex-col gap-y-6 xl:mb-20">
       <div className=" md:text-[36px] text-[24px] flex justify-center font-HelveticaNeueBold leading-9 text-[#132337]">
-        <span className="text-center">
+        <h3 className="text-center">
           Get started with{" "}
           <span className="gradient-text inline-block">best practices</span>
-        </span>
+        </h3>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">

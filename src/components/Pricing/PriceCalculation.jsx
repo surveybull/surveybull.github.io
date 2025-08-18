@@ -105,7 +105,7 @@ const PriceCalculation = () => {
           </div>
         </div>
         <div className="flex mt-4 lg:mt-0 justify-center items-center">
-          <img src={calculator} alt="Your Image" class="" />{" "}
+          <img src={calculator} alt="Your Image" loading="lazy" class="" />{" "}
         </div>
       </div>
     </div>

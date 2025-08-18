@@ -25,14 +25,15 @@ const PricePayment = () => {
 
   return (
     <div className="mt-[2rem]">
-      <div className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
+      <h2 className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
         Payment <span className="gradient-text inline-block"> Process </span>
-      </div>
+      </h2>
       <div className="flex flex-col justify-center">
         <img
           src={curve}
           alt="curve"
           className="relative md:top-[7.3rem] lg:top-[8.2rem] md:block hidden w-[60vw] xl:w-auto mx-auto"
+          loading="lazy"
         />
         <div className="md:flex md:justify-between my-10 md:my-14">
           {data.map((item, index) => (
@@ -49,6 +50,7 @@ const PricePayment = () => {
                     height={24}
                     width={24}
                     alt={item.title}
+                    loading="lazy"
                     className=""
                   />
                 </div>

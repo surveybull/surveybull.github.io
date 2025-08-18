@@ -103,7 +103,7 @@ const Footer = () => {
         <div class="max-w-screen-xl px-7 pt-24 pb-6 mx-auto sm:px-7 xl:px-8">
           <div class="flex gap-10 lg:flex-row flex-col justify-center">
             <div class="flex flex-col gap-y-7 lg:w-[25%] w-full items-center lg:items-start justify-between">
-              <img src={Logo} alt="logo" className="w-[170px] sm:w-fit h-fit" />
+              <img src={Logo} alt="logo" className="w-[170px] sm:w-fit h-fit" loading="lazy" />
               <div className="lg:text-start text-center text-[#5A6573] text-[14px] font-[400] leading-[20px] md:leading-[26px]">
                 Our mission is to provide surveyors with the essential tools to
                 gather reliable and authentic data. Leveraging our pioneering
@@ -133,7 +133,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={FooterTelegram} alt="FooterTelegram" />
+                  <img src={FooterTelegram} alt="FooterTelegram" loading="lazy" />
                 </a>
 
                 <a
@@ -141,7 +141,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={FooterTwitter} alt="FooterTwitter" />
+                  <img src={FooterTwitter} alt="FooterTwitter" loading="lazy" />
                 </a>
 
                 <a
@@ -149,7 +149,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={discord} alt="discord" />
+                  <img src={discord} alt="discord" loading="lazy" />
                 </a>
               </div>
             </div>

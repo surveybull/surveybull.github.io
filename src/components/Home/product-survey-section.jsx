@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { ScanLine, Scan, Gift, FileText, BarChart4, QrCode, Coins, Users, Fingerprint, Wallet } from "lucide-react"
 import { MAINNET_LINK } from "../../constant/app"
+import { Link } from "react-router-dom";
 
 export default function ProductSurveySection() {
   const [activeTab, setActiveTab] = useState("surveyor")
@@ -207,7 +208,7 @@ export default function ProductSurveySection() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center flex flex-col gap-5"
         >
-          <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className="gradient-text inline-block">Rewarding.</span></h3>
+          <h4 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center">Simple. Secure. <span className="gradient-text inline-block">Rewarding.</span></h4>
           <p className="text-md md:text-lg text-[#5A6573] leading-[20px] max-w-3xl mx-auto">
             Join our blockchain survey platform that directly connects brands with real consumers. Brands get authentic
             feedback, consumers get instant rewards - all without middlemen.
@@ -234,7 +235,7 @@ function Feature({ icon, title, description, delay = 0 }) {
     >
       <div className="flex-shrink-0 h-fit p-2 mt-1 shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] gradient-bg-hover rounded-xl">{icon}</div>
       <div>
-        <h4 className="w-fit font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-lg">{title}</h4>
+        <h6 className="w-fit font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-lg">{title}</h6>
         <p className="text-[12px] md:text-sm text-[#5A6573] leading-[20px]">{description}</p>
       </div>
     </motion.div>
@@ -272,7 +273,8 @@ function SurveyorAnimation() {
           transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
         >
           <BarChart4 className="w-16 h-16 mb-4" />
-          <h4 className="text-lg font-bold mb-2">Survey Creation</h4>
+          <Link to={"/surveycreation"} className="text-lg font-bold mb-2">Survey Creation</Link>
+          {/* <h4 className="text-lg font-bold mb-2">Survey Creation</h4> */}
           <p className="text-sm text-center max-w-32">Design your product survey and generate QR codes</p>
         </motion.div>
 

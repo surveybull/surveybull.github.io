@@ -13,6 +13,7 @@ function DesktopNavbar({ NavbarData, visitedPage }) {
           alt="SurveybullLogo"
           width={170}
           height={170}
+          loading="lazy"
         ></img>
       </Link>
       <div className="flex items-center  gap-x-4 lg:gap-x-8">
