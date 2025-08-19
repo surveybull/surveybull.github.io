@@ -122,12 +122,12 @@ const Hooks = () => {
 
   return (
     <div className="my-[4rem]">
-      <h1
+      <div
         data-aos={"fade-up"}
         className="flex justify-center text-2xl md:text-4xl    tracking-wide  text-center"
       >
         Maximize Your Earnings : Staking and Referrals
-      </h1>
+      </div>
       <div className="flex justify-center">
         <div
           data-aos={"fade-up"}

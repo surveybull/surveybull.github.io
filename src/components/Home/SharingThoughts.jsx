@@ -110,12 +110,12 @@ const SharingThoughts = () => {
 
   return (
     <div className=" my-[4rem] xl:my-[4rem]">
-      <h1
+      <div
         data-aos={"fade-up"}
         className="flex justify-center text-center text-2xl md:text-4xl   tracking-wide  "
       >
         Earn tokens for sharing your thoughts
-      </h1>
+      </div>
       <div className="flex justify-center">
         <div
           data-aos={"fade-up"}

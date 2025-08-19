@@ -76,7 +76,9 @@ function Home() {
         </div>
       </section> */}
 
-      <section className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
+      <section 
+        id="Distribution"
+        className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <DecentralizedAction />
         </div>

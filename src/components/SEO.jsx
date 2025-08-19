@@ -12,7 +12,7 @@ function SEO({ name, type, description, title }) {
       <meta
         name="description"
         content={
-          "Web3 Survey Platform: Secure, Verified Data with WorldID Authentication, Token-Gated Participation, Airdrop Rewards Solution, and Transparent Blockchain Transactions"
+          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
         }
       />
       <meta property="og:type" content={type} />
@@ -38,7 +38,7 @@ function SEO({ name, type, description, title }) {
       <meta
         name="twitter:description"
         content={
-          "Web3 Survey Platform: Secure, Verified Data with WorldID Authentication, Token-Gated Participation, Airdrop Rewards Solution, and Transparent Blockchain Transactions"
+          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
         }
       />
     </Helmet>

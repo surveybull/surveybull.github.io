@@ -41,10 +41,10 @@ const rewardData = [
 const Distribution = () => {
   return (
     <div className="flex flex-col items-start gap-y-7 skew-y-6 xl:skew-y-3 py-16">
-      <h1 className="md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] leading-[34px] md:leading-[52px] ">
+      <div className="md:text-[36px] text-[24px] font-HelveticaNeueBold text-[#FFFFFF] leading-[34px] md:leading-[52px] ">
         Weighted <span className="text-[#978FFD]">Revenue Sharing</span>{" "}
         Mechanism
-      </h1>
+      </div>
       <div className="text-[14px] leading-[26px] max-w-[1000px] font-[400] text-[#89919B] md:text-[16px]">
         SurveyBull employs a sophisticated reward distribution mechanism,
         meticulously designed to ensure fairness and to uphold our commitment to
