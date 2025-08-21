@@ -14,7 +14,7 @@ const Intro = () => {
         </div>
         <div>
           <button
-            className="bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] sm:px-[30px] sm:py-[12px] px-[20px] py-[10px] text-[#FFFFFF] sm:font-HelveticaNeueMedium sm:text-[16px] text-[14px] font-[400]"
+            className="gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] sm:px-[30px] sm:py-[12px] px-[20px] py-[10px] text-[#FFFFFF] sm:font-HelveticaNeueMedium sm:text-[16px] text-[14px] font-[400]"
             onClick={() => {
               window.open(MAINNET_LINK);
             }}

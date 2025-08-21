@@ -12,7 +12,7 @@ const Why = () => {
     {
       id: "1",
       img: (
-        <BlockchainTransparency className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <BlockchainTransparency className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Blockchain Transparency",
       description:
@@ -21,7 +21,7 @@ const Why = () => {
     {
       id: "2",
       img: (
-        <WorldCoin className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <WorldCoin className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Verified Human Contributors ",
       description:
@@ -31,7 +31,7 @@ const Why = () => {
       id: "3",
       title: "Fair Compensation",
       img: (
-        <FairCompensation className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <FairCompensation className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
 
       description:
@@ -40,7 +40,7 @@ const Why = () => {
     {
       id: "4",
       img: (
-        <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <TokenGatedSurveys className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Token Gated Surveys",
       description:
@@ -49,7 +49,7 @@ const Why = () => {
     {
       id: "5",
       img: (
-        <InclusiveApproach className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <InclusiveApproach className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Inclusive Approach",
       description:
@@ -58,7 +58,7 @@ const Why = () => {
     {
       id: "6",
       img: (
-        <IndustryCollaboration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <IndustryCollaboration className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Industry Collaboration",
       description:
@@ -67,7 +67,7 @@ const Why = () => {
     {
       id: "7",
       img: (
-        <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <CompliancewithRegulations className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Compliance with Regulations",
       description:
@@ -76,7 +76,7 @@ const Why = () => {
     {
       id: "8",
       img: (
-        <SeamlessIntegration className="h-[34px] w-[34px] fill-[#3B4EF4] group-hover:fill-white transition-colors duration-700 ease-in-out" />
+        <SeamlessIntegration className="h-[34px] w-[34px] fill-[#9333EA] group-hover:fill-white transition-colors duration-700 ease-in-out" />
       ),
       title: "Seamless Integration",
       description:
@@ -87,19 +87,19 @@ const Why = () => {
   const Card = ({ imageSrc, title, description,id }) => {
     return (
       <div
-        class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out ${
+        class={`min-h-[356px] group rounded-xl max-w-[272px] shadow-[8px_8px_30px_0_rgba(151,143,253,0.1)] bg-white border border-transparent hover:border-purple-600/60 ${
           Number(id) % 2 == 0 && "xl:relative xl:top-[2rem]"
         }`}
       >
         <div className="px-4 ">
           <div className="mt-8">
-            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] group-hover:bg-[rgba(59,78,244,1)] transition-colors duration-700 ease-in-out flex justify-center items-center">
+            <div className="w-[70px] h-[70px] rounded-full shadow-[5px_10px_30px_0_rgba(237,239,255,1)] bg-[#EDEFFF] gradient-bg-hover transition-colors duration-700 ease-in-out flex justify-center items-center">
               {imageSrc}
             </div>
           </div>
-          <div className="mt-8 font-HelveticaNeueMedium group-hover:text-[rgba(59,78,244,1)] text-[14px] md:text-[16px] md:leading-[16px] leading-[14px] ">
+          <h5 className="w-fit mt-8 font-HelveticaNeueMedium gradient-text-groupHover text-[14px] md:text-[16px] md:leading-[16px] leading-[14px] ">
             {title}{" "}
-          </div>
+          </h5>
           <div className="mt-8 font-HelveticaNeueLight text-[12px] md:text-[14px] text-[#5A6573]  md:leading-[24px] leading-[20px]  ">
             {description}{" "}
           </div>
@@ -110,10 +110,10 @@ const Why = () => {
 
   return (
     <div className="xl:mb-[5rem] sm:mb-[1rem]">
-      <h1 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
+      <h2 className=" text-2xl md:text-4xl flex justify-center font-medium font-HelveticaNeueBold md:leading-9 leading-[24px] mb-[2.75rem] tracking-wider text-[#484848]">
         {"Why"}&nbsp;
-        <span className=" text-[rgba(59,78,244,1)]">SurveyBull</span>&nbsp;?
-      </h1>
+        <span className="gradient-text inline-block">SurveyBull</span>&nbsp;?
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-7">
         {columnItem.map((item, index) => (

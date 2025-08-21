@@ -23,7 +23,7 @@ function Questions({ faqs }) {
           value={`Item-${data.id}`}
           className="border-[1px] border-[#D0D3D7] rounded-[10px]"
         >
-          <AccordionTrigger className="group hover:no-underline data-[state=open]:bg-gradient-to-r from-[#3B4EF4] to-[#978FFD] data-[state=open]:rounded-t-[9px] data-[state=open]:rounded-b-none rounded-[10px] data-[state=closed]:bg-[#FFFFFF] px-10 md:text-[16px] data-[state=open]:font-HelveticaNeueBold font-[400] data-[state=open]:text-[#FFFFFF] text-[#132337] text-[14px]">
+          <AccordionTrigger className="group hover:no-underline data-[state=open]:bg-gradient-to-r from-[#5465f7] to-purple-600 data-[state=open]:rounded-t-[9px] data-[state=open]:rounded-b-none rounded-[10px] data-[state=closed]:bg-[#FFFFFF] px-10 md:text-[16px] data-[state=open]:font-HelveticaNeueBold font-[400] data-[state=open]:text-[#FFFFFF] text-[#132337] text-[14px]">
             <div className="flex justify-between items-center w-full gap-x-2">
               <span className="text-start">{data.que}</span>
               <LuPlus
@@ -47,7 +47,11 @@ function Questions({ faqs }) {
     </Accordion>
   ) : (
     <div className="flex flex-col justify-center items-center w-full mt-20">
-      <img src={noData} alt="noData" height={170} width={170} />
+      {/* <img src={noData} alt="noData" height={170} width={170} /> */}
+      <picture>
+        <source srcSet={noData.replace(/\.png$/, '.webp')} type="image/webp" />
+        <img src={noData} alt="No data illustration" height={170} width={170} loading="lazy" />
+      </picture>
       <span className="text-[5A6573] md:text-[34px] text-[24px] font-semibold">
         No Question Found
       </span>

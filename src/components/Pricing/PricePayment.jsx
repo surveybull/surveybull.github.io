@@ -25,14 +25,15 @@ const PricePayment = () => {
 
   return (
     <div className="mt-[2rem]">
-      <div className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
-        Payment <span className=" text-[rgba(59,78,244,1)]"> Process </span>
-      </div>
+      <h2 className="text-center text-2xl md:text-4xl font-HelveticaNeueMedium">
+        Payment <span className="gradient-text inline-block"> Process </span>
+      </h2>
       <div className="flex flex-col justify-center">
         <img
           src={curve}
           alt="curve"
           className="relative md:top-[7.3rem] lg:top-[8.2rem] md:block hidden w-[60vw] xl:w-auto mx-auto"
+          loading="lazy"
         />
         <div className="md:flex md:justify-between my-10 md:my-14">
           {data.map((item, index) => (
@@ -43,12 +44,13 @@ const PricePayment = () => {
               key={item.title}
             >
               <div className="flex justify-center">
-                <div className="flex justify-center items-center w-[50px] h-[50px] shadow-[5px_10px_30px_0px_rgba(237,239,255,1)] rounded-full bg-gradient-to-r from-[rgba(59,78,244,1)] via-[rgba(88,104,248,1)] to-[rgba(151,143,253,1)]">
+                <div className="flex justify-center items-center w-[50px] h-[50px] shadow-[5px_10px_30px_0px_rgba(237,239,255,1)] rounded-full gradient-bg">
                   <img
                     src={item.icon}
                     height={24}
                     width={24}
                     alt={item.title}
+                    loading="lazy"
                     className=""
                   />
                 </div>

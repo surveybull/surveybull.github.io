@@ -40,11 +40,12 @@ const CardComponent = ({ item }) => {
             height={200}
             src={behind}
             alt={"cardimg"}
+            loading="lazy"
           />
           <div class="relative w-full h-[130px] flex  items-center justify-center">
-            <h1 class="flex  items-center justify-center text-2xl text-white text-center font-medium">
+            <div class="flex  items-center justify-center text-2xl text-white text-center font-medium">
               {item.title}
-            </h1>
+            </div>
           </div>
         </div>
         <div className="flex-1  flex  px-4 text-center justify-center  items-center text-xl font-light tracking-wide text-[#263238]">
@@ -62,12 +63,12 @@ const SurveyBuilding = () => {
 
   return (
     <div className=" my-[4rem] xl:mb-[4rem]">
-      <h1
+      <div
         data-aos={"fade-up"}
         className="flex justify-center text-2xl md:text-4xl text-center   tracking-wide  "
       >
         Effortless Survey Building with SurveyBull
-      </h1>
+      </div>
       <div className="flex justify-center">
         <div
           data-aos={"fade-up"}

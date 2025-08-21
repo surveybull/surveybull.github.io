@@ -105,12 +105,12 @@ const Tokonomics = () => {
  
   return (
     <div className="skew-y-6 xl:skew-y-3 py-16">
-      <h1
+      <div
         className="flex justify-center text-center text-[#FFFFFF] md:text-[36px] text-[24px] font-HelveticaNeueBold"
         
       >
         Tokenomics
-      </h1>
+      </div>
       <div
         className="flex gap-8 lg:flex-row flex-col sm:mt-10 mt-6 rounded-[25px] sm:p-10 p-5  bg-[#FFFFFF0A] border-2 border-[#FFFFFF0A] 
  "
@@ -120,6 +120,7 @@ const Tokonomics = () => {
             src={tokonomics}
             alt="tokonomics"
             className="md:min-w-[600px] md:min-h-[600px] min-w-[200px] min-h-[200px]"
+            loading="lazy"
           />
         </div>
         <div className="w-full grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-4 ">

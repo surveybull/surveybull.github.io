@@ -21,7 +21,7 @@ function Switcher() {
                 type="checkbox"
                 className={`${
                   checkedState[index].isChecked
-                    ? "bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD]"
+                    ? "gradient-bg"
                     : "bg-transparent border border-[#D0D3D7]"
                 } appearance-none transition-colors cursor-pointer w-[60px] h-8 rounded-full  `}
                 onClick={() => {

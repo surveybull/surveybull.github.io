@@ -7,38 +7,38 @@ function SEO({ name, type, description, title }) {
   return (
     <Helmet>
       <title>
-        SurveyBull - The World's First Blockchain Based Survey Platform
+        {title}
       </title>
       <meta
         name="description"
         content={
-          "Web3 Survey Platform: Secure, Verified Data with WorldID Authentication, Token-Gated Participation, Airdrop Rewards Solution, and Transparent Blockchain Transactions"
+          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
         }
       />
       <meta property="og:type" content={type} />
       <meta
         property="og:title"
         content={
-          "SurveyBull - The World's First Blockchain Based Survey Platform"
+          "SurveyBull – Blockchain-Powered Survey Platform"
         }
       />
       <meta property="og:description" content={intro} />
       <meta
         property="og:image"
-        content="https://surveybull.github.io/homepage.jpg"
+        content="https://surveybull.io/homepage.jpg"
       />
       <meta name="twitter:creator" content={name} />
       <meta name="twitter:card" content={type} />
       <meta
         name="twitter:title"
         content={
-          "SurveyBull - The World's First Blockchain Based Survey Platform"
+          "SurveyBull – Blockchain-Powered Survey Platform"
         }
       />
       <meta
         name="twitter:description"
         content={
-          "Web3 Survey Platform: Secure, Verified Data with WorldID Authentication, Token-Gated Participation, Airdrop Rewards Solution, and Transparent Blockchain Transactions"
+          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
         }
       />
     </Helmet>

@@ -30,11 +30,12 @@ function Home() {
       <SEO
         name={"SurveyBull"}
         description={"Our blockchain-based survey platform employs WorldID verification mechanism to ensure the authenticity of survey participants. The platform utilizes different verification levels according to specific needs. These levels include Device and ORB verification. By integrating Device level verification, we establish a one-device, one-response rule. By integrating World ID ORB verification, we create a trust layer that verifies the human identity of participants, mitigating the risk of fake or duplicate responses. This ensures the integrity and reliability of the survey data, instilling confidence in the generated insights."}
-        title={"SurveyBull - The World's First Blockchain Based Survey Platform"}
+        title={"SurveyBull – Blockchain-Powered Survey Platform"}
         type={"Home"}
       />
 
-      <section className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round ">
+      {/* <section className="bg-[url('./assets/gif/IntroBg.gif')]  bg-cover bg-repeat-round "> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Intro />
         </div>
@@ -66,16 +67,18 @@ function Home() {
         </div>
       </section>
 
-      <section
+      {/* <section
         id="Distribution"
         className="bg-[#132337] bg-[url('./assets/background/DistributionMobile.svg')] lg:bg-[url('./assets/background/Distribution.svg')] bg-cover  lg:bg-no-repeat -skew-y-6 xl:-skew-y-3 w-full h-fit"
       >
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <Distribution />
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
+      <section 
+        id="Distribution"
+        className="bg-[url('./assets/background/decentralizedBg.jpg')] bg-cover bg-repeat-round">
         <div className="xl:max-w-[1300px] p-7 mx-auto">
           <DecentralizedAction />
         </div>

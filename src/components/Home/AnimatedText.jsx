@@ -35,12 +35,12 @@ function AnimatedText() {
         }}
       >
         {items.map((item, index) => (
-          <div
+          <h1
             key={index}
-            className="h-24 md:mx-auto flex items-center md:justify-center text-[#3B4EF4] text-[28px] md:text-[40px] lg:text-[68px] font-HelveticaNeueBold"
+            className="h-24 md:mx-auto flex items-center md:justify-center gradient-text text-[28px] md:text-[40px] lg:text-[68px] font-HelveticaNeueBold"
           >
             {item}
-          </div>
+          </h1>
         ))}
       </div>
     </div>

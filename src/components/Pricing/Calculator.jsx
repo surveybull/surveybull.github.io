@@ -7,9 +7,9 @@ import TokenSwitcher from "./TokenSwitcher";
 function Calculator() {
   return (
     <>
-      <div className="text-center md:text-4xl text-2xl font-HelveticaNeueBold pb-10">
-        Pricing <span className=" text-[rgba(59,78,244,1)]"> Calculator </span>
-      </div>
+      <h2 className="text-center md:text-4xl text-2xl font-HelveticaNeueBold pb-10">
+        Pricing <span className="gradient-text inline-block"> Calculator </span>
+      </h2>
       <div className="flex flex-col mb-10">
         <div className="flex md:flex-row flex-col p-7 gap-10 bg-[#FFFFFF] border border-[#E7E9EB] rounded-t-[22.94px] shadow-[2px_7px_25px_0px_rgba(151,143,253,0.14)]">
           <div className="flex flex-col gap-y-9 flex-1">

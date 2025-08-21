@@ -53,12 +53,12 @@ const Faqs = () => {
 
   return (
     <div className=" my-[6rem]">
-      <h1
+      <div
         data-aos={"fade-up"}
         className="text-2xl md:text-4xl flex justify-center text-center   tracking-wide  text-[#484848] "
       >
         Frequently Asked Questions
-      </h1>
+      </div>
       <div className="my-24">
         {collapsibleData.map((x) => {
           return (

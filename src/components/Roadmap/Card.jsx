@@ -3,7 +3,7 @@ import React from "react";
 function Card({ data }) {
   return (
     <div className="flex flex-col max-w-[400px] rounded-[12px] shadow-[3px_9px_35px_0px_rgba(19,35,55,0.06)]">
-      <div className="flex justify-between items-center gap-x-2 p-3 bg-gradient-to-r from-[#3B4EF4] via-[#5868F8] to-[#978FFD] rounded-t-[12px]">
+      <div className="flex justify-between items-center gap-x-2 p-3 gradient-bg rounded-t-[12px]">
         <span className="text-[#FFFFFF] font-[500] md:text-[18px] text-[14px]">
           {data.heading}
         </span>

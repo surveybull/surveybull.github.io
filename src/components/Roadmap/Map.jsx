@@ -251,8 +251,8 @@ const Map = () => {
         <div className="w-full flex flex-col justify-between my-[50px]">
           {/* 1 */}
           <div className=" my-10 md:flex  h-fit w-full">
-            <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
-              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
+            <div className="absolute flex md:justify-center mt-14 md:mt-0 w-full h-8 ">
+              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-16px] md:ml-0 ">
                 <img src={Phase1} alt="Your Image" class="" />
               </div>
             </div>
@@ -270,9 +270,9 @@ const Map = () => {
           </div>
 
           {/* 2 */}
-          <div className="  my-10 md:flex-row flex flex-col-reverse justify-end sm:justify-between  h-fit w-full ">
-            <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
-              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
+          <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
+            <div className="absolute flex  md:justify-center w-full mt-14 md:mt-0  h-8 ">
+              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-16px] md:ml-0 ">
                 <img src={Phase2} alt="Your Image" class="" />
               </div>
             </div>
@@ -294,8 +294,8 @@ const Map = () => {
 
           {/* 3 */}
           <div className=" my-10 md:flex  h-fit w-full">
-            <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
-              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
+            <div className="absolute flex md:justify-center mt-14 md:mt-0 w-full h-8 ">
+              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-16px] md:ml-0 ">
                 <img src={Phase3} alt="Your Image" class="" />
               </div>
             </div>
@@ -314,8 +314,8 @@ const Map = () => {
 
           {/* 4 */}
           <div className="  my-10 md:flex-row flex flex-col-reverse justify-end md:justify-between  h-fit w-full ">
-            <div className="absolute flex  md:justify-center w-full mt-12 md:mt-0  h-8 ">
-              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
+            <div className="absolute flex  md:justify-center w-full mt-14 md:mt-0  h-8 ">
+              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-16px] md:ml-0 ">
                 <img src={Phase4} alt="Your Image" class="" />
               </div>
             </div>
@@ -337,8 +337,8 @@ const Map = () => {
 
           {/* 5 */}
           <div className=" my-10 md:flex  h-fit w-full">
-            <div className="absolute flex md:justify-center mt-12 md:mt-0 w-full h-8 ">
-              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-8px] md:ml-0 ">
+            <div className="absolute flex md:justify-center mt-14 md:mt-0 w-full h-8 ">
+              <div className=" rounded-full w-12 h-12 md:w-16 md:h-16 z-10 ml-[-16px] md:ml-0 ">
                 <img src={Phase5} alt="Your Image" class="" />
               </div>
             </div>

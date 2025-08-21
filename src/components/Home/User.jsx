@@ -48,7 +48,7 @@ const ContentComponent = ({ content }) => {
       <div className="font-bold my-2 text-lg">{content.title}</div>
       <div className="flex justify-center">
         <div className="max-w-[350px] max-h-[350px] w-full h-full">
-          <img src={content.image} alt="Your Image" class="" />
+          <img src={content.image} alt="Your Image" class="" loading="lazy" />
         </div>
       </div>
       <div className="text-base text-[#232222] tracking-[1px] pt-12">
@@ -86,7 +86,7 @@ const MobileViewCard = ({ data }) => {
         <div className="text-center text-lg font-bold">{data.title}</div>
         <div className="flex justify-center">
           <div className="max-w-[180px] max-h-[180px] w-full h-full mt-5 ">
-            <img src={data.image} alt={"preHook"} />
+            <img src={data.image} alt={"preHook"} loading="lazy" />
           </div>
         </div>
         <div className="my-4">
