@@ -1,11 +1,21 @@
 import { useState } from "react";
 import {
   MousePointer,
+  MousePointerClick,
+  LogIn,
+  ShieldCheck,
+  Table,
+  ListChecks,
+  FileEdit,
+  CheckCircle2,
   Cable,
   Link,
   NotebookTabs,
   FileSpreadsheet,
   PartyPopper,
+  Sheet,
+  Database,
+  MessageSquare,
 } from "lucide-react";
 import { Button } from "../../@/components/ui/button";
 import { step } from "@material-tailwind/react";
@@ -36,9 +46,9 @@ import slackImage7 from "../../assets/Integrations/slackImage7.png"
 import Steps from "./Steps"
 
 const tabs = [
-  { id: 1, label: "Airtable"},
-  { id: 2, label: "Google Sheets"},
-  { id: 3, label: "Notion"},
+  { id: 1, label: "Airtable" },
+  { id: 2, label: "Google Sheets" },
+  { id: 3, label: "Notion" },
   { id: 4, label: "Slack" },
   // { id: 5, label: "Zapier"},
   // { id: 6, label: "n8n"},
@@ -47,77 +57,77 @@ const tabs = [
 const tabContent = {
   1: {
     heading: "Airtable",
-    desc: "A step-by-step guide to integrate Airtable with Surveybull.",
+    desc: "The Airtable integration allows you to automatically send responses to an Airtable of your choice.",
     data: [
       {
         id: 1,
-        label: "Select Airtable",
-        icon: MousePointer,
+        label: "Open Airtable Integration",
+        icon: MousePointerClick,
         data: {
-          title: "Select Airtable",
-          desc: "Go to the Integrations tab in surveybull integration dashboard and click on the “Connect” button under Airtable integration.",
+          title: "Open Airtable Integration",
+          desc: "Go to the Integrations tab in the Surveybull integration dashboard and click on the “Connect” button under Airtable integration.",
           img: googleSheetsImage1,
         },
       },
       {
         id: 2,
-        label: "Connect with Airtable",
-        icon: Cable,
+        label: "Authenticate Airtable Account",
+        icon: LogIn,
         data: {
-          title: "Connect with Airtable",
+          title: "Authenticate Airtable Account",
           desc: "Now click on the “Connect with Airtable” button to authenticate yourself with Airtable.",
           img: airtableImage2,
         },
       },
       {
         id: 3,
-        label: "Grant access",
-        icon: Link,
+        label: "Authorize Base Access",
+        icon: ShieldCheck,
         data: {
-          title: "Grant access",
+          title: "Authorize Base Access",
           desc: "You will now be taken to a page where you need to add and grant access to the base you want to use for the integration.",
           img: airtableImage3,
         },
       },
       {
         id: 4,
-        label: "Link New Table",
-        icon: NotebookTabs,
+        label: "Link Airtable Table",
+        icon: Table,
         data: {
-          title: "Link New Table",
+          title: "Link Airtable Table",
           desc: "Once you add and grant access to your base, you will be taken back to Surveybull and see the connected status as below:",
-          desc2: "Now click on the “Link New Table” button to link an Airtable with Formbricks and a modal will open up.",
+          desc2: "Now click on the “Link New Table” button to link an Airtable with Surveybull and a modal will open up.",
           img: airtableImage4,
         },
       },
       {
         id: 5,
-        label: "Select Details",
-        icon: NotebookTabs,
+        label: "Choose Base & Survey",
+        icon: ListChecks,
         data: {
-          title: "Select Details",
-          desc: "Select the Airtable base you want to link with surveybull and the Survey.",
+          title: "Choose Base & Survey",
+          desc: "Select the Airtable base you want to link with Surveybull and the Survey.",
           img: airtableImage5,
         },
       },
       {
         id: 6,
-        label: "Enter Details",
-        icon: FileSpreadsheet,
+        label: "Map Questions to Fields",
+        icon: FileEdit,
         data: {
-          title: "Enter Details",
+          title: "Map Questions to Fields",
           desc: "On doing so, you will be asked with what questions’ responses you want to feed in Airtable. Select the questions and click on the “Save” button.",
           img: airtableImage6,
         },
       },
       {
         id: 7,
-        label: "Complete",
-        icon: PartyPopper,
+        label: "Integration Complete",
+        icon: CheckCircle2,
         data: {
-          title: "Complete",
+          title: "Integration Complete",
           desc: "On submitting, the modal will close and you will see the linked table in the list of linked tables.",
-          img: googleSheetsImage6,
+          img: airtableImage7,
         },
       },
     ],
@@ -128,20 +138,20 @@ const tabContent = {
     data: [
       {
         id: 1,
-        label: "Select Google Sheets",
-        icon: MousePointer,
+        label: "Open Google Sheets Integration",
+        icon: MousePointerClick,
         data: {
-          title: "Select Google Sheets",
-          desc: "Go to the Integrations tab in your surveybull Integration dashboard and click on the “Connect” button under Google Sheets integration.",
+          title: "Open Google Sheets Integration",
+          desc: "Go to the Integrations tab in your Surveybull Integration dashboard and click on the “Connect” button under Google Sheets integration.",
           img: googleSheetsImage1,
         },
       },
       {
         id: 2,
-        label: "Connect with Google",
-        icon: Cable,
+        label: "Authenticate with Google",
+        icon: LogIn,
         data: {
-          title: "Connect with Google",
+          title: "Authenticate with Google",
           desc: "Now click on the “Connect with Google” button to authenticate yourself with Google.",
           desc2: "You will now be taken to the Google OAuth page where you can select the Google account you want to use for the integration.",
           img: googleSheetsImage2,
@@ -149,10 +159,10 @@ const tabContent = {
       },
       {
         id: 3,
-        label: "Link New Sheet",
-        icon: Link,
+        label: "Link Google Sheet",
+        icon: Sheet,
         data: {
-          title: "Link New Sheet",
+          title: "Link Google Sheet",
           desc: "Once you have selected the account and completed the authentication process, you will be taken back to Surveybull and see the connected status as below:",
           desc2: "Now click on the “Link New Sheet” button to link a Google Sheet with Surveybull and a modal will open up.",
           img: googleSheetsImage3,
@@ -160,30 +170,30 @@ const tabContent = {
       },
       {
         id: 4,
-        label: "Select Details",
-        icon: NotebookTabs,
+        label: "Choose Sheet & Survey",
+        icon: Table,
         data: {
-          title: "Select Details",
-          desc: "Select the spreadsheet URL for the Google Sheet you want to link with surveybull and the Survey. ",
+          title: "Choose Sheet & Survey",
+          desc: "Select the spreadsheet URL for the Google Sheet you want to link with Surveybull and the Survey.",
           img: googleSheetsImage4,
         },
       },
       {
         id: 5,
-        label: "Link Sheet",
-        icon: FileSpreadsheet,
+        label: "Map Questions to Columns",
+        icon: FileEdit,
         data: {
-          title: "Link Sheet",
+          title: "Map Questions to Columns",
           desc: "On doing so, you will be asked with what questions’ responses you want to feed in the Google Sheet. Select the questions and click on the “Link Sheet” button.",
           img: googleSheetsImage5,
         },
       },
       {
         id: 6,
-        label: "Complete",
-        icon: PartyPopper,
+        label: "Integration Complete",
+        icon: CheckCircle2,
         data: {
-          title: "Complete",
+          title: "Integration Complete",
           desc: "Now, you will see the linked Google Sheet in the list of linked Google Sheets.",
           img: googleSheetsImage6,
         },
@@ -192,24 +202,24 @@ const tabContent = {
   },
   3: {
     heading: "Notion",
-    desc: "The notion integration allows you to automatically send responses to a Notion database of your choice.",
+    desc: "The Notion integration allows you to automatically send responses to a Notion database of your choice.",
     data: [
       {
         id: 1,
-        label: "Select Notion",
-        icon: MousePointer,
+        label: "Open Notion Integration",
+        icon: MousePointerClick,
         data: {
-          title: "Select Notion",
+          title: "Open Notion Integration",
           desc: "Go to the Integrations tab in your Surveybull dashboard and click on the “Connect” button under Notion integration.",
           img: googleSheetsImage1,
         },
       },
       {
         id: 2,
-        label: "Connect with Notion",
-        icon: Cable,
+        label: "Authenticate with Notion",
+        icon: LogIn,
         data: {
-          title: "Connect with Notion",
+          title: "Authenticate with Notion",
           desc: "Now click on the “Connect with Notion” button to authenticate yourself with Notion.",
           desc2: "You will now be taken to the Notion OAuth page where you can select the Notion account you want to use for the integration.",
           img: notionImage2,
@@ -217,41 +227,41 @@ const tabContent = {
       },
       {
         id: 3,
-        label: "Link New Database",
-        icon: Link,
+        label: "Link Notion Database",
+        icon: Database,
         data: {
-          title: "Link New Database",
-          desc: "Once you have selected the account and databases and completed the authentication and authorization process, you will be taken back to Formbricks Cloud and see the connected status as below:",
-          desc2: "Now click on the “Link New Database” button to link a Notion database with Formbricks and a modal will open up.",
+          title: "Link Notion Database",
+          desc: "Once you have selected the account and databases and completed the authentication and authorization process, you will be taken back to Surveybull and see the connected status as below:",
+          desc2: "Now click on the “Link New Database” button to link a Notion database with Surveybull and a modal will open up.",
           img: notionImage3,
         },
       },
       {
         id: 4,
-        label: "Enter Details",
-        icon: NotebookTabs,
+        label: "Choose Database & Survey",
+        icon: Table,
         data: {
-          title: "Enter Details",
-          desc: "Select the Notion database you want to link with Formbricks and the Survey. ",
+          title: "Choose Database & Survey",
+          desc: "Select the Notion database you want to link with Surveybull and the Survey.",
           img: notionImage4,
         },
       },
       {
         id: 5,
-        label: "Link Database",
-        icon: FileSpreadsheet,
+        label: "Map Questions to Columns",
+        icon: FileEdit,
         data: {
-          title: "Link Database",
-          desc: "On doing so, you will be asked to map formbricks’ survey questions with selected databases’ column. Complete the mapping and click on the “Link Database” button.",
+          title: "Map Questions to Columns",
+          desc: "On doing so, you will be asked to map Surveybull’s survey questions with selected databases’ columns. Complete the mapping and click on the “Link Database” button.",
           img: notionImage5,
         },
       },
       {
         id: 6,
-        label: "Complete",
-        icon: PartyPopper,
+        label: "Integration Complete",
+        icon: CheckCircle2,
         data: {
-          title: "Complete",
+          title: "Integration Complete",
           desc: "Now, you will see the linked Notion database in the list of linked Notion databases.",
           img: notionImage6,
         },
@@ -260,81 +270,82 @@ const tabContent = {
   },
   4: {
     heading: "Slack",
-    desc: "The slack integration allows you to automatically send responses to a Slack channel of your choice.",
+    desc: "The Slack integration allows you to automatically send responses to a Slack channel of your choice.",
     data: [
       {
         id: 1,
-        label: "Select Slack",
-        icon: MousePointer,
+        label: "Open Slack Integration",
+        icon: MousePointerClick,
         data: {
-          title: "Select Slack",
+          title: "Open Slack Integration",
           desc: "Go to the Integrations tab in your Surveybull dashboard and click on the “Connect” button under Slack integration.",
           img: googleSheetsImage1,
         },
       },
       {
         id: 2,
-        label: "Connect with Slack",
-        icon: Cable,
+        label: "Authenticate with Slack",
+        icon: LogIn,
         data: {
-          title: "Connect with Slack",
+          title: "Authenticate with Slack",
           desc: "Now click on the “Connect with Slack” button to authenticate yourself with Slack.",
           img: slackImage2,
         },
       },
       {
         id: 3,
-        label: "Grant access",
-        icon: Link,
+        label: "Authorize Slack Channel Access",
+        icon: ShieldCheck,
         data: {
-          title: "Grant access",
+          title: "Authorize Slack Channel Access",
           desc: "You will now be taken to the Slack OAuth page where you can select the Slack channel you want to link with Surveybull and click on the “Allow” button.",
           img: slackImage3,
         },
       },
       {
         id: 4,
-        label: "Link New Table",
-        icon: NotebookTabs,
+        label: "Link Slack Channel",
+        icon: MessageSquare,
         data: {
-          title: "Link New Table",
-          desc: "Once you have selected the account and completed the authentication process, you will be taken back to Formbricks Cloud and see the connected status as below:",
-          desc2: "Now click on the “Link New Table” button to link an Airtable with Formbricks and a modal will open up.",
+          title: "Link Slack Channel",
+          desc: "Once you have selected the account and completed the authentication process, you will be taken back to Surveybull and see the connected status as below:",
+          desc2: "Now click on the “Link New Channel” button to link a Slack channel with Surveybull and a modal will open up.",
           img: slackImage4,
         },
       },
       {
         id: 5,
-        label: "Select Details",
-        icon: NotebookTabs,
+        label: "Select Channel & Survey",
+        icon: ListChecks,
         data: {
-          title: "Select Details",
-          desc: "Select the channel you want to link with Formbricks and the Survey.",
+          title: "Select Channel & Survey",
+          desc: "Select the channel you want to link with Surveybull and the Survey.",
           img: slackImage5,
         },
       },
       {
         id: 6,
-        label: "Enter Details",
-        icon: FileSpreadsheet,
+        label: "Map Questions to Messages",
+        icon: FileEdit,
         data: {
-          title: "Enter Details",
+          title: "Map Questions to Messages",
           desc: "On doing so, you will be asked to select the questions’ responses you want to feed in the Slack channel. Select the questions and click on the “Link Channel” button.",
           img: slackImage6,
         },
       },
       {
         id: 7,
-        label: "Complete",
-        icon: PartyPopper,
+        label: "Integration Complete",
+        icon: CheckCircle2,
         data: {
-          title: "Complete",
+          title: "Integration Complete",
           desc: "On submitting, the modal will close and you will see the linked Slack channel in the list of linked Slack channels.",
           img: googleSheetsImage6,
         },
       },
     ],
   },
+
   // 5: {
   //   heading: "Zapier",
   //   desc: "Master the integration of Surveybull with Zapier using our detailed guide. Seamlessly connect your surveys to 5000+ apps, automate data transfers, and enhance feedback management. Start optimizing your workflow today.",
@@ -366,7 +377,7 @@ const tabContent = {
   //       icon: Link,
   //       data: {
   //         title: " Setup your Zap",
-  //         desc: "Go to zapier.com and create a new Zap. Search for “Formbricks” to get started:",
+  //         desc: "Go to zapier.com and create a new Zap. Search for “Surveybull” to get started:",
   //         desc2: "Then, choose the event you want to trigger the Zap on:",
   //         img: googleSheetsImage3,
   //       },
@@ -377,8 +388,8 @@ const tabContent = {
   //       label: "",
   //       icon: NotebookTabs,
   //       data: {
-  //         title: "Connect Formbricks with Zapier",
-  //         desc: "Now, you have to connect Zapier with Formbricks via an API Key:",
+  //         title: "Connect Surveybull with Zapier",
+  //         desc: "Now, you have to connect Zapier with Surveybull via an API Key:",
   //         desc2: "Now you need an API key. Please refer to the API Key Setup page to learn how to create one. Once you copied it in the newly opened Zapier window, you will be connected:",
   //         img: googleSheetsImage4,
   //       },
@@ -417,6 +428,7 @@ const tabContent = {
   //     }
   //   ]
   // },
+  
   // 6: {
   //   heading: "n8n",
   //   desc: "Integrate Surveybull with n8n for a streamlined workflow experience.",
@@ -438,7 +450,7 @@ const tabContent = {
   //       icon: Cable,
   //       data: {
   //         title: "Setup your n8n workflow",
-  //         desc: "Go to n8n.io and create a new workflow. Search for “Formbricks” to get started:",
+  //         desc: "Go to n8n.io and create a new workflow. Search for “Surveybull” to get started:",
   //         img: googleSheetsImage2,
   //       },
   //     },
@@ -448,11 +460,10 @@ const tabContent = {
   //       icon: Link,
   //       data: {
   //         title: "Connect Surveybull with n8n",
-  //         desc: "Now, you have to connect n8n with Formbricks via an API Key: , Click on Create New Credentail button to add your host and API Key, ",
+  //         desc: "Now, you have to connect n8n with Surveybull via an API Key: , Click on Create New Credentail button to add your host and API Key, ",
   //         desc2: "Now you need an API key. Please refer to the API Key Setup page to learn how to create one.Once you copied it in the API Key field, hit Save button to test the connection and save the credentials.",
   //         img: googleSheetsImage3,
   //       },
-
   //     },
   //     {
   //       id: 4,
@@ -464,7 +475,6 @@ const tabContent = {
   //         desc2: "Here, we are adding Response Finished as an event, which will trigger when the survey has been filled out.",
   //         img: googleSheetsImage4,
   //       },
-
   //     },
   //     {
   //       id: 5,
@@ -504,7 +514,7 @@ const tabContent = {
 };
 
 export default function Tabs() {
-  const [activeTab, setActiveTab] = useState(1); 
+  const [activeTab, setActiveTab] = useState(1);
   const [activeStep, setActiveStep] = useState(1);
   const content = tabContent[activeTab];
 
@@ -525,10 +535,10 @@ export default function Tabs() {
               }}
             >
               {/* <Icon className={`w-6 h-6 mb-1 ${isActive ? "text-blue-600" : "text-gray-400"}`} /> */}
-              <span className={`text-lg px-4 ${isActive ? "text-[#3B4EF4]" : "text-gray-400"}`}>
+              <span className={`text-lg px-4 ${isActive ? "gradient-text w-fit" : "text-gray-400"}`}>
                 {tab.label}
               </span>
-              {isActive && <div className="absolute -bottom-1 w-full h-0.5 bg-[#3B4EF4] rounded-full"></div>}
+              {isActive && <div className="absolute -bottom-1 w-full h-0.5 gradient-bg rounded-full"></div>}
             </div>
           );
         })}

@@ -6,7 +6,8 @@ import Tabs from './Tabs'
 const integrations = () => {
   return (
     <>
-      <section className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round">
+      {/* <section className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round"> */}
+      <section>
         <div className="xl:max-w-[1300px] p-7 pt-[3rem] mx-auto">
           <IntegrationIntro />
         </div>
