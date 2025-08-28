@@ -16,7 +16,7 @@ function Feedback() {
           collect valuable market insights.
         </span>
         <button
-          className="rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] gradient-text font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#9333EA] w-fit "
+          className="mainnet-button rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] gradient-text font-HelveticaNeueMedium md:text-[16px] text-[14px] border border-[#9333EA] w-fit "
           onClick={() => {
             window.open(MAINNET_LINK);
           }}

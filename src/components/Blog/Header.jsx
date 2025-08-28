@@ -14,7 +14,7 @@ function Header() {
         </span>
         <div className="flex items-center sm:gap-5 gap-3">
           <button
-            className="gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#FFFFFF] font-HelveticaNeueMedium md:text-[16px] text-[14px] "
+            className="mainnet-button gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] md:px-[30px] px-[20px] md:py-[12px] py-[10px] text-[#FFFFFF] font-HelveticaNeueMedium md:text-[16px] text-[14px] "
             onClick={() => {
               window.open(MAINNET_LINK);
             }}

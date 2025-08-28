@@ -91,7 +91,7 @@ const Footer = () => {
           Start Earning Rewards Or Get Insightful Data ?
         </div>
         <button
-          className="text-[#9333EA] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] md:w-fit md:text-nowrap "
+          className="mainnet-button text-[#9333EA] md:text-[16px] text-[14px] font-[400] md:px-[30px] md:py-[12px] px-[20px] py-[10px] shadow-[2px_7px_16px_0px_rgba(255,255,255,0.1)] bg-[#FFFFFF] rounded-[7px] md:w-fit md:text-nowrap "
           onClick={() => {
             window.open(MAINNET_LINK);
           }}

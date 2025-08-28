@@ -162,7 +162,7 @@ function MobileNavbar({ NavbarData, visitedPage }) {
             </div>
             <div>
               <button
-                className="gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]"
+                className="mainnet-button gradient-bg shadow-[2px_7px_16px_0px_rgba(19,35,55,0.1)] rounded-[7px] px-[30px] py-[12px] text-[#FFFFFF] font-HelveticaNeueMedium text-[16px]"
                 onClick={() => {
                   window.open(MAINNET_LINK);
                 }}

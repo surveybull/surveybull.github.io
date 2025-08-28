@@ -213,7 +213,7 @@ export default function ProductSurveySection() {
             Join our blockchain survey platform that directly connects brands with real consumers. Brands get authentic
             feedback, consumers get instant rewards - all without middlemen.
           </p>
-          <button onClick={() => { window.open(MAINNET_LINK);}} className="gradient-bg text-white font-medium w-fit self-center px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+          <button onClick={() => { window.open(MAINNET_LINK);}} className="mainnet-button gradient-bg text-white font-medium w-fit self-center px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
             Get Started
           </button>
         </motion.div>
