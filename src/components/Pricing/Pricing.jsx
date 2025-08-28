@@ -28,9 +28,9 @@ function Pricing() {
     <>
       <SEO
         name={"SurveyBull"}
-        title={"SurveyBull | Pricing"}
+        title={"SurveyBull Pricing - flexible and transparent pricing model"}
         type={"Article"}
-        description={"Pricing Section"}
+        description={"Explore SurveyBull's flexible and transparent pricing model. Find the perfect survey solution for your needs with transparent pricing and powerful features."}
       />
       {/* <section className="bg-[url('./assets/gif/Pricing.gif')] bg-cover bg-repeat-round"> */}
       <section>

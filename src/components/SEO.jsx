@@ -11,15 +11,13 @@ function SEO({ name, type, description, title }) {
       </title>
       <meta
         name="description"
-        content={
-          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
-        }
+        content={description}
       />
       <meta property="og:type" content={type} />
       <meta
         property="og:title"
         content={
-          "SurveyBull – Blockchain-Powered Survey Platform"
+          "Web3 Survey Platform | Reward-Based Surveys with Smart Contracts – SurveyBull"
         }
       />
       <meta property="og:description" content={intro} />
@@ -32,13 +30,13 @@ function SEO({ name, type, description, title }) {
       <meta
         name="twitter:title"
         content={
-          "SurveyBull – Blockchain-Powered Survey Platform"
+          "Web3 Survey Platform | Reward-Based Surveys with Smart Contracts – SurveyBull"
         }
       />
       <meta
         name="twitter:description"
         content={
-          "Web3 Survey Platform: Secure, Verified Data with World ID Authentication, Token-Gated Participation, Airdrop Rewards, and Transparent Blockchain Transactions"
+          "Create and participate in Web3-powered surveys. Earn tokens for your feedback through smart contracts, World ID verification, and token-gated access."
         }
       />
     </Helmet>

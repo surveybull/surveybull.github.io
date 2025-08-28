@@ -94,9 +94,9 @@ function FAQs() {
     <>
       <SEO
         name={"SurveyBull"}
-        title={"SurveyBull | FAQs"}
+        title={"SurveyBull FAQs - Frequently Asked Questions"}
         type={"FAQs"}
-        description={"FAQs Page"}
+        description={"Find answers to common questions about SurveyBull's survey platform, features, pricing, and how to get the most out of your surveys."}
       />
       {/* <section className="bg-[url('./assets/gif/FAQsGif.gif')] bg-cover bg-repeat-round"> */}
       <section>

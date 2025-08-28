@@ -55,10 +55,10 @@ const NavBar = () => {
           subtitle: "earn tokens with your data",
         },
         {
-          id: "Distribution",
-          title: "Distribution",
+          id: "Refer&Earn",
+          title: "Refer & Earn",
           path: "/",
-          subtitle: "know your share",
+          subtitle: "Invite others and earn rewards",
         },
         {
           id: "Survey",

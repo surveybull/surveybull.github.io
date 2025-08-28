@@ -15,8 +15,8 @@ function Roadmap() {
     <>
       <SEO
         name={"SurveyBull"}
-        description={"Roadmap Page"}
-        title={"SurveyBull | Roadmap"}
+        description={"Explore the SurveyBull product roadmap to see upcoming features, enhancements, and what we're building next to improve your survey experience."}
+        title={"SurveyBull Roadmap - Upcoming Features & Updates"}
         type={"Article"}
       />
       {/* <section className="bg-[url('./assets/gif/Roadmap.gif')] bg-cover bg-repeat-round"> */}

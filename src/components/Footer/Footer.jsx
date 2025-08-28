@@ -22,8 +22,8 @@ const sectionsData = [
       { title: "Survey Creation", path: "/surveycreation" },
       { title: "Earn Crypto", path: "/#Earn" },
       // { title: "Staking Rewards", path: "/#Distribution" },
-      { title: "Participation Rewards", path: "/#Distribution" },
-      { title: "Buy WLD Token", path: "/" },
+      { title: "Refer & Earn", path: "/#Refer&Earn" },
+      { title: "Integrations", path: "/Integrations" },
     ],
   },
   {

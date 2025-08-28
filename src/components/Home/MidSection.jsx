@@ -94,7 +94,7 @@ const EarnToken = () => {
   );
 
   return (
-    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem]">
+    <div id="Earn" className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem]">
       <div className="lg:w-[50%] w-full">
         <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] text-center lg:text-start font-HelveticaNeueBold">
           <span className="gradient-text inline-block">Earn Tokens</span> For{" "}
@@ -156,7 +156,7 @@ const Grow = () => {
   );
 
   return (
-    <div className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem] ">
+    <div id="Refer&Earn" className="flex lg:flex-row flex-col-reverse lg:my-14 my-9 gap-[2rem] ">
       <div className="lg:w-[50%] w-full">
         <h3 className="md:text-4xl md:leading-[52px] text-2xl leading-[40px] font-HelveticaNeueBold text-center lg:text-start">
           Grow With Us:&nbsp;

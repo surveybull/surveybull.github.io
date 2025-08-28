@@ -20,9 +20,9 @@ function Blog() {
     <>
       <SEO
         name={"SurveyBull"}
-        description={"Survey Creation Page"}
+        title={"Surveybull | Survey Creation Page"}
         type={"Survey Creation"}
-        title={"SurveyBull | Survey Creation"}
+        description={"Build powerful surveys with SurveyBull's intuitive survey creation tool. Design custom questionnaires, styles, and forms with advanced features and templates."}
       />
       {/* <section className="bg-[url('./assets/gif/Blog.gif')] bg-cover bg-repeat-round"> */}
       <section>
