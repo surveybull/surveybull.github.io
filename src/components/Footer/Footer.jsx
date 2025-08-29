@@ -132,6 +132,7 @@ const Footer = () => {
                   href={TELEGRAM_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="telegram-link"
                 >
                   <img src={FooterTelegram} alt="FooterTelegram" loading="lazy" />
                 </a>
@@ -140,6 +141,7 @@ const Footer = () => {
                   href={TWITTER_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="twitter-link"
                 >
                   <img src={FooterTwitter} alt="FooterTwitter" loading="lazy" />
                 </a>
@@ -148,6 +150,7 @@ const Footer = () => {
                   href={DISCORD_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="discord-link"
                 >
                   <img src={discord} alt="discord" loading="lazy" />
                 </a>
